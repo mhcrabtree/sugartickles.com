@@ -627,3 +627,9 @@ button.chip[aria-pressed="true"] { border-color: var(--gold); color: var(--text)
 .tr-out .garg-svg { width: 22px; height: 36px; }
 .garg-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); max-width: 640px; }
 .garg-grid .latin { font-family: var(--body); font-weight: 600; }
+
+/* Walkthrough index: one heading per game universe */
+.universe { max-width: 1100px; margin: 0 auto; padding: 0 24px 18px; }
+.universe h2 { font-size: 2.2rem; margin: 0; }
+.universe p { color: var(--muted); margin: 6px 0 0; }
+.hero .resource-links { justify-content: center; margin-top: 18px; }
