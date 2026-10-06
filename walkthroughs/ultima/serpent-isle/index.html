@@ -51,6 +51,10 @@
           <div class="label" style="margin-top:6px"><span class="count"></span></div>
           <button type="button">Reset progress</button>
         </div>
+          <h4><a href="#install" style="color:inherit;text-decoration:none">Setup</a></h4>
+          <ol>
+            <li><a href="#install"><span>Installing the Game</span><span class="done"></span></a></li>
+          </ol>
           <h4><a href="#act-1" style="color:inherit;text-decoration:none">Shipwrecked on the Mainland</a></h4>
           <ol>
             <li><a href="#arrival"><span>Arrival</span><span class="done"></span></a></li>
@@ -132,6 +136,66 @@
         </ul>
         <p>Where the two sources disagree, you'll see a gold <strong>"To verify"</strong> note until we've confirmed the answer in our own playthrough. Screenshots and video are our own captures from that playthrough.</p>
         <p><em>Ultima VII Part Two: Serpent Isle</em> and <em>The Silver Seed</em> are © 1993 Origin Systems, Inc. / Electronic Arts. SugarTickles isn't affiliated with Origin or EA. This is a fan guide, made with love.</p>
+      </section>
+
+      <section class="chapter install" id="install">
+        <header>
+          <span class="chapter-num">Setup</span>
+          <h3>Installing the Game</h3>
+          <p class="where">Buy it on GOG, play it with Exult, and add mods, on a Mac or a PC</p>
+        </header>
+
+        <h4>1. Buy the game</h4>
+        <p><a href="https://www.gog.com/en/game/ultima_7_complete" rel="noopener">Ultima 7 Complete on GOG</a> includes The Black Gate, Forge of Virtue, Serpent Isle, and The Silver Seed. Install it from the GOG website or the GOG Galaxy app. It comes set up to run in DOSBox, but the free <a href="https://exult.info" rel="noopener">Exult</a> engine plays much better on modern computers: higher resolutions, bug fixes, and mod support. Exult still needs the GOG game files, so install the game first.</p>
+
+        <h4>2. Install Exult</h4>
+        <p>Get the latest version (1.12.1 as of this writing) from the <a href="https://exult.info/download.html" rel="noopener">Exult download page</a>: the <strong>.dmg</strong> for Mac or the <strong>.exe</strong> installer for Windows.</p>
+
+        <h4>3. Point Exult at the game files</h4>
+        <p>Exult needs the folder that holds the game's <code>STATIC</code> and <code>GAMEDAT</code> folders. If Exult says it can't find the static folder, it's pointed at the wrong place.</p>
+
+        <details class="spoiler" open>
+          <summary>🍎 On a Mac</summary>
+          <ol class="plain">
+            <li>Drag <strong>Exult.app</strong> into your Applications folder.</li>
+            <li>GOG puts Serpent Isle in Applications as its own app. The game files are hidden inside it, in:<pre><code>/Applications/Ultima VII™  - Serpent Isle + The Silver Seed.app/Contents/Resources/game</code></pre>To peek inside, right-click the app in Finder and choose <strong>Show Package Contents</strong>. Note the ™ symbol and the <em>two</em> spaces before the dash in the app's name. The path has to match exactly.</li>
+            <li>Exult's settings live in <code>~/Library/Preferences/exult.cfg</code>. In Finder, choose <strong>Go → Go to Folder…</strong>, paste <code>~/Library/Preferences</code>, and open <code>exult.cfg</code> in TextEdit. (If it isn't there, open and quit Exult once, or create the file yourself.)</li>
+            <li>Inside the <code>&lt;disk&gt;</code> section, add a <code>&lt;game&gt;</code> entry with the path. A brand-new file can be just this:<pre><code>&lt;config&gt;
+  &lt;disk&gt;
+    &lt;game&gt;
+      &lt;serpentisle&gt;
+        &lt;path&gt;/Applications/Ultima VII™  - Serpent Isle + The Silver Seed.app/Contents/Resources/game&lt;/path&gt;
+      &lt;/serpentisle&gt;
+    &lt;/game&gt;
+  &lt;/disk&gt;
+&lt;/config&gt;</code></pre>Exult fills in the rest of the settings the first time it runs. If you set up both games, put the <code>&lt;blackgate&gt;</code> and <code>&lt;serpentisle&gt;</code> entries side by side inside the same <code>&lt;game&gt;</code> section.</li>
+            <li>Save, open Exult, and Serpent Isle appears on its start screen.</li>
+          </ol>
+        </details>
+
+        <details class="spoiler">
+          <summary>🪟 On a Windows PC</summary>
+          <ol class="plain">
+            <li>Run the Exult installer. It asks where The Black Gate and Serpent Isle are installed.</li>
+            <li>For Serpent Isle, browse to the GOG folder. It's usually <code>C:\GOG Games\Ultima 7 - Serpent Isle</code>. Older GOG versions use <code>C:\GOG Games\Ultima VII - Complete\Serpent</code>, and GOG Galaxy installs go under <code>C:\Program Files (x86)\GOG Galaxy\Games\</code>. Pick whichever folder contains <code>STATIC</code> and <code>GAMEDAT</code>.</li>
+            <li>To change it later, edit <code>exult.cfg</code> in <code>%LOCALAPPDATA%\Exult</code> (paste that into File Explorer's address bar) and fix the <code>&lt;path&gt;</code> under <code>&lt;serpentisle&gt;</code>.</li>
+          </ol>
+        </details>
+
+        <h4>4. Add a mod (optional)</h4>
+        <p>Marzo's <strong>Serpent Isle Fixes</strong> mod repairs many of the original's plot and script bugs. (You don't need a keyring mod here: The Silver Seed already gives you a magic keyring.) Download it here: <a href="https://exult.sourceforge.io/snapshots/Sifixes.zip" rel="noopener">SI Fixes mod (.zip)</a>, also listed on the <a href="https://exult.info/download.html" rel="noopener">Exult download page</a>.</p>
+        <ol class="plain">
+          <li>Unzip it. You get a file, <code>sifixes.cfg</code>, and a folder, <code>sifixes</code>. Keep both, side by side.</li>
+          <li>Move both into the game's <code>mods</code> folder. Create an empty folder named <code>mods</code> if it isn't there yet.
+            <ul>
+              <li><strong>Mac:</strong> <code>~/Library/Application Support/Exult/serpentisle/mods</code> (in Finder, use <strong>Go → Go to Folder…</strong>; the Library folder is hidden otherwise).</li>
+              <li><strong>Windows:</strong> a <code>mods</code> folder inside the game folder, e.g. <code>C:\GOG Games\Ultima 7 - Serpent Isle\mods</code>.</li>
+            </ul>
+          </li>
+          <li>Open Exult, choose Serpent Isle, and pick the mod from the menu before you start a new game.</li>
+        </ol>
+        <aside class="callout tip"><strong>Saves</strong>A mod keeps its own save files, separate from the unmodded game. Decide on mods before you start a long playthrough.</aside>
+        <p class="where">Playing The Black Gate too? Its <em>Keyring</em> mod is on the same download page.</p>
       </section>
 
       <section class="act" id="act-1">

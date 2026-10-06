@@ -670,3 +670,31 @@ strong.has-tip[data-tip="item"]:hover, strong.has-tip[data-tip="item"]:focus-vis
 .npc-tip.is-item { border-left-color: var(--gold); }
 .npc-tip.is-item strong { color: var(--gold); }
 .npc-tip.is-item .where::before { content: "🔎 "; }
+
+/* ---------- Install chapter ---------- */
+
+.chapter code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.85em;
+  background: var(--bg-deep);
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 1px 5px;
+  overflow-wrap: anywhere;
+}
+.chapter pre {
+  margin: 10px 0;
+  padding: 12px 14px;
+  background: var(--bg-deep);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow-x: auto;
+  line-height: 1.5;
+}
+.chapter pre code { background: none; border: 0; padding: 0; overflow-wrap: normal; white-space: pre; }
+ol.plain { padding-left: 1.3em; margin: 10px 0; }
+ol.plain > li { margin: 8px 0; }
+ol.plain ul { padding-left: 1.2em; margin: 6px 0; }
+.install details.spoiler summary { font-size: 1rem; color: var(--text); }
+.install details.spoiler, .install details.spoiler > ol { min-width: 0; max-width: 100%; }
+.chapter pre { max-width: 100%; }
