@@ -633,3 +633,33 @@ button.chip[aria-pressed="true"] { border-color: var(--gold); color: var(--text)
 .universe h2 { font-size: 2.2rem; margin: 0; }
 .universe p { color: var(--muted); margin: 6px 0 0; }
 .hero .resource-links { justify-content: center; margin-top: 18px; }
+
+/* ---------- Character tooltips ---------- */
+
+.npc.has-tip {
+  cursor: help;
+  text-decoration: underline dotted;
+  text-decoration-color: rgba(143, 184, 232, 0.6);
+  text-underline-offset: 3px;
+  border-radius: 3px;
+}
+.npc.has-tip:hover, .npc.has-tip:focus-visible { text-decoration-color: var(--sky); outline: none; background: rgba(143, 184, 232, 0.12); }
+
+.npc-tip {
+  position: absolute;
+  z-index: 50;
+  max-width: min(320px, calc(100vw - 16px));
+  padding: 10px 13px;
+  background: var(--panel-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--sky);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  font-size: 0.88rem;
+  line-height: 1.45;
+  pointer-events: none;
+}
+.npc-tip strong { display: block; font-family: var(--display); font-weight: 400; font-size: 1.1rem; color: var(--sky); }
+.npc-tip .role { display: block; color: var(--muted); font-style: italic; }
+.npc-tip .where { display: block; margin-top: 6px; color: var(--text); }
+.npc-tip .where::before { content: "📍 "; }

@@ -168,3 +168,60 @@
     });
   });
 })();
+
+// Character tooltips: pages that load an npcs.js (window.ST_NPCS) get a "who and where"
+// card on <span class="npc"> names. Hover or focus on desktop, tap on touch screens.
+(function () {
+  const data = window.ST_NPCS;
+  if (!data) return;
+
+  const tip = document.createElement('div');
+  tip.className = 'npc-tip';
+  tip.id = 'npc-tip';
+  tip.setAttribute('role', 'tooltip');
+  tip.hidden = true;
+  document.body.appendChild(tip);
+  let current = null;
+
+  function show(el) {
+    const info = data[el.textContent.trim()];
+    if (!info) return;
+    current = el;
+    tip.innerHTML = '<strong></strong><span class="role"></span><span class="where"></span>';
+    tip.querySelector('strong').textContent = el.textContent.trim();
+    tip.querySelector('.role').textContent = info[0];
+    tip.querySelector('.where').textContent = info[1];
+    tip.hidden = false;
+    el.setAttribute('aria-describedby', 'npc-tip');
+
+    // Prefer above the name; flip below if it would run off the top. Keep it on screen sideways.
+    const r = el.getBoundingClientRect();
+    const w = tip.offsetWidth, h = tip.offsetHeight, pad = 8;
+    let left = Math.min(Math.max(pad, r.left + r.width / 2 - w / 2), window.innerWidth - w - pad);
+    let top = r.top - h - 8;
+    tip.classList.toggle('below', top < pad);
+    if (top < pad) top = r.bottom + 8;
+    tip.style.left = (left + window.scrollX) + 'px';
+    tip.style.top = (top + window.scrollY) + 'px';
+  }
+
+  function hide() {
+    if (current) current.removeAttribute('aria-describedby');
+    current = null;
+    tip.hidden = true;
+  }
+
+  document.querySelectorAll('.npc').forEach(function (el) {
+    if (!data[el.textContent.trim()]) return;
+    el.classList.add('has-tip');
+    el.tabIndex = 0;
+    el.addEventListener('mouseenter', function () { show(el); });
+    el.addEventListener('mouseleave', hide);
+    el.addEventListener('focus', function () { show(el); });
+    el.addEventListener('blur', hide);
+    el.addEventListener('click', function (e) { e.stopPropagation(); show(el); });
+  });
+
+  document.addEventListener('click', hide);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') hide(); });
+})();
