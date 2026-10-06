@@ -3,6 +3,7 @@
 (function () {
   const page = document.body.dataset.walkthrough || location.pathname;
   const storeKey = 'st-walkthrough:' + page;
+  const lastKey = storeKey + ':last';
   let saved = {};
   try { saved = JSON.parse(localStorage.getItem(storeKey)) || {}; } catch (e) { saved = {}; }
 
@@ -26,10 +27,14 @@
         if (box.checked) saved[key] = 1; else delete saved[key];
         li.classList.toggle('checked', box.checked);
         localStorage.setItem(storeKey, JSON.stringify(saved));
+        // The bookmark follows the step you most recently checked off.
+        if (box.checked) localStorage.setItem(lastKey, key);
+        else if (localStorage.getItem(lastKey) === key) localStorage.removeItem(lastKey);
         updateProgress();
+        updateBookmark();
       });
       li.prepend(box);
-      steps.push({ chapter: chapter.id, box: box });
+      steps.push({ chapter: chapter.id, box: box, key: key, li: li });
     });
   });
 
@@ -56,8 +61,10 @@
       if (!confirm('Clear all checked steps?')) return;
       saved = {};
       localStorage.removeItem(storeKey);
+      localStorage.removeItem(lastKey);
       steps.forEach(function (s) { s.box.checked = false; s.box.closest('li').classList.remove('checked'); });
       updateProgress();
+      updateBookmark();
     });
   }
 
@@ -131,7 +138,91 @@
     window.addEventListener('scroll', function () { top.classList.toggle('show', window.scrollY > 800); }, { passive: true });
   }
 
+  // Bookmark: the step you last checked off (or, failing that, the furthest checked step).
+  // Opening the page jumps straight there, so you can pick up mid-game without scrolling.
+  function bookmarkStep() {
+    const last = localStorage.getItem(lastKey);
+    const byKey = steps.find(function (s) { return s.key === last && s.box.checked; });
+    if (byKey) return byKey;
+    for (let i = steps.length - 1; i >= 0; i--) if (steps[i].box.checked) return steps[i];
+    return null;
+  }
+
+  const fab = document.createElement('button');
+  fab.type = 'button';
+  fab.className = 'bookmark-fab';
+  fab.setAttribute('aria-label', 'Jump to where you left off');
+  fab.title = 'Jump to where you left off';
+  fab.textContent = '🔖';
+  document.body.appendChild(fab);
+
+  const jump = document.createElement('button');
+  jump.type = 'button';
+  jump.className = 'bookmark-jump';
+  jump.textContent = '🔖 Jump to where I left off';
+  const progressBox = document.querySelector('.toc .progress');
+  if (progressBox) progressBox.appendChild(jump);
+
+  function chapterTitle(step) {
+    const h = document.querySelector('#' + step.chapter + ' h3');
+    return h ? h.textContent.trim() : '';
+  }
+
+  function updateBookmark() {
+    const step = bookmarkStep();
+    document.querySelectorAll('li.bookmarked').forEach(function (li) { li.classList.remove('bookmarked'); });
+    if (step) step.li.classList.add('bookmarked');
+    fab.classList.toggle('show', !!step);
+    jump.hidden = !step;
+  }
+
+  function goToBookmark() {
+    const step = bookmarkStep();
+    if (!step) return;
+    // Land the bookmarked step about a third of the way down, below the sticky top bar,
+    // so the next unchecked step is right underneath it.
+    const bar = document.querySelector('.topbar');
+    const offset = (bar ? bar.offsetHeight : 0) + window.innerHeight * 0.2;
+    const top = step.li.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: Math.max(0, top), behavior: 'instant' });
+    step.li.classList.remove('flash');
+    void step.li.offsetWidth;
+    step.li.classList.add('flash');
+    if (toc && window.innerWidth <= 900) toc.classList.remove('open');
+  }
+
+  fab.addEventListener('click', function () { goToBookmark(); });
+  jump.addEventListener('click', function () { goToBookmark(); });
+
+  function showResumeNote(step) {
+    const note = document.createElement('div');
+    note.className = 'resume-note';
+    note.setAttribute('role', 'status');
+    note.innerHTML = '<span>🔖 Picked up where you left off<small></small></span><button type="button" class="to-top">↑ Start at top</button><button type="button" class="close" aria-label="Dismiss">✕</button>';
+    note.querySelector('small').textContent = chapterTitle(step);
+    document.body.appendChild(note);
+    function dismiss() { note.classList.add('hide'); setTimeout(function () { note.remove(); }, 300); }
+    note.querySelector('.to-top').addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'instant' }); dismiss(); });
+    note.querySelector('.close').addEventListener('click', dismiss);
+    setTimeout(dismiss, 9000);
+  }
+
   updateProgress();
+  updateBookmark();
+
+  // Auto-resume on open, unless the link points somewhere specific (e.g. #chapter).
+  const resumeStep = bookmarkStep();
+  if (resumeStep && !location.hash) {
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+    goToBookmark();
+    // Fonts and images can shift the layout after first paint; settle on the step once loaded.
+    let touched = false;
+    ['touchstart', 'wheel', 'keydown', 'mousedown'].forEach(function (ev) {
+      window.addEventListener(ev, function () { touched = true; }, { once: true, passive: true });
+    });
+    window.addEventListener('load', function () { if (!touched) goToBookmark(); });
+    showResumeNote(resumeStep);
+  }
 })();
 
 // Spell pages: free-text search plus reagent filter chips.
@@ -237,4 +328,29 @@
 
   document.addEventListener('click', hide);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') hide(); });
+})();
+
+// Copy buttons on code blocks (install instructions).
+(function () {
+  document.querySelectorAll('.chapter pre').forEach(function (pre) {
+    const code = pre.querySelector('code') || pre;
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'copy';
+    btn.textContent = 'Copy';
+    btn.addEventListener('click', function () {
+      const text = code.textContent;
+      const done = function () { btn.textContent = 'Copied!'; setTimeout(function () { btn.textContent = 'Copy'; }, 1500); };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(done, function () { btn.textContent = 'Press ⌘C'; });
+      } else {
+        const range = document.createRange();
+        range.selectNodeContents(code);
+        const sel = window.getSelection();
+        sel.removeAllRanges(); sel.addRange(range);
+        try { document.execCommand('copy'); done(); } catch (e) { btn.textContent = 'Press ⌘C'; }
+      }
+    });
+    pre.appendChild(btn);
+  });
 })();

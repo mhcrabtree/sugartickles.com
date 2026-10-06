@@ -683,18 +683,118 @@ strong.has-tip[data-tip="item"]:hover, strong.has-tip[data-tip="item"]:focus-vis
   overflow-wrap: anywhere;
 }
 .chapter pre {
+  position: relative;
   margin: 10px 0;
   padding: 12px 14px;
+  padding-right: 72px;
   background: var(--bg-deep);
   border: 1px solid var(--line);
   border-radius: 8px;
-  overflow-x: auto;
   line-height: 1.5;
+  /* Wrap long paths instead of scrolling sideways, on every screen size. */
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  max-width: 100%;
 }
-.chapter pre code { background: none; border: 0; padding: 0; overflow-wrap: normal; white-space: pre; }
+.chapter pre code { background: none; border: 0; padding: 0; white-space: inherit; overflow-wrap: anywhere; }
+.chapter pre .copy {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font: 600 0.75rem var(--body, inherit);
+  color: var(--gold);
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 3px 9px;
+  cursor: pointer;
+}
+.chapter pre .copy:hover { border-color: var(--gold); }
 ol.plain { padding-left: 1.3em; margin: 10px 0; }
 ol.plain > li { margin: 8px 0; }
 ol.plain ul { padding-left: 1.2em; margin: 6px 0; }
 .install details.spoiler summary { font-size: 1rem; color: var(--text); }
-.install details.spoiler, .install details.spoiler > ol { min-width: 0; max-width: 100%; }
-.chapter pre { max-width: 100%; }
+.chapter, .install details.spoiler, .install details.spoiler > ol { min-width: 0; max-width: 100%; }
+
+/* ---------- Bookmark & resume ---------- */
+
+.bookmark-jump {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 7px 10px;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--gold);
+  background: var(--gold-soft);
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  cursor: pointer;
+}
+.bookmark-jump:hover { background: rgba(227, 184, 103, 0.24); }
+
+.bookmark-fab {
+  position: fixed;
+  right: 20px;
+  bottom: 74px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  background: var(--panel);
+  font-size: 1.15rem;
+  display: none;
+  place-items: center;
+  cursor: pointer;
+  z-index: 15;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+.bookmark-fab.show { display: grid; }
+
+ol.steps > li.bookmarked { box-shadow: inset 3px 0 0 var(--gold); opacity: 1; }
+ol.steps > li.bookmarked::after {
+  content: "🔖 You left off here";
+  display: block;
+  margin-top: 6px;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--gold);
+}
+@keyframes bookmark-flash { from { background: rgba(227, 184, 103, 0.28); } to { background: transparent; } }
+ol.steps > li.flash { animation: bookmark-flash 2.2s ease-out; }
+
+.resume-note {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: calc(100vw - 100px);
+  padding: 10px 12px 10px 16px;
+  background: var(--panel-2);
+  border: 1px solid var(--gold);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  font-size: 0.9rem;
+  transition: opacity 0.3s;
+}
+.resume-note.hide { opacity: 0; }
+.resume-note small { display: block; color: var(--muted); font-size: 0.8rem; }
+.resume-note button {
+  font: inherit;
+  font-size: 0.82rem;
+  color: var(--gold);
+  background: transparent;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.resume-note button.close { border: 0; color: var(--muted); padding: 6px; }
+@media (max-width: 600px) {
+  .resume-note { left: 12px; right: 76px; transform: none; max-width: none; }
+}
