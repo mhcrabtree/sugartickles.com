@@ -34,7 +34,9 @@
         updateBookmark();
       });
       li.prepend(box);
-      steps.push({ chapter: chapter.id, box: box, key: key, li: li });
+      // Optional steps can be checked, but don't hold back a chapter's ✓.
+      const optional = /^optional\b/i.test(li.textContent.trim());
+      steps.push({ chapter: chapter.id, box: box, key: key, li: li, optional: optional });
     });
   });
 
@@ -51,7 +53,12 @@
       const mine = steps.filter(function (s) { return s.chapter === id; });
       const mark = a.querySelector('.done');
       if (!mark || !mine.length) return;
-      mark.textContent = mine.every(function (s) { return s.box.checked; }) ? '✓' : '';
+      const required = mine.filter(function (s) { return !s.optional; });
+      const checked = mine.filter(function (s) { return s.box.checked; }).length;
+      const complete = required.every(function (s) { return s.box.checked; });
+      // ✓ when every required step is done; otherwise show how far along you are.
+      mark.textContent = complete ? '✓' : checked ? checked + '/' + mine.length : '';
+      mark.classList.toggle('partial', !complete && checked > 0);
     });
   }
 

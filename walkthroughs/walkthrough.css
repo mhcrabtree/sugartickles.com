@@ -201,7 +201,8 @@ h1, h2, h3, h4 { font-family: var(--display); font-weight: 400; line-height: 1.2
 }
 .toc li a:hover { background: var(--panel); color: var(--text); }
 .toc li a.active { background: var(--gold-soft); color: var(--gold); }
-.toc li a .done { color: var(--serpent); font-size: 0.8rem; }
+.toc li a .done { color: var(--serpent); font-size: 0.8rem; white-space: nowrap; }
+.toc li a .done.partial { color: var(--muted); font-size: 0.72rem; }
 
 .toc-toggle { display: none; }
 
@@ -718,7 +719,7 @@ ol.plain ul { padding-left: 1.2em; margin: 6px 0; }
 
 /* ---------- Bookmark & resume ---------- */
 
-.bookmark-jump {
+.toc .progress .bookmark-jump {
   display: block;
   width: 100%;
   margin-top: 10px;
@@ -730,8 +731,9 @@ ol.plain ul { padding-left: 1.2em; margin: 6px 0; }
   border: 1px solid var(--gold);
   border-radius: 8px;
   cursor: pointer;
+  text-decoration: none;
 }
-.bookmark-jump:hover { background: rgba(227, 184, 103, 0.24); }
+.toc .progress .bookmark-jump:hover { background: rgba(227, 184, 103, 0.24); }
 
 .bookmark-fab {
   position: fixed;
