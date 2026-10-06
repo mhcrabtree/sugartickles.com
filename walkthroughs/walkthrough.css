@@ -634,9 +634,9 @@ button.chip[aria-pressed="true"] { border-color: var(--gold); color: var(--text)
 .universe p { color: var(--muted); margin: 6px 0 0; }
 .hero .resource-links { justify-content: center; margin-top: 18px; }
 
-/* ---------- Character tooltips ---------- */
+/* ---------- Character & item tooltips ---------- */
 
-.npc.has-tip {
+.has-tip {
   cursor: help;
   text-decoration: underline dotted;
   text-decoration-color: rgba(143, 184, 232, 0.6);
@@ -663,3 +663,10 @@ button.chip[aria-pressed="true"] { border-color: var(--gold); color: var(--text)
 .npc-tip .role { display: block; color: var(--muted); font-style: italic; }
 .npc-tip .where { display: block; margin-top: 6px; color: var(--text); }
 .npc-tip .where::before { content: "📍 "; }
+
+.item.has-tip, strong.has-tip[data-tip="item"] { text-decoration-color: rgba(227, 184, 103, 0.6); }
+.item.has-tip:hover, .item.has-tip:focus-visible,
+strong.has-tip[data-tip="item"]:hover, strong.has-tip[data-tip="item"]:focus-visible { text-decoration-color: var(--gold); background: var(--gold-soft); outline: none; }
+.npc-tip.is-item { border-left-color: var(--gold); }
+.npc-tip.is-item strong { color: var(--gold); }
+.npc-tip.is-item .where::before { content: "🔎 "; }

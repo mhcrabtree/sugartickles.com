@@ -169,11 +169,13 @@
   });
 })();
 
-// Character tooltips: pages that load an npcs.js (window.ST_NPCS) get a "who and where"
-// card on <span class="npc"> names. Hover or focus on desktop, tap on touch screens.
+// Character and item tooltips: pages that load npcs.js (window.ST_NPCS) and items.js
+// (window.ST_ITEMS) get a small card on <span class="npc">, <span class="item">, and bold
+// item names in the steps. Hover or focus on desktop, tap on touch screens.
 (function () {
-  const data = window.ST_NPCS;
-  if (!data) return;
+  const npcs = window.ST_NPCS || {};
+  const items = window.ST_ITEMS || {};
+  if (!window.ST_NPCS && !window.ST_ITEMS) return;
 
   const tip = document.createElement('div');
   tip.className = 'npc-tip';
@@ -184,11 +186,14 @@
   let current = null;
 
   function show(el) {
-    const info = data[el.textContent.trim()];
+    const name = el.textContent.trim();
+    const isItem = el.dataset.tip === 'item';
+    const info = (isItem ? items : npcs)[name];
     if (!info) return;
     current = el;
+    tip.classList.toggle('is-item', isItem);
     tip.innerHTML = '<strong></strong><span class="role"></span><span class="where"></span>';
-    tip.querySelector('strong').textContent = el.textContent.trim();
+    tip.querySelector('strong').textContent = name;
     tip.querySelector('.role').textContent = info[0];
     tip.querySelector('.where').textContent = info[1];
     tip.hidden = false;
@@ -211,8 +216,8 @@
     tip.hidden = true;
   }
 
-  document.querySelectorAll('.npc').forEach(function (el) {
-    if (!data[el.textContent.trim()]) return;
+  function attach(el, kind) {
+    el.dataset.tip = kind;
     el.classList.add('has-tip');
     el.tabIndex = 0;
     el.addEventListener('mouseenter', function () { show(el); });
@@ -220,6 +225,14 @@
     el.addEventListener('focus', function () { show(el); });
     el.addEventListener('blur', hide);
     el.addEventListener('click', function (e) { e.stopPropagation(); show(el); });
+  }
+
+  document.querySelectorAll('.npc').forEach(function (el) {
+    if (npcs[el.textContent.trim()]) attach(el, 'npc');
+  });
+  // Tagged items, plus bold words in the steps and callouts that name an item.
+  document.querySelectorAll('main .item, main li strong, main .callout strong').forEach(function (el) {
+    if (items[el.textContent.trim()] && !el.dataset.tip) attach(el, 'item');
   });
 
   document.addEventListener('click', hide);
