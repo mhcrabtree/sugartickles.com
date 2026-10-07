@@ -124,15 +124,22 @@
       el.href = 'https://www.youtube.com/watch?v=' + encodeURIComponent(id);
       el.target = '_blank';
       el.rel = 'noopener';
-      el.style.backgroundImage = 'url("https://i.ytimg.com/vi/' + encodeURIComponent(id) + '/hqdefault.jpg")';
       el.innerHTML = '<span>▶ Watch on YouTube</span>';
     } else if (id) {
-      el = document.createElement('iframe');
-      el.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id);
-      el.title = caption ? caption.textContent : 'Gameplay video';
-      el.loading = 'lazy';
-      el.allow = 'accelerometer; encrypted-media; gyroscope; picture-in-picture';
-      el.allowFullscreen = true;
+      // Click-to-load: nothing loads from YouTube until the visitor presses play.
+      el = document.createElement('button');
+      el.type = 'button';
+      el.className = 'yt-facade';
+      el.setAttribute('aria-label', 'Play video' + (caption ? ': ' + caption.textContent : ''));
+      el.innerHTML = '<span class="yt-play" aria-hidden="true">▶</span><span class="yt-note">Play video · loads from YouTube</span>';
+      el.addEventListener('click', function () {
+        const frame = document.createElement('iframe');
+        frame.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id) + '?autoplay=1&rel=0';
+        frame.title = caption ? caption.textContent : 'Gameplay video';
+        frame.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+        frame.allowFullscreen = true;
+        fig.replaceChild(frame, el);
+      });
     } else {
       el = document.createElement('div');
       el.className = 'stub';

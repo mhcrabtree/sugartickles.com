@@ -824,3 +824,17 @@ ol.steps > li.flash { animation: bookmark-flash 2.2s ease-out; }
 @media (max-width: 600px) {
   .resume-note { left: 12px; right: 76px; transform: none; max-width: none; }
 }
+
+/* Click-to-load YouTube (see ytFacade in the script) */
+.yt-facade {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;
+  width: 100%; aspect-ratio: 16 / 9; border: 0; margin: 0; padding: 0; cursor: pointer;
+  background: var(--panel); color: var(--text); font: inherit;
+}
+.yt-facade .yt-play {
+  width: 64px; height: 64px; border-radius: 50%; display: grid; place-items: center;
+  border: 2px solid var(--gold); color: var(--gold); font-size: 22px; padding-left: 4px;
+}
+.yt-facade .yt-note { font-size: 0.85rem; opacity: 0.75; }
+.yt-facade:hover .yt-play, .yt-facade:focus-visible .yt-play { background: var(--gold); color: var(--panel); }
+figure.video .yt-facade { border-radius: 10px; border: 1px solid var(--line); }
