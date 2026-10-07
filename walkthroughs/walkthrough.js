@@ -111,11 +111,22 @@
   });
 
   // Video: <figure class="video" data-youtube="VIDEO_ID"> embeds; empty id shows a stub.
+  // Pages with <body data-video-mode="link"> (non-commercial pages) get a "Watch on YouTube"
+  // link instead of an embed, so the monetized video never plays on the page itself.
+  const linkOnly = document.body.dataset.videoMode === 'link';
   document.querySelectorAll('figure.video').forEach(function (fig) {
     const id = (fig.dataset.youtube || '').trim();
     const caption = fig.querySelector('figcaption');
     let el;
-    if (id) {
+    if (id && linkOnly) {
+      el = document.createElement('a');
+      el.className = 'watch';
+      el.href = 'https://www.youtube.com/watch?v=' + encodeURIComponent(id);
+      el.target = '_blank';
+      el.rel = 'noopener';
+      el.style.backgroundImage = 'url("https://i.ytimg.com/vi/' + encodeURIComponent(id) + '/hqdefault.jpg")';
+      el.innerHTML = '<span>▶ Watch on YouTube</span>';
+    } else if (id) {
       el = document.createElement('iframe');
       el.src = 'https://www.youtube-nocookie.com/embed/' + encodeURIComponent(id);
       el.title = caption ? caption.textContent : 'Gameplay video';

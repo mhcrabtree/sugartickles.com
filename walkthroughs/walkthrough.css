@@ -393,6 +393,27 @@ figure.video iframe {
   border-radius: 10px;
 }
 
+figure.video a.watch {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  border: 1px solid var(--line);
+  background-color: var(--panel);
+  background-size: cover;
+  background-position: center;
+  text-decoration: none;
+}
+figure.video a.watch span {
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.72);
+  color: var(--text);
+  font-weight: 600;
+  border: 1px solid var(--gold);
+}
+figure.video a.watch:hover span { background: var(--gold); color: #1a1220; }
+
 figcaption { color: var(--muted); font-size: 0.88rem; margin-top: 8px; text-align: center; font-style: italic; }
 
 /* Reference tables */

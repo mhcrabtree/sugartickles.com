@@ -12,6 +12,11 @@ other SugarTickles pages are. That means no:
 - tip jars, donation buttons, or memberships
 - paywalls, or ad-revenue tracking scripts
 
+Our own gameplay videos are separate from the wiki text, so they **can** be monetized on YouTube (the game's
+publisher allows it). But they must not play on this page: the page's `<body>` has `data-video-mode="link"`, which turns
+each video slot into a "Watch on YouTube" link instead of an embed. Keep it that way, and don't copy wiki text into
+video descriptions.
+
 The license also requires us to:
 
 - **credit the wiki** and link to its license terms (see the Credits section on the page and the footer)

@@ -11,7 +11,7 @@ Use our own screenshots only. Don't copy sprites or images from the Stardew Vall
 
 ## Videos
 
-Each act has a video slot. Set `data-youtube="VIDEO_ID"` on the `<figure class="video">` for that act in `../index.html`.
+Each act has a video slot. Set `data-youtube="VIDEO_ID"` on the `<figure class="video">` for that act in `../index.html`. This page links to YouTube instead of embedding (see `../NOTICE.md`).
 
 ## "Your notes" stubs
 
