@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baldur's Gate 3 — Walkthrough · SugarTickles</title>
+  <meta name="description" content="An act-by-act walkthrough for Baldur's Gate 3: the Nautiloid, the Emerald Grove, the Shadow-Cursed Lands, and the city itself, with companion quests, points of no return, and progress tracking." />
+  <!--
+    NO MONETIZATION. This page adapts bg3.wiki, whose older text is licensed
+    CC BY-NC-SA 4.0 (NonCommercial). Never add ads, affiliate links, sponsorships,
+    tip jars, paywalls, or tracking for ad revenue to this page or its companion
+    files, even if other SugarTickles pages are monetized. See NOTICE.md.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../walkthrough.css?v=139990bf" />
+</head>
+
+<body data-walkthrough="baldurs-gate-3">
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/logo.png" alt="" />SugarTickles</a>
+    <nav>
+      <a href="/walkthroughs/" aria-current="page">Walkthroughs</a>
+      <a href="#credits">Credits</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">Walkthrough · Larian Studios · 2023</span>
+    <h1>Baldur's Gate 3<span class="sub">From the Nautiloid to the Netherbrain</span></h1>
+    <p class="lede">A mind flayer ship, a worm in your head, and a strange crew of survivors who all have the same problem. This guide walks you through all three acts in the order most parties play them, with the quests that matter, the choices that close doors, and every companion's story. Check off steps as you go; your progress saves in this browser.</p>
+    <svg class="ornament" viewBox="0 0 240 40" fill="none" aria-hidden="true">
+      <path d="M4 20 H 84" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M156 20 H 236" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M120 6 C 104 6, 96 14, 96 20 C 96 26, 104 34, 120 34 C 136 34, 144 26, 144 20 C 144 14, 136 6, 120 6 z" stroke="currentColor" stroke-width="2"/>
+      <path d="M108 30 C 106 36, 104 38, 100 40 M116 34 C 115 38, 114 40, 112 42 M124 34 C 125 38, 126 40, 128 42 M132 30 C 134 36, 136 38, 140 40" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="112" cy="18" r="2.2" fill="currentColor"/>
+      <circle cx="128" cy="18" r="2.2" fill="currentColor"/>
+    </svg>
+    <div class="meta-row">
+      <span class="pill">All three acts</span>
+      <span class="pill">Every companion's story</span>
+      <span class="pill">Tracks your progress</span>
+    </div>
+    <div class="resource-links">
+      <a href="#ref-companions">🧭 Companion Finder</a>
+      <a href="#ref-no-return">⛔ Points of No Return</a>
+      <a href="#ref-choices">⚖️ Big Choices</a>
+    </div>
+  </section>
+
+  <div class="layout">
+    <div>
+      <button class="toc-toggle" aria-expanded="false">☰ Chapters &amp; progress</button>
+      <nav class="toc" aria-label="Chapters">
+        <div class="progress">
+          <div class="label"><span>Your progress</span></div>
+          <div class="bar"><span></span></div>
+          <div class="label" style="margin-top:6px"><span class="count"></span></div>
+          <button type="button">Reset progress</button>
+        </div>
+          <h4><a href="#install" style="color:inherit;text-decoration:none">Setup</a></h4>
+          <ol>
+            <li><a href="#install"><span>Installing the Game</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-0" style="color:inherit;text-decoration:none">Prologue</a></h4>
+          <ol>
+            <li><a href="#before-you-start"><span>Before You Start</span><span class="done"></span></a></li>
+            <li><a href="#nautiloid"><span>Escape the Nautiloid</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-1" style="color:inherit;text-decoration:none">Act One — The Wilderness</a></h4>
+          <ol>
+            <li><a href="#crash-site"><span>The Crash Site</span><span class="done"></span></a></li>
+            <li><a href="#grove"><span>The Emerald Grove</span><span class="done"></span></a></li>
+            <li><a href="#blighted-village"><span>The Blighted Village &amp; the Hag</span><span class="done"></span></a></li>
+            <li><a href="#risen-road"><span>The Risen Road &amp; Karlach</span><span class="done"></span></a></li>
+            <li><a href="#goblin-camp"><span>The Goblin Camp</span><span class="done"></span></a></li>
+            <li><a href="#underdark"><span>The Underdark &amp; Grymforge</span><span class="done"></span></a></li>
+            <li><a href="#creche"><span>The Mountain Pass &amp; the Crèche</span><span class="done"></span></a></li>
+            <li><a href="#leaving-act-1"><span>Before You Leave Act One</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-2" style="color:inherit;text-decoration:none">Act Two — The Shadow-Cursed Lands</a></h4>
+          <ol>
+            <li><a href="#into-shadow"><span>Into the Shadows</span><span class="done"></span></a></li>
+            <li><a href="#last-light"><span>Last Light Inn</span><span class="done"></span></a></li>
+            <li><a href="#reithwin"><span>Reithwin Town</span><span class="done"></span></a></li>
+            <li><a href="#moonrise"><span>Moonrise Towers</span><span class="done"></span></a></li>
+            <li><a href="#gauntlet"><span>The Gauntlet of Shar</span><span class="done"></span></a></li>
+            <li><a href="#ketheric"><span>Defeat Ketheric Thorm</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-3" style="color:inherit;text-decoration:none">Act Three — Baldur's Gate</a></h4>
+          <ol>
+            <li><a href="#rivington"><span>Rivington</span><span class="done"></span></a></li>
+            <li><a href="#wyrms-rock"><span>Wyrm's Rock &amp; Gortash</span><span class="done"></span></a></li>
+            <li><a href="#lower-city"><span>The Lower City</span><span class="done"></span></a></li>
+            <li><a href="#orin"><span>Orin &amp; the Temple of Bhaal</span><span class="done"></span></a></li>
+            <li><a href="#companion-endings"><span>Companions' Final Chapters</span><span class="done"></span></a></li>
+            <li><a href="#finale"><span>Confront the Elder Brain</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-side" style="color:inherit;text-decoration:none">Around the Realms</a></h4>
+          <ol>
+            <li><a href="#camp"><span>Camp, Resting &amp; Withers</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-reference" style="color:inherit;text-decoration:none">Reference</a></h4>
+          <ol>
+            <li><a href="#ref-companions"><span>Companion Finder</span><span class="done"></span></a></li>
+            <li><a href="#ref-no-return"><span>Points of No Return</span><span class="done"></span></a></li>
+            <li><a href="#ref-choices"><span>Big Choices</span><span class="done"></span></a></li>
+            <li><a href="#ref-difficulty"><span>Difficulty Modes</span><span class="done"></span></a></li>
+            <li><a href="#ref-tips"><span>General Tips</span><span class="done"></span></a></li>
+          </ol>
+      </nav>
+    </div>
+
+    <main>
+      <section class="credits" id="credits">
+        <h3>Credits &amp; Sources</h3>
+        <p>This guide is a SugarTickles rewrite of material from <strong>bg3.wiki</strong>, the community-run Baldur's Gate 3 wiki, reorganized into an act-by-act route for playing alongside the game, with gaps marked for our own playthrough. Full credit to the wiki's editors. The pages we drew on most:</p>
+        <ul>
+          <li><a href="https://bg3.wiki/wiki/Act_One" rel="noopener">Act One</a>, <a href="https://bg3.wiki/wiki/Act_Two" rel="noopener">Act Two</a>, and <a href="https://bg3.wiki/wiki/Act_Three" rel="noopener">Act Three</a>: the regions, the order of events, and the points of no return.</li>
+          <li><a href="https://bg3.wiki/wiki/Escape_the_Nautiloid" rel="noopener">Escape the Nautiloid</a>, <a href="https://bg3.wiki/wiki/Find_a_Cure" rel="noopener">Find a Cure</a>, <a href="https://bg3.wiki/wiki/Free_Lae%27zel" rel="noopener">Free Lae'zel</a>, <a href="https://bg3.wiki/wiki/Save_the_Refugees" rel="noopener">Save the Refugees</a>, <a href="https://bg3.wiki/wiki/Save_the_First_Druid" rel="noopener">Save the First Druid</a>, <a href="https://bg3.wiki/wiki/Save_Mayrina" rel="noopener">Save Mayrina</a>, <a href="https://bg3.wiki/wiki/Hunt_the_Devil" rel="noopener">Hunt the Devil</a>, <a href="https://bg3.wiki/wiki/Rescue_the_Grand_Duke" rel="noopener">Rescue the Grand Duke</a>, <a href="https://bg3.wiki/wiki/Find_the_Githyanki_Cr%C3%A8che" rel="noopener">Find the Githyanki Crèche</a>, and <a href="https://bg3.wiki/wiki/Travel_to_Moonrise_Towers" rel="noopener">Travel to Moonrise Towers</a>: the prologue and Act One.</li>
+          <li><a href="https://bg3.wiki/wiki/Infiltrate_Moonrise_Towers" rel="noopener">Infiltrate Moonrise Towers</a>, <a href="https://bg3.wiki/wiki/Lift_the_Shadow_Curse" rel="noopener">Lift the Shadow Curse</a>, <a href="https://bg3.wiki/wiki/Find_the_Nightsong" rel="noopener">Find the Nightsong</a>, <a href="https://bg3.wiki/wiki/Gauntlet_of_Shar" rel="noopener">Gauntlet of Shar</a>, <a href="https://bg3.wiki/wiki/Last_Light_Inn" rel="noopener">Last Light Inn</a>, <a href="https://bg3.wiki/wiki/Rescue_the_Tieflings" rel="noopener">Rescue the Tieflings</a>, and <a href="https://bg3.wiki/wiki/Rescue_Wulbren" rel="noopener">Rescue Wulbren</a>: Act Two.</li>
+          <li><a href="https://bg3.wiki/wiki/Get_Gortash%27s_Netherstone" rel="noopener">Get Gortash's Netherstone</a> and <a href="https://bg3.wiki/wiki/Get_Orin%27s_Netherstone" rel="noopener">Get Orin's Netherstone</a>: Act Three.</li>
+          <li><a href="https://bg3.wiki/wiki/Companions" rel="noopener">Companions</a>: who joins where, and the ways to lose them for good.</li>
+        </ul>
+        <p>Where we haven't confirmed something in our own game yet, you'll see a gold <strong>"To verify"</strong> note. Dashed <strong>"Your notes"</strong> boxes mark spots to fill in. Story twists are tucked inside <strong>spoiler</strong> boxes; open them only when you're ready. Screenshots and video are our own captures. We don't copy the wiki's images: the game art belongs to Larian Studios, and Dungeons &amp; Dragons belongs to Wizards of the Coast.</p>
+        <p><strong>License:</strong> because this page adapts bg3.wiki, its text is shared under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener">CC BY-NC-SA 4.0</a>. The wiki's text written before July 20, 2024 is licensed only under CC BY-NC-SA 4.0, so we use that license for the whole page (<a href="https://bg3.wiki/wiki/bg3wiki:Copyrights" rel="noopener">the wiki's license terms</a>). You may share and adapt it, with credit, for non-commercial use, under the same license. <em>Baldur's Gate 3</em> and its art, characters, and names are © Larian Studios; Baldur's Gate, Dungeons &amp; Dragons, and the Forgotten Realms are trademarks of Wizards of the Coast. SugarTickles isn't affiliated with Larian, Wizards of the Coast, or bg3.wiki, and this guide isn't official. It's a fan guide, made with love.</p>
+        <p><strong>No ads, ever:</strong> the license doesn't allow commercial use, so this page will never carry ads, affiliate links, sponsorships, or anything else that makes money.</p>
+      </section>
+
+      <section class="chapter install" id="install">
+        <header>
+          <span class="chapter-num">Setup</span>
+          <h3>Installing the Game</h3>
+          <p class="where">Buy it, play it on a Mac or a PC, and keep your saves safe</p>
+        </header>
+
+        <h4>1. Buy the game</h4>
+        <p><em>Baldur's Gate 3</em> is on <a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" rel="noopener">Steam</a> and <a href="https://www.gog.com/en/game/baldurs_gate_iii" rel="noopener">GOG</a>, plus PlayStation 5 and Xbox Series X|S. It runs natively on Windows and Mac: install it and press Play. It's a big download (around 150 GB), so give it room. This guide follows the computer version.</p>
+        <aside class="callout verify"><strong>To verify while proving</strong>Note the game version (shown on the main menu) and the download size on our machine.</aside>
+
+        <h4>2. Know where your saves live</h4>
+        <p>The game autosaves often, but make your own saves too, especially before a big choice. Quicksave is <kbd>F5</kbd> and quickload is <kbd>F8</kbd> on a computer. Back up this folder before a long session or before adding mods:</p>
+        <ul>
+          <li><strong>Mac:</strong> <code>~/Documents/Larian Studios/Baldur's Gate 3/PlayerProfiles/Public/Savegames/Story</code></li>
+          <li><strong>Windows:</strong> <code>%LocalAppData%\Larian Studios\Baldur's Gate 3\PlayerProfiles\Public\Savegames\Story</code> (paste into File Explorer's address bar)</li>
+        </ul>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the Mac save path on our machine.</aside>
+
+        <h4>3. Mods (optional, and not for your first run)</h4>
+        <p>The game has a built-in mod browser on the main menu (<strong>Mod Manager</strong>), so you don't need any outside tools. We'd play the first time without mods: the game is big enough already, and a few choices are easier to follow when everything is the way Larian made it.</p>
+        <aside class="callout verify"><strong>To verify while proving</strong>Check whether mods from the in-game Mod Manager turn off achievements in our version.</aside>
+      </section>
+
+      <section class="act" id="act-0">
+        <span class="act-num">Prologue</span>
+        <h2>The Nautiloid</h2>
+        <p>You wake up in a pod on a mind flayer ship with a tadpole behind your eye. The ship is under attack, and it's on its way through Hell.</p>
+      </section>
+
+      <figure class="video" data-youtube="">
+        <figcaption>Gameplay: the Prologue</figcaption>
+      </figure>
+
+      <section class="chapter" id="before-you-start">
+        <header>
+          <span class="chapter-num">Chapter 0</span>
+          <h3>Before You Start</h3>
+          <p class="where">The choices on the character creation screen</p>
+        </header>
+
+        <ul>
+          <li><strong>Pick who you are.</strong> You can play one of the six <strong>Origin</strong> characters (Astarion, Gale, Karlach, Lae'zel, Shadowheart, or Wyll), make your own <strong>Custom</strong> character, or play <strong>The Dark Urge</strong>, a custom character with a dark story of their own. For a first run, a Custom character lets you meet all six Origins as companions. The Dark Urge is best saved for a second playthrough.</li>
+          <li><strong>Pick a difficulty.</strong> <strong>Balanced</strong> is the game as designed. <strong>Explorer</strong> is gentler if you're here for the story. <strong>Tactician</strong> and <strong>Honour</strong> mode are for once you know the game. See <a href="#ref-difficulty">Difficulty Modes</a>.</li>
+          <li><strong>Pick a class you'll enjoy.</strong> Your companions cover a lot of ground: a fighter (Lae'zel), a cleric (Shadowheart), a wizard (Gale), a rogue (Astarion), a warlock (Wyll), and a barbarian (Karlach). Any class works. If you can't decide, a Paladin, Fighter, or Cleric is forgiving to learn on.</li>
+          <li><strong>Talk to everyone, read everything.</strong> Most of the game's best moments come from conversations. When a dice roll shows up, that's a skill check, and a failure usually opens a different path, not a dead end.</li>
+        </ul>
+
+        <aside class="callout notes"><strong>Your notes</strong>Who did we play (Origin, class, background), and on what difficulty?</aside>
+      </section>
+
+      <section class="chapter" id="nautiloid">
+        <header>
+          <span class="chapter-num">Chapter 1</span>
+          <h3>Escape the Nautiloid</h3>
+          <p class="where">Where: the <strong>Nautiloid</strong>, a mind flayer ship · Quest: <strong>Escape the Nautiloid</strong></p>
+        </header>
+
+        <figure class="shot" data-src="shots/01-nautiloid.jpg">
+          <figcaption>Waking up on the Nautiloid</figcaption>
+        </figure>
+
+        <ol class="steps">
+          <li>Break out of your pod. Look around the first room (the Nursery) for loot on the raised paths, but don't touch the larva pool in the middle: it bursts. Leave through the door on the west side.</li>
+          <li>In the next room, take the lift up to the elf with the exposed brain. Pass the check to see what it really is: an intellect devourer called <span class="npc">Us</span>. You can free it, leave it, or destroy it. Freed, it follows you for a while.</li>
+          <li>Head outside. <span class="npc">Lae'zel</span>, a githyanki warrior, drops in and joins you. Fight off the three imps together.</li>
+          <li>Climb north. A pod in this room holds <span class="npc">Shadowheart</span>. Open it with a check, or fetch an <span class="item">Eldritch Rune</span> from a body in the next chamber east and use that. This starts <strong>Rescue the Illithids' Captive</strong>. Recruit her.</li>
+          <li>Enter the Helm. A cambion, <span class="npc">Commander Zhalk</span>, is fighting a mind flayer. You don't have to beat him: your goal is the transponder on the far west side. Reach it, and connect its nerves when the mind flayer tells you to.</li>
+          <li>A red dragon attacks, the ship breaks free of Hell, and you crash. Watch the cutscene.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>The Everburn Blade</strong>Zhalk carries a fine sword, the <span class="item">Everburn Blade</span>. Beating him this early is hard. If you want it, let the mind flayer and the imps soak up his attacks and focus him down, or simply skip it: there's plenty of loot ahead.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>Did we free Us, and did we take on Zhalk?</aside>
+      </section>
+
+      <section class="act" id="act-1">
+        <span class="act-num">Act One</span>
+        <h2>The Wilderness</h2>
+        <p>A beach of wreckage, a grove full of refugees, a goblin army that follows a new god, and the first hints that your tadpole isn't behaving like it should.</p>
+      </section>
+
+      <figure class="video" data-youtube="">
+        <figcaption>Gameplay: Act One</figcaption>
+      </figure>
+
+      <section class="chapter" id="crash-site">
+        <header>
+          <span class="chapter-num">Chapter 2</span>
+          <h3>The Crash Site</h3>
+          <p class="where">Where: the <strong>Ravaged Beach</strong> and the <strong>Roadside Cliffs</strong> · Quest: <strong>Find a Cure</strong></p>
+        </header>
+
+        <figure class="shot" data-src="shots/02-ravaged-beach.jpg">
+          <figcaption>The Nautiloid wreck on the Ravaged Beach</figcaption>
+        </figure>
+
+        <ol class="steps">
+          <li>You wake on the beach. Everyone who was on the ship has a tadpole, and nobody has turned into a mind flayer yet. Your journal now tracks <strong>Find a Cure</strong>: the rest of Act One is about following leads.</li>
+          <li>If you saved <span class="npc">Shadowheart</span> on the ship, she's nearby. If not, you can still find her later.</li>
+          <li>Walk west along the beach. A pale elf runs up asking for help, then holds a knife to your throat: that's <span class="npc">Astarion</span>. Talk him down and he joins you.</li>
+          <li>Head east to the stone circle. A voice calls for help from inside a portal. Give it a hand (literally) and out comes <span class="npc">Gale</span>, a wizard from Waterdeep. Recruit him.</li>
+          <li>Follow the road north to the <strong>Roadside Cliffs</strong>. Two tiefling scouts, <span class="npc">Nymessa</span> and <span class="npc">Damays</span>, have <span class="npc">Lae'zel</span> trapped in a cage. Talk them into letting her down (or shoot the cage), then recruit her. This is <strong>Free Lae'zel</strong>.</li>
+          <li>Explore the <strong>Dank Crypt</strong> near the beach. Inside, a sarcophagus holds a strange skeleton called <span class="npc">Withers</span>. Wake him. He moves into your camp and is useful for the rest of the game (see <a href="#camp">Camp</a>).</li>
+          <li>Rest at camp tonight (the tent icon). Your companions talk about the tadpole, and you start to learn who they really are.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>Four at a time</strong>You can have four characters in your party, including you. Everyone else waits at camp and gets the same experience. Swap people in and out from camp whenever you like.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>Who's in our starting four?</aside>
+      </section>
+
+      <section class="chapter" id="grove">
+        <header>
+          <span class="chapter-num">Chapter 3</span>
+          <h3>The Emerald Grove</h3>
+          <p class="where">Where: the <strong>Emerald Grove</strong>, north of the Roadside Cliffs · Quests: <strong>Save the Refugees</strong>, <strong>Save Arabella</strong></p>
+        </header>
+
+        <ol class="steps">
+          <li>At the Grove gate, goblins attack a group of tieflings. Join the fight on the tieflings' side. A warlock named <span class="npc">Wyll</span> fights alongside you.</li>
+          <li>Inside, <span class="npc">Zevlor</span>, the tieflings' leader, argues with <span class="npc">Aradin</span>, an adventurer whose group just lost their druid guide. Calm them down. Zevlor tells you about the goblins and the trouble with the druids.</li>
+          <li>Find <span class="npc">Wyll</span> training tiefling children with a sword, and recruit him. His quest is to hunt down a devil on the Risen Road.</li>
+          <li>Go to the <strong>Inner Sanctum</strong>. A tiefling girl, <span class="npc">Arabella</span>, has been caught stealing the druids' <span class="item">Sacred Idol</span>, and <span class="npc">Kagha</span> is about to punish her. Talk Kagha into letting her go (<strong>Save Arabella</strong>).</li>
+          <li>Kagha has started the <strong>Rite of Thorns</strong>, a ritual that will seal the Grove and force the tieflings out. Their usual leader, <span class="npc">Halsin</span>, is missing: the goblins took him.</li>
+          <li>Find the healer <span class="npc">Nettie</span>. She can't cure you, but she points you to Halsin. Be honest with her and agree to her terms, or she'll try to poison you.</li>
+          <li>Meet the bard <span class="npc">Alfira</span>, who needs help with a song, and the gnome author <span class="npc">Volo</span>.</li>
+        </ol>
+
+        <aside class="callout warn"><strong>Don't touch the Idol</strong>If you agree to steal the <span class="item">Sacred Idol</span> for the tiefling <span class="npc">Mol</span>, the druids finish the ritual right away and the tieflings are thrown out. Leave the Idol alone on a first playthrough.</aside>
+        <aside class="callout tip"><strong>Saving the Grove</strong>There are two ways to stop the Rite of Thorns: expose Kagha (follow the letters in <strong>Investigate Kagha</strong>, out in the Wilderness), or rescue Halsin from the Goblin Camp so he can stop it himself. Saving the tieflings for good means defeating the goblin leaders.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>How did we handle Kagha?</aside>
+      </section>
+
+      <section class="chapter" id="blighted-village">
+        <header>
+          <span class="chapter-num">Chapter 4</span>
+          <h3>The Blighted Village &amp; the Hag</h3>
+          <p class="where">Where: the <strong>Blighted Village</strong>, the <strong>Riverside Teahouse</strong>, and the <strong>Sunlit Wetlands</strong> · Quests: <strong>Rescue the Gnome</strong>, <strong>Save Mayrina</strong></p>
+        </header>
+
+        <ol class="steps">
+          <li>Head west to the <strong>Blighted Village</strong>. Goblins hold it. Talk your way past the gate or fight.</li>
+          <li>A gnome, <span class="npc">Barcus Wroot</span>, is tied to a windmill. Rescue him (<strong>Rescue the Gnome</strong>). Search the village, including the cellar under the old apothecary (<strong>Search the Cellar</strong>).</li>
+          <li>The cave to the north belongs to an owlbear and her cub. It's a tough fight at low level; come back later if you like.</li>
+          <li>South of the village, two brothers are arguing with an old woman about their sister. That's <span class="npc">Auntie Ethel</span>, and the sister is <span class="npc">Mayrina</span>. This starts <strong>Save Mayrina</strong>.</li>
+          <li>Follow Ethel to her <strong>Riverside Teahouse</strong> in the swamp. She's a hag. She'll offer to remove your tadpole in exchange for an eye. Don't take it: she can't actually do it.</li>
+          <li>Follow her through the fireplace into her lair. Fight past her masked servants, find Mayrina in a cage, and beat Ethel. Put out the fire under the cage fast, or Mayrina dies.</li>
+          <li>When Ethel is nearly dead, she offers a bargain. Freeing Mayrina is the kind choice. Taking <span class="item">Auntie Ethel's Hair</span> (a permanent +1 to an ability) is the greedy one.</li>
+        </ol>
+
+        <aside class="callout warn"><strong>The hag is hard</strong>Ethel's lair is one of Act One's toughest fights. Come at level 4 or 5, with healing potions and something that can put out fire (Create Water or Ray of Frost).</aside>
+        <aside class="callout notes"><strong>Your notes</strong>What did we pick when Ethel offered her deal?</aside>
+      </section>
+
+      <section class="chapter" id="risen-road">
+        <header>
+          <span class="chapter-num">Chapter 5</span>
+          <h3>The Risen Road &amp; Karlach</h3>
+          <p class="where">Where: the <strong>Risen Road</strong>, east of the Grove · Quests: <strong>Hunt the Devil</strong>, <strong>Rescue the Grand Duke</strong></p>
+        </header>
+
+        <ol class="steps">
+          <li>On the road, a group of paladins led by <span class="npc">Anders</span> has holed up in the Toll House. They're hunting a "devil" and want your help.</li>
+          <li>Down the cliff and across the stream, find the "devil": <span class="npc">Karlach</span>, a tiefling who escaped from Hell. Hear her side. Then decide who to believe. One side has to go (<strong>Hunt the Devil</strong>).</li>
+          <li>Side with Karlach and she joins you. She's one of the best fighters in the game, and one of the warmest characters.</li>
+          <li>Further along, the inn at <strong>Waukeen's Rest</strong> is on fire, with people trapped inside, including <span class="npc">Councillor Florrick</span> of Baldur's Gate. Put out the flames and get them out (<strong>Rescue the Grand Duke</strong>).</li>
+        </ol>
+
+        <aside class="callout warn"><strong>Waukeen's Rest is timed</strong>Once your companions comment on the burning inn, deal with it right away. If you long rest, fast travel, or go to the Rosymorn Monastery Trail first, everyone trapped inside dies.</aside>
+        <aside class="callout tip"><strong>Wyll and Karlach</strong>If Wyll is with you, he confronts Karlach: his devil patron sent him after her. Convince him she's no devil and he comes around. The choice you make here has lasting effects on Wyll's story; see <a href="#ref-choices">Big Choices</a>.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>Who did we side with, Anders or Karlach?</aside>
+      </section>
+
+      <section class="chapter" id="goblin-camp">
+        <header>
+          <span class="chapter-num">Chapter 6</span>
+          <h3>The Goblin Camp</h3>
+          <p class="where">Where: the <strong>Goblin Camp</strong> and the <strong>Shattered Sanctum</strong>, northwest of the Blighted Village · Quests: <strong>Save the First Druid</strong>, <strong>Defeat the Goblins</strong></p>
+        </header>
+
+        <figure class="shot" data-src="shots/06-shattered-sanctum.jpg">
+          <figcaption>The Shattered Sanctum</figcaption>
+        </figure>
+
+        <ol class="steps">
+          <li>The goblins think you're a "True Soul": a chosen servant of their god, the Absolute, because of your tadpole. Use that. Walk in through the front gate.</li>
+          <li>Inside the <strong>Shattered Sanctum</strong>, three leaders run the camp: <span class="npc">Priestess Gut</span>, <span class="npc">Dror Ragzlin</span>, and the drow <span class="npc">Minthara</span>. Each wants to know where the Grove is.</li>
+          <li>Find <span class="npc">Halsin</span>. He's in bear form, fighting goblins in the worg pens behind the Sanctum. Help him. Afterwards he asks you to deal with the leaders so the Grove is safe.</li>
+          <li>In a room off the Sanctum, the goblins are torturing <span class="npc">Liam</span>, one of Aradin's group. Talk the goblins away and free him. He tells you about the <strong>Nightsong</strong>, a "relic" a Baldur's Gate wizard wants.</li>
+          <li><strong>The big choice:</strong> defeat all three leaders to save the Grove, or side with Minthara and help raid it. This guide follows the Grove. Kill (or knock out) the three leaders, then go back to Halsin.</li>
+          <li>Return to the Grove. The Rite of Thorns ends, the tieflings get ready to leave for Baldur's Gate, and they throw you a party at camp. Halsin tells you your tadpoles came from <strong>Moonrise Towers</strong>.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>Fight one leader at a time</strong>If the whole Sanctum turns on you at once, it's brutal. Lure each leader into a quiet room, or knock out the guards first. High ground, Shove, and a well-placed Grease or Thunderwave all help.</aside>
+        <aside class="callout tip"><strong>Minthara</strong>If you knock Minthara out instead of killing her (turn on <strong>Non-Lethal Attacks</strong> in the passives), you can find her again in Act Two and recruit her without raiding the Grove.</aside>
+        <aside class="callout warn"><strong>Raiding the Grove</strong>Siding with Minthara means killing the tieflings and druids. Several companions hate it, and some leave. It locks you out of a lot of later content.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>How did we take the Sanctum, by stealth or by force?</aside>
+      </section>
+
+      <section class="chapter" id="underdark">
+        <header>
+          <span class="chapter-num">Chapter 7</span>
+          <h3>The Underdark &amp; Grymforge</h3>
+          <p class="where">Where: below the <strong>Defiled Temple</strong>, the <strong>Zhentarim Hideout</strong>, or the <strong>Whispering Depths</strong> · Quests: <strong>Defeat the Duergar Intruders</strong>, <strong>Save the Grymforge Gnomes</strong></p>
+        </header>
+
+        <ol class="steps">
+          <li>There are several ways down. The easiest to find is the <strong>Defiled Temple</strong> under the Shattered Sanctum: solve the Selûnite door puzzle there (the dwarf <span class="npc">Brian</span>'s poem has the clues) and keep going down.</li>
+          <li>In the <strong>Myconid Colony</strong>, the mushroom folk ask you to deal with some duergar (<strong>Defeat the Duergar Intruders</strong>). A myconid named <span class="npc">Glut</span> has his own plans.</li>
+          <li>Visit <span class="npc">Omeluum</span>, a friendly mind flayer, at the colony. He'll study your tadpole (<strong>Help Omeluum Investigate the Parasite</strong>).</li>
+          <li>Find the old <strong>Selûnite Outpost</strong>. The book <span class="item">In Search of the Nightsong</span> there says the Nightsong is held in a Sharran fortress near Moonrise Towers.</li>
+          <li>Take a skiff across the lake to <strong>Grymforge</strong>. Duergar have enslaved deep gnomes there, and <span class="npc">True Soul Nere</span> is trapped behind a rockfall. Free him or don't; either way, save the gnomes.</li>
+          <li>Optional — below Grymforge is the <strong>Adamantine Forge</strong>, where you can craft some of Act One's best gear if you can beat its guardian, <span class="npc">Grym</span>.</li>
+          <li>The <strong>elevator</strong> in Grymforge goes up to the Shadow-Cursed Lands. That's your way into Act Two if you take this route.</li>
+        </ol>
+
+        <aside class="callout warn"><strong>Lots of danger, little light</strong>Bring a torch or a light spell. Watch for bulettes under the ground (the earth rumbles) and for the floating spectator who guards the forge's way in.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>What did we make at the Adamantine Forge?</aside>
+      </section>
+
+      <section class="chapter" id="creche">
+        <header>
+          <span class="chapter-num">Chapter 8</span>
+          <h3>The Mountain Pass &amp; the Crèche</h3>
+          <p class="where">Where: the <strong>Risen Road</strong>, the <strong>Mountain Pass</strong>, and <strong>Rosymorn Monastery</strong> · Quest: <strong>Find the Githyanki Crèche</strong></p>
+        </header>
+
+        <ol class="steps">
+          <li>With Lae'zel in the party, cross west over the Risen Road. A githyanki patrol is arguing with some Flaming Fists, and a red dragon drops from the sky. Lae'zel runs to meet its rider, <span class="npc">Kith'rak Voss</span>. Go with her and keep the conversation calm.</li>
+          <li>At the <strong>Rosymorn Monastery Trail</strong>, summon the cable car with the wheel and ride across. Climb into the monastery through the broken windows.</li>
+          <li>Below the monastery is the githyanki crèche, <strong>Crèche Y'llek</strong>. The gith don't trust outsiders. Let Lae'zel do the talking where you can.</li>
+          <li>In the infirmary, the <span class="npc">Inquisitor W'wargaz</span> offers to cure you in the <strong>Zaith'isk</strong>, a githyanki machine. It doesn't go to plan.</li>
+          <li>Optional — the monastery also holds the <span class="item">Blood of Lathander</span>, a legendary mace, behind a puzzle (<strong>Find the Blood of Lathander</strong>).</li>
+          <li>The Mountain Pass leads down into the Shadow-Cursed Lands: your other way into Act Two.</li>
+        </ol>
+
+        <aside class="callout warn"><strong>The Rite of Thorns ends here</strong>Going to the Rosymorn Monastery Trail finishes the Rite of Thorns. If you haven't saved the tieflings by then, they're gone. Do the Goblin Camp first.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>What happened in the Zaith'isk?</aside>
+      </section>
+
+      <section class="chapter" id="leaving-act-1">
+        <header>
+          <span class="chapter-num">Chapter 9</span>
+          <h3>Before You Leave Act One</h3>
+          <p class="where">A checklist for your last day in the Wilderness</p>
+        </header>
+
+        <ol class="steps">
+          <li>The tieflings are safe and you've celebrated at camp.</li>
+          <li>Everyone you want is recruited: Astarion, Gale, Karlach, Lae'zel, Shadowheart, Wyll, and Halsin.</li>
+          <li>Florrick is out of Waukeen's Rest.</li>
+          <li>Mayrina is free of Auntie Ethel.</li>
+          <li>You've been to both the Underdark and the crèche, or decided to skip one.</li>
+          <li>You've talked to every companion at camp and finished their camp scenes. Some only trigger in Act One.</li>
+          <li>You've sold your junk and bought anything you want from traders like <span class="npc">Arron</span> and <span class="npc">Dammon</span> at the Grove.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>You can come back, for a while</strong>Entering the Shadow-Cursed Lands starts Act Two, but you can still return to the Wilderness and the Underdark to finish most quests. The real point of no return comes much later, deep in the Gauntlet of Shar. See <a href="#ref-no-return">Points of No Return</a>.</aside>
+      </section>
+
+      <section class="act" id="act-2">
+        <span class="act-num">Act Two</span>
+        <h2>The Shadow-Cursed Lands</h2>
+        <p>A land under a curse that kills anyone who strays from the light, an inn holding out against the dark, and the immortal general who runs the cult from Moonrise Towers.</p>
+      </section>
+
+      <figure class="video" data-youtube="">
+        <figcaption>Gameplay: Act Two</figcaption>
+      </figure>
+
+      <section class="chapter" id="into-shadow">
+        <header>
+          <span class="chapter-num">Chapter 10</span>
+          <h3>Into the Shadows</h3>
+          <p class="where">Where: the <strong>Ruined Battlefield</strong> · Quests: <strong>Seek Protection from the Shadow Curse</strong>, <strong>Follow the Convoy</strong></p>
+        </header>
+
+        <figure class="shot" data-src="shots/10-shadow-cursed-lands.jpg">
+          <figcaption>The first steps into the Shadow-Cursed Lands</figcaption>
+        </figure>
+
+        <ol class="steps">
+          <li>Step out of the darkness. The curse hurts anyone who isn't in a pool of light. Grab a torch from the braziers by the exit and keep it lit.</li>
+          <li><strong>From the Underdark:</strong> a group of Harpers is fighting shadows nearby. Help them. Their leader, <span class="npc">Lassandra</span>, points you to the one safe place left: the <strong>Last Light Inn</strong>.</li>
+          <li><strong>From the Mountain Pass:</strong> a goblin mistakes you for a True Soul and sends you to wait for a guide. That's the drider <span class="npc">Kar'niss</span>, whose moonlantern keeps the curse off. Harpers ambush the convoy on the way. Help them, and they take you to the inn.</li>
+          <li>Either way, head for the Last Light Inn.</li>
+        </ol>
+
+        <aside class="callout warn"><strong>The curse</strong>Walking in the dark gives you a stacking curse that drains your health. Stay inside the light from a torch, a moonlantern, or a blessing, and don't wander off the road.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>Which route did we take into Act Two?</aside>
+      </section>
+
+      <section class="chapter" id="last-light">
+        <header>
+          <span class="chapter-num">Chapter 11</span>
+          <h3>Last Light Inn</h3>
+          <p class="where">Where: the <strong>Last Light Inn</strong> · Quests: <strong>Resolve the Abduction</strong>, <strong>Lift the Shadow Curse</strong>, <strong>Rescue the Tieflings</strong></p>
+        </header>
+
+        <ol class="steps">
+          <li>At the gate, <span class="npc">Jaheira</span>, a veteran Harper, tests you with a tadpole specimen and thinks you're a True Soul. A tiefling friend from the Grove (or someone else) vouches for you. Show her the <span class="item">Mysterious Artefact</span>, the strange stone you've been carrying since the crash, and she backs down.</li>
+          <li>Jaheira explains: the cult's leader at Moonrise Towers is <span class="npc">Ketheric Thorm</span>, and he can't die. The Harpers want to stop him.</li>
+          <li>Go upstairs to meet <span class="npc">Isobel</span>, the Selûnite cleric whose magic shields the inn. Speaking to her triggers an attack: a winged man named <span class="npc">Marcus</span> tries to carry her off.</li>
+          <li><strong>Protect Isobel.</strong> If she's taken or killed, the shield falls and everyone at the inn is lost to the curse.</li>
+          <li>The tieflings from the Grove are here, but some are missing: they were taken to Moonrise Towers (<strong>Rescue the Tieflings</strong>).</li>
+          <li>If Halsin is with you, he wants to lift the curse itself. A man asleep in the inn, <span class="npc">Art Cullagh</span>, keeps murmuring the name "Thaniel." Wake him (Halsin suggests something from his past) to start <strong>Lift the Shadow Curse</strong>.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>Get ready for Isobel's fight</strong>Before talking to Isobel, put your strongest fighters near her and give someone a way to stop Marcus fast. It's a short fight, but it matters a great deal.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>Did Isobel make it?</aside>
+      </section>
+
+      <section class="chapter" id="reithwin">
+        <header>
+          <span class="chapter-num">Chapter 12</span>
+          <h3>Reithwin Town</h3>
+          <p class="where">Where: <strong>Reithwin Town</strong>, west of the inn, and the <strong>House of Healing</strong></p>
+        </header>
+
+        <ol class="steps">
+          <li>Reithwin was a prosperous Selûnite town before the curse. Now its streets are full of shadows. Explore during the day with your torches lit.</li>
+          <li>Several members of the Thorm family still haunt their old posts: <span class="npc">Thisobald Thorm</span> at the tollhouse, <span class="npc">Gerringothe Thorm</span> at the Waning Moon bar, and <span class="npc">Malus Thorm</span> at the <strong>House of Healing</strong>.</li>
+          <li>North of town, past the graveyard, is the <strong>Grand Mausoleum</strong> of the Thorm family. Hold off on that until you've been to Moonrise Towers.</li>
+        </ol>
+
+        <aside class="callout verify"><strong>To verify while proving</strong>Fill in what we found at each Thorm's post, including the House of Healing.</aside>
+      </section>
+
+      <section class="chapter" id="moonrise">
+        <header>
+          <span class="chapter-num">Chapter 13</span>
+          <h3>Moonrise Towers</h3>
+          <p class="where">Where: <strong>Moonrise Towers</strong>, across the bridge from Reithwin · Quests: <strong>Infiltrate Moonrise Towers</strong>, <strong>Rescue Wulbren</strong>, <strong>Rescue the Tieflings</strong></p>
+        </header>
+
+        <figure class="shot" data-src="shots/13-moonrise-towers.jpg">
+          <figcaption>Moonrise Towers through the shadow</figcaption>
+        </figure>
+
+        <ol class="steps">
+          <li>Walk in as a True Soul. In the audience chamber, Ketheric's lieutenant <span class="npc">Z'rell</span> is questioning the goblins about what happened at the camp. If you knocked Minthara out, she's here too, begging for her life. Ketheric leaves the prisoners to you.</li>
+          <li>Talk to Z'rell behind the throne. Prove your faith, and she sends you after <span class="npc">Balthazar</span>, Ketheric's necromancer, who was last seen at the Thorm Mausoleum. She gives you a key to his room.</li>
+          <li>Search Balthazar's room for its hidden area. His notes reveal what the "Nightsong" really is.</li>
+          <li>Find the prison. Down in the cells are the gnome <span class="npc">Wulbren</span>, captured tieflings (including <span class="npc">Rolan</span>'s brother and sister, <span class="npc">Cal</span> and <span class="npc">Lia</span>), and others. Break them out and get them to the boat or out on foot.</li>
+          <li>Once they're free, go back to the Last Light Inn to collect your thanks.</li>
+        </ol>
+
+        <aside class="callout warn"><strong>Rescue the prisoners first</strong>The prisoners are lost for good if you finish the Gauntlet of Shar first. Free them before you go there.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>Did we free Minthara, and how did we get the prisoners out?</aside>
+      </section>
+
+      <section class="chapter" id="gauntlet">
+        <header>
+          <span class="chapter-num">Chapter 14</span>
+          <h3>The Gauntlet of Shar</h3>
+          <p class="where">Where: through the <strong>Grand Mausoleum</strong> north of Reithwin · Quests: <strong>Find Ketheric Thorm's Relic</strong>, <strong>Find the Nightsong</strong></p>
+        </header>
+
+        <ol class="steps">
+          <li>Solve the mausoleum's puzzle and go down into the <strong>Gauntlet of Shar</strong>, an ancient temple to the goddess of loss. Snuff out every light in the entrance hall to open the way.</li>
+          <li>Balthazar is already here, and he'll order you to clear the way for him. Help him or fight him; either way, you'll need what's below.</li>
+          <li>Collect four <span class="item">Umbral Gem</span>s. Three come from the <strong>Trials of Shar</strong>: the <strong>Soft-Step Trial</strong> (sneak through a maze), the <strong>Self-Same Trial</strong> (fight shadow copies of your party), and the <strong>Faith-Leap Trial</strong> (cross an invisible path with one character).</li>
+          <li>The fourth gem belongs to <span class="npc">Yurgir</span>, an orthon in the east wing, who has a contract with the devil <span class="npc">Raphael</span> he'd love to break.</li>
+          <li>If Shadowheart is with you, she wants to complete one more Sharran trial. Help her; it's part of her story.</li>
+          <li>Use the gems to open the way into the Shadowfell. There you find the Nightsong.</li>
+        </ol>
+
+        <details class="spoiler">
+          <summary>⚠️ Spoiler: what the Nightsong is, and Shadowheart's choice</summary>
+          <p>The Nightsong isn't a relic. It's a woman: <span class="npc">Dame Aylin</span>, a celestial, held prisoner for a century to keep Ketheric immortal. Shadowheart is asked to kill her for Shar. Bring Shadowheart with you: if she isn't there when Aylin's fate is decided, she leaves for good. Freeing Aylin (or killing her) ends Ketheric's immortality.</p>
+        </details>
+
+        <aside class="callout warn"><strong>Point of no return</strong>Stepping into the Shadowfell locks you out of Act One for good. Every unfinished Act One quest ends, usually badly. If you haven't been to Moonrise Towers yet, much of what's there finishes without you too.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>What did Shadowheart decide?</aside>
+      </section>
+
+      <section class="chapter" id="ketheric">
+        <header>
+          <span class="chapter-num">Chapter 15</span>
+          <h3>Defeat Ketheric Thorm</h3>
+          <p class="where">Where: <strong>Moonrise Towers</strong> and the <strong>Mind Flayer Colony</strong> beneath it · Quest: <strong>Defeat Ketheric Thorm</strong></p>
+        </header>
+
+        <ol class="steps">
+          <li>Back at the Last Light Inn, Jaheira gathers the Harpers and Flaming Fists to storm Moonrise Towers. Join the assault.</li>
+          <li>Fight your way up to the roof. Ketheric is waiting there, and now he can be hurt. Win the fight.</li>
+          <li>When he falls, the way opens into the <strong>Mind Flayer Colony</strong> below the towers. Follow him down.</li>
+          <li>Explore the colony. It's where the tadpoles are made, and where you learn what the cult has been building.</li>
+          <li>Face Ketheric one last time.</li>
+          <li>After the fight, the story takes a turn you won't see coming. The act ends at your new camp, <strong>Wyrm's Lookout</strong>, on the road to Baldur's Gate.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>Jaheira joins</strong>If Jaheira survives the assault, you can recruit her. Do it: she's great company, and she's the only way to recruit <span class="npc">Minsc</span> in Act Three.</aside>
+
+        <details class="spoiler">
+          <summary>⚠️ Spoiler: what's behind the Absolute</summary>
+          <p>The "Absolute" is an elder brain, controlled by three Chosen of the Dead Three: Ketheric (for Myrkul), <span class="npc">Enver Gortash</span> (Bane), and <span class="npc">Orin the Red</span> (Bhaal). Each holds a Netherstone. Your tadpoles haven't turned you because of the Mysterious Artefact, which holds a prisoner of its own: <span class="npc">Prince Orpheus</span> of the githyanki. The friendly figure who's been visiting your dreams is the Emperor, a mind flayer.</p>
+        </details>
+
+        <aside class="callout notes"><strong>Your notes</strong>Who did we have in the party for the final fight with Ketheric?</aside>
+      </section>
+
+      <section class="act" id="act-3">
+        <span class="act-num">Act Three</span>
+        <h2>Baldur's Gate</h2>
+        <p>The biggest city on the Sword Coast, a new Archduke, a murderer with a knife for every friend you have, and an army of the Absolute on the way.</p>
+      </section>
+
+      <figure class="video" data-youtube="">
+        <figcaption>Gameplay: Act Three</figcaption>
+      </figure>
+
+      <section class="chapter" id="rivington">
+        <header>
+          <span class="chapter-num">Chapter 16</span>
+          <h3>Rivington</h3>
+          <p class="where">Where: <strong>Rivington</strong>, the outer district south of the river · Quests: <strong>Solve the Open Hand Temple Murders</strong>, <strong>Find the Missing Letters</strong></p>
+        </header>
+
+        <figure class="shot" data-src="shots/16-rivington.jpg">
+          <figcaption>Rivington, with Baldur's Gate across the river</figcaption>
+        </figure>
+
+        <ol class="steps">
+          <li>From Wyrm's Lookout, walk west into <strong>Rivington</strong>. Refugees fill the streets: the city won't let them in.</li>
+          <li>Look around the <strong>Circus of the Last Days</strong>. It's a lot of fun, and a few acts aren't what they seem.</li>
+          <li>At the <strong>Open Hand Temple</strong>, someone has murdered the priests. Investigate (<strong>Solve the Open Hand Temple Murders</strong>). The trail leads to Orin.</li>
+          <li>At <strong>Sword Coast Couriers</strong>, letters for your companions have gone missing (<strong>Find the Missing Letters</strong>). Track them down: each one adds something to a companion's story.</li>
+          <li>Find the camp of the <span class="npc">Gur</span>, monster hunters. They're after one of your companions.</li>
+          <li>Cross <strong>Wyrm's Crossing</strong>, the bridge into the city.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>Slow down</strong>Act Three is huge, and some quests in it change once you've dealt with Gortash or Orin. Explore Rivington and the Lower City before you go after either of them.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>Favorite circus act?</aside>
+      </section>
+
+      <section class="chapter" id="wyrms-rock">
+        <header>
+          <span class="chapter-num">Chapter 17</span>
+          <h3>Wyrm's Rock &amp; Gortash</h3>
+          <p class="where">Where: <strong>Wyrm's Rock Fortress</strong>, the <strong>Iron Throne</strong>, and the <strong>Steel Watch Foundry</strong> · Quests: <strong>Get Gortash's Netherstone</strong>, <strong>Rescue the Grand Duke</strong></p>
+        </header>
+
+        <ol class="steps">
+          <li><span class="npc">Enver Gortash</span> is being crowned Archduke of Baldur's Gate in <strong>Wyrm's Rock Fortress</strong>. Go up to the ceremony.</li>
+          <li>Gortash makes you an offer: kill Orin, and rule the city with him. You don't have to answer yet.</li>
+          <li>He's guarded by the <strong>Steel Watch</strong>, giant clockwork soldiers. Before you take him on, go to the <strong>Steel Watch Foundry</strong> in the Lower City and shut it down (<strong>Disable the Steel Watch</strong>).</li>
+          <li>Find the <strong>Iron Throne</strong>, an underwater prison off the coast. <span class="npc">Duke Ravengard</span>, Wyll's father, is held there along with a group of gnomes. Get them out before the prison floods.</li>
+          <li>Then go back to Wyrm's Rock and take Gortash's Netherstone.</li>
+        </ol>
+
+        <aside class="callout warn"><strong>Do the Iron Throne before Gortash</strong>If you defeat Gortash first, the Iron Throne is destroyed and everyone in it dies, including Duke Ravengard.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>How did we handle Gortash's offer?</aside>
+      </section>
+
+      <section class="chapter" id="lower-city">
+        <header>
+          <span class="chapter-num">Chapter 18</span>
+          <h3>The Lower City</h3>
+          <p class="where">Where: the <strong>Lower City</strong> and its sewers · Quests: <strong>The High Harper</strong>, the Nightsong's end, and many more</p>
+        </header>
+
+        <ol class="steps">
+          <li>Make the <strong>Elfsong Tavern</strong> your first stop. You'll hear about half the city's trouble there.</li>
+          <li>At <strong>Sorcerous Sundries</strong>, the wizard <span class="npc">Lorroakan</span> is still offering a reward for the Nightsong. If you freed Dame Aylin, think carefully about what you tell him.</li>
+          <li>At the <strong>Counting House</strong>, meet <span class="npc">Minsc</span>. With Jaheira's help, and once he survives a fight in the sewers, he can join you (<strong>The High Harper</strong>).</li>
+          <li>Each Origin companion's story comes to a head somewhere in the city. See <a href="#companion-endings">Companions' Final Chapters</a> for where.</li>
+          <li>Explore. The Lower City is full of side quests: a guild war, a printing press, a haunted bookshop, a devil's house, and much more.</li>
+        </ol>
+
+        <aside class="callout notes"><strong>Your notes</strong>Our favorite Lower City side quests.</aside>
+      </section>
+
+      <section class="chapter" id="orin">
+        <header>
+          <span class="chapter-num">Chapter 19</span>
+          <h3>Orin &amp; the Temple of Bhaal</h3>
+          <p class="where">Where: <strong>Candulhallow's Tombstones</strong>, the <strong>Murder Tribunal</strong>, and the <strong>Temple of Bhaal</strong> under the city · Quest: <strong>Get Orin's Netherstone</strong></p>
+        </header>
+
+        <ol class="steps">
+          <li>Once you're in the Lower City, <span class="npc">Orin the Red</span> kidnaps a companion who's waiting at camp. She wants you to kill Gortash for her.</li>
+          <li>Find your way into her temple. Investigate the city's serial murders (<strong>Investigate the Murders</strong>), or kill Gortash first: either way, you get the password to the <strong>Murder Tribunal</strong>, hidden under <strong>Candulhallow's Tombstones</strong>, northeast of the Elfsong.</li>
+          <li>At the Tribunal you meet <span class="npc">Sarevok Anchev</span>. Win his trust or fight him for the <span class="item">Amulet of Bhaal</span> and the map to the temple.</li>
+          <li>The <strong>Temple of Bhaal</strong> is in the <strong>Undercity Ruins</strong>. Hold the amulet to the temple door, fight past the assassins, and face Orin.</li>
+          <li>Take Orin's Netherstone from her dagger, and rescue your companion.</li>
+        </ol>
+
+        <aside class="callout warn"><strong>Don't leave your friend hanging</strong>Get to Orin's captive before the fight ends badly. A companion she kills is gone for good.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>Who did Orin take?</aside>
+      </section>
+
+      <section class="chapter" id="companion-endings">
+        <header>
+          <span class="chapter-num">Chapter 20</span>
+          <h3>Companions' Final Chapters</h3>
+          <p class="where">Where each Origin companion's story ends, roughly</p>
+        </header>
+
+        <ol class="steps">
+          <li><strong>Astarion</strong> (<strong>The Pale Elf</strong>): his old master, the vampire lord <span class="npc">Cazador</span>, lives in a palace in the Lower City. Investigate Cazador's Palace when Astarion is ready.</li>
+          <li><strong>Gale</strong> (<strong>The Wizard of Waterdeep</strong>): talk him through what he wants to do with the <strong>Crown of Karsus</strong>. Keep his approval high.</li>
+          <li><strong>Karlach</strong> (<strong>Our Fiery Friend</strong>): find <span class="npc">Dammon</span>, the tiefling blacksmith from the Grove, now in the Lower City, and hear what he can do about her infernal engine.</li>
+          <li><strong>Lae'zel</strong> (<strong>The Githyanki Warrior</strong>): finish her business with the githyanki queen, <span class="npc">Vlaakith</span>, and decide what to do about Orpheus.</li>
+          <li><strong>Shadowheart</strong> (<strong>Daughter of Darkness</strong>): the <strong>House of Grief</strong>, Shar's temple in the city, holds the end of her story.</li>
+          <li><strong>Wyll</strong> (<strong>The Blade of Frontiers</strong>): his father, Duke Ravengard, is in the Iron Throne. Get him out.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>Long rest often</strong>Many companion scenes only happen during a long rest at camp. In Act Three, rest whenever the game offers a new camp conversation, and talk to everyone after.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>Which companion's ending hit us hardest?</aside>
+      </section>
+
+      <section class="chapter" id="finale">
+        <header>
+          <span class="chapter-num">Chapter 21</span>
+          <h3>Confront the Elder Brain</h3>
+          <p class="where">Where: the <strong>Morphic Pool</strong> and the <strong>Upper City</strong> · Quests: <strong>Gather Your Allies</strong>, <strong>Confront the Elder Brain</strong></p>
+        </header>
+
+        <figure class="shot" data-src="shots/21-upper-city.jpg">
+          <figcaption>The Upper City under attack</figcaption>
+        </figure>
+
+        <ol class="steps">
+          <li>Throughout the game, <strong>Gather Your Allies</strong> has been keeping a list of everyone who owes you: the tieflings, the druids, the gnomes, the Harpers, the githyanki, and more. Check it before the end. The more allies, the easier the final fight.</li>
+          <li>With all three Netherstones, head for the <strong>Morphic Pool</strong>, where the elder brain feeds.</li>
+          <li>From here the game moves to its finale in the Upper City. Finish everything else first.</li>
+          <li>Make your last choices, and see your story through.</li>
+        </ol>
+
+        <aside class="callout warn"><strong>Point of no return</strong>Once you go to the Morphic Pool and start <strong>Confront the Elder Brain</strong>, you can't go back to the rest of the city. Make a separate save before you step in.</aside>
+
+        <details class="spoiler">
+          <summary>⚠️ Spoiler: the last choice</summary>
+          <p>At the end, you have to decide who controls the elder brain, or whether anyone does. You can free Prince Orpheus, side with the Emperor, or take control yourself. Each path asks a hard price of someone, and some of your companions will have strong opinions.</p>
+        </details>
+
+        <aside class="callout notes"><strong>Your notes</strong>How did our story end?</aside>
+      </section>
+
+      <section class="act" id="act-side">
+        <span class="act-num">Throughout</span>
+        <h2>Around the Realms</h2>
+        <p>The camp, the people you meet there, and how resting works.</p>
+      </section>
+
+      <section class="chapter" id="camp">
+        <header>
+          <span class="chapter-num">Anytime</span>
+          <h3>Camp, Resting &amp; Withers</h3>
+          <p class="where">Your camp moves with you through each act</p>
+        </header>
+
+        <ul>
+          <li><strong>Short rest</strong> (twice between long rests): heals a bit and refreshes some abilities. Use them after a tough fight.</li>
+          <li><strong>Long rest</strong> (at camp): full heal, all spells back. It costs <strong>camp supplies</strong>, which is just food. Pick up any food you find. Many companion scenes only happen at camp after a long rest, so rest often.</li>
+          <li><strong>Withers</strong>: the skeleton from the Dank Crypt. At camp, he can bring back dead companions for a fee, and he lets anyone re-pick their class and abilities.</li>
+          <li><strong>Hirelings</strong>: from level 3, Withers can also hire mercenaries, one of each class. Handy if you've lost a companion or want to try a class.</li>
+          <li><strong>Your traveller's chest</strong>: send items to camp from your inventory to keep your bags light.</li>
+        </ul>
+
+        <aside class="callout verify"><strong>To verify while proving</strong>Note what Withers charges to bring someone back and to re-pick a class.</aside>
+      </section>
+
+      <section class="act" id="act-reference">
+        <span class="act-num">Reference</span>
+        <h2>Reference</h2>
+        <p>Quick tables to keep handy while you play.</p>
+      </section>
+
+      <section class="chapter reference" id="ref-companions">
+        <header><h3>Companion Finder</h3><p class="where">Where to recruit everyone, and the easiest way to miss them</p></header>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Companion</th><th>Class</th><th>Where</th><th>Don't miss them</th></tr></thead>
+            <tbody>
+              <tr><td>Lae'zel</td><td>Fighter</td><td>Nautiloid; then the cage on the Roadside Cliffs</td><td>Talk the tieflings down, don't fight them</td></tr>
+              <tr><td>Shadowheart</td><td>Cleric</td><td>The pod on the Nautiloid; or later on the beach or in the Dank Crypt</td><td>Hard to miss</td></tr>
+              <tr><td>Astarion</td><td>Rogue</td><td>Ravaged Beach, west of the wreck</td><td>Talk him down when he ambushes you</td></tr>
+              <tr><td>Gale</td><td>Wizard</td><td>The stone circle east of the wreck</td><td>Pull him out of the portal</td></tr>
+              <tr><td>Wyll</td><td>Warlock</td><td>Emerald Grove, training the tiefling kids</td><td>Don't raid the Grove</td></tr>
+              <tr><td>Karlach</td><td>Barbarian</td><td>Risen Road, below the Toll House</td><td>Side with her, not with Anders</td></tr>
+              <tr><td>Halsin</td><td>Druid</td><td>Goblin Camp, in the worg pens</td><td>Free him and don't attack the Grove</td></tr>
+              <tr><td>Minthara</td><td>Paladin</td><td>Goblin Camp; then Moonrise Towers</td><td>Knock her out (don't kill her), then free her at Moonrise</td></tr>
+              <tr><td>Jaheira</td><td>Druid</td><td>Last Light Inn; joins after the assault on Moonrise</td><td>Keep her alive and friendly</td></tr>
+              <tr><td>Minsc</td><td>Ranger</td><td>The Counting House, Lower City</td><td>Have Jaheira with you</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="chapter reference" id="ref-no-return">
+        <header><h3>Points of No Return</h3><p class="where">The moments that close doors behind you</p></header>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>When</th><th>What you lose</th></tr></thead>
+            <tbody>
+              <tr><td>Long rest or fast travel after seeing Waukeen's Rest burn</td><td>Florrick and the people trapped in the inn</td></tr>
+              <tr><td>Attacking a druid, or taking the Sacred Idol</td><td>The Grove seals; the tieflings are thrown out</td></tr>
+              <tr><td>Going to the Rosymorn Monastery Trail, the Mountain Pass, or the Shadow-Cursed Lands with the Grove unresolved</td><td>The Rite of Thorns completes; the tieflings are lost</td></tr>
+              <tr><td>Entering the Shadowfell in the Gauntlet of Shar</td><td>All of Act One, for good; Moonrise prisoners if not yet freed</td></tr>
+              <tr><td>Defeating Gortash before the Iron Throne</td><td>Duke Ravengard and the Iron Throne prisoners</td></tr>
+              <tr><td>Starting Confront the Elder Brain</td><td>The rest of Baldur's Gate</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="chapter reference" id="ref-choices">
+        <header><h3>Big Choices</h3><p class="where">The decisions with the biggest ripples (light spoilers)</p></header>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Choice</th><th>What it changes</th></tr></thead>
+            <tbody>
+              <tr><td>The Grove or the goblins</td><td>Who survives Act One; who's at the Last Light Inn; Wyll, Halsin, or Minthara as companions</td></tr>
+              <tr><td>Karlach or Anders</td><td>Whether Karlach joins; what Wyll's patron does to him</td></tr>
+              <tr><td>Auntie Ethel's deal</td><td>Mayrina's fate, or a permanent ability boost</td></tr>
+              <tr><td>Isobel at the Last Light Inn</td><td>Whether the inn, and everyone in it, survives</td></tr>
+              <tr><td>The Nightsong</td><td>Shadowheart's story, and Dame Aylin's</td></tr>
+              <tr><td>Gortash's offer</td><td>How you take the last two Netherstones</td></tr>
+              <tr><td>Who controls the elder brain</td><td>The ending</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="chapter reference" id="ref-difficulty">
+        <header><h3>Difficulty Modes</h3><p class="where">You can change difficulty anytime, except in Honour mode</p></header>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Mode</th><th>For</th></tr></thead>
+            <tbody>
+              <tr><td>Explorer</td><td>Story first: easier fights and a little help on dice rolls</td></tr>
+              <tr><td>Balanced</td><td>The game as designed. Our pick for a first run</td></tr>
+              <tr><td>Tactician</td><td>Smarter, tougher enemies, and higher costs</td></tr>
+              <tr><td>Honour</td><td>Tactician-plus, with one save. If the whole party falls, the run drops out of Honour mode</td></tr>
+              <tr><td>Custom</td><td>Mix and match the settings</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="chapter reference" id="ref-tips">
+        <header><h3>General Tips</h3></header>
+        <ul>
+          <li><strong>Save often,</strong> and keep a few separate saves. Quicksave before every conversation that feels important.</li>
+          <li><strong>High ground</strong> gives ranged attackers an edge. <strong>Shove</strong> enemies off ledges.</li>
+          <li><strong>Jump</strong> (and Misty Step) gets you places the path doesn't.</li>
+          <li><strong>Read the surface:</strong> water and electricity, grease and fire. Many fights are won before they start.</li>
+          <li><strong>Talk to the dead.</strong> The <em>Speak with Dead</em> spell turns corpses into clues.</li>
+          <li><strong>Long rest when it's offered.</strong> Most quests don't care how often you rest; the few that do are flagged in this guide. Camp is where the story happens.</li>
+          <li><strong>Don't sell your junk too fast.</strong> Camp supplies, scrolls, and potions all matter more than gold.</li>
+        </ul>
+        <aside class="callout notes"><strong>Your notes</strong>Our own tips from this playthrough.</aside>
+      </section>
+
+      <aside class="callout tip" style="margin-top:40px"><strong>Credits</strong>Sources, thanks, and the license are listed <a href="#credits">at the top of this page</a>.</aside>
+    </main>
+  </div>
+
+  <a class="back-to-top" href="#" aria-label="Back to top">↑</a>
+
+  <footer class="site-footer">
+    © 2026 <a href="https://craz.com">Crabtree Labz</a> · Walkthrough text <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener">CC BY-NC-SA 4.0</a>, adapted from <a href="https://bg3.wiki/" rel="noopener">bg3.wiki</a> · Baldur's Gate 3 © Larian Studios · Non-commercial
+  </footer>
+
+  <script src="npcs.js?v=a60e0e91"></script>
+  <script src="items.js?v=0214a821"></script>
+  <script src="../walkthrough.js?v=f4f8ac13"></script>
+</body>
+</html>

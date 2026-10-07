@@ -1,0 +1,81 @@
+// Character tooltips for the Baldur's Gate 3 walkthrough.
+// Key = the exact text inside <span class="npc">. Value = [who they are, where to find them].
+// Keep these spoiler-light: say who someone seems to be when you first meet them.
+window.ST_NPCS = {
+  // Companions
+  "Astarion": ['High elf rogue; charming, sharp-tongued, and hiding something', 'Ravaged Beach, west of the Nautiloid wreck'],
+  "Gale": ['Human wizard from Waterdeep', 'The stone circle east of the Nautiloid wreck'],
+  "Karlach": ['Tiefling barbarian who escaped from Avernus', 'Risen Road, down the cliff below the Toll House'],
+  "Lae'zel": ['Githyanki fighter; wants a githyanki cure', 'Nautiloid; then a cage on the Roadside Cliffs'],
+  "Shadowheart": ['Half-elf cleric with a secret mission and a mysterious artefact', 'A pod on the Nautiloid, or later near the crash site'],
+  "Wyll": ['Human warlock known as the Blade of Frontiers', 'Emerald Grove, training the tiefling children'],
+  "Halsin": ['Archdruid of the Emerald Grove', 'Goblin Camp, in the worg pens'],
+  "Jaheira": ['Veteran Harper and druid', 'Last Light Inn'],
+  "Minsc": ['Ranger and old friend of Jaheira', 'The Counting House, Lower City'],
+  "Minthara": ['Drow paladin; one of the Goblin Camp\'s three leaders', 'Shattered Sanctum; later Moonrise Towers'],
+
+  // Prologue
+  "Us": ['An intellect devourer that can be freed', 'The Nautiloid, the surgery room'],
+  "Commander Zhalk": ['Cambion commander; carries the Everburn Blade', 'The Nautiloid, at the Helm'],
+
+  // Act One
+  "Nymessa": ['Tiefling scout guarding Lae\'zel\'s cage', 'Roadside Cliffs'],
+  "Damays": ['Tiefling scout guarding Lae\'zel\'s cage', 'Roadside Cliffs'],
+  "Withers": ['A strange, talkative skeleton', 'The Dank Crypt near the crash site; then your camp'],
+  "Zevlor": ['Leader of the tiefling refugees', 'Emerald Grove'],
+  "Aradin": ['Adventurer who lost his druid guide to goblins', 'Emerald Grove'],
+  "Arabella": ['Tiefling girl caught stealing the Sacred Idol', 'Emerald Grove, Inner Sanctum'],
+  "Kagha": ['Druid who has started the Rite of Thorns', 'Emerald Grove, Inner Sanctum'],
+  "Nettie": ['Druid healer', 'Emerald Grove, Inner Sanctum'],
+  "Alfira": ['Tiefling bard working on a song', 'Emerald Grove'],
+  "Volo": ['Famous gnome author and performer', 'Emerald Grove'],
+  "Mol": ['Tiefling girl who leads a band of young thieves', 'Emerald Grove'],
+  "Arron": ['Trader', 'Emerald Grove'],
+  "Dammon": ['Tiefling blacksmith', 'Emerald Grove; later the Last Light Inn and the Lower City'],
+  "Rolan": ['Tiefling wizard looking after his brother and sister', 'Emerald Grove; later Last Light Inn'],
+  "Barcus Wroot": ['Deep gnome tied to a windmill', 'Blighted Village'],
+  "Auntie Ethel": ['Kindly old woman who sells potions', 'Emerald Grove; then the Riverside Teahouse'],
+  "Mayrina": ['Young woman taken by Auntie Ethel', 'Auntie Ethel\'s lair'],
+  "Anders": ['Paladin hunting a "devil"', 'Risen Road, the Toll House'],
+  "Councillor Florrick": ['Flaming Fist officer from Baldur\'s Gate', 'Waukeen\'s Rest (trapped in the fire)'],
+  "Priestess Gut": ['Goblin priestess; one of the camp\'s three leaders', 'Shattered Sanctum'],
+  "Dror Ragzlin": ['Hobgoblin warlord; one of the camp\'s three leaders', 'Shattered Sanctum'],
+  "Liam": ['Aradin\'s companion, captured by goblins', 'Shattered Sanctum'],
+  "Brian": ['Dwarf from Aradin\'s group who left a poem behind', 'Goblin Camp'],
+  "Glut": ['Myconid with his own plans', 'Myconid Colony, Underdark'],
+  "Omeluum": ['A friendly mind flayer', 'Myconid Colony, Underdark'],
+  "True Soul Nere": ['Duergar overseer trapped behind a rockfall', 'Grymforge'],
+  "Grym": ['Guardian of the Adamantine Forge', 'Below Grymforge'],
+  "Kith'rak Voss": ['Githyanki dragon rider', 'Risen Road; later the Mountain Pass'],
+  "Inquisitor W'wargaz": ['Githyanki inquisitor', 'Crèche Y\'llek, the infirmary'],
+
+  // Act Two
+  "Lassandra": ['Harper fighting the shadows', 'The edge of the Shadow-Cursed Lands'],
+  "Kar'niss": ['Drider who guides True Souls to Moonrise Towers', 'The Mountain Pass route into Act Two'],
+  "Isobel": ['Selûnite cleric whose shield protects the inn', 'Last Light Inn, upstairs'],
+  "Marcus": ['Winged warrior with a hidden purpose', 'Last Light Inn'],
+  "Art Cullagh": ['Flaming Fist who won\'t wake up', 'Last Light Inn'],
+  "Ketheric Thorm": ['General of the Absolute\'s army; cannot die', 'Moonrise Towers'],
+  "Thisobald Thorm": ['A Thorm who still minds his post', 'Reithwin Town'],
+  "Gerringothe Thorm": ['A Thorm who still minds the Waning Moon', 'Reithwin Town'],
+  "Malus Thorm": ['A Thorm who runs the House of Healing', 'Reithwin Town, the House of Healing'],
+  "Z'rell": ['Ketheric\'s lieutenant', 'Moonrise Towers, behind the throne'],
+  "Balthazar": ['Ketheric\'s necromancer', 'Moonrise Towers; then the Gauntlet of Shar'],
+  "Wulbren": ['Deep gnome leader taken prisoner', 'Moonrise Towers, the prison'],
+  "Cal": ['Rolan\'s brother, taken prisoner', 'Moonrise Towers, the prison'],
+  "Lia": ['Rolan\'s sister, taken prisoner', 'Moonrise Towers, the prison'],
+  "Yurgir": ['Orthon with a devil\'s contract', 'Gauntlet of Shar, the east wing'],
+  "Raphael": ['A very polite devil', 'Shows up when you least expect him'],
+  "Dame Aylin": ['The Nightsong', 'The Shadowfell'],
+  "Prince Orpheus": ['A githyanki prince', 'Act Two onward'],
+
+  // Act Three
+  "Gur": ['Monster hunters camped in Rivington', 'Rivington, the Gur camp'],
+  "Enver Gortash": ['Baldur\'s Gate\'s new Archduke', 'Wyrm\'s Rock Fortress'],
+  "Duke Ravengard": ['Grand Duke of Baldur\'s Gate; Wyll\'s father', 'The Iron Throne'],
+  "Lorroakan": ['Wizard offering a reward for the Nightsong', 'Sorcerous Sundries, Lower City'],
+  "Orin the Red": ['A shapeshifting killer', 'The Temple of Bhaal'],
+  "Sarevok Anchev": ['Head of the Murder Tribunal', 'Under Candulhallow\'s Tombstones'],
+  "Cazador": ['Vampire lord; Astarion\'s old master', 'Cazador\'s Palace, Lower City'],
+  "Vlaakith": ['Lich-queen of the githyanki', 'Act Three']
+};
