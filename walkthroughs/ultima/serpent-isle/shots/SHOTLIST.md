@@ -4,8 +4,8 @@ Drop images into this folder using these exact filenames. The page shows a place
 
 Tip: native 320x200 captures look best upscaled 4x (1280x800) with nearest-neighbor scaling.
 
-- [ ] `01-arrival-ship.jpg` — The ship runs aground and the party steps ashore
-- [ ] `02-monitor-gate.jpg` — Monitor's southwest gate
+- [x] `01-arrival-ship.jpg` — The ship runs aground and the party steps ashore
+- [x] `02-monitor-gate.jpg` — Monitor's southwest gate
 - [ ] `02-knights-test.jpg` — Inside the Knight's Test, wearing only the leather armour and mace Shmed allows you
 - [ ] `02-pomdirgun.jpg` — Showdown with Pomdirgun in the goblin camp
 - [ ] `03-fawn-bridge.jpg` — The bridge into Fawn
