@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Stardew Valley — Walkthrough · SugarTickles</title>
+  <meta name="description" content="A season-by-season walkthrough for Stardew Valley: your first year, every Community Center bundle, Ginger Island, and Perfection, with progress tracking and reference tables." />
+  <!--
+    NO MONETIZATION. This page adapts the Stardew Valley Wiki, which is licensed
+    CC BY-NC-SA 3.0 (NonCommercial). Never add ads, affiliate links, sponsorships,
+    tip jars, paywalls, or tracking for ad revenue to this page or its companion
+    files, even if other SugarTickles pages are monetized. See NOTICE.md.
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../walkthrough.css?v=4282c37b" />
+</head>
+
+<body data-walkthrough="stardew-valley">
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/logo.png" alt="" />SugarTickles</a>
+    <nav>
+      <a href="/walkthroughs/" aria-current="page">Walkthroughs</a>
+      <a href="#credits">Credits</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">Walkthrough · ConcernedApe · 2016</span>
+    <h1>Stardew Valley<span class="sub">From the first parsnip to Perfection</span></h1>
+    <p class="lede">Grandpa's old farm, a town that's lost its heart, and a boarded-up Community Center full of little forest spirits. This guide walks you through your first year season by season, then on to Ginger Island and beyond. Check off steps as you go; your progress saves in this browser.</p>
+    <svg class="ornament" viewBox="0 0 240 40" fill="none" aria-hidden="true">
+      <path d="M4 34 H 236" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M120 34 V 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M120 24 C 108 24, 102 14, 104 8 C 114 8, 120 15, 120 24 z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M120 19 C 132 19, 138 9, 136 3 C 126 3, 120 10, 120 19 z" fill="currentColor" opacity="0.35" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    </svg>
+    <div class="meta-row">
+      <span class="pill">Year One, season by season</span>
+      <span class="pill">Every Community Center bundle</span>
+      <span class="pill">Tracks your progress</span>
+    </div>
+    <div class="resource-links">
+      <a href="#ref-bundles">🧺 Bundle Checklist</a>
+      <a href="#ref-calendar">📅 Festival Calendar</a>
+      <a href="#ref-tools">⛏️ Tool Upgrades</a>
+    </div>
+  </section>
+
+  <div class="layout">
+    <div>
+      <button class="toc-toggle" aria-expanded="false">☰ Chapters &amp; progress</button>
+      <nav class="toc" aria-label="Chapters">
+        <div class="progress">
+          <div class="label"><span>Your progress</span></div>
+          <div class="bar"><span></span></div>
+          <div class="label" style="margin-top:6px"><span class="count"></span></div>
+          <button type="button">Reset progress</button>
+        </div>
+          <h4><a href="#install" style="color:inherit;text-decoration:none">Setup</a></h4>
+          <ol>
+            <li><a href="#install"><span>Installing the Game</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-1" style="color:inherit;text-decoration:none">Spring, Year One</a></h4>
+          <ol>
+            <li><a href="#before-you-start"><span>Before You Start</span><span class="done"></span></a></li>
+            <li><a href="#first-days"><span>Your First Days</span><span class="done"></span></a></li>
+            <li><a href="#spring-5"><span>Spring 5 — The Mines &amp; the Community Center</span><span class="done"></span></a></li>
+            <li><a href="#wizard"><span>Meet the Wizard</span><span class="done"></span></a></li>
+            <li><a href="#spring-crops"><span>Spring Crops &amp; Festivals</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-2" style="color:inherit;text-decoration:none">Summer, Year One</a></h4>
+          <ol>
+            <li><a href="#summer-crops"><span>Summer Crops &amp; Foraging</span><span class="done"></span></a></li>
+            <li><a href="#railroad"><span>Summer 3 — The Earthquake</span><span class="done"></span></a></li>
+            <li><a href="#fishing"><span>Filling the Fish Tank</span><span class="done"></span></a></li>
+            <li><a href="#summer-festivals"><span>The Luau &amp; the Moonlight Jellies</span><span class="done"></span></a></li>
+            <li><a href="#mines-deeper"><span>Deeper into the Mines</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-3" style="color:inherit;text-decoration:none">Fall, Year One</a></h4>
+          <ol>
+            <li><a href="#fall-crops"><span>The Fall Harvest</span><span class="done"></span></a></li>
+            <li><a href="#barn-coop"><span>Animals &amp; Artisan Goods</span><span class="done"></span></a></li>
+            <li><a href="#fall-festivals"><span>The Fair &amp; Spirit's Eve</span><span class="done"></span></a></li>
+            <li><a href="#mines-bottom"><span>Floor 120 — The Skull Key</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-4" style="color:inherit;text-decoration:none">Winter, Year One</a></h4>
+          <ol>
+            <li><a href="#winter"><span>The Quiet Season</span><span class="done"></span></a></li>
+            <li><a href="#vault"><span>The Vault &amp; the Bus</span><span class="done"></span></a></li>
+            <li><a href="#desert"><span>The Calico Desert</span><span class="done"></span></a></li>
+            <li><a href="#year-two"><span>Planning Year Two</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-5" style="color:inherit;text-decoration:none">Beyond the Valley</a></h4>
+          <ol>
+            <li><a href="#cc-complete"><span>Restoring the Community Center</span><span class="done"></span></a></li>
+            <li><a href="#ginger-island"><span>Willy's Boat &amp; Ginger Island</span><span class="done"></span></a></li>
+            <li><a href="#grandpa"><span>Grandpa's Evaluation</span><span class="done"></span></a></li>
+            <li><a href="#perfection"><span>Mastery &amp; Perfection</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-side" style="color:inherit;text-decoration:none">Around the Valley</a></h4>
+          <ol>
+            <li><a href="#side-quests"><span>Anytime Activities</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-reference" style="color:inherit;text-decoration:none">Reference</a></h4>
+          <ol>
+            <li><a href="#ref-bundles"><span>Bundle Checklist</span><span class="done"></span></a></li>
+            <li><a href="#ref-calendar"><span>Festival Calendar</span><span class="done"></span></a></li>
+            <li><a href="#ref-unlocks"><span>Unlock Timeline</span><span class="done"></span></a></li>
+            <li><a href="#ref-tools"><span>Tool &amp; Backpack Upgrades</span><span class="done"></span></a></li>
+            <li><a href="#ref-crops"><span>Crops Worth Planting</span><span class="done"></span></a></li>
+            <li><a href="#ref-tips"><span>General Tips</span><span class="done"></span></a></li>
+          </ol>
+      </nav>
+    </div>
+
+    <main>
+      <section class="credits" id="credits">
+        <h3>Credits &amp; Sources</h3>
+        <p>This guide is a SugarTickles rewrite of material from the <strong>Stardew Valley Wiki</strong>, reorganized into a season-by-season route for playing alongside the game, with gaps marked for our own playthrough. Full credit to the wiki's editors. The pages we drew on most:</p>
+        <ul>
+          <li><a href="https://stardewvalleywiki.com/Getting_Started" rel="noopener">Getting Started</a>, <a href="https://stardewvalleywiki.com/Farm_Maps" rel="noopener">Farm Maps</a>, and <a href="https://stardewvalleywiki.com/Tools" rel="noopener">Tools</a>: the setup, the first days, and the upgrade tables.</li>
+          <li><a href="https://stardewvalleywiki.com/Community_Center" rel="noopener">Community Center</a> and <a href="https://stardewvalleywiki.com/Bundles" rel="noopener">Bundles</a>: the Junimo story and every bundle in the checklist.</li>
+          <li><a href="https://stardewvalleywiki.com/Spring" rel="noopener">Spring</a>, <a href="https://stardewvalleywiki.com/Summer" rel="noopener">Summer</a>, <a href="https://stardewvalleywiki.com/Fall" rel="noopener">Fall</a>, <a href="https://stardewvalleywiki.com/Winter" rel="noopener">Winter</a>, and <a href="https://stardewvalleywiki.com/Crops" rel="noopener">Crops</a>: festivals, crops, and the calendar.</li>
+          <li><a href="https://stardewvalleywiki.com/The_Mines" rel="noopener">The Mines</a>, <a href="https://stardewvalleywiki.com/Skull_Cavern" rel="noopener">Skull Cavern</a>, <a href="https://stardewvalleywiki.com/Railroad" rel="noopener">Railroad</a>, <a href="https://stardewvalleywiki.com/Quarry" rel="noopener">Quarry</a>, <a href="https://stardewvalleywiki.com/Secret_Woods" rel="noopener">Secret Woods</a>, and <a href="https://stardewvalleywiki.com/The_Desert" rel="noopener">The Desert</a>: the places you unlock along the way.</li>
+          <li><a href="https://stardewvalleywiki.com/Fish_Shop" rel="noopener">Fish Shop</a>, <a href="https://stardewvalleywiki.com/Ginger_Island" rel="noopener">Ginger Island</a>, <a href="https://stardewvalleywiki.com/Qi%27s_Walnut_Room" rel="noopener">Qi's Walnut Room</a>, <a href="https://stardewvalleywiki.com/Grandpa" rel="noopener">Grandpa</a>, <a href="https://stardewvalleywiki.com/Mastery_Cave" rel="noopener">Mastery Cave</a>, and <a href="https://stardewvalleywiki.com/Perfection" rel="noopener">Perfection</a>: the late game.</li>
+          <li><a href="https://stardewvalleywiki.com/Modding:Player_Guide/Getting_Started" rel="noopener">Modding: Player Guide</a> and the SMAPI install pages for <a href="https://stardewvalleywiki.com/Modding:Installing_SMAPI_on_Mac" rel="noopener">Mac</a> and <a href="https://stardewvalleywiki.com/Modding:Installing_SMAPI_on_Windows" rel="noopener">Windows</a>: the optional mods section.</li>
+        </ul>
+        <p>Where we haven't confirmed something in our own game yet, you'll see a gold <strong>"To verify"</strong> note. Dashed <strong>"Your notes"</strong> boxes mark spots to fill in. Screenshots and video are our own captures. We don't copy the wiki's sprites or images: the game art belongs to ConcernedApe, and the wiki only has permission to use it on the wiki itself.</p>
+        <p><strong>License:</strong> because this page adapts the Stardew Valley Wiki, its text is shared under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="noopener">CC BY-NC-SA 3.0</a>, the same license as the wiki (<a href="https://stardewvalleywiki.com/Stardew_Valley_Wiki:Copyrights" rel="noopener">the wiki's license terms</a>). You may share and adapt it, with credit, for non-commercial use, under the same license. <em>Stardew Valley</em> and all of its art, characters, and names are © ConcernedApe. SugarTickles isn't affiliated with ConcernedApe or the wiki, and this guide isn't official. It's a fan guide, made with love.</p>
+        <p><strong>No ads, ever:</strong> the license doesn't allow commercial use, so this page will never carry ads, affiliate links, sponsorships, or anything else that makes money.</p>
+      </section>
+
+      <section class="chapter install" id="install">
+        <header>
+          <span class="chapter-num">Setup</span>
+          <h3>Installing the Game</h3>
+          <p class="where">Buy it, play it on a Mac or a PC, and (optionally) add mods</p>
+        </header>
+
+        <h4>1. Buy the game</h4>
+        <p><em>Stardew Valley</em> is on <a href="https://store.steampowered.com/app/413150/Stardew_Valley/" rel="noopener">Steam</a> and <a href="https://www.gog.com/en/game/stardew_valley" rel="noopener">GOG</a>, plus every major console and phone. It runs natively on Mac, Windows, and Linux: no emulator, no setup. Install it from Steam or GOG Galaxy and press Play. This guide follows the computer version (1.6). Consoles and phones may be a version behind.</p>
+
+        <h4>2. Know where your saves live</h4>
+        <p>The game saves when you go to bed each night. Back up this folder before a big decision (like choosing Joja) or before you add mods:</p>
+        <ul>
+          <li><strong>Mac:</strong> <code>~/.config/StardewValley/Saves</code> (in Finder, use <strong>Go → Go to Folder…</strong>)</li>
+          <li><strong>Windows:</strong> <code>%appdata%\StardewValley\Saves</code> (paste into File Explorer's address bar)</li>
+        </ul>
+
+        <h4>3. Add mods (optional)</h4>
+        <p>Mods need <a href="https://smapi.io/" rel="noopener">SMAPI</a>, the free Stardew mod loader. Run the game once without mods first, so it can finish its first-time setup.</p>
+
+        <details class="spoiler" open>
+          <summary>🍎 On a Mac</summary>
+          <ol class="plain">
+            <li>SMAPI needs macOS 10.15 Catalina or later.</li>
+            <li>Download the latest SMAPI from <a href="https://smapi.io/" rel="noopener">smapi.io</a> and unzip it somewhere <em>outside</em> the game folder (Downloads is fine).</li>
+            <li>Right-click <code>install on macOS.command</code>, choose <strong>Open</strong>, and follow the prompts.</li>
+            <li>If macOS says it was "Not Opened," click <strong>Done</strong>, then go to <strong>System Settings → Privacy &amp; Security</strong>, scroll to <strong>Security</strong>, and click <strong>Open Anyway</strong>. Enter your password and the installer runs.</li>
+            <li>That's it. Launch the game from Steam as usual; on a Mac you don't need to change Steam's launch options.</li>
+          </ol>
+        </details>
+
+        <details class="spoiler">
+          <summary>🪟 On a Windows PC</summary>
+          <ol class="plain">
+            <li>Download the latest SMAPI from <a href="https://smapi.io/" rel="noopener">smapi.io</a> and unzip it (Downloads is fine).</li>
+            <li>Double-click <code>install on Windows.bat</code> and follow the prompts. Keep the installer window open when it finishes.</li>
+            <li>On Steam: right-click <strong>Stardew Valley → Properties</strong>, and paste the line the installer shows into <strong>Launch Options</strong>. It looks like this (quotes and <code>%command%</code> included):<pre><code>"C:\Program Files (x86)\Steam\steamapps\common\Stardew Valley\StardewModdingAPI.exe" %command%</code></pre></li>
+            <li>From now on, launching from Steam runs the game with mods, and achievements still work.</li>
+          </ol>
+        </details>
+
+        <p>Mods go in the <code>Mods</code> folder inside the game folder (SMAPI creates it). Our one recommendation for a first playthrough is Pathoschild's <a href="https://www.nexusmods.com/stardewvalley/mods/541" rel="noopener">Lookup Anything</a>: point at anything and press <kbd>F1</kbd> to see what it is, who likes it as a gift, and which bundle needs it. Unzip it into <code>Mods</code> and restart the game.</p>
+        <aside class="callout tip"><strong>Mods and saves</strong>Most mods can be added or removed mid-game, but back up your saves first. To play without mods, uninstall SMAPI with its installer, or (on Windows) clear the Steam launch options.</aside>
+      </section>
+
+      <section class="act" id="act-1">
+        <span class="act-num">Act I</span>
+        <h2>Spring, Year One</h2>
+        <p>A letter from Grandpa, an overgrown farm, fifteen parsnip seeds, and a Community Center nobody uses anymore.</p>
+      </section>
+
+      <figure class="video" data-youtube="">
+        <figcaption>Gameplay: Spring, Year One</figcaption>
+      </figure>
+
+      <section class="chapter" id="before-you-start">
+        <header>
+          <span class="chapter-num">Chapter 0</span>
+          <h3>Before You Start</h3>
+          <p class="where">The choices on the character creation screen</p>
+        </header>
+
+        <ul>
+          <li><strong>Pick a farm map.</strong> It's permanent for that save. Every map is the same size but has different amounts of usable land. For a first game, the <strong>Standard Farm</strong> has the most room for crops and animals. The others favor a skill: Forest (foraging), Hill-top (mining), Riverland (fishing), Wilderness (combat, with monsters at night), plus Four Corners, Beach, and Meadowlands. See the wiki's <a href="https://stardewvalleywiki.com/Farm_Maps" rel="noopener">Farm Maps</a> for side-by-side pictures.</li>
+          <li><strong>Pick a pet.</strong> Your cat or dog choice decides which pet Marnie brings you. Your gender doesn't affect who you can marry.</li>
+          <li><strong>Check Advanced Options</strong> (the wrench button). This guide assumes <strong>standard</strong> bundles, not remixed. If you want to finish the Community Center in your first year, turn on the option that guarantees the Traveling Cart sells a <strong>Red Cabbage</strong> seed in Year One; otherwise you'll need Year Two for the Dye Bundle.</li>
+          <li><strong>Watch the TV</strong> every morning: the weather tells you when you can skip watering, and the fortune teller tells you your luck for the day.</li>
+          <li><strong>Keep one of everything.</strong> Bundles want odd things (a Leek, a Sunfish, a Frozen Tear). Set out a chest on day one and toss in one of each new item before you sell the rest.</li>
+        </ul>
+
+        <aside class="callout notes"><strong>Your notes</strong>Which farm map did we pick, and why?</aside>
+      </section>
+
+      <section class="chapter" id="first-days">
+        <header>
+          <span class="chapter-num">Chapter 1</span>
+          <h3>Your First Days</h3>
+          <p class="where">Spring 1–4 · Your farm and Pelican Town</p>
+        </header>
+
+        <figure class="shot" data-src="shots/01-first-morning.jpg">
+          <figcaption>The first morning on Grandpa's farm</figcaption>
+        </figure>
+
+        <ol class="steps">
+          <li><span class="npc">Mayor Lewis</span> welcomes you and leaves <span class="item">Parsnip Seeds</span> (15) in your house. Grab them.</li>
+          <li>Clear a patch of ground near the house with your axe, pickaxe, and scythe. Till 15 tiles with the hoe, plant the seeds, and water them. They're ready in 4 days.</li>
+          <li>Water your crops every morning. Unwatered crops don't die; they just stop growing. Refill the watering can at any pond or river.</li>
+          <li>Walk into Pelican Town and say hello to everyone you meet. Your Journal (the quest log) tracks introductions.</li>
+          <li>Buy more seeds at <span class="npc">Pierre</span>'s General Store (closed Wednesdays). Parsnips, Potatoes, Cauliflower, and Green Beans are all needed for the Spring Crops Bundle, so plant at least one of each.</li>
+          <li>Forage as you walk: Leeks, Dandelions, Daffodils, and Wild Horseradish spawn all over in spring. Keep one of each for the Spring Foraging Bundle.</li>
+          <li>Put anything you want to sell in the shipping bin by your house. You're paid overnight.</li>
+          <li>On Spring 2, a letter from <span class="npc">Willy</span> invites you to the beach. Visit his Fish Shop and he gives you your first fishing pole, the <span class="item">Bamboo Pole</span>.</li>
+          <li>Go to bed before midnight. Staying up until 2 a.m. makes you pass out and lose some gold.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>Energy</strong>Every swing of a tool costs energy. When your bar runs low, eat something (most crops and forage restore a little) or call it a day. Sleeping by midnight refills it.</aside>
+      </section>
+
+      <section class="chapter" id="spring-5">
+        <header>
+          <span class="chapter-num">Chapter 2</span>
+          <h3>Spring 5 — The Mines &amp; the Community Center</h3>
+          <p class="where">Where: the <strong>Mountain</strong>, north of town, and the <strong>Bus Stop</strong> east of your farm</p>
+        </header>
+
+        <ol class="steps">
+          <li>On the morning of Spring 5, a letter says the landslide blocking the Mines has been cleared.</li>
+          <li>Between 8 a.m. and 1 p.m. on a day that isn't raining, walk from your farm through the <strong>Bus Stop</strong> into Pelican Town. Mayor Lewis meets you and unlocks the Community Center. Something small and green runs off before he can see it. He blames rats. This starts the <strong>Rat Problem</strong> quest.</li>
+          <li>Go back inside the Community Center and read the <span class="item">Golden Scroll</span> in the lower-left room. You can't make sense of the writing yet.</li>
+          <li>Head up to the Mines, north of the Carpenter's Shop. <span class="npc">Marlon</span> meets you at the entrance and gives you a <span class="item">Rusty Sword</span>.</li>
+          <li>Go down the ladder. On each floor, break rocks or defeat monsters until a ladder appears. Every fifth floor unlocks the elevator, so you can come straight back.</li>
+        </ol>
+
+        <aside class="callout warn"><strong>Passing out</strong>If your health hits zero in the Mines, you wake up at the clinic missing some gold and items. Bring food, and head up when your health is low.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>The cutscene only triggers if you <em>enter town from the Bus Stop</em>. Confirm that walking in from the farm's south exit doesn't trigger it.</aside>
+      </section>
+
+      <section class="chapter" id="wizard">
+        <header>
+          <span class="chapter-num">Chapter 3</span>
+          <h3>Meet the Wizard</h3>
+          <p class="where">Where: the <strong>Wizard's Tower</strong>, on the west side of Cindersap Forest</p>
+        </header>
+
+        <ol class="steps">
+          <li>The morning after you read the scroll, a letter from the <span class="npc">Wizard</span> starts the <strong>Meet the Wizard</strong> quest.</li>
+          <li>Walk south from your farm into Cindersap Forest and follow the path west to his tower.</li>
+          <li>He gives you a potion. Drink it, and you gain <span class="item">Forest Magic</span>: you can now read the Junimos' language.</li>
+          <li>Go back to the Community Center and read every Golden Scroll. Each one is a room of <strong>bundles</strong>: offerings the Junimos ask for in return for fixing up the valley. More rooms open as you complete bundles.</li>
+          <li>Check bundle progress anytime from the Golden Scroll icon at the top-right of your inventory menu. When you're holding an item a bundle needs, the icon pulses.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>Quality</strong>Bundles that don't name a quality take any quality. Bundles that ask for gold quality also take iridium.</aside>
+        <aside class="callout warn"><strong>Joja or the Junimos?</strong>Morris at JojaMart will sell you a membership for 5,000g. Buying it permanently turns the Community Center into a Joja Warehouse, and you buy the upgrades instead of earning them. This guide follows the Junimo route. See <a href="#side-quests">Anytime Activities</a> for the Joja route.</aside>
+      </section>
+
+      <section class="chapter" id="spring-crops">
+        <header>
+          <span class="chapter-num">Chapter 4</span>
+          <h3>Spring Crops &amp; Festivals</h3>
+          <p class="where">Spring 5–28 · <a href="#ref-crops">best crops →</a></p>
+        </header>
+
+        <ol class="steps">
+          <li>Plant <strong>Cauliflower</strong> by Spring 16. It takes 12 days, and every crop dies when Summer begins.</li>
+          <li>Green Beans need 10 days to grow, then produce every 3 days. They climb a trellis, so you can't walk through them.</li>
+          <li>Aim for five <strong>gold-quality Parsnips</strong> for the Quality Crops Bundle. Fertilizer (Basic Fertilizer is a farming recipe) raises your odds.</li>
+          <li>On <strong>Spring 13</strong>, go to the <strong>Egg Festival</strong> in the town square. Win the egg hunt if you can, and buy <span class="item">Strawberry Seeds</span> from Pierre's booth. Strawberries take 8 days, then regrow every 4.</li>
+          <li>Upgrade your backpack at Pierre's as soon as you have 2,000g. Twelve more slots makes every trip to the Mines better.</li>
+          <li>Keep pushing down the Mines on rainy days, when the crops water themselves.</li>
+          <li>On <strong>Spring 24</strong>, go to the <strong>Flower Dance</strong> in Cindersap Forest. If you have enough hearts with a bachelor or bachelorette, ask them to dance.</li>
+          <li>Optional — the <strong>Desert Festival</strong> (Spring 15–17) only opens once the bus is repaired, so skip it this year.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>Last day of the season</strong>Spring crops wilt on Summer 1. Don't plant anything in late spring that won't finish in time. Check the days to harvest on the seed packet.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>How much gold did we finish spring with, and how deep in the Mines did we get?</aside>
+      </section>
+
+      <section class="act" id="act-2">
+        <span class="act-num">Act II</span>
+        <h2>Summer, Year One</h2>
+        <p>Blueberries, an earthquake, a bowl of potluck soup, and the first real money.</p>
+      </section>
+
+      <figure class="video" data-youtube="">
+        <figcaption>Gameplay: Summer, Year One</figcaption>
+      </figure>
+
+      <section class="chapter" id="summer-crops">
+        <header>
+          <span class="chapter-num">Chapter 5</span>
+          <h3>Summer Crops &amp; Foraging</h3>
+          <p class="where">Summer 1 onward · Your farm and Pierre's</p>
+        </header>
+
+        <ol class="steps">
+          <li>Clear away the dead spring crops and replant on Summer 1.</li>
+          <li><strong>Blueberries</strong> are the summer money crop: 13 days to grow, then a harvest every 4 days.</li>
+          <li>Plant the Summer Crops Bundle: <strong>Tomato</strong>, <strong>Hot Pepper</strong>, <strong>Blueberry</strong>, and <strong>Melon</strong>. Melons take 12 days; plant extras for five gold-quality Melons.</li>
+          <li><strong>Corn</strong> grows in both summer and fall, so a summer planting keeps producing until fall ends. Save five gold-quality ears for the Quality Crops Bundle.</li>
+          <li>Plant some <strong>Wheat</strong> late in summer or in fall. You need 10 for the Fodder Bundle, and Marnie sells Hay.</li>
+          <li>Forage the summer items for the Summer Foraging Bundle: <strong>Grape</strong>, <strong>Spice Berry</strong>, and <strong>Sweet Pea</strong>.</li>
+          <li>Optional — Red Cabbage (Dye Bundle) isn't in Pierre's shop until Year Two. Check the Traveling Cart in Cindersap Forest on Fridays and Sundays in case it shows up.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>Sprinklers</strong>By now you may have the recipe for a basic Sprinkler (Farming level 2). Each one waters the four tiles next to it every morning. Quality Sprinklers (Farming level 6) water all eight tiles around them.</aside>
+      </section>
+
+      <section class="chapter" id="railroad">
+        <header>
+          <span class="chapter-num">Chapter 6</span>
+          <h3>Summer 3 — The Earthquake</h3>
+          <p class="where">Where: the <strong>Railroad</strong>, north of the Mountain</p>
+        </header>
+
+        <ol class="steps">
+          <li>You wake up on Summer 3 to news of an earthquake. The rockslide north of the Mountain is gone, and the <strong>Railroad</strong> is open.</li>
+          <li>Visit the <strong>Spa</strong> by the tracks. Stand still in the water and your energy refills, any time you need it.</li>
+          <li>Trains pass through some days. Freight cars sometimes drop items beside the tracks; pick them up after the train passes.</li>
+          <li>Stop by the Fish Shop sometime this summer. <span class="npc">Willy</span> mentions an old friend in his back room. That's a story for later (Act V).</li>
+        </ol>
+      </section>
+
+      <section class="chapter" id="fishing">
+        <header>
+          <span class="chapter-num">Chapter 7</span>
+          <h3>Filling the Fish Tank</h3>
+          <p class="where">Rivers, the Mountain lake, and the ocean · <a href="#ref-bundles">fish list →</a></p>
+        </header>
+
+        <ol class="steps">
+          <li>Fish in each kind of water: the river in town and the forest (River Fish), the lake by the Carpenter's Shop (Lake Fish), and the beach (Ocean Fish). Each fish only bites in certain seasons, weather, and hours. The wiki's <a href="https://stardewvalleywiki.com/Fish" rel="noopener">Fish</a> page has the table.</li>
+          <li>Fish after dark for the <strong>Night Fishing Bundle</strong>: Walleye, Bream, and Eel.</li>
+          <li>At Fishing level 3, you can craft <span class="item">Crab Pots</span>. Bait them and drop them in any water; check them each morning. Five different catches fill the <strong>Crab Pot Bundle</strong>.</li>
+          <li>The <strong>Specialty Fish Bundle</strong> needs a Sandfish from the Desert, so it can't be finished until the bus is fixed (Act IV). Grab the Pufferfish, Ghostfish, and Woodskip whenever you find them.</li>
+          <li>When the whole Fish Tank is done, the Junimos clear the glittering boulder by the river, and Willy gives you a <span class="item">Copper Pan</span> for panning ore from shimmering water.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>The fishing minigame</strong>Hold the button to rise, let go to fall, and keep the green bar over the fish. It gets easier with every level. Trout Soup and Bait help.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>Which fish took the most tries? Tips for the fishing minigame?</aside>
+      </section>
+
+      <section class="chapter" id="summer-festivals">
+        <header>
+          <span class="chapter-num">Chapter 8</span>
+          <h3>The Luau &amp; the Moonlight Jellies</h3>
+          <p class="where">Summer 11, 20–21, and 28 · <a href="#ref-calendar">calendar →</a></p>
+        </header>
+
+        <ol class="steps">
+          <li>On <strong>Summer 11</strong>, the town holds the <strong>Luau</strong> on the beach. Put something good (a gold-quality crop is ideal) into the potluck soup. The Governor tastes it, and a great soup earns friendship with everyone in town.</li>
+          <li>Optional — on <strong>Summer 20–21</strong>, the <strong>Trout Derby</strong> takes place in Cindersap Forest. Catch Rainbow Trout for prizes.</li>
+          <li>On <strong>Summer 28</strong>, come to the beach at night for the <strong>Dance of the Moonlight Jellies</strong>. Just watch and enjoy.</li>
+        </ol>
+
+        <aside class="callout warn"><strong>The soup</strong>Don't put in anything gross. A bad ingredient lowers your friendship with everyone.</aside>
+      </section>
+
+      <section class="chapter" id="mines-deeper">
+        <header>
+          <span class="chapter-num">Chapter 9</span>
+          <h3>Deeper into the Mines</h3>
+          <p class="where">Where: <strong>the Mines</strong> and <span class="npc">Clint</span>'s Blacksmith shop · <a href="#ref-tools">tool upgrades →</a></p>
+        </header>
+
+        <ol class="steps">
+          <li>Floors 1–39 have Copper Ore. Floors 40–79 are frozen and have Iron. Floors 80–119 are fiery and have Gold.</li>
+          <li>Smelt ore into bars in a Furnace (you get the recipe from Clint early on). One <strong>Copper Bar</strong>, <strong>Iron Bar</strong>, and <strong>Gold Bar</strong> fill the Blacksmith's Bundle.</li>
+          <li>Collect gems for the Geologist's Bundle: <strong>Quartz</strong>, <strong>Earth Crystal</strong> (floors 1–39), <strong>Frozen Tear</strong> (40–79), and <strong>Fire Quartz</strong> (80–119).</li>
+          <li>For the Adventurer's Bundle, you need two of: 99 Slime, 10 Bat Wings, Solar Essence, Void Essence. Slime and Bat Wings come with time.</li>
+          <li>Take tools to <span class="npc">Clint</span> to upgrade them. It takes two days. Upgrade the watering can the day before rain, or the pickaxe before a long weekend away from the Mines.</li>
+          <li>Upgrade to a <strong>Steel Axe</strong> to clear the big log at the northwest corner of Cindersap Forest. Behind it are the <strong>Secret Woods</strong>, where six stumps give you Hardwood every day.</li>
+        </ol>
+
+        <figure class="shot" data-src="shots/09-mines-floor-40.jpg">
+          <figcaption>The frozen floors begin at floor 40</figcaption>
+        </figure>
+        <aside class="callout notes"><strong>Your notes</strong>Best weapon we found before floor 80?</aside>
+      </section>
+
+      <section class="act" id="act-3">
+        <span class="act-num">Act III</span>
+        <h2>Fall, Year One</h2>
+        <p>Pumpkins, the Stardew Valley Fair, a haunted maze, and the bottom of the Mines.</p>
+      </section>
+
+      <figure class="video" data-youtube="">
+        <figcaption>Gameplay: Fall, Year One</figcaption>
+      </figure>
+
+      <section class="chapter" id="fall-crops">
+        <header>
+          <span class="chapter-num">Chapter 10</span>
+          <h3>The Fall Harvest</h3>
+          <p class="where">Fall 1 onward · <a href="#ref-crops">best crops →</a></p>
+        </header>
+
+        <ol class="steps">
+          <li>Replant on Fall 1. Your summer Corn keeps going; everything else summer-only wilts.</li>
+          <li>Plant the Fall Crops Bundle: <strong>Corn</strong>, <strong>Eggplant</strong>, <strong>Pumpkin</strong>, and <strong>Yam</strong>. Pumpkins take 13 days; plant extras to get five gold-quality ones.</li>
+          <li><strong>Cranberries</strong> are the fall money crop: they regrow every 5 days and give two berries a harvest.</li>
+          <li>Forage the Fall Foraging Bundle: <strong>Common Mushroom</strong>, <strong>Wild Plum</strong>, <strong>Hazelnut</strong>, and <strong>Blackberry</strong>. Blackberries cover the bushes in the second week of fall.</li>
+          <li>Tap a Maple, Oak, or Pine tree with a Tapper for <strong>Maple Syrup</strong>, <strong>Oak Resin</strong>, and <strong>Pine Tar</strong>. They count toward several bundles.</li>
+        </ol>
+      </section>
+
+      <section class="chapter" id="barn-coop">
+        <header>
+          <span class="chapter-num">Chapter 11</span>
+          <h3>Animals &amp; Artisan Goods</h3>
+          <p class="where">Where: <span class="npc">Robin</span>'s Carpenter's Shop and <span class="npc">Marnie</span>'s Ranch</p>
+        </header>
+
+        <ol class="steps">
+          <li>Have Robin build a <strong>Coop</strong>, then a <strong>Barn</strong>, when you can afford the gold and lumber.</li>
+          <li>Buy chickens and a cow from Marnie. Pet every animal every day; happy animals give bigger, better products.</li>
+          <li>The Animal Bundle wants five of: Large Milk, Large Brown Egg, Large White Egg, Large Goat Milk, Wool, and Duck Egg.</li>
+          <li>Turn produce into artisan goods for the Artisan Bundle (six of the twelve): Cheese from a Cheese Press, Honey from a Bee House, Jelly from a Preserves Jar, Cloth from a Loom, Truffle Oil, Goat Cheese, or any six of the listed fruits.</li>
+          <li>Optional — fruit trees take 28 days to mature and only fruit in their season. Plant Apple, Apricot, Orange, Peach, Pomegranate, or Cherry saplings early if you want fruit for the Artisan Bundle.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>The Pantry's prize</strong>Finishing every Pantry bundle restores the <strong>Greenhouse</strong> on your farm, where anything grows in any season.</aside>
+      </section>
+
+      <section class="chapter" id="fall-festivals">
+        <header>
+          <span class="chapter-num">Chapter 12</span>
+          <h3>The Fair &amp; Spirit's Eve</h3>
+          <p class="where">Fall 16 and Fall 27 · Pelican Town</p>
+        </header>
+
+        <ol class="steps">
+          <li>On <strong>Fall 16</strong>, set up a grange display at the <strong>Stardew Valley Fair</strong>. Fill all nine slots with a variety of high-quality items from different categories.</li>
+          <li>Play the Fair's games to win star tokens. If you can save up 2,000 tokens, buy the <span class="item">Stardrop</span>. It raises your max energy for good.</li>
+          <li>On <strong>Fall 27</strong>, come to town at night for <strong>Spirit's Eve</strong>. Find your way through the haunted maze to the <span class="item">Golden Pumpkin</span> at the end.</li>
+        </ol>
+
+        <aside class="callout notes"><strong>Your notes</strong>What went into our grange display, and where did it place?</aside>
+      </section>
+
+      <section class="chapter" id="mines-bottom">
+        <header>
+          <span class="chapter-num">Chapter 13</span>
+          <h3>Floor 120 — The Skull Key</h3>
+          <p class="where">Where: the bottom of <strong>the Mines</strong></p>
+        </header>
+
+        <ol class="steps">
+          <li>Push on through floors 80–119. Bring plenty of food, and a good sword.</li>
+          <li>On floor 120, open the chest and take the <span class="item">Skull Key</span>. It opens the Skull Cavern in the Desert (and the Junimo Kart machine in the Saloon).</li>
+          <li>Finish the Boiler Room: the Blacksmith's, Geologist's, and Adventurer's bundles. The Junimos repair the <strong>Minecarts</strong>, for fast travel between the Bus Stop, town, the Mines, and the Quarry.</li>
+          <li>Finish the Crafts Room (the four foraging bundles, Construction, and Exotic Foraging) to have the bridge repaired to the <strong>Quarry</strong>, full of ore and gems.</li>
+        </ol>
+
+        <figure class="shot" data-src="shots/13-skull-key.jpg">
+          <figcaption>The chest on floor 120</figcaption>
+        </figure>
+      </section>
+
+      <section class="act" id="act-4">
+        <span class="act-num">Act IV</span>
+        <h2>Winter, Year One</h2>
+        <p>Nothing grows, so everything else does: friendships, the Mines, the Vault, and the road to the Desert.</p>
+      </section>
+
+      <figure class="video" data-youtube="">
+        <figcaption>Gameplay: Winter, Year One</figcaption>
+      </figure>
+
+      <section class="chapter" id="winter">
+        <header>
+          <span class="chapter-num">Chapter 14</span>
+          <h3>The Quiet Season</h3>
+          <p class="where">Winter 1–28 · <a href="#ref-calendar">calendar →</a></p>
+        </header>
+
+        <ol class="steps">
+          <li>Nothing grows outside in winter except Winter Seeds (a reward from the Winter Foraging Bundle). Use the Greenhouse if you've restored it.</li>
+          <li>Hoe the ground and dig up Artifact Spots for <strong>Winter Root</strong> and <strong>Snow Yam</strong>. Forage <strong>Crystal Fruit</strong> and <strong>Crocus</strong>. That's the Winter Foraging Bundle.</li>
+          <li>On <strong>Winter 8</strong>, enter the ice-fishing contest at the <strong>Festival of Ice</strong> in Cindersap Forest.</li>
+          <li>Optional — <strong>SquidFest</strong> (Winter 12–13) and the <strong>Night Market</strong> (Winter 15–17, at the beach) are worth a visit.</li>
+          <li>On <strong>Winter 25</strong>, bring a gift to the <strong>Feast of the Winter Star</strong> for your secret friend. You'll find out who it is in the days before the feast.</li>
+          <li>Spend the extra time on friendships. Each villager accepts two gifts a week, and a gift on their birthday counts eight times as much.</li>
+        </ol>
+      </section>
+
+      <section class="chapter" id="vault">
+        <header>
+          <span class="chapter-num">Chapter 15</span>
+          <h3>The Vault &amp; the Bus</h3>
+          <p class="where">Where: the <strong>Vault</strong> room in the Community Center</p>
+        </header>
+
+        <ol class="steps">
+          <li>The Vault opens after you've finished four bundles. It wants gold: 2,500g, 5,000g, 10,000g, and 25,000g (42,500g in all). You can pay them one at a time.</li>
+          <li>Finish all four and the Junimos repair the bus at the Bus Stop. Talk to Pam at the Bus Stop and buy a ticket to the Desert.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>Saving up</strong>Each Vault bundle gives a reward back: Chocolate Cakes, Quality Fertilizer, a Lightning Rod, and a Crystalarium.</aside>
+      </section>
+
+      <section class="chapter" id="desert">
+        <header>
+          <span class="chapter-num">Chapter 16</span>
+          <h3>The Calico Desert</h3>
+          <p class="where">Where: <strong>the Desert</strong>, by bus from the Bus Stop</p>
+        </header>
+
+        <ol class="steps">
+          <li><span class="npc">Sandy</span> runs the Oasis, which sells seeds you can't buy in town, including Starfruit, Rhubarb, and Beets.</li>
+          <li>Forage <strong>Coconut</strong> and <strong>Cactus Fruit</strong> for the Exotic Foraging Bundle.</li>
+          <li>Fish the desert pond for a <strong>Sandfish</strong>. That finishes the Specialty Fish Bundle.</li>
+          <li>Use the Skull Key on the cave door in the northwest to enter the <strong>Skull Cavern</strong>. There's no elevator: every visit starts from floor 1, and iridium shows up more the deeper you go.</li>
+          <li>The day after your first visit, a letter from <span class="npc">Mr. Qi</span> challenges you to reach floor 25 for 10,000g.</li>
+        </ol>
+
+        <aside class="callout warn"><strong>Skull Cavern</strong>The monsters hit hard. Bring lots of food and bombs, start in the morning, and leave before 2 a.m. Staircases (a Mining recipe) let you skip a floor.</aside>
+      </section>
+
+      <section class="chapter" id="year-two">
+        <header>
+          <span class="chapter-num">Chapter 17</span>
+          <h3>Planning Year Two</h3>
+          <p class="where">What's left, and what to plant first</p>
+        </header>
+
+        <ol class="steps">
+          <li>Open your bundle menu and list what's missing. The usual leftovers: Red Cabbage, the seasonal fish you missed, and the quality crops.</li>
+          <li>On Summer 1, Year Two, buy <strong>Red Cabbage</strong> seeds from Pierre for the Dye Bundle.</li>
+          <li>Plant extras of every bundle crop on the first day of its season. Keep the best ones.</li>
+        </ol>
+
+        <aside class="callout notes"><strong>Your notes</strong>Our leftover list going into Year Two.</aside>
+      </section>
+
+      <section class="act" id="act-5">
+        <span class="act-num">Act V</span>
+        <h2>Beyond the Valley</h2>
+        <p>A party at the Community Center, a boat to a tropical island, and Grandpa's verdict.</p>
+      </section>
+
+      <figure class="video" data-youtube="">
+        <figcaption>Gameplay: the Community Center ceremony and Ginger Island</figcaption>
+      </figure>
+
+      <section class="chapter" id="cc-complete">
+        <header>
+          <span class="chapter-num">Chapter 18</span>
+          <h3>Restoring the Community Center</h3>
+          <p class="where">Where: <strong>Pelican Town</strong></p>
+        </header>
+
+        <ol class="steps">
+          <li>Turn in the last bundle. The Junimos restore the building and say goodbye.</li>
+          <li>On the next sunny day, enter Pelican Town for the reopening ceremony. Lewis gives you the <span class="item">Stardew Hero Trophy</span>.</li>
+          <li><span class="npc">Morris</span> from JojaMart storms in. You choose how it goes ("Let's be reasonable" or "Let's settle this the old-fashioned way"). Either way, JojaMart closes for good.</li>
+          <li>On the first night before rain, lightning cracks open the abandoned JojaMart. Inside is <strong>The Missing Bundle</strong>: silver-quality or better Wine, Dinosaur Mayonnaise, a Prismatic Shard, 5 gold-quality Ancient Fruit, and a gold-quality Void Salmon. Finish it to build the <strong>Movie Theater</strong>.</li>
+        </ol>
+
+        <figure class="shot" data-src="shots/18-ceremony.jpg">
+          <figcaption>The town celebrates the restored Community Center</figcaption>
+        </figure>
+      </section>
+
+      <section class="chapter" id="ginger-island">
+        <header>
+          <span class="chapter-num">Chapter 19</span>
+          <h3>Willy's Boat &amp; Ginger Island</h3>
+          <p class="where">Where: the back room of the <strong>Fish Shop</strong>, then <strong>Ginger Island</strong></p>
+        </header>
+
+        <ol class="steps">
+          <li>After the Community Center is done, Willy invites you into his back room. His old boat needs three repairs: 200 <span class="item">Hardwood</span> for the hull, 5 <span class="item">Iridium Bars</span> for the anchor, and 5 <span class="item">Battery Packs</span> for the ticket stand.</li>
+          <li>Bring all three and Willy and Robin fix the boat overnight. A round trip costs 1,000g.</li>
+          <li>On the island, follow <span class="npc">Leo</span> through the jungle to his hut. He and his parrot open the way north.</li>
+          <li>Collect <span class="item">Golden Walnuts</span>: they're hidden everywhere, dug up, fished up, and won from puzzles. Parrots take them to unlock new areas, starting with your Island Farmhouse.</li>
+          <li>Rescue <span class="npc">Professor Snail</span> from the mushroom cave near the Dig Site with a bomb. He opens the Island Field Office, where you can donate fossils.</li>
+          <li>Once you've found 100 Golden Walnuts, <strong>Qi's Walnut Room</strong> in Island West opens, with the Perfection Tracker and Mr. Qi's Special Orders.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>The parrot knows</strong>The parrot in Leo's hut tells you how many walnuts are still hiding in each part of the island.</aside>
+        <aside class="callout notes"><strong>Your notes</strong>Our order for the walnut unlocks.</aside>
+      </section>
+
+      <section class="chapter" id="grandpa">
+        <header>
+          <span class="chapter-num">Chapter 20</span>
+          <h3>Grandpa's Evaluation</h3>
+          <p class="where">Spring 1, Year Three · Grandpa's Shrine, at the northwest corner of your farm</p>
+        </header>
+
+        <ol class="steps">
+          <li>At the start of Year Three, Grandpa's spirit returns to judge your first two years. He lights one to four candles on his shrine, based on your money, skills, friendships, and achievements.</li>
+          <li>Light all four and he leaves you a <span class="item">Statue of Perfection</span>.</li>
+          <li>Didn't get four? Place a <span class="item">Diamond</span> on the shrine anytime to ask for another evaluation.</li>
+        </ol>
+
+        <aside class="callout verify"><strong>To verify while proving</strong>The wiki's <a href="https://stardewvalleywiki.com/Grandpa" rel="noopener">Grandpa</a> page breaks down all 21 points. Note which ones we earned.</aside>
+      </section>
+
+      <section class="chapter" id="perfection">
+        <header>
+          <span class="chapter-num">Chapter 21</span>
+          <h3>Mastery &amp; Perfection</h3>
+          <p class="where">The endgame</p>
+        </header>
+
+        <ol class="steps">
+          <li>Reach level 10 in all five skills (Farming, Mining, Foraging, Fishing, and Combat). The <strong>Mastery Cave</strong> in Cindersap Forest opens, with a letter from Grandpa and new mastery perks.</li>
+          <li>Check your score at the <strong>Perfection Tracker</strong> in Qi's Walnut Room. It averages everything: items shipped, fish caught, recipes cooked and crafted, friendships, skills, walnuts, monster goals, stardrops, and the special buildings.</li>
+          <li>Reach 100% and the Summit opens above the Mountain, with one last cutscene.</li>
+        </ol>
+
+        <aside class="callout tip"><strong>Perfection waivers</strong>After you see the tracker, Fizz from Joja offers waivers: 500,000g for 1% each. Buying 14 is cheaper than building the obelisks and the Gold Clock (which add up to the same 14%).</aside>
+      </section>
+
+      <section class="act" id="act-side">
+        <span class="act-num">Side Paths</span>
+        <h2>Around the Valley</h2>
+        <p>Things to do whenever you like.</p>
+      </section>
+
+      <section class="chapter" id="side-quests">
+        <header>
+          <span class="chapter-num">Anytime</span>
+          <h3>Anytime Activities</h3>
+          <p class="where">Not required, but part of what makes the valley home</p>
+        </header>
+
+        <h4>The Museum</h4>
+        <ol class="steps">
+          <li>Optional — Donate artifacts and minerals to <span class="npc">Gunther</span> at the Museum. He gives you rewards as your collection grows. Dig up Artifact Spots (the wiggling worms) with your hoe.</li>
+        </ol>
+
+        <h4>Friendships &amp; marriage</h4>
+        <ol class="steps">
+          <li>Optional — Talk to people every day and give gifts they like. You need 250 friendship points per heart. Villagers send recipes and gifts as you get closer.</li>
+          <li>Optional — Twelve villagers can be dated and married. Give a Bouquet at 8 hearts, then a Mermaid's Pendant at 10. The wiki's <a href="https://stardewvalleywiki.com/Friendship" rel="noopener">Friendship</a> page has the details.</li>
+        </ol>
+
+        <h4>Shops worth knowing</h4>
+        <ol class="steps">
+          <li>Optional — The <strong>Traveling Cart</strong> visits Cindersap Forest every Friday and Sunday, with rare seeds and hard-to-find bundle items.</li>
+          <li>Optional — The <strong>Quarry</strong> (after the Crafts Room) and the <strong>Secret Woods</strong> (after the Steel Axe) are both great for resources.</li>
+        </ol>
+
+        <h4>The Joja route</h4>
+        <ol class="steps">
+          <li>Optional — If you'd rather buy than build, the Joja membership (5,000g at JojaMart) replaces the bundles with a Community Development Form. You buy the same unlocks (Bridge, Greenhouse, Minecarts, Bus, Panning) with gold. You miss out on the Bulletin Board's friendship reward, and the Community Center becomes a Joja Warehouse for good.</li>
+        </ol>
+      </section>
+
+      <section class="act" id="act-reference">
+        <span class="act-num">Appendix</span>
+        <h2>Reference</h2>
+        <p>Tables and lookups to keep open while you play.</p>
+      </section>
+
+      <section class="chapter reference" id="ref-bundles">
+        <header><h3>Bundle Checklist</h3><p class="where">Standard bundles, from the wiki's <a href="https://stardewvalleywiki.com/Bundles" target="_blank" rel="noopener">Bundles</a> page · "pick 5 of 9" means any five of the listed items</p></header>
+
+        <h4>Crafts Room · repairs the bridge to the Quarry</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Bundle</th><th>Needs</th><th>Reward</th></tr></thead>
+            <tbody>
+              <tr><td>Spring Foraging</td><td>Wild Horseradish, Daffodil, Leek, Dandelion</td><td>30 Spring Seeds</td></tr>
+              <tr><td>Summer Foraging</td><td>Grape, Spice Berry, Sweet Pea</td><td>30 Summer Seeds</td></tr>
+              <tr><td>Fall Foraging</td><td>Common Mushroom, Wild Plum, Hazelnut, Blackberry</td><td>30 Fall Seeds</td></tr>
+              <tr><td>Winter Foraging</td><td>Winter Root, Crystal Fruit, Snow Yam, Crocus</td><td>30 Winter Seeds</td></tr>
+              <tr><td>Construction</td><td>99 Wood, 99 Wood, 99 Stone, 10 Hardwood</td><td>Charcoal Kiln</td></tr>
+              <tr><td>Exotic Foraging</td><td>Pick 5 of 9: Coconut, Cactus Fruit, Cave Carrot, Red Mushroom, Purple Mushroom, Maple Syrup, Oak Resin, Pine Tar, Morel</td><td>5 Autumn's Bounty</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Pantry · restores the Greenhouse</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Bundle</th><th>Needs</th><th>Reward</th></tr></thead>
+            <tbody>
+              <tr><td>Spring Crops</td><td>Parsnip, Green Bean, Cauliflower, Potato</td><td>20 Speed-Gro</td></tr>
+              <tr><td>Summer Crops</td><td>Tomato, Hot Pepper, Blueberry, Melon</td><td>Quality Sprinkler</td></tr>
+              <tr><td>Fall Crops</td><td>Corn, Eggplant, Pumpkin, Yam</td><td>Bee House</td></tr>
+              <tr><td>Quality Crops</td><td>Pick 3 of 4, gold quality, 5 each: Parsnip, Melon, Pumpkin, Corn</td><td>Preserves Jar</td></tr>
+              <tr><td>Animal</td><td>Pick 5 of 6: Large Milk, Large Brown Egg, Large White Egg, Large Goat Milk, Wool, Duck Egg</td><td>Cheese Press</td></tr>
+              <tr><td>Artisan</td><td>Pick 6 of 12: Truffle Oil, Cloth, Goat Cheese, Cheese, Honey, Jelly, Apple, Apricot, Orange, Peach, Pomegranate, Cherry</td><td>Keg</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Fish Tank · removes the glittering boulder (Copper Pan)</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Bundle</th><th>Needs</th><th>Reward</th></tr></thead>
+            <tbody>
+              <tr><td>River Fish</td><td>Sunfish, Catfish, Shad, Tiger Trout</td><td>30 Deluxe Bait</td></tr>
+              <tr><td>Lake Fish</td><td>Largemouth Bass, Carp, Bullhead, Sturgeon</td><td>Dressed Spinner</td></tr>
+              <tr><td>Ocean Fish</td><td>Sardine, Tuna, Red Snapper, Tilapia</td><td>5 Warp Totem: Beach</td></tr>
+              <tr><td>Night Fishing</td><td>Walleye, Bream, Eel</td><td>Glow Ring</td></tr>
+              <tr><td>Crab Pot</td><td>Pick 5 of 10: Lobster, Crayfish, Crab, Cockle, Mussel, Shrimp, Snail, Periwinkle, Oyster, Clam</td><td>3 Crab Pots</td></tr>
+              <tr><td>Specialty Fish</td><td>Pufferfish, Ghostfish, Sandfish (Desert), Woodskip</td><td>5 Dish O' The Sea</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Boiler Room · repairs the Minecarts</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Bundle</th><th>Needs</th><th>Reward</th></tr></thead>
+            <tbody>
+              <tr><td>Blacksmith's</td><td>Copper Bar, Iron Bar, Gold Bar</td><td>Furnace</td></tr>
+              <tr><td>Geologist's</td><td>Quartz, Earth Crystal, Frozen Tear, Fire Quartz</td><td>5 Omni Geodes</td></tr>
+              <tr><td>Adventurer's</td><td>Pick 2 of 4: 99 Slime, 10 Bat Wings, Solar Essence, Void Essence</td><td>Small Magnet Ring</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Bulletin Board · +2 hearts with every villager you can't date</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Bundle</th><th>Needs</th><th>Reward</th></tr></thead>
+            <tbody>
+              <tr><td>Chef's</td><td>Maple Syrup, Fiddlehead Fern, Truffle, Poppy, Maki Roll, Fried Egg</td><td>3 Pink Cakes</td></tr>
+              <tr><td>Dye</td><td>Red Mushroom, Sea Urchin, Sunflower, Duck Feather, Aquamarine, Red Cabbage</td><td>Seed Maker</td></tr>
+              <tr><td>Field Research</td><td>Purple Mushroom, Nautilus Shell, Chub, Frozen Geode</td><td>Recycling Machine</td></tr>
+              <tr><td>Fodder</td><td>10 Wheat, 10 Hay, 3 Apples</td><td>Heater</td></tr>
+              <tr><td>Enchanter's</td><td>Oak Resin, Wine, Rabbit's Foot, Pomegranate</td><td>5 Gold Bars</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Vault · repairs the bus to the Desert</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Bundle</th><th>Needs</th><th>Reward</th></tr></thead>
+            <tbody>
+              <tr><td>2,500g</td><td>2,500g</td><td>3 Chocolate Cakes</td></tr>
+              <tr><td>5,000g</td><td>5,000g</td><td>30 Quality Fertilizer</td></tr>
+              <tr><td>10,000g</td><td>10,000g</td><td>Lightning Rod</td></tr>
+              <tr><td>25,000g</td><td>25,000g</td><td>Crystalarium</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h4>Abandoned JojaMart · builds the Movie Theater</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Bundle</th><th>Needs</th><th>Reward</th></tr></thead>
+            <tbody>
+              <tr><td>The Missing Bundle</td><td>Silver-or-better Wine, Dinosaur Mayonnaise, Prismatic Shard, 5 gold Ancient Fruit, gold Void Salmon</td><td>Movie Theater</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="chapter reference" id="ref-calendar">
+        <header><h3>Festival Calendar</h3><p class="where">The same dates every year · shops close on festival days</p></header>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Season</th><th>Day</th><th>Festival</th><th>Don't miss</th></tr></thead>
+            <tbody>
+              <tr><td>Spring</td><td>13</td><td>Egg Festival</td><td>Strawberry Seeds</td></tr>
+              <tr><td>Spring</td><td>15–17</td><td>Desert Festival</td><td>Needs the bus repaired</td></tr>
+              <tr><td>Spring</td><td>24</td><td>Flower Dance</td><td>Dance with your sweetheart</td></tr>
+              <tr><td>Summer</td><td>11</td><td>Luau</td><td>Your best item in the soup</td></tr>
+              <tr><td>Summer</td><td>20–21</td><td>Trout Derby</td><td>Rainbow Trout prizes</td></tr>
+              <tr><td>Summer</td><td>28</td><td>Dance of the Moonlight Jellies</td><td>Just watch</td></tr>
+              <tr><td>Fall</td><td>16</td><td>Stardew Valley Fair</td><td>Grange display, the Stardrop</td></tr>
+              <tr><td>Fall</td><td>27</td><td>Spirit's Eve</td><td>The Golden Pumpkin in the maze</td></tr>
+              <tr><td>Winter</td><td>8</td><td>Festival of Ice</td><td>Ice-fishing contest</td></tr>
+              <tr><td>Winter</td><td>12–13</td><td>SquidFest</td><td>Squid fishing</td></tr>
+              <tr><td>Winter</td><td>15–17</td><td>Night Market</td><td>Boats at the beach</td></tr>
+              <tr><td>Winter</td><td>25</td><td>Feast of the Winter Star</td><td>Your secret friend's gift</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="chapter reference" id="ref-unlocks">
+        <header><h3>Unlock Timeline</h3><p class="where">When each part of the valley opens up</p></header>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Unlock</th><th>How</th></tr></thead>
+            <tbody>
+              <tr><td>Fishing pole</td><td>Visit Willy after his Spring 2 letter</td></tr>
+              <tr><td>The Mines</td><td>Spring 5, Year One</td></tr>
+              <tr><td>Community Center</td><td>Enter town from the Bus Stop, Spring 5 or later, 8 a.m.–1 p.m., no rain</td></tr>
+              <tr><td>Junimo bundles</td><td>The Wizard's Forest Magic, the day after reading the scroll</td></tr>
+              <tr><td>Railroad &amp; Spa</td><td>Summer 3, Year One</td></tr>
+              <tr><td>Secret Woods</td><td>Steel Axe (or better)</td></tr>
+              <tr><td>Quarry</td><td>Crafts Room bundles</td></tr>
+              <tr><td>Greenhouse</td><td>Pantry bundles</td></tr>
+              <tr><td>Copper Pan</td><td>Fish Tank bundles</td></tr>
+              <tr><td>Minecarts</td><td>Boiler Room bundles</td></tr>
+              <tr><td>Desert</td><td>Vault bundles (bus repair)</td></tr>
+              <tr><td>Skull Cavern</td><td>Skull Key (Mines floor 120) and the Desert</td></tr>
+              <tr><td>Movie Theater</td><td>The Missing Bundle</td></tr>
+              <tr><td>Ginger Island</td><td>Community Center done, then repair Willy's boat</td></tr>
+              <tr><td>Qi's Walnut Room</td><td>100 Golden Walnuts</td></tr>
+              <tr><td>Mastery Cave</td><td>Level 10 in all five skills</td></tr>
+              <tr><td>The Summit</td><td>100% Perfection</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="chapter reference" id="ref-tools">
+        <header><h3>Tool &amp; Backpack Upgrades</h3><p class="where">Tools at Clint's Blacksmith (two days each) · backpacks at Pierre's</p></header>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Upgrade</th><th>Cost</th><th>Bars</th></tr></thead>
+            <tbody>
+              <tr><td>Copper tool</td><td>2,000g</td><td>5 Copper Bars</td></tr>
+              <tr><td>Steel tool</td><td>5,000g</td><td>5 Iron Bars</td></tr>
+              <tr><td>Gold tool</td><td>10,000g</td><td>5 Gold Bars</td></tr>
+              <tr><td>Iridium tool</td><td>25,000g</td><td>5 Iridium Bars</td></tr>
+              <tr><td>Large Pack (24 slots)</td><td>2,000g</td><td>—</td></tr>
+              <tr><td>Deluxe Pack (36 slots)</td><td>10,000g</td><td>—</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the tool prices against Clint's shop in our version.</aside>
+      </section>
+
+      <section class="chapter reference" id="ref-crops">
+        <header><h3>Crops Worth Planting</h3><p class="where">Pierre's prices from the wiki's season pages · ↻ = keeps producing after the first harvest</p></header>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Season</th><th>Crop</th><th>Seed</th><th>Days</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>Spring</td><td>Parsnip</td><td>20g</td><td>4</td><td>Cheap and fast; bundles</td></tr>
+              <tr><td>Spring</td><td>Cauliflower</td><td>80g</td><td>12</td><td>Bundle; sells for 175g</td></tr>
+              <tr><td>Spring</td><td>Potato</td><td>50g</td><td>6</td><td>Bundle</td></tr>
+              <tr><td>Spring</td><td>Green Bean ↻</td><td>60g</td><td>10, then every 3</td><td>Bundle</td></tr>
+              <tr><td>Spring</td><td>Strawberry ↻</td><td>100g (Egg Festival)</td><td>8, then every 4</td><td>Best spring money</td></tr>
+              <tr><td>Summer</td><td>Blueberry ↻</td><td>80g</td><td>13, then every 4</td><td>Best summer money; bundle</td></tr>
+              <tr><td>Summer</td><td>Melon</td><td>80g</td><td>12</td><td>Bundle; sells for 250g</td></tr>
+              <tr><td>Summer</td><td>Hot Pepper ↻</td><td>40g</td><td>5, then every 3</td><td>Bundle</td></tr>
+              <tr><td>Summer</td><td>Tomato ↻</td><td>50g</td><td>11, then every 4</td><td>Bundle</td></tr>
+              <tr><td>Summer–Fall</td><td>Corn ↻</td><td>150g</td><td>14, then every 4</td><td>Two seasons; bundles</td></tr>
+              <tr><td>Summer</td><td>Red Cabbage</td><td>100g (Year Two)</td><td>9</td><td>Dye Bundle</td></tr>
+              <tr><td>Fall</td><td>Pumpkin</td><td>100g</td><td>13</td><td>Bundle; sells for 320g</td></tr>
+              <tr><td>Fall</td><td>Cranberries ↻</td><td>240g</td><td>7, then every 5</td><td>Best fall money</td></tr>
+              <tr><td>Fall</td><td>Eggplant ↻</td><td>20g</td><td>5, then every 5</td><td>Bundle</td></tr>
+              <tr><td>Fall</td><td>Yam</td><td>60g</td><td>10</td><td>Bundle</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="chapter reference" id="ref-tips">
+        <header><h3>General Tips</h3></header>
+        <ul>
+          <li><strong>Keep one of everything</strong> in a chest until its bundle is done.</li>
+          <li><strong>Rainy days</strong> water your crops for you. Spend them in the Mines or fishing.</li>
+          <li><strong>Upgrade tools</strong> on rainy days or right before a festival, when you won't miss them.</li>
+          <li><strong>Plant on day one</strong> of each season to get the most harvests.</li>
+          <li><strong>Go to bed by midnight.</strong> Passing out at 2 a.m. costs gold and leaves you tired.</li>
+          <li><strong>Talk to everyone,</strong> especially on their birthday. The calendar outside Pierre's shows who's next.</li>
+        </ul>
+        <aside class="callout notes"><strong>Your notes</strong>Our own tips from this playthrough.</aside>
+      </section>
+
+      <aside class="callout tip" style="margin-top:40px"><strong>Credits</strong>Sources, thanks, and the license are listed <a href="#credits">at the top of this page</a>.</aside>
+    </main>
+  </div>
+
+  <a class="back-to-top" href="#" aria-label="Back to top">↑</a>
+
+  <footer class="site-footer">
+    © 2026 <a href="https://craz.com">Crabtree Labz</a> · Walkthrough text <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="noopener">CC BY-NC-SA 3.0</a>, adapted from the <a href="https://stardewvalleywiki.com/" rel="noopener">Stardew Valley Wiki</a> · Stardew Valley © ConcernedApe · Non-commercial
+  </footer>
+
+  <script src="npcs.js?v=f613f300"></script>
+  <script src="items.js?v=673f03b3"></script>
+  <script src="../walkthrough.js?v=b18fda7f"></script>
+</body>
+</html>
