@@ -422,7 +422,9 @@ tr:hover td { background: rgba(255, 255, 255, 0.02); }
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  /* Fixed-width tracks, centered: sections with 1-2 cards stay balanced */
+  grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 330px));
+  justify-content: center;
   gap: 24px;
   max-width: 1100px;
   margin: 0 auto;
@@ -630,9 +632,10 @@ button.chip[aria-pressed="true"] { border-color: var(--gold); color: var(--text)
 .garg-grid .latin { font-family: var(--body); font-weight: 600; }
 
 /* Walkthrough index: one heading per game universe */
-.universe { max-width: 1100px; margin: 0 auto; padding: 0 24px 18px; }
+.universe { max-width: 1100px; margin: 0 auto; padding: 0 24px 18px; text-align: center; }
 .universe h2 { font-size: 2.2rem; margin: 0; }
-.universe p { color: var(--muted); margin: 6px 0 0; }
+.universe h2::after { content: ""; display: block; width: 56px; height: 2px; margin: 10px auto 0; background: var(--gold); opacity: 0.6; }
+.universe p { color: var(--muted); max-width: 640px; margin: 6px auto 0; }
 .hero .resource-links { justify-content: center; margin-top: 18px; }
 
 /* ---------- Character & item tooltips ---------- */
