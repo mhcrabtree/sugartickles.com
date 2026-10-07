@@ -77,6 +77,26 @@
 
   // Screenshots: <figure class="shot" data-src="shots/x.jpg"> shows the image if the
   // file exists, otherwise a labeled stub so it's obvious what still needs capturing.
+  // The probe image is detached, so native loading="lazy" would never fetch it; instead
+  // start each load when its stub nears the viewport.
+  function loadShot(stub) {
+    const fig = stub.parentNode;
+    const caption = fig.querySelector('figcaption');
+    const img = new Image();
+    img.alt = caption ? caption.textContent : '';
+    img.onload = function () { fig.replaceChild(img, stub); };
+    img.src = fig.dataset.src;
+  }
+  const shotObserver = 'IntersectionObserver' in window
+    ? new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          shotObserver.unobserve(e.target);
+          loadShot(e.target);
+        });
+      }, { rootMargin: '600px 0px' })
+    : null;
+
   document.querySelectorAll('figure.shot[data-src]').forEach(function (fig) {
     const src = fig.dataset.src;
     const caption = fig.querySelector('figcaption');
@@ -86,11 +106,8 @@
     stub.querySelector('.file').textContent = src;
     fig.insertBefore(stub, caption);
 
-    const img = new Image();
-    img.alt = caption ? caption.textContent : '';
-    img.loading = 'lazy';
-    img.onload = function () { fig.replaceChild(img, stub); };
-    img.src = src;
+    if (shotObserver) shotObserver.observe(stub);
+    else loadShot(stub);
   });
 
   // Video: <figure class="video" data-youtube="VIDEO_ID"> embeds; empty id shows a stub.
