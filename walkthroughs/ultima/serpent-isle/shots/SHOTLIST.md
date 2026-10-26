@@ -7,6 +7,7 @@ Tip: native 320x200 captures look best upscaled 4x (1280x800) with nearest-neigh
 - [x] `01-arrival-ship.jpg` — The ship runs aground and the party steps ashore
 - [x] `02-monitor-gate.jpg` — Monitor's southwest gate
 - [x] `02-knights-test.jpg` — Inside the Knight's Test, wearing only the leather armour and mace Shmed allows you
+- [x] `02-knighthood-banquet.jpg` — The Knighthood Banquet in Monitor's southeast hall
 - [ ] `02-pomdirgun.jpg` — Showdown with Pomdirgun in the goblin camp
 - [ ] `03-fawn-bridge.jpg` — The bridge into Fawn
 - [ ] `03-oracle-levers.jpg` — The Oracle's hidden lever room under the temple
