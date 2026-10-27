@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serpent Isle — Potions · SugarTickles</title>
+  <meta name="description" content="Every potion in Ultima VII, Part Two: what each color does, what Pothos charges in Moonshade, and the two potions new to Serpent Isle." />
+  <link rel="stylesheet" href="/fonts/fonts.css?v=d1e52a1c">
+  <link rel="stylesheet" href="../../../walkthrough.css?v=b78d8fbf" />
+  <style>
+    .potion-table td.potion { white-space: nowrap; font-weight: 600; }
+    .potion-table td.potion span { vertical-align: middle; }
+    .potion-table td { vertical-align: middle; }
+    .potion-table th.num, .potion-table td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .potion-table td.notes { color: var(--muted); font-size: 0.9rem; }
+    .flask { width: 26px; height: 34px; margin-right: 10px; vertical-align: middle; color: var(--text); }
+    .chip-verify { display: inline-block; margin-left: 6px; padding: 0 7px; border: 1px solid var(--gold); border-radius: 999px; color: var(--gold); background: var(--gold-soft); font-size: 0.7rem; font-weight: 600; vertical-align: middle; cursor: help; }
+    .vnote { color: var(--gold); }
+  </style>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="flask" viewBox="0 0 24 32">
+      <path d="M3.51 18 A9 9 0 1 0 20.49 18 Z" fill="var(--potion)"/>
+      <path d="M3.51 24 A9 9 0 0 0 20.49 24 Z" fill="var(--potion2, var(--potion))"/>
+      <ellipse cx="8" cy="20" rx="1.6" ry="2.6" fill="#fff" opacity="0.35"/>
+      <path d="M9 4 V12.51 A9 9 0 1 0 15 12.51 V4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+      <rect x="8" y="1" width="8" height="3.5" rx="1" fill="#a0784a"/>
+    </symbol>
+  </svg>
+
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/logo.png" alt="" />SugarTickles</a>
+    <nav>
+      <a href="/walkthroughs/">Walkthroughs</a>
+      <a href="../">Serpent Isle walkthrough</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">Resource · Ultima VII, Part Two</span>
+    <h1>Potions<span class="sub">Serpent Isle</span></h1>
+    <p class="lede">The eight familiar colors from Britannia, plus two new ones: a warming potion for the frozen north and a mana potion for your mage. Pothos the apothecary in Moonshade sells the everyday ones.</p>
+  </section>
+
+  <div class="page">
+    <section class="credits">
+      <h3>Sources</h3>
+      <p>Pothos's prices come from <a href="https://www.mikesrpgcenter.com/ultima7b/merchandise.html" rel="noopener">Mike's RPG Center</a> and Adrian Yau's <a href="https://rpggamers.com/walkthrough/ultima-vii-part-two-serpent-isle" rel="noopener">Serpent Isle walkthrough</a>, which also gives the price after haggling. The two new potions are described in Adrian Yau's guide and the <a href="https://ultima.fandom.com/wiki/Potions" rel="noopener">Ultima Wiki</a>. The tables and notes are our own. Where sources disagree you'll see a gold <strong>"to verify"</strong> tag.</p>
+    </section>
+
+    <aside class="callout tip"><strong>How to read this</strong>Prices are in guilders, Moonshade's money, per potion: what Pothos asks first, and roughly where haggling gets you. Three guilders make one monetari; see <a href="../money/">Treasure &amp; Money</a> to change other coins.</aside>
+
+    <section class="chapter reference" id="potions">
+      <header><h3>The Ten Potions</h3><p class="where">All sold by <strong>Pothos</strong>, at the apothecary in Moonshade, unless the price is blank.</p></header>
+      <div class="table-wrap">
+        <table class="potion-table">
+          <thead><tr><th>Potion</th><th>Effect</th><th>Spell that does the same</th><th class="num">Asks</th><th class="num">Haggled</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td class="potion"><svg class="flask" style="--potion:#f2d03b"><use href="#flask"/></svg><span>Yellow</span></td><td>Healing: restores hit points</td><td>Heal (2nd circle)</td><td class="num">100</td><td class="num">50</td><td class="notes">Also found in the Mountains of Freedom</td></tr>
+            <tr><td class="potion"><svg class="flask" style="--potion:#c8312b"><use href="#flask"/></svg><span>Red</span></td><td>Cure: removes poison</td><td>Cure (1st circle)</td><td class="num">75</td><td class="num">45</td><td class="notes">Swamps poison you; swamp boots prevent it</td></tr>
+            <tr><td class="potion"><svg class="flask" style="--potion:#8e4fc9"><use href="#flask"/></svg><span>Purple</span></td><td>Protection: a short-lived shield against blows</td><td>Protection (2nd circle)</td><td class="num">150</td><td class="num">75</td><td class="notes">—</td></tr>
+            <tr><td class="potion"><svg class="flask" style="--potion:#1b1b22"><use href="#flask"/></svg><span>Black</span></td><td>Invisibility: enemies can't see the drinker for a while</td><td>Invisibility (5th circle)</td><td class="num">240</td><td class="num">135</td><td class="notes">The priciest potion</td></tr>
+            <tr><td class="potion"><svg class="flask" style="--potion:#f2f2ee"><use href="#flask"/></svg><span>White</span></td><td>Illumination: light around you, like a torch</td><td>Light (1st circle)</td><td class="num">50 <span class="chip-verify" title="Mike's RPG Center lists Light at 50 guilders; Adrian Yau's table leaves it out.">to verify</span></td><td class="num">—</td><td class="notes">—</td></tr>
+            <tr><td class="potion"><svg class="flask" style="--potion:#f08a24"><use href="#flask"/></svg><span>Orange</span></td><td>Awaken: wakes someone who's asleep</td><td>Awaken (2nd circle)</td><td class="num">65</td><td class="num">30</td><td class="notes">—</td></tr>
+            <tr><td class="potion"><svg class="flask" style="--potion:#3d6fd6"><use href="#flask"/></svg><span>Blue</span></td><td>Sleep: puts the drinker to sleep</td><td>Sleep (3rd circle)</td><td class="num">85</td><td class="num">40</td><td class="notes">Not for drinking. Thrown at the Banes, says one guide</td></tr>
+            <tr><td class="potion"><svg class="flask" style="--potion:#3fa34d"><use href="#flask"/></svg><span>Green</span></td><td>Poison: poisons the drinker</td><td>—</td><td class="num">—</td><td class="num">—</td><td class="notes">Never drink it</td></tr>
+            <tr><td class="potion"><svg class="flask" style="--potion:#3d6fd6;--potion2:#1b1b22"><use href="#flask"/></svg><span>Blue-black</span></td><td>Warmth: keeps the cold out for a while</td><td>—</td><td class="num">—</td><td class="num">—</td><td class="notes"><strong>New in Serpent Isle.</strong> Useful in the frozen north</td></tr>
+            <tr><td class="potion"><svg class="flask" style="--potion:#f08a24;--potion2:#c8312b"><use href="#flask"/></svg><span>Glowing orange-red</span></td><td>Mana: restores some of your mana</td><td>—</td><td class="num">—</td><td class="num">—</td><td class="notes"><strong>New in Serpent Isle.</strong> Sources describe its color differently<br><span class="vnote">Adrian Yau calls it orange/red; the Ultima Wiki calls it red-yellow and shimmering.</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <aside class="callout verify"><strong>To verify while proving</strong>Where the warming and mana potions turn up (no source lists a seller), whether Harnna in Monitor or Delphynia in Fawn sell any potions, and what Pothos really charges for white potions. Fill these in from our own game.</aside>
+
+    <aside class="callout tip"><strong>Cold and warmth</strong>Up north, the cold hurts your party unless they're dressed for it. The warming potion helps for a while, but furs, cloaks, and boots last. See the warmth column on <a href="../arms-armor/#armor-cloaks">Weapons &amp; Armor</a>.</aside>
+
+    <aside class="callout tip"><strong>Save your guilders</strong>Once you can cast Cure, Light, Heal, and Awaken, those spells cost a few reagents instead of 50 to 100 guilders a potion. See <a href="../magic/">Spells &amp; Reagents</a>.</aside>
+  </div>
+
+  <a class="back-to-top" href="#" aria-label="Back to top">↑</a>
+
+  <footer class="site-footer">
+    © 2026 <a href="https://craz.com">Crabtree Labz</a> · <a href="https://craz.com/privacy.html">Privacy</a> · Potion prices credited to Mike's RPG Center &amp; Adrian Yau
+  </footer>
+
+  <script src="../../../walkthrough.js?v=e57d0971"></script>
+</body>
+</html>
