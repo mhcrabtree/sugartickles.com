@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Combat Strategies — The Black Gate &amp; Serpent Isle · SugarTickles</title>
+  <meta name="description" content="What every combat strategy icon in Ultima VII and Serpent Isle means: Attack Nearest, Weakest, Strongest, Berserk, Protect, Defend, Flank, Flee, Random, and Manual, plus the Protect halo." />
+  <link rel="stylesheet" href="/fonts/fonts.css?v=d1e52a1c">
+  <link rel="stylesheet" href="../../walkthrough.css?v=b78d8fbf" />
+  <style>
+    .mode-table td { vertical-align: middle; }
+    .mode-table td.icon { width: 1%; padding-right: 4px; }
+    .mode-table td.name { white-space: nowrap; font-weight: 600; }
+    .mode-table td.notes { color: var(--muted); font-size: 0.9rem; }
+    .u7icon { image-rendering: pixelated; image-rendering: crisp-edges; vertical-align: middle; }
+    .u7icon.mode { width: 57px; height: 57px; }
+    .u7icon.halo { width: 51px; height: 27px; }
+    .u7icon.btn { width: 42px; height: 40px; }
+    .u7icon.inline { width: 32px; height: auto; margin: 0 2px; }
+    .screen-shot { margin: 0 0 12px; }
+    .screen-shot img { display: block; max-width: 100%; height: auto; border-radius: 8px; image-rendering: pixelated; }
+    .screen-shot figcaption { color: var(--muted); font-size: 0.9rem; margin-top: 6px; }
+    .two-col { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; }
+    .two-col h4 { margin: 0 0 6px; }
+    .chip-verify { display: inline-block; margin-left: 6px; padding: 0 7px; border: 1px solid var(--gold); border-radius: 999px; color: var(--gold); background: var(--gold-soft); font-size: 0.7rem; font-weight: 600; vertical-align: middle; cursor: help; }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/logo.png" alt="" />SugarTickles</a>
+    <nav>
+      <a href="/walkthroughs/">Walkthroughs</a>
+      <a href="../black-gate/">Black Gate</a>
+      <a href="../serpent-isle/">Serpent Isle</a>
+      <a href="#strategies">Strategies</a>
+      <a href="#halo">Halo</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">Resource · Ultima VII &amp; Serpent Isle</span>
+    <h1>Combat Strategies<span class="sub">What the little icons mean</span></h1>
+    <p class="lede">You don't swing every sword yourself in Ultima VII. Your companions fight on their own, and each one follows a strategy you pick from a tiny picture. Here's what each picture means, what that fighter will actually do, and a few setups that work.</p>
+  </section>
+
+  <div class="page">
+    <section class="credits">
+      <h3>Sources</h3>
+      <p>The behavior comes from the source code of <a href="https://github.com/exult/exult" rel="noopener">Exult</a>, the engine most people play these games with today. We read the code and wrote our own descriptions. The icons on this page come from our own copies of the games, and the screenshot is from our own playthrough. Exult recreates the original engine, and where its authors say they guessed, you'll see a gold <strong>"to verify"</strong> tag.</p>
+    </section>
+
+    <aside class="callout tip"><strong>The short version</strong>Click a strategy icon to step to the next one. Leave most people on <strong>Attack Nearest</strong>, put your strongest fighter on <strong>Berserk</strong>, and keep the halo off unless someone weak needs a bodyguard.</aside>
+
+    <section class="chapter reference" id="where">
+      <header><h3>Where to Find It</h3><p class="where">The icons are the same in both games. Only the screen they're on changes.</p></header>
+      <div class="two-col">
+        <div>
+          <h4>The Black Gate</h4>
+          <p>Open a character's inventory (double-click them, or press <kbd>I</kbd> to step through the party). Each inventory has its own <strong>strategy icon</strong> and <strong>halo</strong>, so you set people one at a time.</p>
+        </div>
+        <div>
+          <h4>Serpent Isle</h4>
+          <p>Open anyone's paperdoll and click the <strong>crossed swords</strong> <img class="u7icon inline" src="img/si-combat-stats-button.png" alt="crossed swords button" />. The Combat Status screen shows the whole party side by side, so you can set everyone at once.</p>
+        </div>
+      </div>
+      <figure class="screen-shot">
+        <img src="img/combat-status-screen.jpg" width="730" height="480" alt="Serpent Isle's Combat Status screen showing four party members with their Combat, Hits, Strategy, and Protect rows, plus the Avatar's Magic and Mana." />
+        <figcaption>Serpent Isle's Combat Status screen. From left: the Avatar on Attack Weakest, Iolo on Attack Nearest, Shamino on Attack Strongest, and Dupre on Berserk. Nobody is wearing the halo.</figcaption>
+      </figure>
+      <div class="table-wrap">
+        <table class="mode-table">
+          <thead><tr><th>Row</th><th>What it shows</th></tr></thead>
+          <tbody>
+            <tr><td class="name">Combat</td><td>Fighting skill. Higher means more hits land. Trainers raise it.</td></tr>
+            <tr><td class="name">Hits</td><td>Hit points right now. When a companion drops below 3, they run (see <a href="#gotchas">Good to Know</a>).</td></tr>
+            <tr><td class="name">Strategy</td><td>Who this person goes after. Click to change it.</td></tr>
+            <tr><td class="name">Protect</td><td>The halo. Click it to make this person the one your Protect fighters guard.</td></tr>
+            <tr><td class="name">Magic / Mana</td><td>The Avatar's only. Magic is the most mana you can hold; Mana is what's left for spells.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="chapter reference" id="strategies">
+      <header><h3>The Ten Strategies</h3><p class="where">In each picture the <strong>white dot</strong> is your fighter, <strong>black dots</strong> are enemies, and the <strong>red arrows</strong> show where your fighter goes. They're listed in the order a click steps through them.</p></header>
+      <div class="table-wrap">
+        <table class="mode-table">
+          <thead><tr><th></th><th>Strategy</th><th>What the picture shows</th><th>What your fighter does</th><th>Good for</th></tr></thead>
+          <tbody>
+            <tr><td class="icon"><img class="u7icon mode" src="img/mode-nearest.png" width="19" height="19" alt="Attack Nearest icon" /></td><td class="name">Attack Nearest</td><td>An arrow to the closest of three enemies</td><td>Goes for the closest enemy. Prefers one nobody else is already fighting, and ignores enemies that are running away.</td><td class="notes">The default. Fine for almost everyone</td></tr>
+            <tr><td class="icon"><img class="u7icon mode" src="img/mode-weakest.png" width="19" height="19" alt="Attack Weakest icon" /></td><td class="name">Attack Weakest</td><td>An arrow to one small enemy</td><td>Goes for the enemy with the lowest Strength, wherever it is on the field.</td><td class="notes">Thinning out a swarm fast; weaker companions</td></tr>
+            <tr><td class="icon"><img class="u7icon mode" src="img/mode-strongest.png" width="19" height="19" alt="Attack Strongest icon" /></td><td class="name">Attack Strongest</td><td>An arrow to one big enemy</td><td>Goes for the enemy with the highest Strength, even if smaller ones are closer.</td><td class="notes">Your best fighter, against a boss with helpers</td></tr>
+            <tr><td class="icon"><img class="u7icon mode" src="img/mode-berserk.png" width="19" height="19" alt="Berserk icon" /></td><td class="name">Berserk</td><td>Arrows to every enemy</td><td>Charges in and attacks whoever is nearest or a random enemy. <strong>Never retreats</strong>, even near death.</td><td class="notes">A tough fighter you'll keep healed</td></tr>
+            <tr><td class="icon"><img class="u7icon mode" src="img/mode-protect.png" width="19" height="19" alt="Protect icon" /></td><td class="name">Protect</td><td>You step between an enemy and a small white dot (the person you're guarding)</td><td>Attacks whoever is going after the person wearing the <a href="#halo">halo</a>. If nobody has the halo, or nobody is attacking them, picks the first enemy it finds.</td><td class="notes">Bodyguarding a weak companion</td></tr>
+            <tr><td class="icon"><img class="u7icon mode" src="img/mode-defend.png" width="19" height="19" alt="Defend icon" /></td><td class="name">Defend</td><td>An enemy's arrow stopped by a bar in front of you</td><td>Fights cautiously. In Exult, takes the nearest enemy while healthy and switches to the weakest below half hits. <span class="chip-verify" title="Exult's authors note they haven't confirmed how Defend works in the original; their version is a best guess.">to verify</span></td><td class="notes">Companions you want to keep alive</td></tr>
+            <tr><td class="icon"><img class="u7icon mode" src="img/mode-flank.png" width="19" height="19" alt="Flank icon" /></td><td class="name">Flank</td><td>An arrow curving around to the enemy's side</td><td>Joins a fight someone else already started, to gang up on one enemy from the side. <span class="chip-verify" title="Exult's authors note they haven't confirmed how Flank works in the original; their version is a best guess.">to verify</span></td><td class="notes">A second fighter backing up your lead</td></tr>
+            <tr><td class="icon"><img class="u7icon mode" src="img/mode-flee.png" width="19" height="19" alt="Flee icon" /></td><td class="name">Flee</td><td>An arrow pointing away from the enemy</td><td>Doesn't fight. Runs from the battle and comes back to follow you once it's over.</td><td class="notes">Badly hurt or low-level companions</td></tr>
+            <tr><td class="icon"><img class="u7icon mode" src="img/mode-random.png" width="19" height="19" alt="Random icon" /></td><td class="name">Random</td><td>You, surrounded, with arrows every which way</td><td>Picks an enemy at random, trying for one nobody else is fighting.</td><td class="notes">Rarely the best choice</td></tr>
+            <tr><td class="icon"><img class="u7icon mode" src="img/mode-manual.png" width="19" height="19" alt="Manual icon" /></td><td class="name">Manual</td><td>Question marks over the enemies</td><td><strong>Avatar only.</strong> The Avatar won't pick a target alone. In combat mode, double-click an enemy to attack it.</td><td class="notes">When you want control, e.g. to avoid hitting a bystander</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="chapter reference" id="halo">
+      <header><h3>The Protect Halo</h3><p class="where">One halo for the whole party.</p></header>
+      <div class="table-wrap">
+        <table class="mode-table">
+          <tbody>
+            <tr><td class="icon"><img class="u7icon halo" src="img/halo-off.png" width="17" height="9" alt="Gray halo, off" /></td><td class="name">Gray</td><td>Off. This person isn't being guarded.</td></tr>
+            <tr><td class="icon"><img class="u7icon halo" src="img/halo-on.png" width="17" height="9" alt="Gold halo, on" /></td><td class="name">Gold</td><td>On. Everyone set to <strong>Protect</strong> goes after this person's attackers.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Only one person can wear the halo. Turning it on for someone turns it off for everyone else. The halo does nothing by itself: you also need at least one companion set to <strong>Protect</strong>.</p>
+    </section>
+
+    <section class="chapter reference" id="gotchas">
+      <header><h3>Good to Know</h3><p class="where">The things that surprise people</p></header>
+      <ul class="steps">
+        <li><strong>Companions run when nearly dead.</strong> On any strategy except Berserk, a companion whose Hits fall below 3 runs away. That keeps them alive, but they stop fighting. A Berserk companion keeps swinging until they drop.</li>
+        <li><strong>The Avatar never runs on their own.</strong> That rule is only for companions. Watch your own Hits.</li>
+        <li><strong>Strategy only matters in combat mode.</strong> Press <kbd>C</kbd> to switch combat on and off.</li>
+        <li><strong>"Weakest" and "strongest" mean Strength</strong>, not how hurt an enemy is. A wounded troll still counts as strong.</li>
+        <li><strong>Settings stick.</strong> A strategy stays until you change it, and it's saved with your game.</li>
+      </ul>
+    </section>
+
+    <aside class="callout verify"><strong>To verify while proving</strong>Exult's authors say they weren't sure how Defend and Flank behaved in the original 1992 games, so they made a best guess. Try both in our own game and note what companions actually do. Berserk (alternating between the nearest and a random enemy) is based on their observation of the originals.</aside>
+
+    <section class="chapter reference" id="setups">
+      <header><h3>Setups That Work</h3><p class="where">Starting points. Adjust to your party.</p></header>
+      <div class="table-wrap">
+        <table class="mode-table">
+          <thead><tr><th>Situation</th><th>Try this</th></tr></thead>
+          <tbody>
+            <tr><td class="name">Everyday fights</td><td>Everyone on Attack Nearest. Leave the halo off.</td></tr>
+            <tr><td class="name">Boss with helpers</td><td>Your strongest fighter on Attack Strongest. Everyone else on Attack Weakest to clear the helpers.</td></tr>
+            <tr><td class="name">A weak companion along</td><td>Halo on the weak one, set to Flee or Defend. One or two strong fighters on Protect.</td></tr>
+            <tr><td class="name">Crowded town or friendly bystanders</td><td>Avatar on Manual, so you only hit what you click.</td></tr>
+            <tr><td class="name">Hard fight, lots of healing</td><td>Your toughest fighter on Berserk so they don't break off, and keep <a href="../black-gate/potions/">healing potions</a> or the Heal spell ready.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <a class="back-to-top" href="#" aria-label="Back to top">↑</a>
+
+  <footer class="site-footer">
+    © 2026 <a href="https://craz.com">Crabtree Labz</a> · <a href="https://craz.com/privacy.html">Privacy</a> · Combat behavior from the Exult source code
+  </footer>
+
+  <script src="../../walkthrough.js?v=e57d0971"></script>
+</body>
+</html>
