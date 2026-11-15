@@ -36,4 +36,10 @@ The Spells Guide and Easter Egg Guide follow the same rule: facts from bg3.wiki,
 entries stay inside `<details class="spoiler">` boxes. This folder stays separate from `../baldurs-gate-3/`, whose text
 is CC BY-NC-SA and must never be monetized. (The only edit there is two links to these pages in its header.)
 
+The `romance/` guide covers adult encounters (Haarlep, Mizora, Naoise, the Orlith twins, the Emperor). Keep it high-level:
+no explicit description, a mature-content banner, and character roles in `<details class="spoiler">` boxes.
+
+Each path's act chapters follow a shared step-by-step route written in our own words (area and quest names are game
+facts, the prose is ours). Don't paste text from the wiki or from `../baldurs-gate-3/` into it.
+
 Larian or Wizards can change these terms at any time. Re-check them before adding anything new.

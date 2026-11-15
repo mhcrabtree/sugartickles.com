@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Dusk Archer — Baldur's Gate 3 Path · SugarTickles</title>
+  <meta name="description" content="A Baldur's Gate 3 character path: a ranged Gloom Stalker Ranger who ambushes from the dark, with build, level-by-level choices, bow gear, party and checklist." />
+  <!--
+    Original SugarTickles writing. Does NOT adapt bg3.wiki text, so it is not bound by the wiki's
+    CC BY-NC-SA license (unlike ../baldurs-gate-3/). Fan Content rules still apply: see NOTICE.md.
+  -->
+  <link rel="stylesheet" href="/fonts/fonts.css?v=d1e52a1c">
+  <link rel="stylesheet" href="../../walkthrough.css?v=b78d8fbf" />
+</head>
+
+<body data-walkthrough="bg3-paths-ranger">
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/logo.png" alt="" />SugarTickles</a>
+    <nav>
+      <a href="/walkthroughs/">Walkthroughs</a>
+      <a href="../" aria-current="page">BG3 Paths</a>
+      <a href="#credits">Credits</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">BG3 Path · Strike from the dark</span>
+    <h1>The Dusk Archer<span class="sub">Gloom Stalker Ranger</span></h1>
+    <p class="lede">A patient hunter who disappears into the shadows and shoots first. This path gives you the build, the level-by-level choices (spells, feats, fighting style, favored enemies), the gear to hunt for a bow-wielding Ranger, and the party to bring. You choose how they look; we choose everything else.</p>
+    <svg class="ornament" viewBox="0 0 240 40" fill="none" aria-hidden="true">
+      <path d="M4 20 H 84" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M156 20 H 236" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M120 6 C 104 6, 96 14, 96 20 C 96 26, 104 34, 120 34 C 136 34, 144 26, 144 20 C 144 14, 136 6, 120 6 z" stroke="currentColor" stroke-width="2"/>
+      <circle cx="112" cy="18" r="2.2" fill="currentColor"/>
+      <circle cx="128" cy="18" r="2.2" fill="currentColor"/>
+    </svg>
+    <div class="meta-row">
+      <span class="pill">Ranger</span>
+      <span class="pill">The ranged path</span>
+      <span class="pill">Stealth archer</span>
+    </div>
+    <div class="resource-links">
+      <a href="#rg-sheet">🏹 Build</a>
+      <a href="#rg-levels">📈 Levels</a>
+      <a href="#rg-routine">🌑 Routine</a>
+      <a href="#rg-gear">⚔️ Gear</a>
+      <a href="#rg-act1">✅ Playthrough</a>
+    </div>
+  </section>
+
+  <div class="layout">
+    <div>
+      <button class="toc-toggle" aria-expanded="false">☰ Chapters &amp; progress</button>
+      <nav class="toc" aria-label="Chapters">
+        <div class="progress">
+          <div class="label"><span>Your progress</span></div>
+          <div class="bar"><span></span></div>
+          <div class="label" style="margin-top:6px"><span class="count"></span></div>
+          <button type="button">Reset progress</button>
+        </div>
+          <h4><a href="#act-build" style="color:inherit;text-decoration:none">Your Character</a></h4>
+          <ol>
+            <li><a href="#rg-idea"><span>The Idea</span><span class="done"></span></a></li>
+            <li><a href="#rg-sheet"><span>Character Creation</span><span class="done"></span></a></li>
+            <li><a href="#rg-levels"><span>Level by Level</span><span class="done"></span></a></li>
+            <li><a href="#rg-spells"><span>Spells to Use</span><span class="done"></span></a></li>
+            <li><a href="#rg-routine"><span>The Archer's Routine</span><span class="done"></span></a></li>
+            <li><a href="#rg-party"><span>Your Party</span><span class="done"></span></a></li>
+            <li><a href="#rg-gear"><span>Gear Worth Finding</span><span class="done"></span></a></li>
+            <li><a href="#rg-eggs"><span>Easter Eggs</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-play" style="color:inherit;text-decoration:none">Staying on Target</a></h4>
+          <ol>
+            <li><a href="#rg-act1"><span>Act One</span><span class="done"></span></a></li>
+            <li><a href="#rg-act2"><span>Act Two</span><span class="done"></span></a></li>
+            <li><a href="#rg-act3"><span>Act Three</span><span class="done"></span></a></li>
+            <li><a href="#rg-love"><span>Love & Companions</span><span class="done"></span></a></li>
+            <li><a href="#rg-side"><span>Beyond the Companions</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#rg-never" style="color:inherit;text-decoration:none">Reference</a></h4>
+          <ol>
+            <li><a href="#rg-never"><span>Never Do This</span><span class="done"></span></a></li>
+          </ol>
+      </nav>
+    </div>
+
+    <main>
+      <section class="credits" id="credits">
+        <h3>Credits &amp; Sources</h3>
+        <p>This is original SugarTickles writing, built from our own knowledge of the game and checked in our own playthrough. Where we haven't confirmed something yet you'll see a gold <strong>"To verify"</strong> note. Spells, features and items are described in our own words, never copied from the game or the rulebooks.</p>
+        <p>Screenshots are our own captures from the game.</p>
+        <p><em>Baldur's Gate 3 Paths</em> is unofficial Fan Content permitted under the <a href="https://company.wizards.com/en/legal/fancontentpolicy" rel="noopener">Fan Content Policy</a>. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</p>
+        <p><em>Baldur's Gate 3</em> and its art, characters and names are © Larian Studios. Baldur's Gate, Dungeons &amp; Dragons and the Forgotten Realms are trademarks of Wizards of the Coast. SugarTickles isn't affiliated with Larian or Wizards of the Coast. It's a fan guide, made with love. We use no Wizards or Larian logos.</p>
+      </section>
+
+      <section class="act" id="act-build">
+        <span class="act-num">Your Character</span>
+        <h2>Build The Dusk Archer</h2>
+        <p>A Wood Elf Gloom Stalker: stealth, darkvision and a bow. This chapter picks every choice you'll face, from the first favored enemy to the last feat.</p>
+      </section>
+
+      <section class="chapter" id="rg-idea">
+        <header>
+          <span class="chapter-num">Chapter 1</span>
+          <h3>The Idea</h3>
+          <p class="where">Who the Dusk Archer is, and why a Gloom Stalker</p>
+        </header>
+
+        <p>The Dusk Archer fights from the edge of the light. They hide, pick a target, and open the fight with a free extra shot before anyone else has moved. A <strong>Ranger</strong> is the natural bow class, and the <strong>Gloom Stalker</strong> subclass is built for the dark: you see farther in it, you turn invisible in it, and you ambush from it.</p>
+        <p>It's strong and simple: shoot, hide, repeat. The only thing to watch is that you're fragile up close, so bring friends who stand in front.</p>
+        <aside class="callout tip"><strong>Patch 8 alternative</strong>Patch 8 added the <strong>Swarmkeeper</strong> Ranger, who fights with a cloud of magical insects that add damage and move enemies around. It's a fun pick if you'd rather have tricks than stealth. The Hunter and Beast Master are the other choices.</aside>
+        <aside class="callout verify"><strong>Draft status</strong>This path was drafted before our playthrough. Notes marked <strong>To verify</strong> are what we'll confirm against the current version of the game. Gear locations come from one guide per act and haven't been checked in our own game yet.</aside>
+        <figure class="shot" data-src="shots/rg-01-creation.jpg">
+          <figcaption>The character creation screen with The Dusk Archer choices</figcaption>
+        </figure>
+
+      </section>
+
+      <section class="chapter" id="rg-sheet">
+        <header>
+          <span class="chapter-num">Chapter 2</span>
+          <h3>Character Creation</h3>
+          <p class="where">Race, background, ability scores and skills. Pick the look; copy the rest.</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Choice</th><th>Pick</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>Race</td><td><strong>Wood Elf</strong></td><td>Quick, stealthy and at home in the dark.</td></tr>
+              <tr><td>Background</td><td><strong>Outlander</strong></td><td>Trains you in Athletics and Survival.</td></tr>
+              <tr><td>Class</td><td><strong>Ranger</strong></td><td>Subclass at level 3: <strong>Gloom Stalker</strong>.</td></tr>
+              <tr><td>Ability scores</td><td>Strength 8, Dexterity <strong>17</strong>, Constitution <strong>14</strong>, Intelligence 10, Wisdom <strong>15</strong>, Charisma 10</td><td>Spend the 27 points as 8 / 15 / 14 / 10 / 14 / 10, then +2 Dexterity and +1 Wisdom.</td></tr>
+              <tr><td>Skills</td><td>Perception, Stealth, Investigation</td><td>Your three Ranger picks.</td></tr>
+              <tr><td>Favored Enemy (level 1)</td><td><strong>Bounty Hunter</strong></td><td>Trains Investigation and makes your Ensnaring Strike harder to resist. (Mage Breaker is a good alternative: it grants True Strike.)</td></tr>
+              <tr><td>Natural Explorer (level 1)</td><td><strong>Beast Tamer</strong></td><td>Lets you cast Find Familiar as a ritual: a free scout, and a nod to the Raven easter egg.</td></tr>
+              <tr><td>Fighting Style (level 2)</td><td><strong>Archery</strong></td><td>+2 to your ranged attack rolls. Take it, always.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the Wood Elf and Outlander details on our version, and that Gloom Stalker is chosen at level 3.</aside>
+      </section>
+
+      <section class="chapter" id="rg-levels">
+        <header>
+          <span class="chapter-num">Chapter 3</span>
+          <h3>Level by Level</h3>
+          <p class="where">What to pick at each level, and what you're getting</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Level</th><th>What you get</th><th>What to do</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Favored Enemy, Natural Explorer</td><td>Pick Bounty Hunter and Beast Tamer. No spells yet.</td></tr>
+              <tr><td>2</td><td>Fighting Style, spellcasting (2 spells known)</td><td>Take <strong>Archery</strong>. Learn <strong>Hunter's Mark</strong> and <strong>Hail of Thorns</strong>.</td></tr>
+              <tr><td>3</td><td>Gloom Stalker: Dread Ambusher, Umbral Shroud, Superior Darkvision, Disguise Self</td><td>Dread Ambusher gives a free extra attack on your first turn. Hide as a bonus action.</td></tr>
+              <tr><td>4</td><td>Feat</td><td>Take <strong>Sharpshooter</strong>: ranged shots ignore cover and hit harder.</td></tr>
+              <tr><td>5</td><td>Extra Attack, Misty Step</td><td>You now shoot twice. Misty Step is your escape. Learn <strong>Ensnaring Strike</strong> or <strong>Goodberry</strong>.</td></tr>
+              <tr><td>6</td><td>More Favored Enemy and Natural Explorer picks</td><td>Add Mage Breaker (True Strike) and Urban Tracker or Wasteland Wanderer.</td></tr>
+              <tr><td>7</td><td>Iron Mind</td><td>Better saves against being dominated or mind-controlled.</td></tr>
+              <tr><td>8</td><td>Feat, Land's Stride</td><td>Take <strong>Alert</strong> (initiative) or <strong>Resilient (Constitution)</strong>.</td></tr>
+              <tr><td>9</td><td>Fear, third-level spells</td><td>A crowd-control spell from your subclass.</td></tr>
+              <tr><td>10</td><td>Hide in Plain Sight, more picks</td><td>Hide more easily than anyone.</td></tr>
+              <tr><td>11</td><td>Stalker's Flurry</td><td>A missed attack grants another free attack.</td></tr>
+              <tr><td>12</td><td>Feat</td><td>A final <strong>Ability Improvement</strong> (+2 Dexterity) or <strong>Resilient</strong>.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Why not multiclass?</strong>A pure Ranger is great, and your level 5 Extra Attack arrives on time. If you want to experiment, a dip into Rogue adds Sneak Attack, but keep your first Dusk Archer simple.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>The progression is from the wiki, but levels 7-12 were only partly read. Confirm each level on our version, especially the spells at levels 9-12 and whether level 12 grants a fourth third-level slot.</aside>
+      </section>
+
+      <section class="chapter" id="rg-spells">
+        <header>
+          <span class="chapter-num">Chapter 4</span>
+          <h3>Spells to Use</h3>
+          <p class="where">Rangers prepare few spells, so make them count. Wisdom powers them.</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Spell</th><th>What it does (our words)</th><th>When to use it</th></tr></thead>
+            <tbody>
+              <tr><td>Hunter's Mark</td><td>Marks an enemy so your attacks against it hit harder.</td><td>Open every serious fight with it, then shoot the marked target.</td></tr>
+              <tr><td>Hail of Thorns</td><td>Your next arrow bursts into thorns around the target.</td><td>To damage a group clustered around one enemy.</td></tr>
+              <tr><td>Ensnaring Strike</td><td>Your next hit entangles the target in vines.</td><td>Pin a dangerous melee enemy in place.</td></tr>
+              <tr><td>Goodberry</td><td>Creates berries that heal when eaten.</td><td>Free healing between fights, or when allies are low.</td></tr>
+              <tr><td>Cure Wounds</td><td>A healing touch.</td><td>When you need a real heal.</td></tr>
+              <tr><td>Fog Cloud</td><td>A thick cloud blocks sight.</td><td>A cheap way to break line of sight, and to hide inside.</td></tr>
+              <tr><td>Longstrider</td><td>Makes someone move faster.</td><td>Before a long chase or a high-ground climb.</td></tr>
+              <tr><td>Misty Step (free from level 5)</td><td>A short teleport.</td><td>To escape, or to reach a perch.</td></tr>
+              <tr><td>Disguise Self (free from level 3)</td><td>Changes your appearance.</td><td>To walk into places you shouldn't.</td></tr>
+              <tr><td>Fear (free from level 9)</td><td>Frightened enemies flee.</td><td>To break a crowd that's rushing you.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>House rule</strong>Don't cast what you can shoot. Your spells are for setting up the shot, escaping, or healing.</aside>
+        <aside class="callout tip"><strong>More on spells</strong>New to magic? The <a href="../spells/">Spells Guide</a> explains slots, concentration and who can learn what.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm which of these are on the Ranger list. Hunter's Mark, Ensnaring Strike, Goodberry, Cure Wounds, Fog Cloud, Hail of Thorns and Longstrider are confirmed at level 1. The level 2-3 list wasn't read.</aside>
+      </section>
+
+      <section class="chapter" id="rg-routine">
+        <header>
+          <span class="chapter-num">Guide</span>
+          <h3>The Archer's Routine</h3>
+          <p class="where">How to fight a fight, step by step</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Step</th><th>What to do</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>1. Scout</td><td>Cast Find Familiar (as a ritual) and send it ahead, or sneak ahead yourself.</td><td>You know what's waiting before it knows about you.</td></tr>
+              <tr><td>2. Climb</td><td>Find high ground or a dark corner.</td><td>Height gives range and cover. Darkness feeds your subclass.</td></tr>
+              <tr><td>3. Hide</td><td>Hide as a bonus action. Use Umbral Shroud if the fight is hard.</td><td>Enemies can't target what they can't see.</td></tr>
+              <tr><td>4. Mark</td><td>Cast Hunter's Mark on the most dangerous enemy.</td><td>All your arrows now hit harder.</td></tr>
+              <tr><td>5. Ambush</td><td>On turn one, Dread Ambusher gives you an extra attack.</td><td>The fight is half over before it starts.</td></tr>
+              <tr><td>6. Step away</td><td>When something reaches you, Misty Step out.</td><td>Archers die in melee. Don't be there.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout warn"><strong>Don't stand in front</strong>A Ranger has medium armor and few hit points. Let your companions hold the line.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm Umbral Shroud's recharge and whether Hide as a bonus action works from a lit area.</aside>
+      </section>
+
+      <section class="chapter" id="rg-party">
+        <header>
+          <span class="chapter-num">Party</span>
+          <h3>Your Party</h3>
+          <p class="where">The companions to pick, and the ones to leave at camp</p>
+        </header>
+
+        <p>An archer needs a wall to hide behind and someone to patch the holes. The Dusk Archer's party is a tank, a healer and a blaster, all happy to stand where the light is.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Companion</th><th>Role</th><th>Why they fit this path</th><th>Where to find them</th></tr></thead>
+            <tbody>
+              <tr><td><span class="npc">Karlach</span></td><td>Front-line barbarian</td><td>A wall of rage between you and the enemy. Loyal and warm.</td><td>Risen Road, below the Toll House</td></tr>
+              <tr><td><span class="npc">Shadowheart</span></td><td>Cleric healer</td><td>Heals the party, and a Selûne-adjacent partner for a Dusk Archer.</td><td>A pod on the Nautiloid, or near the crash site</td></tr>
+              <tr><td><span class="npc">Gale</span></td><td>Wizard</td><td>Area blasts for crowds that arrows can't clear.</td><td>Stone circle east of the Nautiloid wreck</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>On the bench</strong><span class="npc">Astarion</span> (a fellow stealth archer, though he's a rogue), <span class="npc">Lae'zel</span> (a second tank), <span class="npc">Halsin</span> and <span class="npc">Minsc</span>, a fellow Ranger who arrives in Act Three. Minsc and Boo make a good double act with the Dusk Archer.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm each companion's recruitment spot and that this party handles our path's choices.</aside>
+      </section>
+
+      <section class="chapter" id="rg-gear">
+        <header>
+          <span class="chapter-num">Gear</span>
+          <h3>Gear Worth Finding</h3>
+          <p class="where">Our recommended finds by act, and where to get them</p>
+        </header>
+
+        <p>A Ranger wants a good bow, Dexterity-based armor, and anything that boosts ranged attacks or stealth. Put the bow first. Everything below is chosen for a Dexterity Ranger.</p>
+        <h4>Act One</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>The Joltshooter</strong></td><td>Waukeen's Rest. Counsellor Florrick gives you a choice of three rewards for Rescue the Grand Duke; pick this one.</td><td>Pick it as your reward from Counsellor Florrick for Rescue the Grand Duke. It's a strong early longbow.</td><td>📜 Quest reward</td></tr>
+              <tr><td><strong>Gloves of Archery</strong></td><td>Bought from Grat in the Goblin Camp.</td><td>Buy them from Grat in the Goblin Camp. They add damage to your shots.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Gloves of Dexterity</strong></td><td>Sold in Crèche Y'llek.</td><td>A cheap Dexterity boost from Crèche Y'llek.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Strange Conduit Ring</strong></td><td>A chest in the Inquisitor's chamber, Crèche Y'llek.</td><td>A chest ring one guide recommends for Rangers.</td><td>📦 Chest</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <h4>Act Two</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Least Expected</strong></td><td>A chest in the Gauntlet of Shar.</td><td>A hidden chest in the Gauntlet of Shar. It adds to your attack rolls when you shoot from the shadows.</td><td>👀 Easy to miss</td></tr>
+              <tr><td><strong>Hellfire Hand Crossbow</strong></td><td>A demon east of the Gauntlet of Shar drops it. Location unconfirmed.</td><td>An alternative to the bow: it sets targets alight when you attack from hiding.</td><td>💀 Boss drop</td></tr>
+              <tr><td><strong>Yuan-ti Scale Mail</strong></td><td>Quartermaster Talli, Last Light Inn.</td><td>Medium armor that keeps your Dexterity bonus and helps stealth. Guides recommend it for Gloom Stalkers.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Sharpened Snare Cuirass</strong></td><td>Roah Moonglow, Moonrise Towers.</td><td>Dexterity-friendly armor with a trap-like trick.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Ring of Shadow</strong></td><td>Olivar's quest, House in Deep Shadow.</td><td>Pass Without Trace: a Ranger's dream.</td><td>📜 Quest reward</td></tr>
+              <tr><td><strong>Shifting Corpus Ring</strong></td><td>Flaming Fist Marcus, at Last Light Inn or Moonrise Towers.</td><td>Invisibility and Blur for the toughest fights.</td><td>🛒 Trader</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <h4>Act Three</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>The Dead Shot</strong></td><td>Fytz the Firecracker at the Stormshore Armoury, near the Lower City Central Wall waypoint. About 770 gold.</td><td>Buy it from Fytz the Firecracker at the Stormshore Armoury. It widens your crit range.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Gontr Mael</strong></td><td>The boss of the Steel Watch Foundry in the Lower City.</td><td>Defeat the Steel Watch Foundry boss for a +3 longbow.</td><td>💀 Boss drop</td></tr>
+              <tr><td><strong>Hellrider Longbow</strong></td><td>Ferg Drogher among the Rivington refugees. Unverified.</td><td>A longbow with bonus initiative and perception.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Armour of Agility</strong></td><td>Gloomy Fentonson, the armory near the Lower City wall.</td><td>Roughly 20 AC for a Dexterity character.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Spacehunt Boots</strong></td><td>Dolor, at the end of Investigate the Murders.</td><td>A free Dimension Door for the party.</td><td>📜 Quest reward</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Hidden loot</strong>Items marked <strong>👀 Easy to miss</strong> or <strong>⚠️ Missable</strong> are the ones people walk past. The full list for every act is in the <a href="../gear/">Gear Atlas</a>.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Every location here comes from a single guide and hasn't been confirmed in our own game. We'll check each one and correct the page.</aside>
+      </section>
+
+      <section class="chapter" id="rg-eggs">
+        <header>
+          <span class="chapter-num">Eggs</span>
+          <h3>Easter Eggs on Your Path</h3>
+          <p class="where">Nods, jokes and references your build is likely to find</p>
+        </header>
+
+        <p>Your path is a good excuse to catch these. We've picked the easter eggs your build, background, party and route are most likely to run into. Each one links to the full entry in the <a href="../eggs/">Easter Egg Guide</a>. ⚠️ means a spoiler, so the guide hides the details until you open it.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>When</th><th>Easter egg</th><th>Where</th><th>What you need</th></tr></thead>
+            <tbody>
+              <tr><td>Act Three</td><td><strong><a href="../eggs/#egg-minsc-room">Minsc's room</a></strong></td><td>The Lower City Sewers, in the room where you recruit him.</td><td>Reach the room where Minsc can be recruited.</td></tr>
+              <tr><td>Any act</td><td><strong><a href="../eggs/#egg-gale-chess">Gale talks in chess</a></strong></td><td>Gale's combat lines, in any act.</td><td>Bring Gale along.</td></tr>
+              <tr><td>Any act</td><td><strong><a href="../eggs/#egg-boo-turns">"Boo is not used to this taking of turns"</a></strong></td><td>A Minsc combat line.</td><td>Bring Minsc (Act Three).</td></tr>
+              <tr><td>Any act</td><td><strong><a href="../eggs/#egg-raven">Quothe the raven</a></strong></td><td>Through a Find Familiar raven.</td><td>Cast Find Familiar. Act and trigger unconfirmed.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Keep a checklist</strong>Tick these off as you find them. We'll note in each act's chapter when one is nearby.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Many acts and triggers come from a single wiki page and are our best guess. We'll confirm each one as we play.</aside>
+      </section>
+
+      <section class="act" id="act-play">
+        <span class="act-num">Staying on Target</span>
+        <h2>The Dusk Archer's Playthrough</h2>
+        <p>Hide, mark, shoot. Here's the plan, act by act.</p>
+      </section>
+
+      <section class="chapter" id="rg-act1">
+        <header>
+          <span class="chapter-num">Act One</span>
+          <h3>Act One: Learn the Dark</h3>
+          <p class="where">Find a bow, then find a dark corner</p>
+        </header>
+
+        <h4>Your vows this act</h4>
+        <ol class="steps">
+          <li>Take the longbow reward from Counsellor Florrick at Waukeen's Rest when you rescue him. Pick <span class="item">The Joltshooter</span>.</li>
+          <li>Recruit <span class="npc">Karlach</span>, <span class="npc">Shadowheart</span> and <span class="npc">Gale</span>. Keep them in front of you.</li>
+          <li>Buy the <span class="item">Gloves of Archery</span> from Grat in the Goblin Camp.</li>
+          <li>Shoot from high ground and from the dark. Hide before every fight.</li>
+          <li>At level 3, take Gloom Stalker, and use Dread Ambusher on turn one of every fight.</li>
+        </ol>
+        <aside class="callout tip"><strong>Recommended: your first big find</strong>Rescue Counsellor Florrick before you rest or travel, and take <span class="item">The Joltshooter</span>. It's the best bow you can have this early.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the three reward choices from Florrick and that Joltshooter is available.</aside>
+        <h4>Step by step</h4>
+        <p class="where">Jump to: <a href="#rg-r-nautiloid">The Nautiloid</a> · <a href="#rg-r-crash-site">The Crash Site</a> · <a href="#rg-r-grove">The Emerald Grove</a> · <a href="#rg-r-blighted-village">The Blighted Village & the Hag</a> · <a href="#rg-r-risen-road">The Risen Road & Karlach</a> · <a href="#rg-r-goblin-camp">The Goblin Camp</a> · <a href="#rg-r-underdark">The Underdark & Grymforge</a> · <a href="#rg-r-creche">The Mountain Pass & the Crèche</a> · <a href="#rg-r-leave-act1">Before You Leave Act One</a></p>
+        <h4 id="rg-r-nautiloid">Prologue: The Nautiloid</h4>
+        <p class="where">A mind flayer ship, on its way through Hell</p>
+        <ol class="steps">
+          <li>⬆️ <strong>Level 1 (start):</strong> Favored Enemy, Natural Explorer. Pick Bounty Hunter and Beast Tamer. No spells yet.</li>
+          <li>Wake in your pod and break out. Loot the raised walkways in the first room, and stay away from the larva pool in the middle: it bursts.</li>
+          <li>Leave through the west door. In the next room, take the lift up to the elf with the exposed brain. Pass the check to see what it really is: an intellect devourer called Us.</li>
+          <li>Decide what to do with Us: free it, leave it, or destroy it. If you free it, it tags along for a while.</li>
+          <li>Step outside. A githyanki warrior, Lae'zel, drops in and joins you. Fight the three imps together.</li>
+          <li>Climb north to the room with Shadowheart's pod. Open it with a check, or take the Eldritch Rune from a body in the chamber to the east and use that. Then free her.</li>
+          <li>Enter the Helm. A cambion, Commander Zhalk, is fighting a mind flayer. You don't have to beat him. Your goal is the transponder on the far west side: reach it and connect its nerves when the mind flayer is distracted. <em>Your path: Take the high ground and shoot Zhalk from range.</em></li>
+          <li>Watch the ship break free of Hell and crash. You wake on the beach.</li>
+        </ol>
+        <h4 id="rg-r-crash-site">The Crash Site</h4>
+        <p class="where">The Ravaged Beach and the Roadside Cliffs · Quest: Find a Cure</p>
+        <ol class="steps">
+          <li>Look around the beach. Everyone from the ship has a tadpole, and nobody has turned yet. Your journal now tracks <strong>Find a Cure</strong>: the rest of Act One is following leads.</li>
+          <li>If you didn't free Shadowheart on the ship, find her now, in a nearby cave.</li>
+          <li>Go east to the stone circle. A voice calls for help from inside a portal. Pull the wizard Gale out (literally) and recruit him.</li>
+          <li>Explore the Dank Crypt near the beach. A sarcophagus holds a strange skeleton called Withers. Wake him: he moves into your camp and stays useful all game. He can re-pick your class and abilities, and bring back dead companions.</li>
+          <li>Make camp and take a long rest. Your companions talk about the tadpole. Talk to each one before you move on.</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-gale-chess">Gale talks in chess</a>. Gale's combat lines, in any act.</li>
+          <li>⬆️ <strong>Level 2</strong> (around now): Fighting Style, spellcasting (2 spells known). <em>Take <strong>Archery</strong>. Learn <strong>Hunter's Mark</strong> and <strong>Hail of Thorns</strong>.</em></li>
+        </ol>
+        <h4 id="rg-r-grove">The Emerald Grove</h4>
+        <p class="where">North of the Roadside Cliffs · Quests: Save the Refugees, Save Arabella</p>
+        <ol class="steps">
+          <li>At the Grove gate, goblins are attacking tieflings. Join the fight on the tieflings' side. A warlock named Wyll fights beside you.</li>
+          <li>Inside, talk <strong>Zevlor</strong> (the tieflings' leader) and <strong>Aradin</strong> (an adventurer who lost his druid guide) out of their argument. Zevlor explains the goblin threat and the Grove's troubles.</li>
+          <li>Go to the Inner Sanctum. A tiefling girl, Arabella, has been caught stealing the druids' Sacred Idol, and Kagha is about to punish her. Talk Kagha into letting her go (<strong>Save Arabella</strong>).</li>
+          <li>Never take the Sacred Idol, whoever asks you to. Taking it makes the druids finish the ritual and throws the tieflings out.</li>
+          <li>Kagha has begun the <strong>Rite of Thorns</strong>, which will seal the Grove. Their leader, Halsin, is missing: the goblins took him.</li>
+          <li>Talk to the healer <strong>Nettie</strong>. She can't cure your tadpole, but she points you toward Halsin. Be honest with her and accept her terms, or she'll try to poison you.</li>
+          <li>Meet the bard Alfira and the gnome author Volo. Both have side quests, and traders like Arron sell useful gear.</li>
+          <li>Investigate Kagha: follow the letters in the <strong>Investigate Kagha</strong> quest. Report to Zevlor to earn his reward.</li>
+          <li>⬆️ <strong>Level 3</strong> (around now): Gloom Stalker: Dread Ambusher, Umbral Shroud, Superior Darkvision, Disguise Self. <em>Dread Ambusher gives a free extra attack on your first turn. Hide as a bonus action.</em></li>
+        </ol>
+        <h4 id="rg-r-blighted-village">The Blighted Village & the Hag</h4>
+        <p class="where">The Blighted Village, the Riverside Teahouse and the Sunlit Wetlands · Quests: Rescue the Gnome, Save Mayrina</p>
+        <ol class="steps">
+          <li>Head west to the <strong>Blighted Village</strong>. Goblins hold it. Talk your way past the gate or fight.</li>
+          <li>A gnome, <strong>Barcus Wroot</strong>, is tied to a windmill. Free him (<strong>Rescue the Gnome</strong>), then search the village, including the cellar under the old apothecary.</li>
+          <li>The cave to the north belongs to an owlbear and her cub. It's a hard fight at low level: come back later.</li>
+          <li>South of the village, two brothers are arguing with an old woman about their sister. She's <strong>Auntie Ethel</strong>, and the sister is Mayrina. This starts <strong>Save Mayrina</strong>.</li>
+          <li>Follow Ethel to her <strong>Riverside Teahouse</strong> in the swamp. She's a hag, and she'll offer to remove your tadpole in return for an eye. Don't: she can't do it.</li>
+          <li>Follow her through the fireplace into her lair. Fight past the masked servants, find Mayrina in her cage, and put out the fire beneath it quickly or she dies.</li>
+          <li>When Ethel is nearly beaten she offers a bargain. <strong>Free Mayrina</strong>: it's the kind choice.</li>
+          <li>⬆️ <strong>Level 4</strong> (around now): Feat. <em>Take <strong>Sharpshooter</strong>: ranged shots ignore cover and hit harder.</em></li>
+        </ol>
+        <h4 id="rg-r-risen-road">The Risen Road & Karlach</h4>
+        <p class="where">East of the Grove · Quests: Hunt the Devil, Rescue the Grand Duke</p>
+        <ol class="steps">
+          <li>At the <strong>Toll House</strong> on the road, a group of paladins led by <strong>Anders</strong> is hunting a devil and wants your help.</li>
+          <li>Go down the cliff and across the stream. The 'devil' is <strong>Karlach</strong>, a tiefling who escaped from Hell. Hear her side, then decide whom to believe (<strong>Hunt the Devil</strong>).</li>
+          <li>Side with Karlach, and she joins you: one of the best fighters in the game, and one of the warmest.</li>
+          <li>Further along, the inn at <strong>Waukeen's Rest</strong> is on fire with people trapped inside, including Councillor Florrick (<strong>Rescue the Grand Duke</strong>). Put out the flames and get everyone out. <strong>Do this before you long rest or fast travel</strong>, or they die.</li>
+          <li>🎒 <strong>Get The Joltshooter.</strong> Waukeen's Rest. Counsellor Florrick gives you a choice of three rewards for Rescue the Grand Duke; pick this one. <em>Pick it as your reward from Counsellor Florrick for Rescue the Grand Duke. It's a strong early longbow.</em> 📜 Quest reward</li>
+        </ol>
+        <h4 id="rg-r-goblin-camp">The Goblin Camp</h4>
+        <p class="where">Northwest of the Blighted Village · Quests: Save the First Druid, Defeat the Goblins</p>
+        <ol class="steps">
+          <li>Walk in through the front gate. The goblins think your tadpole makes you a 'True Soul', a chosen servant of their god, the Absolute. Use that.</li>
+          <li>Inside the Shattered Sanctum three leaders rule the camp: Priestess Gut, Dror Ragzlin and the drow Minthara. Each wants to know where the Grove is.</li>
+          <li>Find Halsin in bear form in the worg pens behind the Sanctum. Help him fight the goblins. He asks you to deal with the leaders so the Grove is safe.</li>
+          <li>In a room off the Sanctum, goblins are torturing Liam, one of Aradin's group. Talk them off him and free him. He tells you about the Nightsong.</li>
+          <li>Defeat all three leaders. If you can, <strong>knock Minthara out</strong> (non-lethal attacks) rather than killing her. That keeps the door open to freeing her in Act Two.</li>
+          <li>Return to Halsin, then go back to the Grove. The Rite of Thorns ends, the tieflings prepare to leave, and they throw a party at camp.</li>
+          <li>🎒 <strong>Get Gloves of Archery.</strong> Bought from Grat in the Goblin Camp. <em>Buy them from Grat in the Goblin Camp. They add damage to your shots.</em> 🛒 Trader</li>
+          <li>⬆️ <strong>Level 5</strong> (around now): Extra Attack, Misty Step. <em>You now shoot twice. Misty Step is your escape. Learn <strong>Ensnaring Strike</strong> or <strong>Goodberry</strong>.</em></li>
+        </ol>
+        <h4 id="rg-r-underdark">The Underdark & Grymforge</h4>
+        <p class="where">Below the Defiled Temple, the Zhentarim Hideout or the Whispering Depths · Quests: Defeat the Duergar Intruders, Save the Grymforge Gnomes</p>
+        <ol class="steps">
+          <li>The easiest way down is the <strong>Defiled Temple</strong> under the Shattered Sanctum. Solve the Selûnite door puzzle (a dwarf named Brian's poem holds the clues) and keep going down.</li>
+          <li>In the <strong>Myconid Colony</strong>, the mushroom folk ask you to deal with duergar intruders. A myconid named Glut has plans of his own.</li>
+          <li>Visit <strong>Omeluum</strong>, a friendly mind flayer in the colony. He'll study your tadpole.</li>
+          <li>Find the old <strong>Selûnite Outpost</strong>. A book there, <em>In Search of the Nightsong</em>, says the Nightsong is held in a Sharran fortress near Moonrise Towers.</li>
+          <li>Take a skiff across the lake to <strong>Grymforge</strong>. Duergar have enslaved deep gnomes there. Free them, whether or not you free the True Soul Nere trapped behind a rockfall.</li>
+          <li>Optional: below Grymforge lies the Adamantine Forge, where you can craft some of Act One's best gear if you defeat its guardian, Grym.</li>
+          <li>The elevator in Grymforge goes up to the Shadow-Cursed Lands. That's your way into Act Two on this route.</li>
+        </ol>
+        <h4 id="rg-r-creche">The Mountain Pass & the Crèche</h4>
+        <p class="where">The Risen Road, the Mountain Pass and the Rosymorn Monastery · Quest: Find the Githyanki Crèche</p>
+        <ol class="steps">
+          <li><strong>Heads-up:</strong> the githyanki scenes are built around Lae'zel. Without her they play out differently, and some crèche content may be closed to you. If you want the crèche's gear, bring her along for this one trip and send her back to camp afterward.</li>
+          <li>At the <strong>Rosymorn Monastery Trail</strong>, summon the cable car with the wheel and ride across. Climb into the monastery through the broken windows.</li>
+          <li>Optional: the monastery hides the <span class="item">Blood of Lathander</span>, a legendary mace, behind a puzzle (<strong>Find the Blood of Lathander</strong>).</li>
+          <li>Below the monastery is the githyanki crèche, <strong>Crèche Y'llek</strong>. The gith distrust outsiders, so talk carefully (and let Lae'zel do the talking if she's with you).</li>
+          <li>In the infirmary, Inquisitor W'wargaz offers to cure you in the Zaith'isk, a githyanki machine. It doesn't go to plan.</li>
+          <li>The Mountain Pass leads down into the Shadow-Cursed Lands: your other way into Act Two.</li>
+          <li>🎒 <strong>Get Gloves of Dexterity.</strong> Sold in Crèche Y'llek. <em>A cheap Dexterity boost from Crèche Y'llek.</em> 🛒 Trader</li>
+          <li>🎒 <strong>Get Strange Conduit Ring.</strong> A chest in the Inquisitor's chamber, Crèche Y'llek. <em>A chest ring one guide recommends for Rangers.</em> 📦 Chest</li>
+        </ol>
+        <h4 id="rg-r-leave-act1">Before You Leave Act One</h4>
+        <p class="where">A checklist for your last day in the Wilderness</p>
+        <ol class="steps">
+          <li>Make sure the tieflings are safe and you've celebrated at camp.</li>
+          <li>Check that Florrick is out of Waukeen's Rest, and that Mayrina is free (or paid for).</li>
+          <li>Visit both the Underdark and the crèche, or decide which to skip.</li>
+          <li>Talk to every companion at camp and finish their camp scenes. Some only trigger in Act One.</li>
+          <li>Sell your junk and buy what you can afford from traders like Arron and Dammon at the Grove.</li>
+          <li>Make a manual save before you descend. Act Two takes you somewhere you can't easily come back from.</li>
+          <li>⬆️ <strong>Level 6</strong> (around now): More Favored Enemy and Natural Explorer picks. <em>Add Mage Breaker (True Strike) and Urban Tracker or Wasteland Wanderer.</em></li>
+        </ol>
+        <aside class="callout tip"><strong>Levels are approximate</strong>The ⬆️ steps show roughly where most players reach each level. If your level is different, follow the level table, not the clock.</aside>
+      </section>
+
+      <section class="chapter" id="rg-act2">
+        <header>
+          <span class="chapter-num">Act Two</span>
+          <h3>Act Two: Shoot in the Shadows</h3>
+          <p class="where">A land made for a Gloom Stalker</p>
+        </header>
+
+        <h4>Your vows this act</h4>
+        <ol class="steps">
+          <li>The shadow-cursed lands are dark, which suits your subclass. Look for the hidden chest in the Gauntlet of Shar that holds <span class="item">Least Expected</span>.</li>
+          <li>Buy <span class="item">Yuan-ti Scale Mail</span> from the quartermaster at Last Light Inn.</li>
+          <li>Take the <span class="item">Ring of Shadow</span> from Olivar's quest for sneaking past guards.</li>
+        </ol>
+        <aside class="callout verify"><strong>To verify while proving</strong>Replace with the exact Act Two quests after playing.</aside>
+        <h4>Step by step</h4>
+        <p class="where">Jump to: <a href="#rg-r-shadow-lands">Into the Shadows</a> · <a href="#rg-r-last-light">Last Light Inn</a> · <a href="#rg-r-reithwin">Reithwin Town</a> · <a href="#rg-r-moonrise">Moonrise Towers</a> · <a href="#rg-r-gauntlet">The Gauntlet of Shar</a> · <a href="#rg-r-ketheric">Defeat Ketheric Thorm</a></p>
+        <h4 id="rg-r-shadow-lands">Into the Shadows</h4>
+        <p class="where">The Ruined Battlefield · Quests: Seek Protection from the Shadow Curse, Follow the Convoy</p>
+        <ol class="steps">
+          <li>Step out of the dark. The curse hurts anyone not standing in light. Take a torch from the braziers near the exit and keep it lit.</li>
+          <li><strong>If you came from the Underdark:</strong> a group of Harpers is fighting shadows nearby. Help them. Their leader, Lassandra, sends you to the last safe place: the Last Light Inn.</li>
+          <li><strong>If you came from the Mountain Pass:</strong> a goblin mistakes you for a True Soul and tells you to wait for a guide, the drider Kar'niss, whose moonlantern keeps the curse off. Harpers ambush the convoy on the way.</li>
+          <li>Either way, head for the <strong>Last Light Inn</strong>.</li>
+        </ol>
+        <h4 id="rg-r-last-light">Last Light Inn</h4>
+        <p class="where">Quests: Resolve the Abduction, Lift the Shadow Curse, Rescue the Tieflings</p>
+        <ol class="steps">
+          <li>At the gate, the veteran Harper <strong>Jaheira</strong> tests you with a tadpole specimen and suspects you're a True Soul. Someone from the Grove can vouch for you, or show her your Mysterious Artefact.</li>
+          <li>Jaheira explains that the cult's leader at Moonrise Towers is <strong>Ketheric Thorm</strong>, and he can't die. The Harpers want to stop him.</li>
+          <li>Go upstairs to meet <strong>Isobel</strong>, the Selûnite cleric whose magic shields the inn. Talking to her triggers an attack: a winged man named Marcus tries to carry her off.</li>
+          <li><strong>Protect Isobel.</strong> If she's taken or killed, the shield falls and everyone at the inn is lost to the curse.</li>
+          <li>The tieflings from the Grove are here, but some are missing: they were taken to Moonrise Towers (<strong>Rescue the Tieflings</strong>).</li>
+          <li>Shop at the inn: the quartermaster, Talli, sells some of Act Two's best gear.</li>
+          <li>🎒 <strong>Get Yuan-ti Scale Mail.</strong> Quartermaster Talli, Last Light Inn. <em>Medium armor that keeps your Dexterity bonus and helps stealth. Guides recommend it for Gloom Stalkers.</em> 🛒 Trader</li>
+          <li>🎒 <strong>Get Shifting Corpus Ring.</strong> Flaming Fist Marcus, at Last Light Inn or Moonrise Towers. <em>Invisibility and Blur for the toughest fights.</em> 🛒 Trader</li>
+        </ol>
+        <h4 id="rg-r-reithwin">Reithwin Town</h4>
+        <p class="where">West of the inn, and the House of Healing</p>
+        <ol class="steps">
+          <li>Reithwin was a prosperous Selûnite town before the curse. Explore it by day, torches lit.</li>
+          <li>Members of the Thorm family still haunt their posts: Thisobald at the tollhouse, Gerringothe at the Waning Moon bar, Malus at the House of Healing.</li>
+          <li>In the town and nearby, the <strong>House in Deep Shadow</strong> holds secrets and a quest from Olivar (<strong>Hide and Seek</strong>).</li>
+          <li>Hold off on the Grand Mausoleum, north of town, until you've been to Moonrise Towers.</li>
+          <li>🎒 <strong>Get Ring of Shadow.</strong> Olivar's quest, House in Deep Shadow. <em>Pass Without Trace: a Ranger's dream.</em> 📜 Quest reward</li>
+        </ol>
+        <h4 id="rg-r-moonrise">Moonrise Towers</h4>
+        <p class="where">Across the bridge from Reithwin · Quests: Infiltrate Moonrise Towers, Rescue Wulbren, Rescue the Tieflings</p>
+        <ol class="steps">
+          <li>Walk in as a True Soul. In the audience chamber, Ketheric's lieutenant <strong>Z'rell</strong> is questioning the goblins about what happened at the camp.</li>
+          <li>If you knocked Minthara out in Act One, she's here too, begging for her life. Ketheric condemns her.</li>
+          <li>Talk to Z'rell behind the throne. Prove your faith and she sends you after <strong>Balthazar</strong>, Ketheric's necromancer, last seen at the Thorm Mausoleum. She gives you a key to his room.</li>
+          <li>Search Balthazar's room for its hidden area. His notes reveal what the 'Nightsong' really is.</li>
+          <li>Find the prison. In the cells are the gnome Wulbren, captured tieflings (including Cal and Lia) and others. Break them out and lead them to the boat or out on foot.</li>
+          <li>Once everyone is free, return to the Last Light Inn to collect your thanks.</li>
+          <li>Moonrise Towers' traders (Lann Tarv, Roah Moonglow and Araj Oblodra) sell strong gear. Check all three.</li>
+          <li>🎒 <strong>Get Sharpened Snare Cuirass.</strong> Roah Moonglow, Moonrise Towers. <em>Dexterity-friendly armor with a trap-like trick.</em> 🛒 Trader</li>
+          <li>⬆️ <strong>Level 7</strong> (around now): Iron Mind. <em>Better saves against being dominated or mind-controlled.</em></li>
+        </ol>
+        <h4 id="rg-r-gauntlet">The Gauntlet of Shar</h4>
+        <p class="where">Through the Grand Mausoleum north of Reithwin · Quests: Find Ketheric Thorm's Relic, Find the Nightsong</p>
+        <ol class="steps">
+          <li>Solve the mausoleum's puzzle and descend into the <strong>Gauntlet of Shar</strong>, an ancient temple to the goddess of loss. Snuff out every light in the entrance hall to open the way.</li>
+          <li>Balthazar is already here and orders you to clear his way. Help him or fight him: either way you need what lies below.</li>
+          <li>Collect four <strong>Umbral Gems</strong>. Three come from the Trials of Shar: the Soft-Step Trial (sneak through a maze), the Self-Same Trial (fight shadow copies of your party) and the Faith-Leap Trial (cross an invisible path).</li>
+          <li>The fourth gem belongs to Yurgir, an orthon in the east wing, who has a contract with the devil Raphael he'd love to break.</li>
+          <li>Shadowheart wants to complete one more Sharran trial. Help her: it's part of her story.</li>
+          <li>Look for hidden chests in the Gauntlet's side rooms. Several of Act Two's best items are tucked away.</li>
+          <li><strong>Before you open the way into the Shadowfell, finish what you want to finish in Act One's lands and at Moonrise Towers.</strong> The Shadowfell is a point of no return.</li>
+          <li>Use the gems to open the Shadowfell, and find the Nightsong.</li>
+          <li>🎒 <strong>Get Least Expected.</strong> A chest in the Gauntlet of Shar. <em>A hidden chest in the Gauntlet of Shar. It adds to your attack rolls when you shoot from the shadows.</em> 👀 Easy to miss</li>
+          <li>🎒 <strong>Get Hellfire Hand Crossbow.</strong> A demon east of the Gauntlet of Shar drops it. Location unconfirmed. <em>An alternative to the bow: it sets targets alight when you attack from hiding.</em> 💀 Boss drop</li>
+          <li>⬆️ <strong>Level 8</strong> (around now): Feat, Land's Stride. <em>Take <strong>Alert</strong> (initiative) or <strong>Resilient (Constitution)</strong>.</em></li>
+        </ol>
+        <h4 id="rg-r-ketheric">Defeat Ketheric Thorm</h4>
+        <p class="where">Moonrise Towers and the Mind Flayer Colony beneath it · Quest: Defeat Ketheric Thorm</p>
+        <ol class="steps">
+          <li>Back at the Last Light Inn, Jaheira gathers the Harpers and Flaming Fists to storm Moonrise Towers. Join the assault.</li>
+          <li>Fight your way up to the roof. Ketheric waits there, and now he can be hurt. Win the fight.</li>
+          <li>When he falls the way opens into the <strong>Mind Flayer Colony</strong> below. Follow him down.</li>
+          <li>Explore the colony. It's where the tadpoles are made, and where you learn what the cult has been building.</li>
+          <li>Face Ketheric one last time.</li>
+          <li>After the fight the story takes a turn. Act Two ends at your new camp, <strong>Wyrm's Lookout</strong>, on the road to Baldur's Gate.</li>
+          <li>⬆️ <strong>Level 9</strong> (around now): Fear, third-level spells. <em>A crowd-control spell from your subclass.</em></li>
+        </ol>
+        <aside class="callout tip"><strong>Levels are approximate</strong>The ⬆️ steps show roughly where most players reach each level. If your level is different, follow the level table, not the clock.</aside>
+      </section>
+
+      <section class="chapter" id="rg-act3">
+        <header>
+          <span class="chapter-num">Act Three</span>
+          <h3>Act Three: One Perfect Shot</h3>
+          <p class="where">A city full of rooftops</p>
+        </header>
+
+        <h4>Your vows this act</h4>
+        <ol class="steps">
+          <li>Buy <span class="item">The Dead Shot</span> from Fytz the Firecracker at the Stormshore Armoury.</li>
+          <li>Defeat the Steel Watch Foundry boss for <span class="item">Gontr Mael</span>.</li>
+          <li>Recruit <span class="npc">Minsc</span>, and let Boo cheer you on.</li>
+          <li>At the finale, shoot first.</li>
+        </ol>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the Act Three quests and the best Dusk Archer ending after playing.</aside>
+        <h4>Step by step</h4>
+        <p class="where">Jump to: <a href="#rg-r-rivington">Rivington</a> · <a href="#rg-r-wyrm-rock">Wyrm's Rock & Gortash</a> · <a href="#rg-r-lower-city">The Lower City</a> · <a href="#rg-r-orin">Orin & the Temple of Bhaal</a> · <a href="#rg-r-finale">Confront the Elder Brain</a></p>
+        <h4 id="rg-r-rivington">Rivington</h4>
+        <p class="where">The outer district south of the river · Quests: Solve the Open Hand Temple Murders, Find the Missing Letters</p>
+        <ol class="steps">
+          <li>From Wyrm's Lookout, walk west into Rivington. Refugees fill the streets: the city won't let them in.</li>
+          <li>Look around the <strong>Circus of the Last Days</strong>. It's great fun, and a few of the acts aren't what they seem.</li>
+          <li>At the <strong>Open Hand Temple</strong>, someone has murdered the priests. Investigate (<strong>Solve the Open Hand Temple Murders</strong>). The trail leads to Orin.</li>
+          <li>At <strong>Sword Coast Couriers</strong>, letters for your companions have gone missing (<strong>Find the Missing Letters</strong>). Track them down: each one adds to a companion's story.</li>
+          <li>Find the camp of the Gur, the monster hunters. They're after one of your companions.</li>
+          <li>Cross <strong>Wyrm's Crossing</strong>, the bridge into the city.</li>
+          <li>🎒 <strong>Get Hellrider Longbow.</strong> Ferg Drogher among the Rivington refugees. Unverified. <em>A longbow with bonus initiative and perception.</em> 🛒 Trader</li>
+          <li>⬆️ <strong>Level 10</strong> (around now): Hide in Plain Sight, more picks. <em>Hide more easily than anyone.</em></li>
+        </ol>
+        <h4 id="rg-r-wyrm-rock">Wyrm's Rock & Gortash</h4>
+        <p class="where">Wyrm's Rock Fortress, the Iron Throne and the Steel Watch Foundry · Quests: Get Gortash's Netherstone, Rescue the Grand Duke</p>
+        <ol class="steps">
+          <li>Enver Gortash is being crowned Archduke of Baldur's Gate in Wyrm's Rock Fortress. Go up to the ceremony.</li>
+          <li>Gortash makes you an offer: kill Orin and rule the city with him. You don't have to answer yet.</li>
+          <li>He's guarded by the Steel Watch, giant clockwork soldiers. Before you take him on, go to the <strong>Steel Watch Foundry</strong> in the Lower City and shut it down (<strong>Disable the Steel Watch</strong>).</li>
+          <li>Find the <strong>Iron Throne</strong>, an underwater prison off the coast. Duke Ravengard, Wyll's father, is held there with a group of gnomes. Get them out before the prison floods.</li>
+          <li>Then return to Wyrm's Rock and take Gortash's Netherstone.</li>
+        </ol>
+        <h4 id="rg-r-lower-city">The Lower City</h4>
+        <p class="where">The Lower City and its sewers</p>
+        <ol class="steps">
+          <li>Make the <strong>Elfsong Tavern</strong> your first stop. You'll hear about half the city's trouble there.</li>
+          <li>At <strong>Sorcerous Sundries</strong>, the wizard Lorroakan is still offering a reward for the Nightsong. If you freed Dame Aylin, think carefully about what you tell him.</li>
+          <li><strong>Gale:</strong> talk him through what he wants to do with the Crown of Karsus, and keep his approval high.</li>
+          <li><strong>Karlach:</strong> find Dammon, the tiefling blacksmith from the Grove, and hear what he can do about her infernal engine.</li>
+          <li><strong>Shadowheart:</strong> the House of Grief, Shar's temple in the city, holds the end of her story.</li>
+          <li>Explore. The Lower City is crowded with side quests: a guild war, a printing press, a haunted bookshop, a devil's house, and more. Buy and loot as you go.</li>
+          <li>🎒 <strong>Get The Dead Shot.</strong> Fytz the Firecracker at the Stormshore Armoury, near the Lower City Central Wall waypoint. About 770 gold. <em>Buy it from Fytz the Firecracker at the Stormshore Armoury. It widens your crit range.</em> 🛒 Trader</li>
+          <li>🎒 <strong>Get Gontr Mael.</strong> The boss of the Steel Watch Foundry in the Lower City. <em>Defeat the Steel Watch Foundry boss for a +3 longbow.</em> 💀 Boss drop</li>
+          <li>🎒 <strong>Get Armour of Agility.</strong> Gloomy Fentonson, the armory near the Lower City wall. <em>Roughly 20 AC for a Dexterity character.</em> 🛒 Trader</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-boo-turns">"Boo is not used to this taking of turns"</a>. A Minsc combat line.</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-minsc-room">Minsc's room</a>. The Lower City Sewers, in the room where you recruit him.</li>
+          <li>⬆️ <strong>Level 11</strong> (around now): Stalker's Flurry. <em>A missed attack grants another free attack.</em></li>
+        </ol>
+        <h4 id="rg-r-orin">Orin & the Temple of Bhaal</h4>
+        <p class="where">Candulhallow's Tombstones, the Murder Tribunal and the Temple of Bhaal under the city · Quest: Get Orin's Netherstone</p>
+        <ol class="steps">
+          <li>Once you're in the Lower City, Orin the Red kidnaps a companion who's waiting at camp. She wants you to kill Gortash for her.</li>
+          <li>Find your way into her temple. Investigate the city's serial murders (<strong>Investigate the Murders</strong>) or kill Gortash first: either way you get the password to the Murder Tribunal, hidden under Candulhallow's Tombstones.</li>
+          <li>At the Tribunal you meet <strong>Sarevok Anchev</strong>. Win his trust or fight him for the Amulet of Bhaal and the map to the temple.</li>
+          <li>The Temple of Bhaal is in the Undercity Ruins. Hold the amulet to the temple door, fight past the assassins, and face Orin.</li>
+          <li>Take Orin's Netherstone from her dagger, and rescue your companion.</li>
+          <li>🎒 <strong>Get Spacehunt Boots.</strong> Dolor, at the end of Investigate the Murders. <em>A free Dimension Door for the party.</em> 📜 Quest reward</li>
+          <li>⬆️ <strong>Level 12</strong> (around now): Feat. <em>A final <strong>Ability Improvement</strong> (+2 Dexterity) or <strong>Resilient</strong>.</em></li>
+        </ol>
+        <h4 id="rg-r-finale">Confront the Elder Brain</h4>
+        <p class="where">The Morphic Pool and the Upper City · Quests: Gather Your Allies, Confront the Elder Brain</p>
+        <ol class="steps">
+          <li>Open the <strong>Gather Your Allies</strong> quest and check who you've rallied: the tieflings, the druids, the gnomes, the Harpers, the githyanki and more. The longer the list, the easier the finale.</li>
+          <li>With all three Netherstones in hand, head for the <strong>Morphic Pool</strong>, where the elder brain feeds.</li>
+          <li>From here the game moves to its finale in the Upper City. <strong>Finish everything else first.</strong> There's no coming back for side quests.</li>
+          <li>Make your last choices, and see your story through.</li>
+        </ol>
+        <aside class="callout tip"><strong>Levels are approximate</strong>The ⬆️ steps show roughly where most players reach each level. If your level is different, follow the level table, not the clock.</aside>
+      </section>
+
+      <section class="chapter" id="rg-love">
+        <header>
+          <span class="chapter-num">Love Interests</span>
+          <h3>Love & Companions</h3>
+          <p class="where">The game is open: any companion can be romanced whatever your character looks like</p>
+        </header>
+
+        <p>The Dusk Archer prefers to watch from a distance, but even a hunter finds someone.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Our pick</th><th>Why they fit</th><th>Alternates</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Male</strong></td><td><span class="npc">Halsin</span></td><td>A patient, gentle druid who loves the forest as you do.</td><td><span class="npc">Astarion</span>, another creature of the night</td></tr>
+              <tr><td><strong>Female</strong></td><td><span class="npc">Shadowheart</span></td><td>Quiet, secretive and drawn to the dark. A good match for a Gloom Stalker.</td><td><span class="npc">Karlach</span>, for something warmer</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm each pick's romance start and approval thresholds.</aside>
+        <figure class="shot" data-src="shots/rg-02-ambush.jpg">
+          <figcaption>The Dusk Archer's first-turn ambush</figcaption>
+        </figure>
+
+      </section>
+
+      <section class="chapter" id="rg-side">
+        <header>
+          <span class="chapter-num">Beyond</span>
+          <h3>Beyond the Companions</h3>
+          <p class="where">One-time encounters, and whether they fit your path</p>
+        </header>
+
+        <p>Beyond your companions, six characters offer one-time encounters, mostly in Act Three. They aren't relationships, so none of them replaces your partner, but a couple can hurt one. Here's how each fits <em>this</em> path. The full details, with spoilers hidden, are in the <a href="../romance/">Beyond the Companions</a> guide.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Who</th><th>Verdict</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Haarlep</strong></td><td>⚠️ Careful</td><td>Be honest, and take the safe 'body but not mind' route or fight.</td></tr>
+              <tr><td><strong>Mizora</strong></td><td>✅ Fits</td><td>She doesn't end Shadowheart's or Halsin's romances. Both are the Dusk Archer's picks.</td></tr>
+              <tr><td><strong>Naoise</strong></td><td>✅ Fits</td><td>No stated cost to romances.</td></tr>
+              <tr><td><strong>Nym Orlith</strong></td><td>⚠️ Careful</td><td>Shadowheart refuses a group scene until her final romance scene.</td></tr>
+              <tr><td><strong>Sorn Orlith</strong></td><td>⚠️ Careful</td><td>No stated costs.</td></tr>
+              <tr><td><strong>The Emperor</strong></td><td>✅ Fits</td><td>A hunter respects a patient watcher. Be kind.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout warn"><strong>Mature content</strong>These encounters are adult. The guide describes them at a high level only.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>The facts come from partly-read wiki pages. Confirm each trigger and consequence before you rely on it.</aside>
+      </section>
+
+      <section class="chapter reference" id="rg-never">
+        <header>
+          <span class="chapter-num">Reference</span>
+          <h3>Never Do This</h3>
+          <p class="where">Choices that break the character</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Don't</th><th>Because</th></tr></thead>
+            <tbody>
+              <tr><td>Fight in the open when you could hide first</td><td>Stealth is your strength.</td></tr>
+              <tr><td>Stand in front</td><td>Archers die in melee.</td></tr>
+              <tr><td>Skip Hunter's Mark</td><td>It's free damage.</td></tr>
+              <tr><td>Spend your best spells on weak enemies</td><td>You have few slots.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Add every point of no return for the path after playing.</aside>
+      </section>
+
+      <aside class="callout tip" style="margin-top:40px"><strong>Want a different path?</strong>Head back to the <a href="../">BG3 Paths hub</a> to compare all three, or see the <a href="../../baldurs-gate-3/">general act-by-act walkthrough</a> for the full story.</aside>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    © 2026 <a href="https://craz.com">Crabtree Labz</a> · <a href="https://craz.com/privacy.html">Privacy</a> · Baldur's Gate 3 © Larian Studios · Baldur's Gate, Dungeons &amp; Dragons and Forgotten Realms © Wizards of the Coast · Unofficial fan guide
+  </footer>
+
+  <script src="../../walkthrough.js?v=e57d0971"></script>
+</body>
+</html>

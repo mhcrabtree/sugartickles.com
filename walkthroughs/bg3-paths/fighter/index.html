@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Sellsword — Baldur's Gate 3 Path · SugarTickles</title>
+  <meta name="description" content="A Baldur's Gate 3 character path: a mercenary Battle Master Fighter who prices every job, with build, maneuvers, feats, gear, rate card, party and checklist." />
+  <!--
+    Original SugarTickles writing. Does NOT adapt bg3.wiki text, so it is not bound by the wiki's
+    CC BY-NC-SA license (unlike ../baldurs-gate-3/). Fan Content rules still apply: see NOTICE.md.
+  -->
+  <link rel="stylesheet" href="/fonts/fonts.css?v=d1e52a1c">
+  <link rel="stylesheet" href="../../walkthrough.css?v=b78d8fbf" />
+</head>
+
+<body data-walkthrough="bg3-paths-fighter">
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/logo.png" alt="" />SugarTickles</a>
+    <nav>
+      <a href="/walkthroughs/">Walkthroughs</a>
+      <a href="../" aria-current="page">BG3 Paths</a>
+      <a href="#credits">Credits</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">BG3 Path · Everything has a price</span>
+    <h1>The Sellsword<span class="sub">Battle Master Fighter</span></h1>
+    <p class="lede">A sword for hire who treats the end of the world as a contract. Everything has a price, every job gets a rate, and every fight is a problem to solve with the right maneuver. This path gives you the build, the maneuvers to pick, the feats and levels, the gear to hunt, a rate card for the jobs you'll be offered, and a company of fellow professionals. You choose how they look; we choose everything else.</p>
+    <svg class="ornament" viewBox="0 0 240 40" fill="none" aria-hidden="true">
+      <path d="M4 20 H 84" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M156 20 H 236" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M120 6 C 104 6, 96 14, 96 20 C 96 26, 104 34, 120 34 C 136 34, 144 26, 144 20 C 144 14, 136 6, 120 6 z" stroke="currentColor" stroke-width="2"/>
+      <circle cx="112" cy="18" r="2.2" fill="currentColor"/>
+      <circle cx="128" cy="18" r="2.2" fill="currentColor"/>
+    </svg>
+    <div class="meta-row">
+      <span class="pill">Fighter</span>
+      <span class="pill">The mercenary path</span>
+      <span class="pill">Tactics and gold</span>
+    </div>
+    <div class="resource-links">
+      <a href="#fg-sheet">⚔️ Build</a>
+      <a href="#fg-levels">📈 Levels</a>
+      <a href="#fg-spells">🎯 Maneuvers</a>
+      <a href="#fg-rates">💰 Rate Card</a>
+      <a href="#fg-act1">✅ Playthrough</a>
+    </div>
+  </section>
+
+  <div class="layout">
+    <div>
+      <button class="toc-toggle" aria-expanded="false">☰ Chapters &amp; progress</button>
+      <nav class="toc" aria-label="Chapters">
+        <div class="progress">
+          <div class="label"><span>Your progress</span></div>
+          <div class="bar"><span></span></div>
+          <div class="label" style="margin-top:6px"><span class="count"></span></div>
+          <button type="button">Reset progress</button>
+        </div>
+          <h4><a href="#act-build" style="color:inherit;text-decoration:none">Your Character</a></h4>
+          <ol>
+            <li><a href="#fg-idea"><span>The Idea</span><span class="done"></span></a></li>
+            <li><a href="#fg-sheet"><span>Character Creation</span><span class="done"></span></a></li>
+            <li><a href="#fg-levels"><span>Level by Level</span><span class="done"></span></a></li>
+            <li><a href="#fg-spells"><span>Maneuvers to Pick</span><span class="done"></span></a></li>
+            <li><a href="#fg-rates"><span>The Sellsword's Rate Card</span><span class="done"></span></a></li>
+            <li><a href="#fg-party"><span>Your Party</span><span class="done"></span></a></li>
+            <li><a href="#fg-gear"><span>Gear Worth Finding</span><span class="done"></span></a></li>
+            <li><a href="#fg-eggs"><span>Easter Eggs</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-play" style="color:inherit;text-decoration:none">Staying on Target</a></h4>
+          <ol>
+            <li><a href="#fg-act1"><span>Act One</span><span class="done"></span></a></li>
+            <li><a href="#fg-act2"><span>Act Two</span><span class="done"></span></a></li>
+            <li><a href="#fg-act3"><span>Act Three</span><span class="done"></span></a></li>
+            <li><a href="#fg-love"><span>Love & Companions</span><span class="done"></span></a></li>
+            <li><a href="#fg-side"><span>Beyond the Companions</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#fg-never" style="color:inherit;text-decoration:none">Reference</a></h4>
+          <ol>
+            <li><a href="#fg-never"><span>Never Do This</span><span class="done"></span></a></li>
+          </ol>
+      </nav>
+    </div>
+
+    <main>
+      <section class="credits" id="credits">
+        <h3>Credits &amp; Sources</h3>
+        <p>This is original SugarTickles writing, built from our own knowledge of the game and checked in our own playthrough. Where we haven't confirmed something yet you'll see a gold <strong>"To verify"</strong> note. Spells, features and items are described in our own words, never copied from the game or the rulebooks.</p>
+        <p>Screenshots are our own captures from the game.</p>
+        <p><em>Baldur's Gate 3 Paths</em> is unofficial Fan Content permitted under the <a href="https://company.wizards.com/en/legal/fancontentpolicy" rel="noopener">Fan Content Policy</a>. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</p>
+        <p><em>Baldur's Gate 3</em> and its art, characters and names are © Larian Studios. Baldur's Gate, Dungeons &amp; Dragons and the Forgotten Realms are trademarks of Wizards of the Coast. SugarTickles isn't affiliated with Larian or Wizards of the Coast. It's a fan guide, made with love. We use no Wizards or Larian logos.</p>
+      </section>
+
+      <section class="act" id="act-build">
+        <span class="act-num">Your Character</span>
+        <h2>Build The Sellsword</h2>
+        <p>A Shield Dwarf Battle Master with a greatsword, a ledger and a poker face. This chapter picks every choice, including which maneuvers to learn and when.</p>
+      </section>
+
+      <section class="chapter" id="fg-idea">
+        <header>
+          <span class="chapter-num">Chapter 1</span>
+          <h3>The Idea</h3>
+          <p class="where">Who the Sellsword is, and why a Battle Master</p>
+        </header>
+
+        <p>The Sellsword doesn't care about gods or prophecies. They care about being paid. A <strong>Fighter</strong> is the most reliable class in the game: heavy armor, big weapons, two extra attacks late, and an extra action on demand. The <strong>Battle Master</strong> turns that reliability into tactics: a pool of special dice you spend on maneuvers that trip, taunt, push and counterattack.</p>
+        <p>It's one of the best classes for a first run: simple to start, deep to master, and hard to play badly.</p>
+        <aside class="callout tip"><strong>Other subclasses</strong>The <strong>Champion</strong> is the simplest: it just crits more often. The <strong>Eldritch Knight</strong> adds a few wizard spells. The new <strong>Arcane Archer</strong> (Patch 8) shoots magical trick arrows. We built this page around the Battle Master because it teaches you the most.</aside>
+        <aside class="callout verify"><strong>Draft status</strong>This path was drafted before our playthrough. Notes marked <strong>To verify</strong> are what we'll confirm against the current version of the game. Gear locations come from one guide per act and haven't been checked in our own game yet.</aside>
+        <figure class="shot" data-src="shots/fg-01-creation.jpg">
+          <figcaption>The character creation screen with The Sellsword choices</figcaption>
+        </figure>
+
+      </section>
+
+      <section class="chapter" id="fg-sheet">
+        <header>
+          <span class="chapter-num">Chapter 2</span>
+          <h3>Character Creation</h3>
+          <p class="where">Race, background, ability scores and skills. Pick the look; copy the rest.</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Choice</th><th>Pick</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>Race</td><td><strong>Shield Dwarf</strong></td><td>Tough, and trained in armor from the start.</td></tr>
+              <tr><td>Background</td><td><strong>Guild Artisan</strong></td><td>Trains you in Insight and Persuasion: a mercenary who can haggle.</td></tr>
+              <tr><td>Class</td><td><strong>Fighter</strong></td><td>Subclass at level 3: <strong>Battle Master</strong>.</td></tr>
+              <tr><td>Ability scores</td><td>Strength <strong>17</strong>, Dexterity 10, Constitution <strong>15</strong>, Intelligence 10, Wisdom 10, Charisma 13</td><td>Spend the 27 points as 15 / 10 / 14 / 10 / 10 / 13, then +2 Strength and +1 Constitution.</td></tr>
+              <tr><td>Skills</td><td>Athletics, Intimidation</td><td>Your two Fighter picks. Guild Artisan adds Insight and Persuasion.</td></tr>
+              <tr><td>Fighting Style (level 1)</td><td><strong>Great Weapon Fighting</strong></td><td>Rerolls low damage dice on two-handed weapons. Swap for Defence if you'd rather carry a shield.</td></tr>
+              <tr><td>Starting gear</td><td>A longsword, scale mail and boots</td><td>Swap the sword as soon as you find a greatsword. The first one is on the Nautiloid.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the Shield Dwarf traits, the Guild Artisan skills, and that Great Weapon Fighting works as described on our version.</aside>
+      </section>
+
+      <section class="chapter" id="fg-levels">
+        <header>
+          <span class="chapter-num">Chapter 3</span>
+          <h3>Level by Level</h3>
+          <p class="where">What to pick at each level, and what you're getting</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Level</th><th>What you get</th><th>What to do</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Second Wind, Fighting Style</td><td>Take Great Weapon Fighting. Second Wind is a bonus-action heal that comes back on a short rest.</td></tr>
+              <tr><td>2</td><td>Action Surge</td><td>An extra action on your turn, once per short rest. Save it for a boss's second round.</td></tr>
+              <tr><td>3</td><td>Battle Master: 4 superiority dice (d8), 3 maneuvers</td><td>Pick <strong>Precision Attack</strong>, <strong>Trip Attack</strong> and <strong>Riposte</strong>.</td></tr>
+              <tr><td>4</td><td>Feat</td><td>Take <strong>Great Weapon Master</strong> for bigger hits, or Ability Improvement (+2 Strength).</td></tr>
+              <tr><td>5</td><td>Extra Attack</td><td>You attack twice. This is when the Fighter really arrives.</td></tr>
+              <tr><td>6</td><td>Feat</td><td>Ability Improvement: +2 Strength (to 19).</td></tr>
+              <tr><td>7</td><td>5 superiority dice, +2 maneuvers</td><td>Add <strong>Goading Attack</strong> and <strong>Commander's Strike</strong>.</td></tr>
+              <tr><td>8</td><td>Feat</td><td>Take <strong>Sentinel</strong> (to keep enemies on you) or <strong>Tough</strong> (more hit points).</td></tr>
+              <tr><td>9</td><td>Indomitable</td><td>Reroll a failed saving throw. A lifesaver against mind control.</td></tr>
+              <tr><td>10</td><td>Improved Combat Superiority (dice become d10), +2 maneuvers</td><td>Add <strong>Menacing Attack</strong> and <strong>Rally</strong>.</td></tr>
+              <tr><td>11</td><td>Improved Extra Attack</td><td>Two extra attacks after your main one. You're now a one-man army.</td></tr>
+              <tr><td>12</td><td>Feat</td><td>A final Ability Improvement (+2 Strength to 20) or Constitution.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Your short-rest friends</strong>Second Wind, Action Surge and your superiority dice all come back on a <strong>short rest</strong>. Rest after every hard fight and you'll always arrive at the next one full.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>The class table and the Battle Master's dice and maneuver counts are from the wiki. The feat names (Great Weapon Master, Sentinel, Tough) weren't confirmed on a feats page, so check each one in the level-up screen.</aside>
+      </section>
+
+      <section class="chapter" id="fg-spells">
+        <header>
+          <span class="chapter-num">Chapter 4</span>
+          <h3>Maneuvers to Pick</h3>
+          <p class="where">Battle Masters spend a die to do something clever. Here are all 14.</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Maneuver</th><th>What it does (our words)</th><th>Our verdict</th></tr></thead>
+            <tbody>
+              <tr><td>Precision Attack</td><td>Add a die to an attack roll.</td><td><strong>Take it.</strong> Turns a miss into a hit.</td></tr>
+              <tr><td>Trip Attack</td><td>Extra damage and a chance to knock a target prone.</td><td><strong>Take it.</strong> Prone enemies are easy to hit.</td></tr>
+              <tr><td>Riposte</td><td>When a melee attack misses you, hit back for extra damage.</td><td><strong>Take it.</strong> It costs no action.</td></tr>
+              <tr><td>Goading Attack</td><td>Extra damage, and the target has disadvantage attacking anyone but you.</td><td><strong>Level 7.</strong> The tank's tool.</td></tr>
+              <tr><td>Commander's Strike</td><td>Give up an attack so an ally attacks right away.</td><td><strong>Level 7.</strong> Great with a rogue or archer.</td></tr>
+              <tr><td>Menacing Attack</td><td>Extra damage, and a chance to frighten.</td><td><strong>Level 10.</strong> A frightened enemy runs.</td></tr>
+              <tr><td>Rally</td><td>Gives an ally temporary hit points.</td><td><strong>Level 10.</strong> Free healing.</td></tr>
+              <tr><td>Pushing Attack</td><td>Extra damage, and a push of 4.5 m.</td><td>Good near ledges and chasms.</td></tr>
+              <tr><td>Disarming Attack</td><td>Extra damage, and the target may drop its weapons.</td><td>Situational.</td></tr>
+              <tr><td>Distracting Strike</td><td>Allies get advantage on their next attack against the target.</td><td>Good with a big party.</td></tr>
+              <tr><td>Feinting Attack</td><td>Spend an action and a bonus action to attack with advantage and extra damage.</td><td>A burst-damage option.</td></tr>
+              <tr><td>Manoeuvring Attack</td><td>Extra damage, and an ally moves without opportunity attacks.</td><td>Situational.</td></tr>
+              <tr><td>Evasive Footwork</td><td>Enemies have disadvantage on melee attacks against you for a round.</td><td>Situational.</td></tr>
+              <tr><td>Sweeping Attack</td><td>Hit a second nearby enemy with your die as damage.</td><td>Good against crowds.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>House rule</strong>Spend a die when it <em>wins</em> something: a hit you'd miss, a trip on a boss, a counter on a miss. Never spend one just because you have one.</aside>
+        <aside class="callout tip"><strong>More on spells</strong>New to magic? The <a href="../spells/">Spells Guide</a> explains slots, concentration and who can learn what.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>The maneuver list and dice are from the wiki. Confirm the maneuver names and exact effects in the level-up screen.</aside>
+      </section>
+
+      <section class="chapter" id="fg-rates">
+        <header>
+          <span class="chapter-num">Guide</span>
+          <h3>The Sellsword's Rate Card</h3>
+          <p class="where">Our house rules for staying a mercenary</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Situation</th><th>What the Sellsword does</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>Someone asks for help</td><td>Ask what it pays before you say yes.</td><td>Everything has a price.</td></tr>
+              <tr><td>You find loot</td><td>Sell it. Never hoard.</td><td>Gold is the only trophy.</td></tr>
+              <tr><td>A quest has a choice</td><td>Take the one that pays more.</td><td>You're not here to be liked.</td></tr>
+              <tr><td>Two sides ask for you</td><td>Side with whoever pays better, as long as the pay is real.</td><td>Loyalty is a line item.</td></tr>
+              <tr><td>A friend is in trouble</td><td>Help, and send the bill later.</td><td>Professionals have standards.</td></tr>
+              <tr><td>A prisoner begs for mercy</td><td>Ask what they can offer.</td><td>Dead men don't pay.</td></tr>
+              <tr><td>The party shares the take</td><td>Split fairly, always.</td><td>A company that cheats its own doesn't last.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>The ledger</strong>Tally your gold at the end of each act. A good Sellsword aims to finish Act One with a few thousand coins, and spends it on the best armor and weapons they can buy.</aside>
+        <aside class="callout warn"><strong>Don't get too clever</strong>Some rewards cost you a quest outcome, a companion or a friend. The Sellsword is mercenary, not stupid: weigh each price against what you'll lose.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm rewards at each quest as we play, and add a real gold target per act.</aside>
+      </section>
+
+      <section class="chapter" id="fg-party">
+        <header>
+          <span class="chapter-num">Party</span>
+          <h3>Your Party</h3>
+          <p class="where">The companions to pick, and the ones to leave at camp</p>
+        </header>
+
+        <p>A sellsword works with a company. The Sellsword's company is made of professionals who pay their own way: a healer, a caster, and a scout, with you in the middle as the wall.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Companion</th><th>Role</th><th>Why they fit this path</th><th>Where to find them</th></tr></thead>
+            <tbody>
+              <tr><td><span class="npc">Shadowheart</span></td><td>Cleric healer</td><td>Keeps you standing, and has her own mission, which suits a company of professionals.</td><td>A pod on the Nautiloid, or near the crash site</td></tr>
+              <tr><td><span class="npc">Gale</span></td><td>Wizard</td><td>Big spells from a man who is secretly very, very in debt.</td><td>Stone circle east of the Nautiloid wreck</td></tr>
+              <tr><td><span class="npc">Astarion</span></td><td>Rogue scout</td><td>A fellow opportunist who understands the value of a coin.</td><td>Ravaged Beach, west of the Nautiloid wreck</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>On the bench</strong><span class="npc">Lae'zel</span> and <span class="npc">Karlach</span> are good frontline swaps, and <span class="npc">Wyll</span> is a ranged option. <span class="npc">Minsc</span> arrives in Act Three, a mercenary of a different kind.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm each companion's recruitment spot and that this party handles our path's choices.</aside>
+      </section>
+
+      <section class="chapter" id="fg-gear">
+        <header>
+          <span class="chapter-num">Gear</span>
+          <h3>Gear Worth Finding</h3>
+          <p class="where">Our recommended finds by act, and where to get them</p>
+        </header>
+
+        <p>A Fighter wears the best armor and carries the biggest weapon. Look for greatswords, halberds and heavy armor, and anything that raises Strength or Constitution. The Sellsword buys what it can't loot.</p>
+        <h4>Act One</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Everburn Blade</strong></td><td>Commander Zhalk on the Nautiloid (prologue). You don't have to fight him: a Command spell makes him drop it.</td><td>A fiery greatsword from the first minutes. Make Zhalk drop it with a Command spell.</td><td>⚠️ Missable</td></tr>
+              <tr><td><strong>Adamantine Scale or Splint Mail</strong></td><td>Crafted at the Adamantine Forge in Grymforge.</td><td>The sturdiest armor you can craft this early.</td><td>🔨 Craft it</td></tr>
+              <tr><td><strong>The Skinburster</strong></td><td>A chest in the Inquisitor's room, Crèche Y'llek.</td><td>A halberd from the Inquisitor's room, if you prefer a polearm.</td><td>📦 Chest</td></tr>
+              <tr><td><strong>Unseen Menace</strong></td><td>Sold in Crèche Y'llek.</td><td>A pike for crit-hunters. Buy it at Crèche Y'llek.</td><td>🛒 Trader</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <h4>Act Two</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Reaper's Embrace</strong></td><td>Ketheric Thorm's armor, dropped when he's defeated.</td><td>Ketheric's heavy armor, with 19 AC.</td><td>💀 Boss drop</td></tr>
+              <tr><td><strong>Halberd of Vigilance</strong></td><td>Lann Tarv, Moonrise Towers.</td><td>Reactions that hit harder. Buy it from Lann Tarv.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Shield of Devotion</strong></td><td>Quartermaster Talli, Last Light Inn.</td><td>If you switch to sword and shield.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Cloak of Protection</strong></td><td>Quartermaster Talli, Last Light Inn.</td><td>+1 AC and saves for anyone.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Vivacious Cloak</strong></td><td>A hidden tomb in the cemetery near the Gauntlet of Shar.</td><td>Temporary HP in a hidden tomb.</td><td>👀 Easy to miss</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <h4>Act Three</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Gauntlets of Hill Giant Strength</strong></td><td>The House of Hope archive.</td><td>Sets Strength to 23.</td><td>📜 Quest reward</td></tr>
+              <tr><td><strong>Amulet of Greater Health</strong></td><td>House of Hope.</td><td>Raises Constitution to 23.</td><td>📜 Quest reward</td></tr>
+              <tr><td><strong>Balduran's Giantslayer</strong></td><td>The secret base under Wyrmgate Prison, or Wyll's storyline.</td><td>A legendary greatsword.</td><td>👀 Easy to miss</td></tr>
+              <tr><td><strong>Helm of Balduran</strong></td><td>The secret base under Wyrmgate Prison.</td><td>Heals you every turn and blocks crits.</td><td>👀 Easy to miss</td></tr>
+              <tr><td><strong>Helldusk Armour</strong></td><td>Listed as a drop from Raphael. Source looked unreliable, so verify.</td><td>Heavy armor with fire resistance (verify the source).</td><td>💀 Boss drop</td></tr>
+              <tr><td><strong>Sword of Chaos</strong></td><td>Sarevok, near the Murder Tribunal. Unconfirmed.</td><td>A huge greatsword.</td><td>📜 Quest reward</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Hidden loot</strong>Items marked <strong>👀 Easy to miss</strong> or <strong>⚠️ Missable</strong> are the ones people walk past. The full list for every act is in the <a href="../gear/">Gear Atlas</a>.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Every location here comes from a single guide and hasn't been confirmed in our own game. We'll check each one and correct the page.</aside>
+      </section>
+
+      <section class="chapter" id="fg-eggs">
+        <header>
+          <span class="chapter-num">Eggs</span>
+          <h3>Easter Eggs on Your Path</h3>
+          <p class="where">Nods, jokes and references your build is likely to find</p>
+        </header>
+
+        <p>Your path is a good excuse to catch these. We've picked the easter eggs your build, background, party and route are most likely to run into. Each one links to the full entry in the <a href="../eggs/">Easter Egg Guide</a>. ⚠️ means a spoiler, so the guide hides the details until you open it.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>When</th><th>Easter egg</th><th>Where</th><th>What you need</th></tr></thead>
+            <tbody>
+              <tr><td>Act Three</td><td><strong><a href="../eggs/#egg-minsc-room">Minsc's room</a></strong></td><td>The Lower City Sewers, in the room where you recruit him.</td><td>Reach the room where Minsc can be recruited.</td></tr>
+              <tr><td>Act Three</td><td><strong><a href="../eggs/#egg-roveer">Roveer's Storehouse</a></strong></td><td>A quest in the Lower City.</td><td>Take the quest.</td></tr>
+              <tr><td>Act Three</td><td><strong><a href="../eggs/#egg-sethan">Sethan, the JoJo greataxe</a></strong></td><td>Ferg Drogher, among the Rivington refugees.</td><td>Buy or take the axe.</td></tr>
+              <tr><td>Act Three (our guess)</td><td><strong><a href="../eggs/#egg-sarevok-gear">Sarevok's gear</a></strong> ⚠️</td><td>Looted from Sarevok's corpse.</td><td>Defeat Sarevok.</td></tr>
+              <tr><td>Act Three (our guess)</td><td><strong><a href="../eggs/#egg-balduran-gear">Balduran's returning gear</a></strong> ⚠️</td><td>Wyrmgate Prison's secret base and the Emperor's sword.</td><td>Reach the secret base.</td></tr>
+              <tr><td>Any act</td><td><strong><a href="../eggs/#egg-gale-chess">Gale talks in chess</a></strong></td><td>Gale's combat lines, in any act.</td><td>Bring Gale along.</td></tr>
+              <tr><td>Any act</td><td><strong><a href="../eggs/#egg-boo-turns">"Boo is not used to this taking of turns"</a></strong></td><td>A Minsc combat line.</td><td>Bring Minsc (Act Three).</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Keep a checklist</strong>Tick these off as you find them. We'll note in each act's chapter when one is nearby.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Many acts and triggers come from a single wiki page and are our best guess. We'll confirm each one as we play.</aside>
+      </section>
+
+      <section class="act" id="act-play">
+        <span class="act-num">Staying on Target</span>
+        <h2>The Sellsword's Playthrough</h2>
+        <p>Check the price, pick the maneuver, finish the job. Here's the plan.</p>
+      </section>
+
+      <section class="chapter" id="fg-act1">
+        <header>
+          <span class="chapter-num">Act One</span>
+          <h3>Act One: Take the Contract</h3>
+          <p class="where">A world full of people who need a sword</p>
+        </header>
+
+        <h4>Your vows this act</h4>
+        <ol class="steps">
+          <li>At the Nautiloid, take the <span class="item">Everburn Blade</span> by making Zhalk drop it with a Command spell.</li>
+          <li>Recruit <span class="npc">Shadowheart</span>, <span class="npc">Gale</span> and <span class="npc">Astarion</span>. A company needs a healer, a caster and a scout.</li>
+          <li>At every quest, ask for the reward. At the Grove, ask Zevlor what he'll pay.</li>
+          <li>Take <span class="item">Auntie Ethel's Hair</span> from the hag. It's payment.</li>
+          <li>At level 3, take Battle Master, and learn Precision Attack, Trip Attack and Riposte.</li>
+        </ol>
+        <aside class="callout tip"><strong>Recommended: your first big find</strong>Get the <span class="item">Everburn Blade</span> on the Nautiloid. A free greatsword is the best opening payment you'll ever receive.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the Command trick on Zhalk, and each quest's reward.</aside>
+        <h4>Step by step</h4>
+        <p class="where">Jump to: <a href="#fg-r-nautiloid">The Nautiloid</a> · <a href="#fg-r-crash-site">The Crash Site</a> · <a href="#fg-r-grove">The Emerald Grove</a> · <a href="#fg-r-blighted-village">The Blighted Village & the Hag</a> · <a href="#fg-r-risen-road">The Risen Road & Karlach</a> · <a href="#fg-r-goblin-camp">The Goblin Camp</a> · <a href="#fg-r-underdark">The Underdark & Grymforge</a> · <a href="#fg-r-creche">The Mountain Pass & the Crèche</a> · <a href="#fg-r-leave-act1">Before You Leave Act One</a></p>
+        <h4 id="fg-r-nautiloid">Prologue: The Nautiloid</h4>
+        <p class="where">A mind flayer ship, on its way through Hell</p>
+        <ol class="steps">
+          <li>⬆️ <strong>Level 1 (start):</strong> Second Wind, Fighting Style. Take Great Weapon Fighting. Second Wind is a bonus-action heal that comes back on a short rest.</li>
+          <li>Wake in your pod and break out. Loot the raised walkways in the first room, and stay away from the larva pool in the middle: it bursts.</li>
+          <li>Leave through the west door. In the next room, take the lift up to the elf with the exposed brain. Pass the check to see what it really is: an intellect devourer called Us.</li>
+          <li>Decide what to do with Us: free it, leave it, or destroy it. If you free it, it tags along for a while.</li>
+          <li>Step outside. A githyanki warrior, Lae'zel, drops in and joins you. Fight the three imps together.</li>
+          <li>Climb north to the room with Shadowheart's pod. Open it with a check, or take the Eldritch Rune from a body in the chamber to the east and use that. Then free her.</li>
+          <li>Enter the Helm. A cambion, Commander Zhalk, is fighting a mind flayer. You don't have to beat him. Your goal is the transponder on the far west side: reach it and connect its nerves when the mind flayer is distracted.</li>
+          <li>Watch the ship break free of Hell and crash. You wake on the beach.</li>
+          <li>🎒 <strong>Get Everburn Blade.</strong> Commander Zhalk on the Nautiloid (prologue). You don't have to fight him: a Command spell makes him drop it. <em>A fiery greatsword from the first minutes. Make Zhalk drop it with a Command spell.</em> ⚠️ Missable</li>
+        </ol>
+        <h4 id="fg-r-crash-site">The Crash Site</h4>
+        <p class="where">The Ravaged Beach and the Roadside Cliffs · Quest: Find a Cure</p>
+        <ol class="steps">
+          <li>Look around the beach. Everyone from the ship has a tadpole, and nobody has turned yet. Your journal now tracks <strong>Find a Cure</strong>: the rest of Act One is following leads.</li>
+          <li>If you didn't free Shadowheart on the ship, find her now, in a nearby cave.</li>
+          <li>Walk west along the beach. A pale elf runs up begging for help, then holds a knife to your throat. That's Astarion. Talk him down and he joins you.</li>
+          <li>Go east to the stone circle. A voice calls for help from inside a portal. Pull the wizard Gale out (literally) and recruit him.</li>
+          <li>Explore the Dank Crypt near the beach. A sarcophagus holds a strange skeleton called Withers. Wake him: he moves into your camp and stays useful all game. He can re-pick your class and abilities, and bring back dead companions.</li>
+          <li>Make camp and take a long rest. Your companions talk about the tadpole. Talk to each one before you move on.</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-gale-chess">Gale talks in chess</a>. Gale's combat lines, in any act.</li>
+          <li>⬆️ <strong>Level 2</strong> (around now): Action Surge. <em>An extra action on your turn, once per short rest. Save it for a boss's second round.</em></li>
+        </ol>
+        <h4 id="fg-r-grove">The Emerald Grove</h4>
+        <p class="where">North of the Roadside Cliffs · Quests: Save the Refugees, Save Arabella</p>
+        <ol class="steps">
+          <li>At the Grove gate, goblins are attacking tieflings. Join the fight on the tieflings' side. A warlock named Wyll fights beside you.</li>
+          <li>Inside, talk <strong>Zevlor</strong> (the tieflings' leader) and <strong>Aradin</strong> (an adventurer who lost his druid guide) out of their argument. Zevlor explains the goblin threat and the Grove's troubles.</li>
+          <li>Go to the Inner Sanctum. A tiefling girl, Arabella, has been caught stealing the druids' Sacred Idol, and Kagha is about to punish her. Talk Kagha into letting her go (<strong>Save Arabella</strong>).</li>
+          <li>Never take the Sacred Idol, whoever asks you to. Taking it makes the druids finish the ritual and throws the tieflings out.</li>
+          <li>Kagha has begun the <strong>Rite of Thorns</strong>, which will seal the Grove. Their leader, Halsin, is missing: the goblins took him.</li>
+          <li>Talk to the healer <strong>Nettie</strong>. She can't cure your tadpole, but she points you toward Halsin. Be honest with her and accept her terms, or she'll try to poison you.</li>
+          <li>Meet the bard Alfira and the gnome author Volo. Both have side quests, and traders like Arron sell useful gear.</li>
+          <li>⬆️ <strong>Level 3</strong> (around now): Battle Master: 4 superiority dice (d8), 3 maneuvers. <em>Pick <strong>Precision Attack</strong>, <strong>Trip Attack</strong> and <strong>Riposte</strong>.</em></li>
+        </ol>
+        <h4 id="fg-r-blighted-village">The Blighted Village & the Hag</h4>
+        <p class="where">The Blighted Village, the Riverside Teahouse and the Sunlit Wetlands · Quests: Rescue the Gnome, Save Mayrina</p>
+        <ol class="steps">
+          <li>Head west to the <strong>Blighted Village</strong>. Goblins hold it. Talk your way past the gate or fight.</li>
+          <li>A gnome, <strong>Barcus Wroot</strong>, is tied to a windmill. Free him (<strong>Rescue the Gnome</strong>), then search the village, including the cellar under the old apothecary.</li>
+          <li>The cave to the north belongs to an owlbear and her cub. It's a hard fight at low level: come back later.</li>
+          <li>South of the village, two brothers are arguing with an old woman about their sister. She's <strong>Auntie Ethel</strong>, and the sister is Mayrina. This starts <strong>Save Mayrina</strong>.</li>
+          <li>Follow Ethel to her <strong>Riverside Teahouse</strong> in the swamp. She's a hag, and she'll offer to remove your tadpole in return for an eye. Don't: she can't do it.</li>
+          <li>Follow her through the fireplace into her lair. Fight past the masked servants, find Mayrina in her cage, and put out the fire beneath it quickly or she dies.</li>
+          <li>When Ethel is nearly beaten she offers a bargain. Take <span class="item">Auntie Ethel's Hair</span> (a permanent +1 to an ability score). The Sellsword takes payment.</li>
+          <li>⬆️ <strong>Level 4</strong> (around now): Feat. <em>Take <strong>Great Weapon Master</strong> for bigger hits, or Ability Improvement (+2 Strength).</em></li>
+        </ol>
+        <h4 id="fg-r-risen-road">The Risen Road & Karlach</h4>
+        <p class="where">East of the Grove · Quests: Hunt the Devil, Rescue the Grand Duke</p>
+        <ol class="steps">
+          <li>At the <strong>Toll House</strong> on the road, a group of paladins led by <strong>Anders</strong> is hunting a devil and wants your help.</li>
+          <li>Go down the cliff and across the stream. The 'devil' is <strong>Karlach</strong>, a tiefling who escaped from Hell. Hear her side, then decide whom to believe (<strong>Hunt the Devil</strong>).</li>
+          <li>Further along, the inn at <strong>Waukeen's Rest</strong> is on fire with people trapped inside, including Councillor Florrick (<strong>Rescue the Grand Duke</strong>). Put out the flames and get everyone out. <strong>Do this before you long rest or fast travel</strong>, or they die.</li>
+        </ol>
+        <h4 id="fg-r-goblin-camp">The Goblin Camp</h4>
+        <p class="where">Northwest of the Blighted Village · Quests: Save the First Druid, Defeat the Goblins</p>
+        <ol class="steps">
+          <li>Walk in through the front gate. The goblins think your tadpole makes you a 'True Soul', a chosen servant of their god, the Absolute. Use that.</li>
+          <li>Inside the Shattered Sanctum three leaders rule the camp: Priestess Gut, Dror Ragzlin and the drow Minthara. Each wants to know where the Grove is.</li>
+          <li>Find Halsin in bear form in the worg pens behind the Sanctum. Help him fight the goblins. He asks you to deal with the leaders so the Grove is safe.</li>
+          <li>In a room off the Sanctum, goblins are torturing Liam, one of Aradin's group. Talk them off him and free him. He tells you about the Nightsong.</li>
+          <li>Defeat all three leaders. If you can, <strong>knock Minthara out</strong> (non-lethal attacks) rather than killing her. That keeps the door open to freeing her in Act Two.</li>
+          <li>Return to Halsin, then go back to the Grove. The Rite of Thorns ends, the tieflings prepare to leave, and they throw a party at camp.</li>
+          <li>⬆️ <strong>Level 5</strong> (around now): Extra Attack. <em>You attack twice. This is when the Fighter really arrives.</em></li>
+        </ol>
+        <h4 id="fg-r-underdark">The Underdark & Grymforge</h4>
+        <p class="where">Below the Defiled Temple, the Zhentarim Hideout or the Whispering Depths · Quests: Defeat the Duergar Intruders, Save the Grymforge Gnomes</p>
+        <ol class="steps">
+          <li>The easiest way down is the <strong>Defiled Temple</strong> under the Shattered Sanctum. Solve the Selûnite door puzzle (a dwarf named Brian's poem holds the clues) and keep going down.</li>
+          <li>In the <strong>Myconid Colony</strong>, the mushroom folk ask you to deal with duergar intruders. A myconid named Glut has plans of his own.</li>
+          <li>Visit <strong>Omeluum</strong>, a friendly mind flayer in the colony. He'll study your tadpole.</li>
+          <li>Find the old <strong>Selûnite Outpost</strong>. A book there, <em>In Search of the Nightsong</em>, says the Nightsong is held in a Sharran fortress near Moonrise Towers.</li>
+          <li>Take a skiff across the lake to <strong>Grymforge</strong>. Duergar have enslaved deep gnomes there. Free them, whether or not you free the True Soul Nere trapped behind a rockfall.</li>
+          <li>Optional: below Grymforge lies the Adamantine Forge, where you can craft some of Act One's best gear if you defeat its guardian, Grym.</li>
+          <li>The elevator in Grymforge goes up to the Shadow-Cursed Lands. That's your way into Act Two on this route.</li>
+          <li>🎒 <strong>Get Adamantine Scale or Splint Mail.</strong> Crafted at the Adamantine Forge in Grymforge. <em>The sturdiest armor you can craft this early.</em> 🔨 Craft it</li>
+        </ol>
+        <h4 id="fg-r-creche">The Mountain Pass & the Crèche</h4>
+        <p class="where">The Risen Road, the Mountain Pass and the Rosymorn Monastery · Quest: Find the Githyanki Crèche</p>
+        <ol class="steps">
+          <li><strong>Heads-up:</strong> the githyanki scenes are built around Lae'zel. Without her they play out differently, and some crèche content may be closed to you. If you want the crèche's gear, bring her along for this one trip and send her back to camp afterward.</li>
+          <li>At the <strong>Rosymorn Monastery Trail</strong>, summon the cable car with the wheel and ride across. Climb into the monastery through the broken windows.</li>
+          <li>Optional: the monastery hides the <span class="item">Blood of Lathander</span>, a legendary mace, behind a puzzle (<strong>Find the Blood of Lathander</strong>).</li>
+          <li>Below the monastery is the githyanki crèche, <strong>Crèche Y'llek</strong>. The gith distrust outsiders, so talk carefully (and let Lae'zel do the talking if she's with you).</li>
+          <li>In the infirmary, Inquisitor W'wargaz offers to cure you in the Zaith'isk, a githyanki machine. It doesn't go to plan.</li>
+          <li>The Mountain Pass leads down into the Shadow-Cursed Lands: your other way into Act Two.</li>
+          <li>🎒 <strong>Get The Skinburster.</strong> A chest in the Inquisitor's room, Crèche Y'llek. <em>A halberd from the Inquisitor's room, if you prefer a polearm.</em> 📦 Chest</li>
+          <li>🎒 <strong>Get Unseen Menace.</strong> Sold in Crèche Y'llek. <em>A pike for crit-hunters. Buy it at Crèche Y'llek.</em> 🛒 Trader</li>
+        </ol>
+        <h4 id="fg-r-leave-act1">Before You Leave Act One</h4>
+        <p class="where">A checklist for your last day in the Wilderness</p>
+        <ol class="steps">
+          <li>Make sure the tieflings are safe and you've celebrated at camp.</li>
+          <li>Check that Florrick is out of Waukeen's Rest, and that Mayrina is free (or paid for).</li>
+          <li>Visit both the Underdark and the crèche, or decide which to skip.</li>
+          <li>Talk to every companion at camp and finish their camp scenes. Some only trigger in Act One.</li>
+          <li>Sell your junk and buy what you can afford from traders like Arron and Dammon at the Grove.</li>
+          <li>Make a manual save before you descend. Act Two takes you somewhere you can't easily come back from.</li>
+          <li>⬆️ <strong>Level 6</strong> (around now): Feat. <em>Ability Improvement: +2 Strength (to 19).</em></li>
+        </ol>
+        <aside class="callout tip"><strong>Levels are approximate</strong>The ⬆️ steps show roughly where most players reach each level. If your level is different, follow the level table, not the clock.</aside>
+      </section>
+
+      <section class="chapter" id="fg-act2">
+        <header>
+          <span class="chapter-num">Act Two</span>
+          <h3>Act Two: Name Your Price</h3>
+          <p class="where">Moonrise Towers has a lot of merchants</p>
+        </header>
+
+        <h4>Your vows this act</h4>
+        <ol class="steps">
+          <li>Spend your gold at Moonrise and Last Light on the best armor and weapon you can afford.</li>
+          <li>Pick up the <span class="item">Halberd of Vigilance</span> from Lann Tarv, or keep your greatsword.</li>
+          <li>At level 7, add Goading Attack and Commander's Strike.</li>
+        </ol>
+        <aside class="callout verify"><strong>To verify while proving</strong>Replace with the exact Act Two quests after playing.</aside>
+        <h4>Step by step</h4>
+        <p class="where">Jump to: <a href="#fg-r-shadow-lands">Into the Shadows</a> · <a href="#fg-r-last-light">Last Light Inn</a> · <a href="#fg-r-reithwin">Reithwin Town</a> · <a href="#fg-r-moonrise">Moonrise Towers</a> · <a href="#fg-r-gauntlet">The Gauntlet of Shar</a> · <a href="#fg-r-ketheric">Defeat Ketheric Thorm</a></p>
+        <h4 id="fg-r-shadow-lands">Into the Shadows</h4>
+        <p class="where">The Ruined Battlefield · Quests: Seek Protection from the Shadow Curse, Follow the Convoy</p>
+        <ol class="steps">
+          <li>Step out of the dark. The curse hurts anyone not standing in light. Take a torch from the braziers near the exit and keep it lit.</li>
+          <li><strong>If you came from the Underdark:</strong> a group of Harpers is fighting shadows nearby. Help them. Their leader, Lassandra, sends you to the last safe place: the Last Light Inn.</li>
+          <li><strong>If you came from the Mountain Pass:</strong> a goblin mistakes you for a True Soul and tells you to wait for a guide, the drider Kar'niss, whose moonlantern keeps the curse off. Harpers ambush the convoy on the way.</li>
+          <li>Either way, head for the <strong>Last Light Inn</strong>.</li>
+        </ol>
+        <h4 id="fg-r-last-light">Last Light Inn</h4>
+        <p class="where">Quests: Resolve the Abduction, Lift the Shadow Curse, Rescue the Tieflings</p>
+        <ol class="steps">
+          <li>At the gate, the veteran Harper <strong>Jaheira</strong> tests you with a tadpole specimen and suspects you're a True Soul. Someone from the Grove can vouch for you, or show her your Mysterious Artefact.</li>
+          <li>Jaheira explains that the cult's leader at Moonrise Towers is <strong>Ketheric Thorm</strong>, and he can't die. The Harpers want to stop him.</li>
+          <li>Go upstairs to meet <strong>Isobel</strong>, the Selûnite cleric whose magic shields the inn. Talking to her triggers an attack: a winged man named Marcus tries to carry her off.</li>
+          <li><strong>Protect Isobel.</strong> If she's taken or killed, the shield falls and everyone at the inn is lost to the curse.</li>
+          <li>The tieflings from the Grove are here, but some are missing: they were taken to Moonrise Towers (<strong>Rescue the Tieflings</strong>).</li>
+          <li>Shop at the inn: the quartermaster, Talli, sells some of Act Two's best gear.</li>
+          <li>🎒 <strong>Get Shield of Devotion.</strong> Quartermaster Talli, Last Light Inn. <em>If you switch to sword and shield.</em> 🛒 Trader</li>
+          <li>🎒 <strong>Get Cloak of Protection.</strong> Quartermaster Talli, Last Light Inn. <em>+1 AC and saves for anyone.</em> 🛒 Trader</li>
+        </ol>
+        <h4 id="fg-r-reithwin">Reithwin Town</h4>
+        <p class="where">West of the inn, and the House of Healing</p>
+        <ol class="steps">
+          <li>Reithwin was a prosperous Selûnite town before the curse. Explore it by day, torches lit.</li>
+          <li>Members of the Thorm family still haunt their posts: Thisobald at the tollhouse, Gerringothe at the Waning Moon bar, Malus at the House of Healing.</li>
+          <li>In the town and nearby, the <strong>House in Deep Shadow</strong> holds secrets and a quest from Olivar (<strong>Hide and Seek</strong>).</li>
+          <li>Hold off on the Grand Mausoleum, north of town, until you've been to Moonrise Towers.</li>
+        </ol>
+        <h4 id="fg-r-moonrise">Moonrise Towers</h4>
+        <p class="where">Across the bridge from Reithwin · Quests: Infiltrate Moonrise Towers, Rescue Wulbren, Rescue the Tieflings</p>
+        <ol class="steps">
+          <li>Walk in as a True Soul. In the audience chamber, Ketheric's lieutenant <strong>Z'rell</strong> is questioning the goblins about what happened at the camp.</li>
+          <li>If you knocked Minthara out in Act One, she's here too, begging for her life. Ketheric condemns her.</li>
+          <li>Talk to Z'rell behind the throne. Prove your faith and she sends you after <strong>Balthazar</strong>, Ketheric's necromancer, last seen at the Thorm Mausoleum. She gives you a key to his room.</li>
+          <li>Search Balthazar's room for its hidden area. His notes reveal what the 'Nightsong' really is.</li>
+          <li>Find the prison. In the cells are the gnome Wulbren, captured tieflings (including Cal and Lia) and others. Break them out and lead them to the boat or out on foot.</li>
+          <li>Once everyone is free, return to the Last Light Inn to collect your thanks.</li>
+          <li>Moonrise Towers' traders (Lann Tarv, Roah Moonglow and Araj Oblodra) sell strong gear. Check all three.</li>
+          <li>🎒 <strong>Get Halberd of Vigilance.</strong> Lann Tarv, Moonrise Towers. <em>Reactions that hit harder. Buy it from Lann Tarv.</em> 🛒 Trader</li>
+          <li>⬆️ <strong>Level 7</strong> (around now): 5 superiority dice, +2 maneuvers. <em>Add <strong>Goading Attack</strong> and <strong>Commander's Strike</strong>.</em></li>
+        </ol>
+        <h4 id="fg-r-gauntlet">The Gauntlet of Shar</h4>
+        <p class="where">Through the Grand Mausoleum north of Reithwin · Quests: Find Ketheric Thorm's Relic, Find the Nightsong</p>
+        <ol class="steps">
+          <li>Solve the mausoleum's puzzle and descend into the <strong>Gauntlet of Shar</strong>, an ancient temple to the goddess of loss. Snuff out every light in the entrance hall to open the way.</li>
+          <li>Balthazar is already here and orders you to clear his way. Help him or fight him: either way you need what lies below.</li>
+          <li>Collect four <strong>Umbral Gems</strong>. Three come from the Trials of Shar: the Soft-Step Trial (sneak through a maze), the Self-Same Trial (fight shadow copies of your party) and the Faith-Leap Trial (cross an invisible path).</li>
+          <li>The fourth gem belongs to Yurgir, an orthon in the east wing, who has a contract with the devil Raphael he'd love to break.</li>
+          <li>Shadowheart wants to complete one more Sharran trial. Help her: it's part of her story.</li>
+          <li>Look for hidden chests in the Gauntlet's side rooms. Several of Act Two's best items are tucked away.</li>
+          <li><strong>Before you open the way into the Shadowfell, finish what you want to finish in Act One's lands and at Moonrise Towers.</strong> The Shadowfell is a point of no return.</li>
+          <li>Use the gems to open the Shadowfell, and find the Nightsong.</li>
+          <li>🎒 <strong>Get Vivacious Cloak.</strong> A hidden tomb in the cemetery near the Gauntlet of Shar. <em>Temporary HP in a hidden tomb.</em> 👀 Easy to miss</li>
+          <li>⬆️ <strong>Level 8</strong> (around now): Feat. <em>Take <strong>Sentinel</strong> (to keep enemies on you) or <strong>Tough</strong> (more hit points).</em></li>
+        </ol>
+        <h4 id="fg-r-ketheric">Defeat Ketheric Thorm</h4>
+        <p class="where">Moonrise Towers and the Mind Flayer Colony beneath it · Quest: Defeat Ketheric Thorm</p>
+        <ol class="steps">
+          <li>Back at the Last Light Inn, Jaheira gathers the Harpers and Flaming Fists to storm Moonrise Towers. Join the assault.</li>
+          <li>Fight your way up to the roof. Ketheric waits there, and now he can be hurt. Win the fight.</li>
+          <li>When he falls the way opens into the <strong>Mind Flayer Colony</strong> below. Follow him down.</li>
+          <li>Explore the colony. It's where the tadpoles are made, and where you learn what the cult has been building.</li>
+          <li>Face Ketheric one last time.</li>
+          <li>After the fight the story takes a turn. Act Two ends at your new camp, <strong>Wyrm's Lookout</strong>, on the road to Baldur's Gate.</li>
+          <li>🎒 <strong>Get Reaper's Embrace.</strong> Ketheric Thorm's armor, dropped when he's defeated. <em>Ketheric's heavy armor, with 19 AC.</em> 💀 Boss drop</li>
+          <li>⬆️ <strong>Level 9</strong> (around now): Indomitable. <em>Reroll a failed saving throw. A lifesaver against mind control.</em></li>
+        </ol>
+        <aside class="callout tip"><strong>Levels are approximate</strong>The ⬆️ steps show roughly where most players reach each level. If your level is different, follow the level table, not the clock.</aside>
+      </section>
+
+      <section class="chapter" id="fg-act3">
+        <header>
+          <span class="chapter-num">Act Three</span>
+          <h3>Act Three: Cash In</h3>
+          <p class="where">A city with more gold than sense</p>
+        </header>
+
+        <h4>Your vows this act</h4>
+        <ol class="steps">
+          <li>Buy the best gear you can in the Lower City. Check the House of Hope for the <span class="item">Gauntlets of Hill Giant Strength</span>.</li>
+          <li>Recruit <span class="npc">Minsc</span> if you like, and pay him in respect.</li>
+          <li>At the finale, choose the ending that leaves you richest.</li>
+        </ol>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the Act Three quests and the best Sellsword ending after playing.</aside>
+        <h4>Step by step</h4>
+        <p class="where">Jump to: <a href="#fg-r-rivington">Rivington</a> · <a href="#fg-r-wyrm-rock">Wyrm's Rock & Gortash</a> · <a href="#fg-r-lower-city">The Lower City</a> · <a href="#fg-r-orin">Orin & the Temple of Bhaal</a> · <a href="#fg-r-finale">Confront the Elder Brain</a></p>
+        <h4 id="fg-r-rivington">Rivington</h4>
+        <p class="where">The outer district south of the river · Quests: Solve the Open Hand Temple Murders, Find the Missing Letters</p>
+        <ol class="steps">
+          <li>From Wyrm's Lookout, walk west into Rivington. Refugees fill the streets: the city won't let them in.</li>
+          <li>Look around the <strong>Circus of the Last Days</strong>. It's great fun, and a few of the acts aren't what they seem.</li>
+          <li>At the <strong>Open Hand Temple</strong>, someone has murdered the priests. Investigate (<strong>Solve the Open Hand Temple Murders</strong>). The trail leads to Orin.</li>
+          <li>At <strong>Sword Coast Couriers</strong>, letters for your companions have gone missing (<strong>Find the Missing Letters</strong>). Track them down: each one adds to a companion's story.</li>
+          <li>Find the camp of the Gur, the monster hunters. They're after one of your companions.</li>
+          <li>Cross <strong>Wyrm's Crossing</strong>, the bridge into the city.</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-sethan">Sethan, the JoJo greataxe</a>. Ferg Drogher, among the Rivington refugees.</li>
+          <li>⬆️ <strong>Level 10</strong> (around now): Improved Combat Superiority (dice become d10), +2 maneuvers. <em>Add <strong>Menacing Attack</strong> and <strong>Rally</strong>.</em></li>
+        </ol>
+        <h4 id="fg-r-wyrm-rock">Wyrm's Rock & Gortash</h4>
+        <p class="where">Wyrm's Rock Fortress, the Iron Throne and the Steel Watch Foundry · Quests: Get Gortash's Netherstone, Rescue the Grand Duke</p>
+        <ol class="steps">
+          <li>Enver Gortash is being crowned Archduke of Baldur's Gate in Wyrm's Rock Fortress. Go up to the ceremony.</li>
+          <li>Gortash makes you an offer: kill Orin and rule the city with him. You don't have to answer yet.</li>
+          <li>He's guarded by the Steel Watch, giant clockwork soldiers. Before you take him on, go to the <strong>Steel Watch Foundry</strong> in the Lower City and shut it down (<strong>Disable the Steel Watch</strong>).</li>
+          <li>Find the <strong>Iron Throne</strong>, an underwater prison off the coast. Duke Ravengard, Wyll's father, is held there with a group of gnomes. Get them out before the prison floods.</li>
+          <li>Then return to Wyrm's Rock and take Gortash's Netherstone.</li>
+          <li>🎒 <strong>Get Balduran's Giantslayer.</strong> The secret base under Wyrmgate Prison, or Wyll's storyline. <em>A legendary greatsword.</em> 👀 Easy to miss</li>
+          <li>🎒 <strong>Get Helm of Balduran.</strong> The secret base under Wyrmgate Prison. <em>Heals you every turn and blocks crits.</em> 👀 Easy to miss</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-balduran-gear">Balduran's returning gear</a> ⚠️. Wyrmgate Prison's secret base and the Emperor's sword.</li>
+        </ol>
+        <h4 id="fg-r-lower-city">The Lower City</h4>
+        <p class="where">The Lower City and its sewers</p>
+        <ol class="steps">
+          <li>Make the <strong>Elfsong Tavern</strong> your first stop. You'll hear about half the city's trouble there.</li>
+          <li>At <strong>Sorcerous Sundries</strong>, the wizard Lorroakan is still offering a reward for the Nightsong. If you freed Dame Aylin, think carefully about what you tell him.</li>
+          <li><strong>Astarion:</strong> his old master Cazador lives in a palace in the Lower City. Visit it when Astarion is ready.</li>
+          <li><strong>Gale:</strong> talk him through what he wants to do with the Crown of Karsus, and keep his approval high.</li>
+          <li><strong>Shadowheart:</strong> the House of Grief, Shar's temple in the city, holds the end of her story.</li>
+          <li>Explore. The Lower City is crowded with side quests: a guild war, a printing press, a haunted bookshop, a devil's house, and more. Buy and loot as you go.</li>
+          <li>🎒 <strong>Get Gauntlets of Hill Giant Strength.</strong> The House of Hope archive. <em>Sets Strength to 23.</em> 📜 Quest reward</li>
+          <li>🎒 <strong>Get Amulet of Greater Health.</strong> House of Hope. <em>Raises Constitution to 23.</em> 📜 Quest reward</li>
+          <li>🎒 <strong>Get Helldusk Armour.</strong> Listed as a drop from Raphael. Source looked unreliable, so verify. <em>Heavy armor with fire resistance (verify the source).</em> 💀 Boss drop</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-boo-turns">"Boo is not used to this taking of turns"</a>. A Minsc combat line.</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-minsc-room">Minsc's room</a>. The Lower City Sewers, in the room where you recruit him.</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-roveer">Roveer's Storehouse</a>. A quest in the Lower City.</li>
+          <li>⬆️ <strong>Level 11</strong> (around now): Improved Extra Attack. <em>Two extra attacks after your main one. You're now a one-man army.</em></li>
+        </ol>
+        <h4 id="fg-r-orin">Orin & the Temple of Bhaal</h4>
+        <p class="where">Candulhallow's Tombstones, the Murder Tribunal and the Temple of Bhaal under the city · Quest: Get Orin's Netherstone</p>
+        <ol class="steps">
+          <li>Once you're in the Lower City, Orin the Red kidnaps a companion who's waiting at camp. She wants you to kill Gortash for her.</li>
+          <li>Find your way into her temple. Investigate the city's serial murders (<strong>Investigate the Murders</strong>) or kill Gortash first: either way you get the password to the Murder Tribunal, hidden under Candulhallow's Tombstones.</li>
+          <li>At the Tribunal you meet <strong>Sarevok Anchev</strong>. Win his trust or fight him for the Amulet of Bhaal and the map to the temple.</li>
+          <li>The Temple of Bhaal is in the Undercity Ruins. Hold the amulet to the temple door, fight past the assassins, and face Orin.</li>
+          <li>Take Orin's Netherstone from her dagger, and rescue your companion.</li>
+          <li>🎒 <strong>Get Sword of Chaos.</strong> Sarevok, near the Murder Tribunal. Unconfirmed. <em>A huge greatsword.</em> 📜 Quest reward</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-sarevok-gear">Sarevok's gear</a> ⚠️. Looted from Sarevok's corpse.</li>
+          <li>⬆️ <strong>Level 12</strong> (around now): Feat. <em>A final Ability Improvement (+2 Strength to 20) or Constitution.</em></li>
+        </ol>
+        <h4 id="fg-r-finale">Confront the Elder Brain</h4>
+        <p class="where">The Morphic Pool and the Upper City · Quests: Gather Your Allies, Confront the Elder Brain</p>
+        <ol class="steps">
+          <li>Open the <strong>Gather Your Allies</strong> quest and check who you've rallied: the tieflings, the druids, the gnomes, the Harpers, the githyanki and more. The longer the list, the easier the finale.</li>
+          <li>With all three Netherstones in hand, head for the <strong>Morphic Pool</strong>, where the elder brain feeds.</li>
+          <li>From here the game moves to its finale in the Upper City. <strong>Finish everything else first.</strong> There's no coming back for side quests.</li>
+          <li>Make your last choices, and see your story through.</li>
+        </ol>
+        <aside class="callout tip"><strong>Levels are approximate</strong>The ⬆️ steps show roughly where most players reach each level. If your level is different, follow the level table, not the clock.</aside>
+      </section>
+
+      <section class="chapter" id="fg-love">
+        <header>
+          <span class="chapter-num">Love Interests</span>
+          <h3>Love & Companions</h3>
+          <p class="where">The game is open: any companion can be romanced whatever your character looks like</p>
+        </header>
+
+        <p>The Sellsword keeps things professional, but even professionals have a weakness.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Our pick</th><th>Why they fit</th><th>Alternates</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Male</strong></td><td><span class="npc">Astarion</span></td><td>A fellow opportunist. A partnership of mutual benefit.</td><td><span class="npc">Wyll</span> for a more honorable partner</td></tr>
+              <tr><td><strong>Female</strong></td><td><span class="npc">Lae'zel</span></td><td>Respects strength and straight talk. A fellow warrior who won't be impressed by your gold.</td><td><span class="npc">Karlach</span> for something warmer</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm each pick's romance start and approval thresholds.</aside>
+        <figure class="shot" data-src="shots/fg-02-ledger.jpg">
+          <figcaption>The Sellsword counting the day's take at camp</figcaption>
+        </figure>
+
+      </section>
+
+      <section class="chapter" id="fg-side">
+        <header>
+          <span class="chapter-num">Beyond</span>
+          <h3>Beyond the Companions</h3>
+          <p class="where">One-time encounters, and whether they fit your path</p>
+        </header>
+
+        <p>Beyond your companions, six characters offer one-time encounters, mostly in Act Three. They aren't relationships, so none of them replaces your partner, but a couple can hurt one. Here's how each fits <em>this</em> path. The full details, with spoilers hidden, are in the <a href="../romance/">Beyond the Companions</a> guide.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Who</th><th>Verdict</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Haarlep</strong></td><td>⚠️ Careful</td><td>Haarlep wants honesty and a party member. A Sellsword can fight their way out and keep the Helldusk Gloves.</td></tr>
+              <tr><td><strong>Mizora</strong></td><td>⚠️ Careful</td><td>She ends Lae'zel's romance, and Lae'zel is the Sellsword's pick. Astarion is only spared in some cases.</td></tr>
+              <tr><td><strong>Naoise</strong></td><td>✅ Fits</td><td>A professional encounter. Pass the Insight check for the extras.</td></tr>
+              <tr><td><strong>Nym Orlith</strong></td><td>✅ Fits</td><td>Pay the 500 gold, or take it free through the Stern Librarian quest. It's the one thing here that's actually a purchase.</td></tr>
+              <tr><td><strong>Sorn Orlith</strong></td><td>✅ Fits</td><td>Same rate. The Sellsword understands the transaction.</td></tr>
+              <tr><td><strong>The Emperor</strong></td><td>⚠️ Careful</td><td>It needs empathy and no hostility toward illithids. A mercenary might need to fake it.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout warn"><strong>Mature content</strong>These encounters are adult. The guide describes them at a high level only.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>The facts come from partly-read wiki pages. Confirm each trigger and consequence before you rely on it.</aside>
+      </section>
+
+      <section class="chapter reference" id="fg-never">
+        <header>
+          <span class="chapter-num">Reference</span>
+          <h3>Never Do This</h3>
+          <p class="where">Choices that break the character</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Don't</th><th>Because</th></tr></thead>
+            <tbody>
+              <tr><td>Work for free</td><td>Everything has a price.</td></tr>
+              <tr><td>Spend all your dice early</td><td>Save them for hard fights.</td></tr>
+              <tr><td>Trust a client who won't pay up front</td><td>That's how you get robbed.</td></tr>
+              <tr><td>Cheat your own company</td><td>A company that cheats its own doesn't last.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Add every point of no return for the path after playing.</aside>
+      </section>
+
+      <aside class="callout tip" style="margin-top:40px"><strong>Want a different path?</strong>Head back to the <a href="../">BG3 Paths hub</a> to compare all three, or see the <a href="../../baldurs-gate-3/">general act-by-act walkthrough</a> for the full story.</aside>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    © 2026 <a href="https://craz.com">Crabtree Labz</a> · <a href="https://craz.com/privacy.html">Privacy</a> · Baldur's Gate 3 © Larian Studios · Baldur's Gate, Dungeons &amp; Dragons and Forgotten Realms © Wizards of the Coast · Unofficial fan guide
+  </footer>
+
+  <script src="../../walkthrough.js?v=e57d0971"></script>
+</body>
+</html>

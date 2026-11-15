@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Greenwarden — Baldur's Gate 3 Path · SugarTickles</title>
+  <meta name="description" content="A Baldur's Gate 3 character path: a shapeshifting Circle of the Moon Druid, with the build, Wild Shape forms by level, spells, feats, gear, party and checklist." />
+  <!--
+    Original SugarTickles writing. Does NOT adapt bg3.wiki text, so it is not bound by the wiki's
+    CC BY-NC-SA license (unlike ../baldurs-gate-3/). Fan Content rules still apply: see NOTICE.md.
+  -->
+  <link rel="stylesheet" href="/fonts/fonts.css?v=d1e52a1c">
+  <link rel="stylesheet" href="../../walkthrough.css?v=b78d8fbf" />
+</head>
+
+<body data-walkthrough="bg3-paths-druid">
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/logo.png" alt="" />SugarTickles</a>
+    <nav>
+      <a href="/walkthroughs/">Walkthroughs</a>
+      <a href="../" aria-current="page">BG3 Paths</a>
+      <a href="#credits">Credits</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">BG3 Path · Wear the wild</span>
+    <h1>The Greenwarden<span class="sub">Circle of the Moon Druid</span></h1>
+    <p class="lede">A druid who fights as a bear, scouts as a cat, and heals as themselves. This path gives you the build, the Wild Shape forms to unlock at each level, the spells and feats to pick, and the gear that makes a shapeshifter stronger. You choose how they look; we choose everything else.</p>
+    <svg class="ornament" viewBox="0 0 240 40" fill="none" aria-hidden="true">
+      <path d="M4 20 H 84" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M156 20 H 236" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M120 6 C 104 6, 96 14, 96 20 C 96 26, 104 34, 120 34 C 136 34, 144 26, 144 20 C 144 14, 136 6, 120 6 z" stroke="currentColor" stroke-width="2"/>
+      <circle cx="112" cy="18" r="2.2" fill="currentColor"/>
+      <circle cx="128" cy="18" r="2.2" fill="currentColor"/>
+    </svg>
+    <div class="meta-row">
+      <span class="pill">Druid</span>
+      <span class="pill">The nature path</span>
+      <span class="pill">Shapeshifter</span>
+    </div>
+    <div class="resource-links">
+      <a href="#dr-sheet">🌿 Build</a>
+      <a href="#dr-levels">📈 Levels</a>
+      <a href="#dr-forms">🐻 Wild Shape</a>
+      <a href="#dr-gear">⚔️ Gear</a>
+      <a href="#dr-act1">✅ Playthrough</a>
+    </div>
+  </section>
+
+  <div class="layout">
+    <div>
+      <button class="toc-toggle" aria-expanded="false">☰ Chapters &amp; progress</button>
+      <nav class="toc" aria-label="Chapters">
+        <div class="progress">
+          <div class="label"><span>Your progress</span></div>
+          <div class="bar"><span></span></div>
+          <div class="label" style="margin-top:6px"><span class="count"></span></div>
+          <button type="button">Reset progress</button>
+        </div>
+          <h4><a href="#act-build" style="color:inherit;text-decoration:none">Your Character</a></h4>
+          <ol>
+            <li><a href="#dr-idea"><span>The Idea</span><span class="done"></span></a></li>
+            <li><a href="#dr-sheet"><span>Character Creation</span><span class="done"></span></a></li>
+            <li><a href="#dr-levels"><span>Level by Level</span><span class="done"></span></a></li>
+            <li><a href="#dr-spells"><span>Spells to Prepare</span><span class="done"></span></a></li>
+            <li><a href="#dr-forms"><span>Wild Shape Forms by Level</span><span class="done"></span></a></li>
+            <li><a href="#dr-party"><span>Your Party</span><span class="done"></span></a></li>
+            <li><a href="#dr-gear"><span>Gear Worth Finding</span><span class="done"></span></a></li>
+            <li><a href="#dr-eggs"><span>Easter Eggs</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-play" style="color:inherit;text-decoration:none">Staying on Target</a></h4>
+          <ol>
+            <li><a href="#dr-act1"><span>Act One</span><span class="done"></span></a></li>
+            <li><a href="#dr-act2"><span>Act Two</span><span class="done"></span></a></li>
+            <li><a href="#dr-act3"><span>Act Three</span><span class="done"></span></a></li>
+            <li><a href="#dr-love"><span>Love & Companions</span><span class="done"></span></a></li>
+            <li><a href="#dr-side"><span>Beyond the Companions</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#dr-never" style="color:inherit;text-decoration:none">Reference</a></h4>
+          <ol>
+            <li><a href="#dr-never"><span>Never Do This</span><span class="done"></span></a></li>
+          </ol>
+      </nav>
+    </div>
+
+    <main>
+      <section class="credits" id="credits">
+        <h3>Credits &amp; Sources</h3>
+        <p>This is original SugarTickles writing, built from our own knowledge of the game and checked in our own playthrough. Where we haven't confirmed something yet you'll see a gold <strong>"To verify"</strong> note. Spells, features and items are described in our own words, never copied from the game or the rulebooks.</p>
+        <p>Screenshots are our own captures from the game.</p>
+        <p><em>Baldur's Gate 3 Paths</em> is unofficial Fan Content permitted under the <a href="https://company.wizards.com/en/legal/fancontentpolicy" rel="noopener">Fan Content Policy</a>. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</p>
+        <p><em>Baldur's Gate 3</em> and its art, characters and names are © Larian Studios. Baldur's Gate, Dungeons &amp; Dragons and the Forgotten Realms are trademarks of Wizards of the Coast. SugarTickles isn't affiliated with Larian or Wizards of the Coast. It's a fan guide, made with love. We use no Wizards or Larian logos.</p>
+      </section>
+
+      <section class="act" id="act-build">
+        <span class="act-num">Your Character</span>
+        <h2>Build The Greenwarden</h2>
+        <p>A Gold Dwarf Moon Druid: sturdy, wise, and happier as a polar bear. This chapter picks the build, the forms and the spells.</p>
+      </section>
+
+      <section class="chapter" id="dr-idea">
+        <header>
+          <span class="chapter-num">Chapter 1</span>
+          <h3>The Idea</h3>
+          <p class="where">Who the Greenwarden is, and why the Moon</p>
+        </header>
+
+        <p>The Greenwarden answers to the wild, and the wild answers back. A <strong>Druid</strong> casts nature magic, heals, and turns into animals. The <strong>Circle of the Moon</strong> is the shapeshifter's circle: its animal forms are stronger, they can use Wild Shape as a bonus action, and they heal themselves while shifted.</p>
+        <p>It's one of the most distinctive ways to play, and one of the more forgiving: a big animal body soaks up damage so the Druid doesn't have to.</p>
+        <aside class="callout tip"><strong>Other circles</strong>The <strong>Circle of the Land</strong> is a spellcaster who recovers spell slots out of combat. The <strong>Circle of the Stars</strong> (added in Patch 8) takes a starry form and fights with light. The <strong>Circle of Spores</strong> is a darker, necromantic circle. We built this page around the Moon.</aside>
+        <aside class="callout verify"><strong>Draft status</strong>This path was drafted before our playthrough. Notes marked <strong>To verify</strong> are what we'll confirm against the current version of the game. Gear locations come from one guide per act and haven't been checked in our own game yet.</aside>
+        <figure class="shot" data-src="shots/dr-01-creation.jpg">
+          <figcaption>The character creation screen with The Greenwarden choices</figcaption>
+        </figure>
+
+      </section>
+
+      <section class="chapter" id="dr-sheet">
+        <header>
+          <span class="chapter-num">Chapter 2</span>
+          <h3>Character Creation</h3>
+          <p class="where">Race, background, ability scores and skills. Pick the look; copy the rest.</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Choice</th><th>Pick</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>Race</td><td><strong>Gold Dwarf</strong></td><td>Sturdy, with extra hit points and a Wisdom bonus: a good fit for a Druid.</td></tr>
+              <tr><td>Background</td><td><strong>Outlander</strong></td><td>Trains you in Athletics and Survival.</td></tr>
+              <tr><td>Class</td><td><strong>Druid</strong></td><td>Subclass at level 2: <strong>Circle of the Moon</strong>.</td></tr>
+              <tr><td>Ability scores</td><td>Strength 8, Dexterity 14, Constitution <strong>15</strong>, Intelligence 10, Wisdom <strong>17</strong>, Charisma 10</td><td>Spend the 27 points as 8 / 14 / 14 / 10 / 15 / 10, then +2 Wisdom and +1 Constitution.</td></tr>
+              <tr><td>Skills</td><td>Nature, Perception</td><td>Your two Druid picks. Outlander adds Athletics and Survival.</td></tr>
+              <tr><td>Cantrips</td><td>Guidance, Produce Flame, Thorn Whip</td><td>A utility cantrip, a ranged attack, and a pull that drags enemies toward you.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the Gold Dwarf traits, Outlander skills, and the Druid's level 1 cantrip choices on our version.</aside>
+      </section>
+
+      <section class="chapter" id="dr-levels">
+        <header>
+          <span class="chapter-num">Chapter 3</span>
+          <h3>Level by Level</h3>
+          <p class="where">What to pick at each level, and what you're getting</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Level</th><th>What you get</th><th>What to do</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Spellcasting (2 first-level slots)</td><td>Learn <strong>Healing Word</strong>, <strong>Entangle</strong>, <strong>Faerie Fire</strong>, <strong>Goodberry</strong> and <strong>Thunderwave</strong> as you prepare them.</td></tr>
+              <tr><td>2</td><td>Circle of the Moon, Wild Shape, Lunar Mend, Combat Wild Shape</td><td>Wild Shape twice per rest, as a bonus action. Your first form is the <strong>Polar Bear</strong>.</td></tr>
+              <tr><td>3</td><td>Second-level spells</td><td>Prepare <strong>Barkskin</strong> and <strong>Hold Person</strong>.</td></tr>
+              <tr><td>4</td><td>Feat, Wild Shape Improvement, new cantrip</td><td>Take <strong>Resilient (Constitution)</strong> or <strong>War Caster</strong>. Unlock the <strong>Dire Raven</strong> form.</td></tr>
+              <tr><td>5</td><td>Wild Strike, third-level spells</td><td>Extra attack after an unarmed strike in animal form. Prepare <strong>Call Lightning</strong>.</td></tr>
+              <tr><td>6</td><td>Primal Strike</td><td>Your animal attacks now count as magical. <strong>Panther</strong> and <strong>Owlbear</strong> forms arrive.</td></tr>
+              <tr><td>7</td><td>Fourth-level spells</td><td>Take a control spell.</td></tr>
+              <tr><td>8</td><td>Feat, Wild Shape Improvement</td><td>Take <strong>Alert</strong>, or boost Wisdom. Unlock the <strong>Sabre-Toothed Tiger</strong>.</td></tr>
+              <tr><td>9</td><td>Fifth-level spells</td><td>Big nature magic.</td></tr>
+              <tr><td>10</td><td>Elemental forms, Improved Wild Strike</td><td>Unlock the four <strong>Myrmidon</strong> forms (air, earth, fire, water), and two extra attacks in animal form.</td></tr>
+              <tr><td>11</td><td>Sixth-level spells</td><td>Late-game magic.</td></tr>
+              <tr><td>12</td><td>Feat, Wild Shape Improvement</td><td>A final <strong>Ability Improvement</strong>. Your forms are at their strongest.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Know your slots</strong>Druids <strong>prepare</strong> spells equal to their level plus their Wisdom modifier, and can change the list after each long rest. Prepare healing and control first, damage second.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Levels 4-12 for the Druid came from a partly-read page. Confirm each level on our version, especially the form unlock levels, Wild Shape Improvement, and the feat levels.</aside>
+      </section>
+
+      <section class="chapter" id="dr-spells">
+        <header>
+          <span class="chapter-num">Chapter 4</span>
+          <h3>Spells to Prepare</h3>
+          <p class="where">Heal, tangle, and call down the sky</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Spell</th><th>What it does (our words)</th><th>When to use it</th></tr></thead>
+            <tbody>
+              <tr><td>Guidance (cantrip)</td><td>A small boost to a roll.</td><td>Before a risky skill check.</td></tr>
+              <tr><td>Produce Flame (cantrip)</td><td>A ranged flame attack.</td><td>When you can't reach anyone in animal form.</td></tr>
+              <tr><td>Thorn Whip (cantrip)</td><td>Pulls an enemy toward you.</td><td>To drag a caster into the bear's reach.</td></tr>
+              <tr><td>Healing Word</td><td>A quick heal at range.</td><td>Mid-fight, as a bonus action, even in human form.</td></tr>
+              <tr><td>Entangle</td><td>Vines hold enemies in an area.</td><td>To lock down a crowd.</td></tr>
+              <tr><td>Faerie Fire</td><td>Outlines enemies in light.</td><td>To help allies hit and to reveal hidden foes.</td></tr>
+              <tr><td>Goodberry</td><td>Magical berries that heal.</td><td>Free healing between fights.</td></tr>
+              <tr><td>Barkskin</td><td>Hardens your skin.</td><td>Before a boss.</td></tr>
+              <tr><td>Hold Person</td><td>Freezes a humanoid.</td><td>Setting up easy kills.</td></tr>
+              <tr><td>Call Lightning</td><td>A storm cloud that calls down bolts.</td><td>A big damage spell outdoors.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Spells in animal form</strong>Most casting stops when you shapeshift. The Moon's <strong>Lunar Mend</strong> lets you spend a spell slot to heal while shifted, so keep a slot free for it.</aside>
+        <aside class="callout tip"><strong>More on spells</strong>New to magic? The <a href="../spells/">Spells Guide</a> explains slots, concentration and who can learn what.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the cantrips and level 1-2 spells (Guidance, Produce Flame, Thorn Whip, Healing Word, Entangle, Faerie Fire, Goodberry, Barkskin). The level 3+ list, including Call Lightning and Hold Person, wasn't fully read.</aside>
+      </section>
+
+      <section class="chapter" id="dr-forms">
+        <header>
+          <span class="chapter-num">Guide</span>
+          <h3>Wild Shape Forms by Level</h3>
+          <p class="where">Which animals you unlock, and when</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Level</th><th>New form</th><th>What it's good for</th></tr></thead>
+            <tbody>
+              <tr><td>2</td><td>Polar Bear (Moon), plus Badger, Cat, Spider, Wolf</td><td>The bear is your tank, with a Goad that pulls enemies to you. The cat scouts, the spider climbs, the wolf pounces.</td></tr>
+              <tr><td>4</td><td>Dire Raven, Deep Rothé</td><td>The raven flies and can blind a target. The rothé charges.</td></tr>
+              <tr><td>6</td><td>Panther, Owlbear</td><td>The Owlbear is a bruiser. Primal Strike makes your claws count as magical.</td></tr>
+              <tr><td>8</td><td>Sabre-Toothed Tiger</td><td>Shreds armor and regenerates.</td></tr>
+              <tr><td>10</td><td>Air, Earth, Fire and Water Myrmidons (and a Dilophosaurus)</td><td>Elementals with big health pools, each with its own spells. Each costs two Wild Shape charges.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>House rules</strong><strong>Stay shaped.</strong> Fight in animal form, and return to your own shape only to talk, to cast, or to heal. <strong>Speak to everything.</strong> Talk to every animal you meet. <strong>Shift to scout.</strong> Check every new area as the cat or the raven first.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>The forms and levels are partly from a summary. Confirm each on our version, plus the exact charges and recharge.</aside>
+      </section>
+
+      <section class="chapter" id="dr-party">
+        <header>
+          <span class="chapter-num">Party</span>
+          <h3>Your Party</h3>
+          <p class="where">The companions to pick, and the ones to leave at camp</p>
+        </header>
+
+        <p>A Moon Druid is a front-line animal, so the Greenwarden's party fills the other roles: a ranged damage dealer, a healer, and an area caster.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Companion</th><th>Role</th><th>Why they fit this path</th><th>Where to find them</th></tr></thead>
+            <tbody>
+              <tr><td><span class="npc">Astarion</span></td><td>Ranged rogue</td><td>A skilled archer who strikes from the shadows while you tank.</td><td>Ravaged Beach, west of the Nautiloid wreck</td></tr>
+              <tr><td><span class="npc">Shadowheart</span></td><td>Cleric healer</td><td>Lets you save your spell slots for Lunar Mend.</td><td>A pod on the Nautiloid, or near the crash site</td></tr>
+              <tr><td><span class="npc">Gale</span></td><td>Wizard</td><td>Fireball, and any spell a druid lacks.</td><td>Stone circle east of the Nautiloid wreck</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>On the bench</strong><span class="npc">Halsin</span> and <span class="npc">Jaheira</span> are fellow druids, and good for banter and a second shapeshifter. <span class="npc">Karlach</span> and <span class="npc">Lae'zel</span> are a second tank.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm each companion's recruitment spot and that this party handles our path's choices.</aside>
+      </section>
+
+      <section class="chapter" id="dr-gear">
+        <header>
+          <span class="chapter-num">Gear</span>
+          <h3>Gear Worth Finding</h3>
+          <p class="where">Our recommended finds by act, and where to get them</p>
+        </header>
+
+        <p>Your wild forms use their own stats, but your Wisdom, Constitution and spell items still matter, and a few items make shapeshifting stronger. Look for those, and for anything that adds Strength or Constitution.</p>
+        <h4>Act One</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Amulet of Misty Step</strong></td><td>A chest in Priestess Gut's chambers in the Goblin Camp, guarded by the ogre Polma.</td><td>An escape for when you're in human form.</td><td>📦 Chest</td></tr>
+              <tr><td><strong>Mourning Frost</strong></td><td>Crafted from three parts: Icy Helve (Dhourn, west of the Selûnite Outpost), Icy Crystal (Myconid Colony reward room) and Icy Metal (Filro the Forgotten, northwest near the Sussur Tree).</td><td>A frost staff for the occasional caster moment.</td><td>🔨 Craft it</td></tr>
+              <tr><td><strong>Adamantine Scale or Splint Mail</strong></td><td>Crafted at the Adamantine Forge in Grymforge.</td><td>Medium-armor options for human form.</td><td>🔨 Craft it</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <h4>Act Two</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>The Mighty Cloth</strong></td><td>Quartermaster Talli, Last Light Inn.</td><td>Adds 2 Strength, which helps a shapeshifter who relies on their own Strength.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Enraging Heart Garb</strong></td><td>Lann Tarv, Moonrise Towers.</td><td>Adds 2 Constitution and a bonus while raging.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Fistbreaker Helm</strong></td><td>Lann Tarv, Moonrise Towers.</td><td>+1 spell save DC and better initiative.</td><td>🛒 Trader</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <h4>Act Three</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Shapeshifter Hat</strong></td><td>Helsik.</td><td>Buy it from Helsik at Devil's Fee. It increases your Wild Shape charges.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Armour of Moonbasking</strong></td><td>The Voiceless Penitent.</td><td>From the Voiceless Penitent. It gives strong temporary HP when you shift.</td><td>💀 Boss drop</td></tr>
+              <tr><td><strong>Shapeshifter's Boon Ring</strong></td><td>A small shed on the hill above the barn in Rivington, near the Strange Ox.</td><td>In a shed above the Rivington barn, near the Strange Ox.</td><td>👀 Easy to miss</td></tr>
+              <tr><td><strong>Staff of Cherished Necromancy</strong></td><td>Carrion, at Philgrave Mansion.</td><td>From Carrion at Philgrave Mansion. A necromancer's staff, but useful.</td><td>📜 Quest reward</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Hidden loot</strong>Items marked <strong>👀 Easy to miss</strong> or <strong>⚠️ Missable</strong> are the ones people walk past. The full list for every act is in the <a href="../gear/">Gear Atlas</a>.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Every location here comes from a single guide and hasn't been confirmed in our own game. We'll check each one and correct the page.</aside>
+      </section>
+
+      <section class="chapter" id="dr-eggs">
+        <header>
+          <span class="chapter-num">Eggs</span>
+          <h3>Easter Eggs on Your Path</h3>
+          <p class="where">Nods, jokes and references your build is likely to find</p>
+        </header>
+
+        <p>Your path is a good excuse to catch these. We've picked the easter eggs your build, background, party and route are most likely to run into. Each one links to the full entry in the <a href="../eggs/">Easter Egg Guide</a>. ⚠️ means a spoiler, so the guide hides the details until you open it.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>When</th><th>Easter egg</th><th>Where</th><th>What you need</th></tr></thead>
+            <tbody>
+              <tr><td>Act One</td><td><strong><a href="../eggs/#egg-faldorn">Faldorn's Canticle</a></strong></td><td>A book in Kagha's chest at the Emerald Grove.</td><td>Loot Kagha's chest (the Paragon investigates Kagha).</td></tr>
+              <tr><td>Act Two (our guess)</td><td><strong><a href="../eggs/#egg-alaundo">Alaundo's prophecy</a></strong> ⚠️</td><td>Jaheira recites it before the assault on Moonrise Towers.</td><td>Have Jaheira with you. The trigger isn't stated.</td></tr>
+              <tr><td>Act Three (our guess)</td><td><strong><a href="../eggs/#egg-khalid">Khalid's Gift</a></strong> ⚠️</td><td>Jaheira's basement (Elerrathin's Home), with a note called "My Dearest Wife."</td><td>Reach Jaheira's story in Act Three.</td></tr>
+              <tr><td>Any act</td><td><strong><a href="../eggs/#egg-gale-chess">Gale talks in chess</a></strong></td><td>Gale's combat lines, in any act.</td><td>Bring Gale along.</td></tr>
+              <tr><td>Any act</td><td><strong><a href="../eggs/#egg-boo-turns">"Boo is not used to this taking of turns"</a></strong></td><td>A Minsc combat line.</td><td>Bring Minsc (Act Three).</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Keep a checklist</strong>Tick these off as you find them. We'll note in each act's chapter when one is nearby.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Many acts and triggers come from a single wiki page and are our best guess. We'll confirm each one as we play.</aside>
+      </section>
+
+      <section class="act" id="act-play">
+        <span class="act-num">Staying on Target</span>
+        <h2>The Greenwarden's Playthrough</h2>
+        <p>Heal, shift, and fight as the wild. Here's the plan.</p>
+      </section>
+
+      <section class="chapter" id="dr-act1">
+        <header>
+          <span class="chapter-num">Act One</span>
+          <h3>Act One: Answer the Grove</h3>
+          <p class="where">A druid among druids</p>
+        </header>
+
+        <h4>Your vows this act</h4>
+        <ol class="steps">
+          <li>Recruit <span class="npc">Astarion</span>, <span class="npc">Shadowheart</span> and <span class="npc">Gale</span>.</li>
+          <li>At the Emerald Grove, <strong>stand with the druids</strong> against the goblins.</li>
+          <li>Rescue <span class="npc">Halsin</span> from the Goblin Camp. He's one of your own.</li>
+          <li>At level 2, take the Circle of the Moon, and shift into the Polar Bear.</li>
+          <li>Talk to every animal you meet.</li>
+        </ol>
+        <aside class="callout tip"><strong>Recommended: shape up</strong>As soon as you hit level 2, <strong>shift before every fight</strong>. The Polar Bear is tougher than any armor you can buy this early.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the Wild Shape recharge and whether Wild Shape works in the Grove.</aside>
+        <h4>Step by step</h4>
+        <p class="where">Jump to: <a href="#dr-r-nautiloid">The Nautiloid</a> · <a href="#dr-r-crash-site">The Crash Site</a> · <a href="#dr-r-grove">The Emerald Grove</a> · <a href="#dr-r-blighted-village">The Blighted Village & the Hag</a> · <a href="#dr-r-risen-road">The Risen Road & Karlach</a> · <a href="#dr-r-goblin-camp">The Goblin Camp</a> · <a href="#dr-r-underdark">The Underdark & Grymforge</a> · <a href="#dr-r-creche">The Mountain Pass & the Crèche</a> · <a href="#dr-r-leave-act1">Before You Leave Act One</a></p>
+        <h4 id="dr-r-nautiloid">Prologue: The Nautiloid</h4>
+        <p class="where">A mind flayer ship, on its way through Hell</p>
+        <ol class="steps">
+          <li>⬆️ <strong>Level 1 (start):</strong> Spellcasting (2 first-level slots). Learn <strong>Healing Word</strong>, <strong>Entangle</strong>, <strong>Faerie Fire</strong>, <strong>Goodberry</strong> and <strong>Thunderwave</strong> as you prepare them.</li>
+          <li>Wake in your pod and break out. Loot the raised walkways in the first room, and stay away from the larva pool in the middle: it bursts.</li>
+          <li>Leave through the west door. In the next room, take the lift up to the elf with the exposed brain. Pass the check to see what it really is: an intellect devourer called Us.</li>
+          <li>Decide what to do with Us: free it, leave it, or destroy it. If you free it, it tags along for a while.</li>
+          <li>Step outside. A githyanki warrior, Lae'zel, drops in and joins you. Fight the three imps together.</li>
+          <li>Climb north to the room with Shadowheart's pod. Open it with a check, or take the Eldritch Rune from a body in the chamber to the east and use that. Then free her.</li>
+          <li>Enter the Helm. A cambion, Commander Zhalk, is fighting a mind flayer. You don't have to beat him. Your goal is the transponder on the far west side: reach it and connect its nerves when the mind flayer is distracted.</li>
+          <li>Watch the ship break free of Hell and crash. You wake on the beach.</li>
+        </ol>
+        <h4 id="dr-r-crash-site">The Crash Site</h4>
+        <p class="where">The Ravaged Beach and the Roadside Cliffs · Quest: Find a Cure</p>
+        <ol class="steps">
+          <li>Look around the beach. Everyone from the ship has a tadpole, and nobody has turned yet. Your journal now tracks <strong>Find a Cure</strong>: the rest of Act One is following leads.</li>
+          <li>If you didn't free Shadowheart on the ship, find her now, in a nearby cave.</li>
+          <li>Walk west along the beach. A pale elf runs up begging for help, then holds a knife to your throat. That's Astarion. Talk him down and he joins you.</li>
+          <li>Go east to the stone circle. A voice calls for help from inside a portal. Pull the wizard Gale out (literally) and recruit him.</li>
+          <li>Explore the Dank Crypt near the beach. A sarcophagus holds a strange skeleton called Withers. Wake him: he moves into your camp and stays useful all game. He can re-pick your class and abilities, and bring back dead companions.</li>
+          <li>Make camp and take a long rest. Your companions talk about the tadpole. Talk to each one before you move on.</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-gale-chess">Gale talks in chess</a>. Gale's combat lines, in any act.</li>
+          <li>⬆️ <strong>Level 2</strong> (around now): Circle of the Moon, Wild Shape, Lunar Mend, Combat Wild Shape. <em>Wild Shape twice per rest, as a bonus action. Your first form is the <strong>Polar Bear</strong>.</em></li>
+        </ol>
+        <h4 id="dr-r-grove">The Emerald Grove</h4>
+        <p class="where">North of the Roadside Cliffs · Quests: Save the Refugees, Save Arabella</p>
+        <ol class="steps">
+          <li>At the Grove gate, goblins are attacking tieflings. Join the fight on the tieflings' side. A warlock named Wyll fights beside you.</li>
+          <li>Inside, talk <strong>Zevlor</strong> (the tieflings' leader) and <strong>Aradin</strong> (an adventurer who lost his druid guide) out of their argument. Zevlor explains the goblin threat and the Grove's troubles.</li>
+          <li>Go to the Inner Sanctum. A tiefling girl, Arabella, has been caught stealing the druids' Sacred Idol, and Kagha is about to punish her. Talk Kagha into letting her go (<strong>Save Arabella</strong>).</li>
+          <li>Never take the Sacred Idol, whoever asks you to. Taking it makes the druids finish the ritual and throws the tieflings out.</li>
+          <li>Kagha has begun the <strong>Rite of Thorns</strong>, which will seal the Grove. Their leader, Halsin, is missing: the goblins took him.</li>
+          <li>Talk to the healer <strong>Nettie</strong>. She can't cure your tadpole, but she points you toward Halsin. Be honest with her and accept her terms, or she'll try to poison you.</li>
+          <li>Meet the bard Alfira and the gnome author Volo. Both have side quests, and traders like Arron sell useful gear.</li>
+          <li>Investigate Kagha: follow the letters in the <strong>Investigate Kagha</strong> quest. Report to Zevlor to earn his reward.</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-faldorn">Faldorn's Canticle</a>. A book in Kagha's chest at the Emerald Grove.</li>
+          <li>⬆️ <strong>Level 3</strong> (around now): Second-level spells. <em>Prepare <strong>Barkskin</strong> and <strong>Hold Person</strong>.</em></li>
+        </ol>
+        <h4 id="dr-r-blighted-village">The Blighted Village & the Hag</h4>
+        <p class="where">The Blighted Village, the Riverside Teahouse and the Sunlit Wetlands · Quests: Rescue the Gnome, Save Mayrina</p>
+        <ol class="steps">
+          <li>Head west to the <strong>Blighted Village</strong>. Goblins hold it. Talk your way past the gate or fight.</li>
+          <li>A gnome, <strong>Barcus Wroot</strong>, is tied to a windmill. Free him (<strong>Rescue the Gnome</strong>), then search the village, including the cellar under the old apothecary.</li>
+          <li>The cave to the north belongs to an owlbear and her cub. It's a hard fight at low level: come back later.</li>
+          <li>South of the village, two brothers are arguing with an old woman about their sister. She's <strong>Auntie Ethel</strong>, and the sister is Mayrina. This starts <strong>Save Mayrina</strong>.</li>
+          <li>Follow Ethel to her <strong>Riverside Teahouse</strong> in the swamp. She's a hag, and she'll offer to remove your tadpole in return for an eye. Don't: she can't do it.</li>
+          <li>Follow her through the fireplace into her lair. Fight past the masked servants, find Mayrina in her cage, and put out the fire beneath it quickly or she dies.</li>
+          <li>When Ethel is nearly beaten she offers a bargain. <strong>Free Mayrina</strong>: it's the kind choice.</li>
+          <li>⬆️ <strong>Level 4</strong> (around now): Feat, Wild Shape Improvement, new cantrip. <em>Take <strong>Resilient (Constitution)</strong> or <strong>War Caster</strong>. Unlock the <strong>Dire Raven</strong> form.</em></li>
+        </ol>
+        <h4 id="dr-r-risen-road">The Risen Road & Karlach</h4>
+        <p class="where">East of the Grove · Quests: Hunt the Devil, Rescue the Grand Duke</p>
+        <ol class="steps">
+          <li>At the <strong>Toll House</strong> on the road, a group of paladins led by <strong>Anders</strong> is hunting a devil and wants your help.</li>
+          <li>Go down the cliff and across the stream. The 'devil' is <strong>Karlach</strong>, a tiefling who escaped from Hell. Hear her side, then decide whom to believe (<strong>Hunt the Devil</strong>).</li>
+          <li>Further along, the inn at <strong>Waukeen's Rest</strong> is on fire with people trapped inside, including Councillor Florrick (<strong>Rescue the Grand Duke</strong>). Put out the flames and get everyone out. <strong>Do this before you long rest or fast travel</strong>, or they die.</li>
+        </ol>
+        <h4 id="dr-r-goblin-camp">The Goblin Camp</h4>
+        <p class="where">Northwest of the Blighted Village · Quests: Save the First Druid, Defeat the Goblins</p>
+        <ol class="steps">
+          <li>Walk in through the front gate. The goblins think your tadpole makes you a 'True Soul', a chosen servant of their god, the Absolute. Use that.</li>
+          <li>Inside the Shattered Sanctum three leaders rule the camp: Priestess Gut, Dror Ragzlin and the drow Minthara. Each wants to know where the Grove is.</li>
+          <li>Find Halsin in bear form in the worg pens behind the Sanctum. Help him fight the goblins. He asks you to deal with the leaders so the Grove is safe.</li>
+          <li>In a room off the Sanctum, goblins are torturing Liam, one of Aradin's group. Talk them off him and free him. He tells you about the Nightsong.</li>
+          <li>Defeat all three leaders. If you can, <strong>knock Minthara out</strong> (non-lethal attacks) rather than killing her. That keeps the door open to freeing her in Act Two.</li>
+          <li>Return to Halsin, then go back to the Grove. The Rite of Thorns ends, the tieflings prepare to leave, and they throw a party at camp.</li>
+          <li>🎒 <strong>Get Amulet of Misty Step.</strong> A chest in Priestess Gut's chambers in the Goblin Camp, guarded by the ogre Polma. <em>An escape for when you're in human form.</em> 📦 Chest</li>
+          <li>⬆️ <strong>Level 5</strong> (around now): Wild Strike, third-level spells. <em>Extra attack after an unarmed strike in animal form. Prepare <strong>Call Lightning</strong>.</em></li>
+        </ol>
+        <h4 id="dr-r-underdark">The Underdark & Grymforge</h4>
+        <p class="where">Below the Defiled Temple, the Zhentarim Hideout or the Whispering Depths · Quests: Defeat the Duergar Intruders, Save the Grymforge Gnomes</p>
+        <ol class="steps">
+          <li>The easiest way down is the <strong>Defiled Temple</strong> under the Shattered Sanctum. Solve the Selûnite door puzzle (a dwarf named Brian's poem holds the clues) and keep going down.</li>
+          <li>In the <strong>Myconid Colony</strong>, the mushroom folk ask you to deal with duergar intruders. A myconid named Glut has plans of his own.</li>
+          <li>Visit <strong>Omeluum</strong>, a friendly mind flayer in the colony. He'll study your tadpole.</li>
+          <li>Find the old <strong>Selûnite Outpost</strong>. A book there, <em>In Search of the Nightsong</em>, says the Nightsong is held in a Sharran fortress near Moonrise Towers.</li>
+          <li>Take a skiff across the lake to <strong>Grymforge</strong>. Duergar have enslaved deep gnomes there. Free them, whether or not you free the True Soul Nere trapped behind a rockfall.</li>
+          <li>Optional: below Grymforge lies the Adamantine Forge, where you can craft some of Act One's best gear if you defeat its guardian, Grym.</li>
+          <li>The elevator in Grymforge goes up to the Shadow-Cursed Lands. That's your way into Act Two on this route.</li>
+          <li>🎒 <strong>Get Mourning Frost.</strong> Crafted from three parts: Icy Helve (Dhourn, west of the Selûnite Outpost), Icy Crystal (Myconid Colony reward room) and Icy Metal (Filro the Forgotten, northwest near the Sussur Tree). <em>A frost staff for the occasional caster moment.</em> 🔨 Craft it</li>
+          <li>🎒 <strong>Get Adamantine Scale or Splint Mail.</strong> Crafted at the Adamantine Forge in Grymforge. <em>Medium-armor options for human form.</em> 🔨 Craft it</li>
+        </ol>
+        <h4 id="dr-r-creche">The Mountain Pass & the Crèche</h4>
+        <p class="where">The Risen Road, the Mountain Pass and the Rosymorn Monastery · Quest: Find the Githyanki Crèche</p>
+        <ol class="steps">
+          <li><strong>Heads-up:</strong> the githyanki scenes are built around Lae'zel. Without her they play out differently, and some crèche content may be closed to you. If you want the crèche's gear, bring her along for this one trip and send her back to camp afterward.</li>
+          <li>At the <strong>Rosymorn Monastery Trail</strong>, summon the cable car with the wheel and ride across. Climb into the monastery through the broken windows.</li>
+          <li>Optional: the monastery hides the <span class="item">Blood of Lathander</span>, a legendary mace, behind a puzzle (<strong>Find the Blood of Lathander</strong>).</li>
+          <li>Below the monastery is the githyanki crèche, <strong>Crèche Y'llek</strong>. The gith distrust outsiders, so talk carefully (and let Lae'zel do the talking if she's with you).</li>
+          <li>In the infirmary, Inquisitor W'wargaz offers to cure you in the Zaith'isk, a githyanki machine. It doesn't go to plan.</li>
+          <li>The Mountain Pass leads down into the Shadow-Cursed Lands: your other way into Act Two.</li>
+        </ol>
+        <h4 id="dr-r-leave-act1">Before You Leave Act One</h4>
+        <p class="where">A checklist for your last day in the Wilderness</p>
+        <ol class="steps">
+          <li>Make sure the tieflings are safe and you've celebrated at camp.</li>
+          <li>Check that Florrick is out of Waukeen's Rest, and that Mayrina is free (or paid for).</li>
+          <li>Visit both the Underdark and the crèche, or decide which to skip.</li>
+          <li>Talk to every companion at camp and finish their camp scenes. Some only trigger in Act One.</li>
+          <li>Sell your junk and buy what you can afford from traders like Arron and Dammon at the Grove.</li>
+          <li>Make a manual save before you descend. Act Two takes you somewhere you can't easily come back from.</li>
+          <li>⬆️ <strong>Level 6</strong> (around now): Primal Strike. <em>Your animal attacks now count as magical. <strong>Panther</strong> and <strong>Owlbear</strong> forms arrive.</em></li>
+        </ol>
+        <aside class="callout tip"><strong>Levels are approximate</strong>The ⬆️ steps show roughly where most players reach each level. If your level is different, follow the level table, not the clock.</aside>
+      </section>
+
+      <section class="chapter" id="dr-act2">
+        <header>
+          <span class="chapter-num">Act Two</span>
+          <h3>Act Two: Grow Stronger</h3>
+          <p class="where">A land under shadow</p>
+        </header>
+
+        <h4>Your vows this act</h4>
+        <ol class="steps">
+          <li>Buy the <span class="item">Mighty Cloth</span> or the <span class="item">Enraging Heart Garb</span> from the Last Light and Moonrise traders.</li>
+          <li>Recruit <span class="npc">Jaheira</span> if she joins you, and compare forms.</li>
+          <li>Unlock the Sabre-Toothed Tiger at level 8.</li>
+        </ol>
+        <aside class="callout verify"><strong>To verify while proving</strong>Replace with the exact Act Two quests after playing.</aside>
+        <h4>Step by step</h4>
+        <p class="where">Jump to: <a href="#dr-r-shadow-lands">Into the Shadows</a> · <a href="#dr-r-last-light">Last Light Inn</a> · <a href="#dr-r-reithwin">Reithwin Town</a> · <a href="#dr-r-moonrise">Moonrise Towers</a> · <a href="#dr-r-gauntlet">The Gauntlet of Shar</a> · <a href="#dr-r-ketheric">Defeat Ketheric Thorm</a></p>
+        <h4 id="dr-r-shadow-lands">Into the Shadows</h4>
+        <p class="where">The Ruined Battlefield · Quests: Seek Protection from the Shadow Curse, Follow the Convoy</p>
+        <ol class="steps">
+          <li>Step out of the dark. The curse hurts anyone not standing in light. Take a torch from the braziers near the exit and keep it lit.</li>
+          <li><strong>If you came from the Underdark:</strong> a group of Harpers is fighting shadows nearby. Help them. Their leader, Lassandra, sends you to the last safe place: the Last Light Inn.</li>
+          <li><strong>If you came from the Mountain Pass:</strong> a goblin mistakes you for a True Soul and tells you to wait for a guide, the drider Kar'niss, whose moonlantern keeps the curse off. Harpers ambush the convoy on the way.</li>
+          <li>Either way, head for the <strong>Last Light Inn</strong>.</li>
+        </ol>
+        <h4 id="dr-r-last-light">Last Light Inn</h4>
+        <p class="where">Quests: Resolve the Abduction, Lift the Shadow Curse, Rescue the Tieflings</p>
+        <ol class="steps">
+          <li>At the gate, the veteran Harper <strong>Jaheira</strong> tests you with a tadpole specimen and suspects you're a True Soul. Someone from the Grove can vouch for you, or show her your Mysterious Artefact.</li>
+          <li>Jaheira explains that the cult's leader at Moonrise Towers is <strong>Ketheric Thorm</strong>, and he can't die. The Harpers want to stop him.</li>
+          <li>Go upstairs to meet <strong>Isobel</strong>, the Selûnite cleric whose magic shields the inn. Talking to her triggers an attack: a winged man named Marcus tries to carry her off.</li>
+          <li><strong>Protect Isobel.</strong> If she's taken or killed, the shield falls and everyone at the inn is lost to the curse.</li>
+          <li>The tieflings from the Grove are here, but some are missing: they were taken to Moonrise Towers (<strong>Rescue the Tieflings</strong>).</li>
+          <li>Shop at the inn: the quartermaster, Talli, sells some of Act Two's best gear.</li>
+          <li>🎒 <strong>Get The Mighty Cloth.</strong> Quartermaster Talli, Last Light Inn. <em>Adds 2 Strength, which helps a shapeshifter who relies on their own Strength.</em> 🛒 Trader</li>
+        </ol>
+        <h4 id="dr-r-reithwin">Reithwin Town</h4>
+        <p class="where">West of the inn, and the House of Healing</p>
+        <ol class="steps">
+          <li>Reithwin was a prosperous Selûnite town before the curse. Explore it by day, torches lit.</li>
+          <li>Members of the Thorm family still haunt their posts: Thisobald at the tollhouse, Gerringothe at the Waning Moon bar, Malus at the House of Healing.</li>
+          <li>In the town and nearby, the <strong>House in Deep Shadow</strong> holds secrets and a quest from Olivar (<strong>Hide and Seek</strong>).</li>
+          <li>Hold off on the Grand Mausoleum, north of town, until you've been to Moonrise Towers.</li>
+        </ol>
+        <h4 id="dr-r-moonrise">Moonrise Towers</h4>
+        <p class="where">Across the bridge from Reithwin · Quests: Infiltrate Moonrise Towers, Rescue Wulbren, Rescue the Tieflings</p>
+        <ol class="steps">
+          <li>Walk in as a True Soul. In the audience chamber, Ketheric's lieutenant <strong>Z'rell</strong> is questioning the goblins about what happened at the camp.</li>
+          <li>If you knocked Minthara out in Act One, she's here too, begging for her life. Ketheric condemns her.</li>
+          <li>Talk to Z'rell behind the throne. Prove your faith and she sends you after <strong>Balthazar</strong>, Ketheric's necromancer, last seen at the Thorm Mausoleum. She gives you a key to his room.</li>
+          <li>Search Balthazar's room for its hidden area. His notes reveal what the 'Nightsong' really is.</li>
+          <li>Find the prison. In the cells are the gnome Wulbren, captured tieflings (including Cal and Lia) and others. Break them out and lead them to the boat or out on foot.</li>
+          <li>Once everyone is free, return to the Last Light Inn to collect your thanks.</li>
+          <li>Moonrise Towers' traders (Lann Tarv, Roah Moonglow and Araj Oblodra) sell strong gear. Check all three.</li>
+          <li>🎒 <strong>Get Enraging Heart Garb.</strong> Lann Tarv, Moonrise Towers. <em>Adds 2 Constitution and a bonus while raging.</em> 🛒 Trader</li>
+          <li>🎒 <strong>Get Fistbreaker Helm.</strong> Lann Tarv, Moonrise Towers. <em>+1 spell save DC and better initiative.</em> 🛒 Trader</li>
+          <li>⬆️ <strong>Level 7</strong> (around now): Fourth-level spells. <em>Take a control spell.</em></li>
+        </ol>
+        <h4 id="dr-r-gauntlet">The Gauntlet of Shar</h4>
+        <p class="where">Through the Grand Mausoleum north of Reithwin · Quests: Find Ketheric Thorm's Relic, Find the Nightsong</p>
+        <ol class="steps">
+          <li>Solve the mausoleum's puzzle and descend into the <strong>Gauntlet of Shar</strong>, an ancient temple to the goddess of loss. Snuff out every light in the entrance hall to open the way.</li>
+          <li>Balthazar is already here and orders you to clear his way. Help him or fight him: either way you need what lies below.</li>
+          <li>Collect four <strong>Umbral Gems</strong>. Three come from the Trials of Shar: the Soft-Step Trial (sneak through a maze), the Self-Same Trial (fight shadow copies of your party) and the Faith-Leap Trial (cross an invisible path).</li>
+          <li>The fourth gem belongs to Yurgir, an orthon in the east wing, who has a contract with the devil Raphael he'd love to break.</li>
+          <li>Shadowheart wants to complete one more Sharran trial. Help her: it's part of her story.</li>
+          <li>Look for hidden chests in the Gauntlet's side rooms. Several of Act Two's best items are tucked away.</li>
+          <li><strong>Before you open the way into the Shadowfell, finish what you want to finish in Act One's lands and at Moonrise Towers.</strong> The Shadowfell is a point of no return.</li>
+          <li>Use the gems to open the Shadowfell, and find the Nightsong.</li>
+          <li>⬆️ <strong>Level 8</strong> (around now): Feat, Wild Shape Improvement. <em>Take <strong>Alert</strong>, or boost Wisdom. Unlock the <strong>Sabre-Toothed Tiger</strong>.</em></li>
+        </ol>
+        <h4 id="dr-r-ketheric">Defeat Ketheric Thorm</h4>
+        <p class="where">Moonrise Towers and the Mind Flayer Colony beneath it · Quest: Defeat Ketheric Thorm</p>
+        <ol class="steps">
+          <li>Back at the Last Light Inn, Jaheira gathers the Harpers and Flaming Fists to storm Moonrise Towers. Join the assault.</li>
+          <li>Fight your way up to the roof. Ketheric waits there, and now he can be hurt. Win the fight.</li>
+          <li>When he falls the way opens into the <strong>Mind Flayer Colony</strong> below. Follow him down.</li>
+          <li>Explore the colony. It's where the tadpoles are made, and where you learn what the cult has been building.</li>
+          <li>Face Ketheric one last time.</li>
+          <li>After the fight the story takes a turn. Act Two ends at your new camp, <strong>Wyrm's Lookout</strong>, on the road to Baldur's Gate.</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-alaundo">Alaundo's prophecy</a> ⚠️. Jaheira recites it before the assault on Moonrise Towers.</li>
+          <li>⬆️ <strong>Level 9</strong> (around now): Fifth-level spells. <em>Big nature magic.</em></li>
+        </ol>
+        <aside class="callout tip"><strong>Levels are approximate</strong>The ⬆️ steps show roughly where most players reach each level. If your level is different, follow the level table, not the clock.</aside>
+      </section>
+
+      <section class="chapter" id="dr-act3">
+        <header>
+          <span class="chapter-num">Act Three</span>
+          <h3>Act Three: The Wild City</h3>
+          <p class="where">Wild Shape in a city of stone</p>
+        </header>
+
+        <h4>Your vows this act</h4>
+        <ol class="steps">
+          <li>Buy the <span class="item">Shapeshifter Hat</span> from Helsik at Devil's Fee.</li>
+          <li>Pick up the <span class="item">Armour of Moonbasking</span> from the Voiceless Penitent in the sewers.</li>
+          <li>At level 10, unlock the Myrmidons and bring the storm.</li>
+          <li>At the finale, fight as the strongest form you have.</li>
+        </ol>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the Act Three quests and the Greenwarden's best ending after playing.</aside>
+        <h4>Step by step</h4>
+        <p class="where">Jump to: <a href="#dr-r-rivington">Rivington</a> · <a href="#dr-r-wyrm-rock">Wyrm's Rock & Gortash</a> · <a href="#dr-r-lower-city">The Lower City</a> · <a href="#dr-r-orin">Orin & the Temple of Bhaal</a> · <a href="#dr-r-finale">Confront the Elder Brain</a></p>
+        <h4 id="dr-r-rivington">Rivington</h4>
+        <p class="where">The outer district south of the river · Quests: Solve the Open Hand Temple Murders, Find the Missing Letters</p>
+        <ol class="steps">
+          <li>From Wyrm's Lookout, walk west into Rivington. Refugees fill the streets: the city won't let them in.</li>
+          <li>Look around the <strong>Circus of the Last Days</strong>. It's great fun, and a few of the acts aren't what they seem.</li>
+          <li>At the <strong>Open Hand Temple</strong>, someone has murdered the priests. Investigate (<strong>Solve the Open Hand Temple Murders</strong>). The trail leads to Orin.</li>
+          <li>At <strong>Sword Coast Couriers</strong>, letters for your companions have gone missing (<strong>Find the Missing Letters</strong>). Track them down: each one adds to a companion's story.</li>
+          <li>Find the camp of the Gur, the monster hunters. They're after one of your companions.</li>
+          <li>Cross <strong>Wyrm's Crossing</strong>, the bridge into the city.</li>
+          <li>🎒 <strong>Get Shapeshifter's Boon Ring.</strong> A small shed on the hill above the barn in Rivington, near the Strange Ox. <em>In a shed above the Rivington barn, near the Strange Ox.</em> 👀 Easy to miss</li>
+          <li>⬆️ <strong>Level 10</strong> (around now): Elemental forms, Improved Wild Strike. <em>Unlock the four <strong>Myrmidon</strong> forms (air, earth, fire, water), and two extra attacks in animal form.</em></li>
+        </ol>
+        <h4 id="dr-r-wyrm-rock">Wyrm's Rock & Gortash</h4>
+        <p class="where">Wyrm's Rock Fortress, the Iron Throne and the Steel Watch Foundry · Quests: Get Gortash's Netherstone, Rescue the Grand Duke</p>
+        <ol class="steps">
+          <li>Enver Gortash is being crowned Archduke of Baldur's Gate in Wyrm's Rock Fortress. Go up to the ceremony.</li>
+          <li>Gortash makes you an offer: kill Orin and rule the city with him. You don't have to answer yet.</li>
+          <li>He's guarded by the Steel Watch, giant clockwork soldiers. Before you take him on, go to the <strong>Steel Watch Foundry</strong> in the Lower City and shut it down (<strong>Disable the Steel Watch</strong>).</li>
+          <li>Find the <strong>Iron Throne</strong>, an underwater prison off the coast. Duke Ravengard, Wyll's father, is held there with a group of gnomes. Get them out before the prison floods.</li>
+          <li>Then return to Wyrm's Rock and take Gortash's Netherstone.</li>
+        </ol>
+        <h4 id="dr-r-lower-city">The Lower City</h4>
+        <p class="where">The Lower City and its sewers</p>
+        <ol class="steps">
+          <li>Make the <strong>Elfsong Tavern</strong> your first stop. You'll hear about half the city's trouble there.</li>
+          <li>At <strong>Sorcerous Sundries</strong>, the wizard Lorroakan is still offering a reward for the Nightsong. If you freed Dame Aylin, think carefully about what you tell him.</li>
+          <li><strong>Astarion:</strong> his old master Cazador lives in a palace in the Lower City. Visit it when Astarion is ready.</li>
+          <li><strong>Gale:</strong> talk him through what he wants to do with the Crown of Karsus, and keep his approval high.</li>
+          <li><strong>Shadowheart:</strong> the House of Grief, Shar's temple in the city, holds the end of her story.</li>
+          <li>Explore. The Lower City is crowded with side quests: a guild war, a printing press, a haunted bookshop, a devil's house, and more. Buy and loot as you go.</li>
+          <li>🎒 <strong>Get Shapeshifter Hat.</strong> Helsik. <em>Buy it from Helsik at Devil's Fee. It increases your Wild Shape charges.</em> 🛒 Trader</li>
+          <li>🎒 <strong>Get Armour of Moonbasking.</strong> The Voiceless Penitent. <em>From the Voiceless Penitent. It gives strong temporary HP when you shift.</em> 💀 Boss drop</li>
+          <li>🎒 <strong>Get Staff of Cherished Necromancy.</strong> Carrion, at Philgrave Mansion. <em>From Carrion at Philgrave Mansion. A necromancer's staff, but useful.</em> 📜 Quest reward</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-boo-turns">"Boo is not used to this taking of turns"</a>. A Minsc combat line.</li>
+          <li>🥚 <strong>Easter egg:</strong> <a href="../eggs/#egg-khalid">Khalid's Gift</a> ⚠️. Jaheira's basement (Elerrathin's Home), with a note called "My Dearest Wife."</li>
+          <li>⬆️ <strong>Level 11</strong> (around now): Sixth-level spells. <em>Late-game magic.</em></li>
+        </ol>
+        <h4 id="dr-r-orin">Orin & the Temple of Bhaal</h4>
+        <p class="where">Candulhallow's Tombstones, the Murder Tribunal and the Temple of Bhaal under the city · Quest: Get Orin's Netherstone</p>
+        <ol class="steps">
+          <li>Once you're in the Lower City, Orin the Red kidnaps a companion who's waiting at camp. She wants you to kill Gortash for her.</li>
+          <li>Find your way into her temple. Investigate the city's serial murders (<strong>Investigate the Murders</strong>) or kill Gortash first: either way you get the password to the Murder Tribunal, hidden under Candulhallow's Tombstones.</li>
+          <li>At the Tribunal you meet <strong>Sarevok Anchev</strong>. Win his trust or fight him for the Amulet of Bhaal and the map to the temple.</li>
+          <li>The Temple of Bhaal is in the Undercity Ruins. Hold the amulet to the temple door, fight past the assassins, and face Orin.</li>
+          <li>Take Orin's Netherstone from her dagger, and rescue your companion.</li>
+          <li>⬆️ <strong>Level 12</strong> (around now): Feat, Wild Shape Improvement. <em>A final <strong>Ability Improvement</strong>. Your forms are at their strongest.</em></li>
+        </ol>
+        <h4 id="dr-r-finale">Confront the Elder Brain</h4>
+        <p class="where">The Morphic Pool and the Upper City · Quests: Gather Your Allies, Confront the Elder Brain</p>
+        <ol class="steps">
+          <li>Open the <strong>Gather Your Allies</strong> quest and check who you've rallied: the tieflings, the druids, the gnomes, the Harpers, the githyanki and more. The longer the list, the easier the finale.</li>
+          <li>With all three Netherstones in hand, head for the <strong>Morphic Pool</strong>, where the elder brain feeds.</li>
+          <li>From here the game moves to its finale in the Upper City. <strong>Finish everything else first.</strong> There's no coming back for side quests.</li>
+          <li>Make your last choices, and see your story through.</li>
+        </ol>
+        <aside class="callout tip"><strong>Levels are approximate</strong>The ⬆️ steps show roughly where most players reach each level. If your level is different, follow the level table, not the clock.</aside>
+      </section>
+
+      <section class="chapter" id="dr-love">
+        <header>
+          <span class="chapter-num">Love Interests</span>
+          <h3>Love & Companions</h3>
+          <p class="where">The game is open: any companion can be romanced whatever your character looks like</p>
+        </header>
+
+        <p>The Greenwarden loves slowly, like a tree grows. These two share your roots.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Our pick</th><th>Why they fit</th><th>Alternates</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Male</strong></td><td><span class="npc">Halsin</span></td><td>A fellow druid and a gentle giant. The most natural pairing.</td><td><span class="npc">Gale</span> for a bookish partner</td></tr>
+              <tr><td><strong>Female</strong></td><td><span class="npc">Jaheira</span></td><td>A veteran Harper and druid: a slow-burning partnership.</td><td><span class="npc">Karlach</span> for something warmer</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm Jaheira's romance availability and thresholds, and Halsin's romance after the Grove.</aside>
+        <figure class="shot" data-src="shots/dr-02-bear.jpg">
+          <figcaption>The Greenwarden as a Polar Bear</figcaption>
+        </figure>
+
+      </section>
+
+      <section class="chapter" id="dr-side">
+        <header>
+          <span class="chapter-num">Beyond</span>
+          <h3>Beyond the Companions</h3>
+          <p class="where">One-time encounters, and whether they fit your path</p>
+        </header>
+
+        <p>Beyond your companions, six characters offer one-time encounters, mostly in Act Three. They aren't relationships, so none of them replaces your partner, but a couple can hurt one. Here's how each fits <em>this</em> path. The full details, with spoilers hidden, are in the <a href="../romance/">Beyond the Companions</a> guide.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Who</th><th>Verdict</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Haarlep</strong></td><td>⚠️ Careful</td><td>Be honest, and take the safe route or fight.</td></tr>
+              <tr><td><strong>Mizora</strong></td><td>✅ Fits</td><td>She doesn't end Halsin's romance. Jaheira isn't listed either way.</td></tr>
+              <tr><td><strong>Naoise</strong></td><td>⚠️ Careful</td><td>No stated cost. It's a tryst with a mind flayer in disguise.</td></tr>
+              <tr><td><strong>Nym Orlith</strong></td><td>⚠️ Careful</td><td>Halsin always agrees to a group scene if you're romancing him.</td></tr>
+              <tr><td><strong>Sorn Orlith</strong></td><td>⚠️ Careful</td><td>No stated costs.</td></tr>
+              <tr><td><strong>The Emperor</strong></td><td>✅ Fits</td><td>A druid believes in the balance of things. Be kind to the Emperor.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout warn"><strong>Mature content</strong>These encounters are adult. The guide describes them at a high level only.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>The facts come from partly-read wiki pages. Confirm each trigger and consequence before you rely on it.</aside>
+      </section>
+
+      <section class="chapter reference" id="dr-never">
+        <header>
+          <span class="chapter-num">Reference</span>
+          <h3>Never Do This</h3>
+          <p class="where">Choices that break the character</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Don't</th><th>Because</th></tr></thead>
+            <tbody>
+              <tr><td>Stay in human form when a bear would do</td><td>That's the point of the Moon.</td></tr>
+              <tr><td>Fight in a city's heart without a plan</td><td>Shift where you have room.</td></tr>
+              <tr><td>Burn all your slots</td><td>Keep one for Lunar Mend.</td></tr>
+              <tr><td>Ignore the animals</td><td>Talk to them.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Add every point of no return for the path after playing.</aside>
+      </section>
+
+      <aside class="callout tip" style="margin-top:40px"><strong>Want a different path?</strong>Head back to the <a href="../">BG3 Paths hub</a> to compare all three, or see the <a href="../../baldurs-gate-3/">general act-by-act walkthrough</a> for the full story.</aside>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    © 2026 <a href="https://craz.com">Crabtree Labz</a> · <a href="https://craz.com/privacy.html">Privacy</a> · Baldur's Gate 3 © Larian Studios · Baldur's Gate, Dungeons &amp; Dragons and Forgotten Realms © Wizards of the Coast · Unofficial fan guide
+  </footer>
+
+  <script src="../../walkthrough.js?v=e57d0971"></script>
+</body>
+</html>
