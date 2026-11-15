@@ -838,3 +838,54 @@ ol.steps > li.flash { animation: bookmark-flash 2.2s ease-out; }
 .yt-facade .yt-note { font-size: 0.85rem; opacity: 0.75; }
 .yt-facade:hover .yt-play, .yt-facade:focus-visible .yt-play { background: var(--gold); color: var(--panel); }
 figure.video .yt-facade { border-radius: 10px; border: 1px solid var(--line); }
+
+/* ---------- Phones: compact header, tighter spacing, stacked tables ---------- */
+
+/* The top bar slides away while scrolling down and returns on scroll up (walkthrough.js adds .tuck). */
+.topbar { transition: transform 0.25s ease; }
+.topbar.tuck { transform: translateY(-100%); }
+
+@media (max-width: 600px), (max-height: 500px) {
+  .topbar { padding: 6px 12px; gap: 12px; }
+  .topbar .brand { font-size: 0; gap: 0; flex: none; }
+  .topbar .brand img { height: 28px; }
+  .topbar nav {
+    display: flex; gap: 14px; overflow-x: auto; white-space: nowrap;
+    scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  }
+  .topbar nav::-webkit-scrollbar { display: none; }
+  .topbar nav a { margin-left: 0; font-size: 0.85rem; padding: 6px 0; }
+
+  .hero { padding: 24px 16px 18px; }
+  .hero h1 { font-size: 2.1rem; margin: 6px 0 4px; }
+  .hero p.lede { font-size: 1rem; margin-top: 10px; }
+  .hero .emblem { width: 52px; height: 52px; margin: 10px auto 2px; }
+  .meta-row { margin-top: 14px; gap: 6px; }
+  .art-banner { padding: 0 12px; margin: 4px auto 18px; }
+  html { scroll-padding-top: 12px; }
+}
+
+@media (max-width: 600px) {
+  body { font-size: 16px; }
+  .layout { padding: 0 10px 64px; }
+  .chapter { padding: 18px 14px; margin: 18px 0; border-radius: 12px; }
+  .chapter h3 { font-size: 1.55rem; }
+  .act { margin-top: 36px; }
+
+  /* Wide tables become one card per row. Labels come from data-label (stamped by tools/stamp-assets.py). */
+  .table-wrap { overflow: visible; }
+  table:has(td[data-label]) thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  table:has(td[data-label]), table:has(td[data-label]) tbody,
+  table:has(td[data-label]) tr, table:has(td[data-label]) td { display: block; width: 100%; }
+  table:has(td[data-label]) tr { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  table:has(td[data-label]) tr:last-child { border-bottom: 0; }
+  table:has(td[data-label]) td { border: 0; padding: 2px 0; }
+  table:has(td[data-label]) td::before {
+    content: attr(data-label); display: block;
+    font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); opacity: 0.85;
+  }
+  table:has(td[data-label]) td:first-child { font-weight: 700; font-size: 1.05rem; padding-bottom: 6px; }
+  table:has(td[data-label]) td:first-child::before { display: none; }
+  table:has(td[data-label]) td[data-label]:empty { display: none; }
+  table:has(td[data-label]) tr:hover td { background: none; }
+}
