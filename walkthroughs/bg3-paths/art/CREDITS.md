@@ -26,3 +26,9 @@ If Larian or Wizards of the Coast asks us to remove an image, we remove it.
 | `spells-spellbook.jpg` | PS5 Release Press Kit / Screenshots / SPELLS UI.png | Spells Guide |
 | `eggs-wyrmway.jpg` | PS5 Release Press Kit / Screenshots / WYRMS WAY EXPLORE.png | Easter Egg Guide |
 | `romance-jaheira.jpg` | Release Day Press Kit / Screenshots / BG3_Jaheira.png | Beyond the Companions |
+| `start-underdark.jpg` | Release Day Press Kit / Screenshots / BG3_Underdark.png | Start Here |
+| `rolls-creation.jpg` | Release Day Press Kit / Screenshots / CC2 (2).png | Dice & Numbers |
+| `combat-ui.jpg` | Release Day Press Kit / Screenshots / UI 7.png | How Fights Work |
+| `faq-city.jpg` | CityReveal June 2023 / BG3_CityReveal_01.png | Questions to Ask |
+| `lone-wanderer-beach.jpg` | (same file) | also Game Systems |
+| `ranger-exploration.jpg` | (same file) | also Glossary |

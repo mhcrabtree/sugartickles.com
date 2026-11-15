@@ -47,4 +47,8 @@ no explicit description, a mature-content banner, and character roles in `<detai
 Each path's act chapters follow a shared step-by-step route written in our own words (area and quest names are game
 facts, the prose is ours). Don't paste text from the wiki or from `../baldurs-gate-3/` into it.
 
+The New Player Guide (`start-here/`, `dice/`, `combat/`, `systems/`, `faq/`, `glossary/`) explains rules in our own words.
+Facts (ability modifiers, proficiency by level, spell-slot counts, rest costs) come from bg3.wiki and the game. Don't paste
+rules text from the game, the rulebooks or the wiki. Keep every unconfirmed claim behind a "To verify" note.
+
 Larian or Wizards can change these terms at any time. Re-check them before adding anything new.

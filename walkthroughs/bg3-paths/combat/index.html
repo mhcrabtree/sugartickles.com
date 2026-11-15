@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How Fights Work — Baldur's Gate 3 Paths · SugarTickles</title>
+  <meta name="description" content="A beginner's guide to Baldur's Gate 3 combat: turn-based mode, actions, initiative, surfaces, conditions, spell slots, death saves, difficulty modes and Xbox controls." />
+  <!--
+    Original SugarTickles writing. Does NOT adapt bg3.wiki text, so it is not bound by the wiki's
+    CC BY-NC-SA license (unlike ../baldurs-gate-3/). Fan Content rules still apply: see NOTICE.md.
+  -->
+  <link rel="stylesheet" href="/fonts/fonts.css?v=d1e52a1c">
+  <link rel="stylesheet" href="../../walkthrough.css?v=b78d8fbf" />
+  <link rel="stylesheet" href="../../bg3-paths/paths.css?v=5b9ec435" />
+</head>
+
+<body data-walkthrough="bg3-paths-combat">
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/logo.png" alt="" />SugarTickles</a>
+    <nav>
+      <a href="/walkthroughs/">Walkthroughs</a>
+      <a href="../">BG3 Paths</a>
+      <a href="../gear/">Gear Atlas</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">BG3 Paths · New Player Guide</span>
+    <h1>How Fights Work<span class="sub">Turns, actions, surfaces and spells</span></h1>
+    <p class="lede">A fight in this game is a turn-based puzzle, not a test of reflexes. This page explains the two modes, what you can do on a turn, how the numbers become hits and misses, and the surfaces, conditions and spells that make fights interesting.</p>
+    <svg class="emblem" viewBox="0 0 512 512" role="img" aria-label="sword brandish icon"><path fill="currentColor" d="M122.1 17.52L186.6 161l104.5-44.9-44.5-98.58h-51.1l35.8 80.75-16.4 7.23-39-87.98zm265.2 77.75L110.4 215.2l12 28.2 278.1-119.8zm-69.7 98.53l-23.9 11.5c12.8 5.4 26 13.7 38.3 15.6 18.1-13.1-4.9-30.5-14.4-27.1zm-60.7 11.1l-36.2 16.7c-11.9 18.4-14.8 46-18.2 69.7 20.6 30.1 30.5 62.4 39.5 94 17.9-3.7 32.2-6.8 48.7-11.5-24.4-38.7-42.2-78.4-53.6-118.9 0 0 5.6-10.5 8.4-15.8 11.9 7.3 24.9 12.4 36.6 9.9 10-4.1 21.5-7.9 27.7-16.6-17.6-6.9-37.1-17.5-52.9-27.5zm92.6 26.6c-10.8 5.8-23 11.2-31.9 18.9-5.3 4.7-12.1 8.8-20.5 12.3 1.1 7.3-.1 19.6 8.1 18.8 20.5-6.2 40.5-15 59.7-28.4-.1-9.2-8-24.1-15.4-21.6zm-90.2 34.2c11.3 34.8 27.6 69 49.3 102.6 4.7-1.6 9.3-3.3 13.5-5-7.3-6.2-11.7-15.9-12-25.3-16.6-4.1-20.8-29.4-17.2-41.6-9.5-7-13.6-18.1-14.2-28.7-7.2.7-13.6-.1-19.4-2zm103.3 10.4c-13.6 8.1-27.6 14.3-41.6 19.2l-9 4.4c-4.4 4.6-4.5 15.6 1 20.3 9.7 3.5 50.1-21.2 57.7-27.9 1.3-5.8-3.5-14.9-8.1-16zm-178.1 21.2L19.1 335.8V495c95.7-25.3 146.9-47.1 209.7-90.2-10.8-38-20.5-74.8-44.3-107.5zm187.8 16.9c-13.6 10.2-27.2 16.2-42.9 21.4-.4 6.7 2.5 18.1 12.1 16 19.9-4.3 36.3-17.5 36.6-24.6.2-3.7-2-10.5-5.8-12.8zm-7.5 48.6c-14.3 8.2-31.5 15.9-46.7 21.4l18.7 31.8 39.3-18.8zm22.2 49.1L342.9 433l3.1 21.9c15.1.5 46.6-11.3 55.4-26.1v-.1z"/></svg>
+    <div class="resource-links">
+      <a href="#modes">Two modes</a>
+      <a href="#turn">Your turn</a>
+      <a href="#order">Initiative</a>
+      <a href="#hits">Hitting</a>
+      <a href="#surfaces">Surfaces</a>
+      <a href="#conditions">Conditions</a>
+      <a href="#magic">Spells</a>
+      <a href="#down">Falling</a>
+      <a href="#difficulty">Difficulty</a>
+      <a href="#controller">Xbox</a>
+    </div>
+  </section>
+  <figure class="art-banner">
+    <img src="../art/combat-ui.jpg" width="1600" height="900" alt="Official screenshot: a turn-based fight with the turn order across the top" />
+    <figcaption>Official press-kit screenshot · © Larian Studios</figcaption>
+  </figure>
+
+
+  <div class="layout" style="display:block;max-width:1000px">
+    <main>
+      <div class="resource-links" style="margin:0 0 22px"><a href="../start-here/">Start Here</a><a href="../dice/">Dice & Numbers</a><a href="../combat/" aria-current="page">How Fights Work</a><a href="../systems/">Game Systems</a><a href="../faq/">Questions to Ask</a><a href="../glossary/">Glossary</a></div>
+        <aside class="callout tip"><strong>The one-sentence version</strong>A fight is a board game: everyone takes turns in a set order, and on your turn you can <strong>move, do one main thing, and one smaller thing</strong>. Nothing happens until you decide.</aside>
+      <section class="chapter reference" id="modes">
+        <header>
+          <h3>Two Modes: Exploring and Fighting</h3>
+          <p class="where">How combat starts and ends</p>
+        </header>
+
+
+        <p>Most of the game is <strong>real time</strong>: you walk, talk and look around. When a fight starts (you attack, you're spotted, or the story triggers one), the game switches to <strong>turn-based mode</strong> automatically and everyone rolls initiative. When the fight ends, it switches back. You can also switch it on yourself outside a fight.</p>
+        <p>In turn-based mode nothing moves while you think. Take as long as you like. When you're done with a character's turn, press <strong>End Turn</strong> (the <strong>Y button</strong> on Xbox).</p>
+        <aside class="callout tip"><strong>In plain English</strong>If you walk into a room and everyone suddenly stops and a row of portraits appears at the top, that's combat. Don't panic: you're in the board game now.</aside>
+      </section>
+
+      <section class="chapter reference" id="turn">
+        <header>
+          <h3>What You Can Do On Your Turn</h3>
+          <p class="where">Four things, refreshed every turn</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>What</th><th>How many</th><th>Examples</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Movement</strong></td><td>A set distance (normal is about 9 m / 30 ft). Dashing doubles it.</td><td>Walking, running to cover, climbing a ladder.</td></tr>
+              <tr><td><strong>Action</strong></td><td>One per turn.</td><td>Attack, cast most spells, Dash, Disengage, Help a friend, Throw something.</td></tr>
+              <tr><td><strong>Bonus action</strong></td><td>One per turn.</td><td>Jump, Shove, off-hand attack, quick spells like Healing Word. Rogues can Dash, Disengage or Hide as a bonus action.</td></tr>
+              <tr><td><strong>Reaction</strong></td><td>One per round, used on <em>someone else's</em> turn.</td><td>A free attack on an enemy who runs past you, or a spell like Shield or Counterspell.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Extra Attack</strong>Many classes get <strong>Extra Attack</strong> at level 5: your Attack action gives two attacks instead of one. A level 11 Fighter gets three.</aside>
+        <aside class="callout tip"><strong>Don't panic about reactions</strong>You can set each reaction to "auto" or "ask me" in the Reactions tab (key L on a computer). If you're unsure, leave them on "ask."</aside>
+      </section>
+
+      <section class="chapter reference" id="order">
+        <header>
+          <h3>Initiative and Turn Order</h3>
+          <p class="where">Who goes first</p>
+        </header>
+
+
+        <p>At the start of a fight everyone rolls <strong>initiative</strong>: a d4 plus their Dexterity modifier. The portraits along the top show the order. Friends who are next to each other in the order take their turns together. If you're <strong>surprised</strong>, you can't act or react for the whole first round, which is why sneaking up on enemies is so strong.</p>
+      </section>
+
+      <section class="chapter reference" id="hits">
+        <header>
+          <h3>Hitting and Being Hit</h3>
+          <p class="where">Hit chance, armor and damage</p>
+        </header>
+
+
+        <p>When you attack, the game shows a <strong>hit chance as a percentage</strong>. It's built from the numbers on the <a href="../dice/">Dice &amp; Numbers</a> page: your d20 plus your bonuses against the enemy's armor class. A hit rolls damage dice. A natural 20 always hits and doubles the dice. A natural 1 always misses.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Tip</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>Attack from <strong>high ground</strong>.</td><td>Attacking from about 2.5 m above gets +2 to hit. Attacking from below gets −2.</td></tr>
+              <tr><td>Avoid shooting <strong>when an enemy is next to you</strong>.</td><td>A ranged attack with an enemy adjacent has disadvantage.</td></tr>
+              <tr><td>Use <strong>surprise</strong>.</td><td>Sneak up and attack first. Hidden attackers get advantage.</td></tr>
+              <tr><td>Attack <strong>helpless</strong> enemies in melee.</td><td>Sleeping, paralysed or downed targets take automatic critical hits.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Leaving a fight</strong>If you move away from an enemy who is next to you, they get a <strong>free attack</strong> (an opportunity attack). The <strong>Disengage</strong> action prevents that for the turn.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Opportunity-attack details come from general rules knowledge: the wiki page wasn't available to read. Cover and flanking rules also aren't covered here yet.</aside>
+      </section>
+
+      <section class="chapter reference" id="surfaces">
+        <header>
+          <h3>The Ground Is Part of the Fight</h3>
+          <p class="where">Fire, water, oil, ice and what happens when they meet</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Surface</th><th>What it does</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Fire</strong></td><td>Burning does 1d4 fire damage each turn.</td></tr>
+              <tr><td><strong>Water</strong></td><td>Makes creatures <strong>Wet</strong>. Cold turns it to ice, lightning electrifies it, and fire turns it to steam.</td></tr>
+              <tr><td><strong>Ice</strong></td><td>Makes creatures fall prone, and is difficult to walk on.</td></tr>
+              <tr><td><strong>Electrified water</strong></td><td>1d4 lightning damage each turn.</td></tr>
+              <tr><td><strong>Oil, alcohol, smokepowder</strong></td><td>Explode into fire when lit. Be careful where you stand.</td></tr>
+              <tr><td><strong>Grease</strong></td><td>Makes you fall over.</td></tr>
+              <tr><td><strong>Acid</strong></td><td>Lowers armor class by 2.</td></tr>
+              <tr><td><strong>Webs and vines</strong></td><td>Hold creatures in place.</td></tr>
+              <tr><td><strong>Poison</strong></td><td>1d4 poison damage each round.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Classic combos</strong><strong>Water + lightning</strong> is a big shock for everyone standing in it. <strong>Oil + any fire</strong> is a bonfire. <strong>Ice + fire</strong> becomes water. Flying creatures avoid ground surfaces. A surface doesn't hurt someone already standing in it until they move.</aside>
+      </section>
+
+      <section class="chapter reference" id="conditions">
+        <header>
+          <h3>Conditions: Status Effects</h3>
+          <p class="where">The words you'll see over characters' heads</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Condition</th><th>What it means (short)</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Prone</strong></td><td>Knocked down. Attackers get advantage against you, and it breaks concentration.</td></tr>
+              <tr><td><strong>Burning</strong></td><td>On fire: 1d4 fire damage each turn.</td></tr>
+              <tr><td><strong>Wet</strong></td><td>Soaked. Makes cold and lightning hit harder.</td></tr>
+              <tr><td><strong>Paralysed</strong></td><td>Can't act. Attackers get advantage, and melee hits are critical hits.</td></tr>
+              <tr><td><strong>Blinded / Restrained</strong></td><td>Attackers get advantage against you.</td></tr>
+              <tr><td><strong>Stunned</strong></td><td>Can't act, and blocks most reactions.</td></tr>
+              <tr><td><strong>Poisoned</strong></td><td>Weakened. Cured by Antidote, Lesser Restoration or Lay on Hands.</td></tr>
+              <tr><td><strong>Frightened</strong></td><td>Afraid. Runs, and attacks worse.</td></tr>
+              <tr><td><strong>Charmed</strong></td><td>Treats the caster as a friend. It costs 10 approval if you charm a companion.</td></tr>
+              <tr><td><strong>Surprised</strong></td><td>No actions or reactions in the first round.</td></tr>
+              <tr><td><strong>Downed</strong></td><td>At 0 HP and rolling death saves.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Frightened and Charmed definitions are brief and from general rules knowledge. Confirm each against the in-game tooltip.</aside>
+      </section>
+
+      <section class="chapter reference" id="magic">
+        <header>
+          <h3>Spells in a Fight</h3>
+          <p class="where">Cantrips, slots and concentration</p>
+        </header>
+
+
+        <p><strong>Cantrips</strong> are free spells you can cast any number of times. <strong>Spell slots</strong> are limited: a leveled spell spends a slot of that level or higher, and most casters get them back on a long rest (Warlocks on a short rest). <strong>Concentration</strong> means you can only hold one lasting spell at a time, and taking damage can break it.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Caster level</th><th>1st</th><th>2nd</th><th>3rd</th><th>4th</th><th>5th</th><th>6th</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>2</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>2</td><td>3</td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>3</td><td>4</td><td>2</td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>4</td><td>4</td><td>3</td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>5</td><td>4</td><td>3</td><td>2</td><td></td><td></td><td></td></tr>
+              <tr><td>6</td><td>4</td><td>3</td><td>3</td><td></td><td></td><td></td></tr>
+              <tr><td>7</td><td>4</td><td>3</td><td>3</td><td>1</td><td></td><td></td></tr>
+              <tr><td>8</td><td>4</td><td>3</td><td>3</td><td>2</td><td></td><td></td></tr>
+              <tr><td>9</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td><td></td></tr>
+              <tr><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td></td></tr>
+              <tr><td>11–12</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td><td>1</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Reading the table</strong>That's how many spell slots a full caster (Wizard, Sorcerer, Cleric, Druid, Bard) has at each level. Paladins and Rangers get fewer. See our <a href="../spells/">Spells Guide</a>.</aside>
+        <aside class="callout tip"><strong>Keeping concentration</strong>When you're hit, you roll a Constitution save against 10 or half the damage, whichever is higher. It also ends if you're knocked prone, put to sleep or downed. To drop a spell yourself, use the X on its icon (on Xbox, open the action wheel and hold Y).</aside>
+      </section>
+
+      <section class="chapter reference" id="down">
+        <header>
+          <h3>When Someone Falls</h3>
+          <p class="where">Downed, death saves, and getting up</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>What happens</th><th>Details</th></tr></thead>
+            <tbody>
+              <tr><td>At 0 HP you're <strong>Downed</strong>.</td><td>You can't act. You roll one death save each turn.</td></tr>
+              <tr><td><strong>Death saving throw</strong></td><td>A plain d20 against DC 10. Three successes and you're stable. Three failures and you're dead. A natural 1 counts as a failure.</td></tr>
+              <tr><td>Taking damage while downed</td><td>Each hit counts as a failed save. A critical hit counts as two. Melee hits on a downed target are always critical hits.</td></tr>
+              <tr><td>Getting back up</td><td>Any healing or a friend's <strong>Help</strong> action gets you up. That turn you can only use bonus actions.</td></tr>
+              <tr><td>Bringing back the dead</td><td>Revivify (a spell), a Scroll of Revivify, or Withers at camp for 200 gold. Some story-critical deaths can't be undone.</td></tr>
+              </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="chapter reference" id="difficulty">
+        <header>
+          <h3>Difficulty Modes</h3>
+          <p class="where">What each setting actually changes</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Mode</th><th>What changes</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Explorer</strong></td><td>Enemies have 30% less health, your party has double health, merchants are 20% cheaper, and everyone gets a bigger proficiency bonus. Multiclassing is disabled. Best for story-first newcomers.</td></tr>
+              <tr><td><strong>Balanced</strong></td><td>The game as designed.</td></tr>
+              <tr><td><strong>Tactician</strong></td><td>Enemies have more health, smarter AI, +2 to attack and spell DCs, and some get extra abilities. Long rests cost twice as many camp supplies, and merchants charge more.</td></tr>
+              <tr><td><strong>Honour</strong></td><td>Tactician plus boss tricks, and a <strong>single save file</strong> that overwrites itself. If your party wipes, you choose: switch to a custom mode or end the campaign and delete the save. For veterans only.</td></tr>
+              <tr><td><strong>Custom</strong></td><td>Pick your own rules: camp cost, death saves, trade prices and more.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Our advice</strong>Start on <strong>Explorer</strong> or <strong>Balanced</strong>. You can change them from the pause menu (Honour mode can't be changed back). Nobody is keeping score.</aside>
+      </section>
+
+      <section class="chapter reference" id="controller">
+        <header>
+          <h3>Xbox Controller Basics</h3>
+          <p class="where">A few buttons worth knowing</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Input</th><th>What it does</th></tr></thead>
+            <tbody>
+              <tr><td><strong>A</strong></td><td>Interact.</td></tr>
+              <tr><td><strong>Y</strong></td><td>End turn (and cancel it). Also takes all items from a container.</td></tr>
+              <tr><td><strong>Left trigger</strong></td><td>Re-center the camera on your character.</td></tr>
+              <tr><td><strong>Left stick</strong></td><td>Move the camera.</td></tr>
+              <tr><td><strong>Right stick</strong></td><td>Rotate and zoom the camera. Press it to highlight characters, item labels and sneak cones.</td></tr>
+              <tr><td><strong>Hold right stick down / up</strong></td><td>Enter / leave the tactical camera (a top-down view).</td></tr>
+              <tr><td><strong>Hold D-pad down</strong></td><td>Toggle group hide (everyone sneaks at once).</td></tr>
+              <tr><td><strong>Hold Y on the action wheel</strong></td><td>End concentration.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>These controller bindings come from the wiki's defaults page. It doesn't describe switching characters, the radial menu or the hotbar, so check those in the game's Options screen.</aside>
+      </section>
+
+      <section class="credits" id="credits">
+        <h3>Credits &amp; Sources</h3>
+        <p>Rules and systems were checked against <a href="https://bg3.wiki" rel="noopener">bg3.wiki</a> and reworded for beginners. Nothing is copied from the game or the rulebooks. Where we couldn't confirm something, you'll see a gold <strong>"To verify"</strong> note.</p>
+        <p><strong>Banner image:</strong> an official screenshot from the Baldur's Gate 3 press kit, © Larian Studios, resized only. This is a free, unofficial fan guide and isn't endorsed by Larian. Our own screenshots go in the step-by-step.</p><p><strong>Emblem:</strong> the "sword brandish" icon by <a href="https://delapouite.com" rel="noopener">Delapouite</a>, from <a href="https://game-icons.net" rel="noopener">game-icons.net</a>, licensed <a href="https://creativecommons.org/licenses/by/3.0/" rel="noopener">CC BY 3.0</a>.</p>
+        <p><em>Baldur's Gate 3 Paths</em> is unofficial Fan Content permitted under the <a href="https://company.wizards.com/en/legal/fancontentpolicy" rel="noopener">Fan Content Policy</a>. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</p>
+        <p><em>Baldur's Gate 3</em> is © Larian Studios. Baldur's Gate, Dungeons &amp; Dragons and the Forgotten Realms are trademarks of Wizards of the Coast. SugarTickles isn't affiliated with either. It's a fan guide, made with love.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    © 2026 <a href="https://craz.com">Crabtree Labz</a> · <a href="https://craz.com/privacy.html">Privacy</a> · Baldur's Gate 3 © Larian Studios · Baldur's Gate, Dungeons &amp; Dragons and Forgotten Realms © Wizards of the Coast · Unofficial fan guide
+  </footer>
+
+</body>
+</html>

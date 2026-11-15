@@ -25,3 +25,9 @@ Credit line used on the pages: "Icons made by {author}. Available on https://gam
 | `delapouite-easter-egg.svg` | easter egg | Delapouite | eggs |
 | `delapouite-lovers.svg` | lovers | Delapouite | romance |
 | `lorc-compass.svg` | compass | Lorc | hub |
+| `lorc-lantern.svg` | lantern | Lorc | start-here |
+| `delapouite-dice-twenty-faces-twenty.svg` | dice twenty faces twenty | Delapouite | dice |
+| `delapouite-sword-brandish.svg` | sword brandish | Delapouite | combat |
+| `lorc-campfire.svg` | campfire | Lorc | systems |
+| `lorc-scroll-unfurled.svg` | scroll unfurled | Lorc | faq |
+| `delapouite-book-cover.svg` | book cover | Delapouite | glossary |
