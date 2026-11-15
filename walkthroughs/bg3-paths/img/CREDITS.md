@@ -15,7 +15,7 @@ Credit line used on the pages: "Icons made by {author}. Available on https://gam
 | `delapouite-barbarian.svg` | barbarian | Delapouite | brute |
 | `lorc-beer-stein.svg` | beer stein | Lorc | tipsy-fist |
 | `lorc-wolf-head.svg` | wolf head | Lorc | lone-wanderer |
-| `delapouite-spell-book.svg` | spell book | Delapouite | scholar |
+| `delapouite-spell-book.svg` | spell book | Delapouite | scholar, creation |
 | `delapouite-bow-arrow.svg` | bow arrow | Delapouite | ranger |
 | `delapouite-bear-head.svg` | bear head | Delapouite | druid |
 | `delapouite-crescent-staff.svg` | crescent staff | Delapouite | cleric |
