@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spells Guide — Baldur's Gate 3 Paths · SugarTickles</title>
+  <meta name="description" content="A plain-English Baldur's Gate 3 spells guide: how magic works, the best spells by class, who can learn what, and how Wizards and Bards get more spells." />
+  <!--
+    Original SugarTickles writing. Does NOT adapt bg3.wiki text, so it is not bound by the wiki's
+    CC BY-NC-SA license (unlike ../baldurs-gate-3/). Fan Content rules still apply: see NOTICE.md.
+  -->
+  <link rel="stylesheet" href="/fonts/fonts.css?v=d1e52a1c">
+  <link rel="stylesheet" href="../../walkthrough.css?v=b78d8fbf" />
+</head>
+
+<body data-walkthrough="bg3-paths-spells">
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/logo.png" alt="" />SugarTickles</a>
+    <nav>
+      <a href="/walkthroughs/">Walkthroughs</a>
+      <a href="../">BG3 Paths</a>
+      <a href="../gear/">Gear Atlas</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">BG3 Paths · Shared guide</span>
+    <h1>Spells Guide<span class="sub">What to cast, and who can cast it</span></h1>
+    <p class="lede">Magic is the part of Baldur's Gate 3 that confuses new players most. This guide explains how spells work in plain English, lists the spells our paths rely on with who can learn each, and covers the tricks, like copying scrolls and stealing spells with Magical Secrets.</p>
+    <svg class="ornament" viewBox="0 0 240 40" fill="none" aria-hidden="true">
+      <path d="M4 20 H 84" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M156 20 H 236" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M120 6 C 104 6, 96 14, 96 20 C 96 26, 104 34, 120 34 C 136 34, 144 26, 144 20 C 144 14, 136 6, 120 6 z" stroke="currentColor" stroke-width="2"/>
+      <circle cx="112" cy="18" r="2.2" fill="currentColor"/>
+      <circle cx="128" cy="18" r="2.2" fill="currentColor"/>
+    </svg>
+    <div class="resource-links">
+      <a href="#magic-basics">Magic Basics</a>
+      <a href="#all-stars">All-Star Spells</a>
+      <a href="#by-class">By Class</a>
+      <a href="#patch8">Patch 8</a>
+      <a href="#wizard-scrolls">Wizard Scrolls</a>
+      <a href="#counterspell">Counterspell</a>
+    </div>
+  </section>
+
+  <div class="layout" style="display:block;max-width:1000px">
+    <main>
+        <aside class="callout verify"><strong>Draft status</strong>Which class gets which spell comes from bg3.wiki's class and spell lists (most confirmed, a few noted below). The descriptions are in our own words, so check the in-game tooltip for exact numbers. We'll keep verifying as we play.</aside>
+      <section class="chapter" id="magic-basics">
+        <header>
+          <h3>Magic in Five Minutes</h3>
+          <p class="where">What a new player needs to know</p>
+        </header>
+
+        <ol class="steps">
+          <li><strong>Cantrips are free.</strong> They cost no spell slot, so use them as often as you like. Every caster has a few.</li>
+          <li><strong>Spell slots are limited.</strong> A leveled spell spends a slot, and most casters get them back on a <strong>long rest</strong>. Warlocks get theirs back on a <strong>short rest</strong>, which is why they love resting.</li>
+          <li><strong>Concentration means one at a time.</strong> Spells marked as needing concentration end if you cast another one, or if you take a bad hit.</li>
+          <li><strong>Reactions happen on the enemy's turn.</strong> Shield and Counterspell are reactions, so keep a slot free for them.</li>
+          <li><strong>Some classes prepare, some know.</strong> Clerics, Druids, Paladins and Wizards choose spells to prepare after a rest. Bards, Sorcerers and Warlocks have a fixed list that only changes when they level.</li>
+        </ol>
+        <aside class="callout tip"><strong>When to spend slots</strong>A good rule for a first run: cantrips for ordinary fights, slots for bosses and crowds, and always one slot held back for emergencies.</aside>
+      </section>
+
+      <section class="chapter reference" id="all-stars">
+        <header>
+          <h3>The All-Star Spells</h3>
+          <p class="where">The spells our paths lean on, who can learn them, and what they do</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Spell</th><th>Level</th><th>Who can learn it</th><th>What it does (our words)</th><th>Paths that use it</th></tr></thead>
+            <tbody>
+              <tr><td>Vicious Mockery</td><td>Cantrip</td><td>Bard (Warlock with Pact of the Tome)</td><td>A magical insult that hurts an enemy's pride, and its next attack.</td><td>Showman</td></tr>
+              <tr><td>Eldritch Blast</td><td>Cantrip</td><td>Warlock (Bard through Magical Secrets)</td><td>Beams of force from a distance. The Warlock's bread and butter.</td><td>Lone Wanderer</td></tr>
+              <tr><td>Fire Bolt</td><td>Cantrip</td><td>Wizard, Sorcerer (Bard through Magical Secrets)</td><td>A ranged fire attack.</td><td>Absolute, Scholar</td></tr>
+              <tr><td>Ray of Frost</td><td>Cantrip</td><td>Wizard, Sorcerer (Bard through Magical Secrets)</td><td>A ranged cold attack that also slows.</td><td>Absolute, Scholar</td></tr>
+              <tr><td>Shocking Grasp</td><td>Cantrip</td><td>Wizard, Sorcerer</td><td>A touch of lightning for close-range attacks.</td><td>Scholar</td></tr>
+              <tr><td>Magic Missile</td><td>1</td><td>Wizard, Sorcerer (Bard through Magical Secrets)</td><td>Three darts of force that never miss.</td><td>Scholar</td></tr>
+              <tr><td>Shield</td><td>1</td><td>Wizard, Sorcerer</td><td>A reaction that briefly raises your armor class.</td><td>Scholar</td></tr>
+              <tr><td>Mage Armour</td><td>1</td><td>Wizard, Sorcerer</td><td>Gives you armor while you wear none.</td><td>Scholar</td></tr>
+              <tr><td>Find Familiar</td><td>1</td><td>Wizard (Warlock with Pact of the Chain)</td><td>Summons a little spirit helper who scouts and distracts.</td><td>Scholar</td></tr>
+              <tr><td>Sleep</td><td>1</td><td>Wizard, Sorcerer, Bard</td><td>Knocks weak enemies unconscious. A star in the early game.</td><td>Showman, Scholar</td></tr>
+              <tr><td>Tasha's Hideous Laughter</td><td>1</td><td>Wizard, Bard</td><td>An enemy collapses, laughing, and can't act.</td><td>Showman, Scholar</td></tr>
+              <tr><td>Dissonant Whispers</td><td>1</td><td>Bard (Warlock with the right subclass)</td><td>A terrifying whisper that hurts and makes the target run.</td><td>Showman</td></tr>
+              <tr><td>Healing Word</td><td>1</td><td>Bard, Cleric, Druid</td><td>A quick heal at range, as a bonus action.</td><td>Showman</td></tr>
+              <tr><td>Bless</td><td>1</td><td>Cleric, Paladin (Bard through Magical Secrets)</td><td>Allies hit and resist better for a while.</td><td>Paragon</td></tr>
+              <tr><td>Command</td><td>1</td><td>Cleric, Paladin (Bard through Magical Secrets)</td><td>A one-word order the target must obey.</td><td>Paragon</td></tr>
+              <tr><td>Cure Wounds</td><td>1</td><td>Bard, Cleric, Druid, Paladin</td><td>A healing touch.</td><td>Paragon</td></tr>
+              <tr><td>Shield of Faith</td><td>1</td><td>Cleric, Paladin</td><td>A shield of light for one ally.</td><td>Paragon</td></tr>
+              <tr><td>Sanctuary</td><td>1</td><td>Cleric (Paladin with the right oath)</td><td>Enemies hesitate to attack the warded creature.</td><td>Paragon</td></tr>
+              <tr><td>Burning Hands</td><td>1</td><td>Wizard, Sorcerer</td><td>A short cone of fire.</td><td>Absolute</td></tr>
+              <tr><td>Armour of Agathys</td><td>1</td><td>Warlock (Bard through Magical Secrets)</td><td>Temporary hit points, plus cold damage to anyone who hits you in melee.</td><td>Lone Wanderer</td></tr>
+              <tr><td>Misty Step</td><td>2</td><td>Wizard, Sorcerer, Warlock (Bard through Magical Secrets)</td><td>A short teleport as a bonus action.</td><td>Scholar, Lone Wanderer</td></tr>
+              <tr><td>Hold Person</td><td>2</td><td>Sorcerer, Bard, Warlock, Cleric, Druid (a Paladin with the right oath)</td><td>Freezes a humanoid in place.</td><td>Absolute, Lone Wanderer</td></tr>
+              <tr><td>Scorching Ray</td><td>2</td><td>Sorcerer (Warlock with the right subclass, Bard through Magical Secrets)</td><td>Several fire rays, each rolled to hit.</td><td>Absolute</td></tr>
+              <tr><td>Lesser Restoration</td><td>2</td><td>Bard, Cleric, Druid, Paladin</td><td>Removes a condition such as poison or blindness.</td><td>Paragon</td></tr>
+              <tr><td>Darkness</td><td>2</td><td>Wizard, Sorcerer, Warlock</td><td>A cloud of magical darkness.</td><td>Lone Wanderer</td></tr>
+              <tr><td>Hypnotic Pattern</td><td>3</td><td>Wizard, Sorcerer, Bard, Warlock</td><td>A swirl of colors that charms and stuns a crowd.</td><td>Showman</td></tr>
+              <tr><td>Counterspell</td><td>3</td><td>Wizard, Sorcerer, Warlock (Bard through Magical Secrets)</td><td>A reaction that interrupts an enemy casting a spell.</td><td>Scholar, Showman</td></tr>
+              <tr><td>Fireball</td><td>3</td><td>Wizard, Sorcerer (Bard through Magical Secrets)</td><td>A huge fiery explosion.</td><td>Absolute, Scholar</td></tr>
+              <tr><td>Haste</td><td>3</td><td>Wizard, Sorcerer (Bard through Magical Secrets)</td><td>A friend moves and acts much faster.</td><td>Absolute, Scholar</td></tr>
+              <tr><td>Revivify</td><td>3</td><td>Cleric, Paladin (Bard through Magical Secrets)</td><td>Brings back an ally who just died.</td><td>Paragon, Showman</td></tr>
+              <tr><td>Speak with Dead</td><td>3</td><td>Bard, Cleric</td><td>Lets you question a corpse. Quests use it.</td><td>Showman</td></tr>
+              <tr><td>Fear</td><td>3</td><td>Wizard, Sorcerer, Bard, Warlock</td><td>Frightened creatures run.</td><td>Lone Wanderer</td></tr>
+              <tr><td>Polymorph</td><td>4</td><td>Wizard, Sorcerer, Bard, Druid</td><td>Turns a creature into a beast.</td><td>—</td></tr>
+              <tr><td>Banishment</td><td>4</td><td>Wizard, Sorcerer, Warlock, Cleric (Bard through Magical Secrets)</td><td>Removes a target from the fight.</td><td>—</td></tr>
+              <tr><td>Dominate Person</td><td>5</td><td>Wizard, Sorcerer, Bard (Warlock with the right subclass)</td><td>Seize control of a humanoid.</td><td>Absolute</td></tr>
+              <tr><td>Cone of Cold</td><td>5</td><td>Wizard, Sorcerer (Warlock with the right subclass)</td><td>A huge cone of cold.</td><td>—</td></tr>
+              <tr><td>Disintegrate</td><td>6</td><td>Wizard, Sorcerer</td><td>Brutal single-target force damage.</td><td>—</td></tr>
+              <tr><td>Globe of Invulnerability</td><td>6</td><td>Wizard, Sorcerer</td><td>Blocks lower-level spells inside the globe.</td><td>—</td></tr>
+              <tr><td>Chain Lightning</td><td>6</td><td>Wizard, Sorcerer</td><td>Lightning that arcs between targets.</td><td>—</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout warn"><strong>Not confirmed yet</strong>We couldn't confirm from the wiki that <strong>Hold Person</strong>, <strong>Scorching Ray</strong> or <strong>Invisibility</strong> are on the Wizard list, so our Wizard path doesn't rely on them.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Spot-check each row against the in-game spell list.</aside>
+      </section>
+
+      <section class="chapter reference" id="by-class">
+        <header>
+          <h3>Picks by Class</h3>
+          <p class="where">A short list for each caster</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Class</th><th>Our starter picks</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>Wizard</td><td>Mage Armour, Shield, Magic Missile, Sleep, Find Familiar; later Misty Step, Counterspell, Fireball, Haste</td><td>A cloth-wearing Wizard lives on armor spells, blasts and escapes.</td></tr>
+              <tr><td>Sorcerer</td><td>Fire Bolt, Chromatic Orb or Magic Missile, Sleep; later Scorching Ray, Hold Person, Fireball, Dominate Person</td><td>You know few spells, so take ones that always matter.</td></tr>
+              <tr><td>Bard</td><td>Vicious Mockery, Healing Word, Tasha's Hideous Laughter, Sleep; later Hypnotic Pattern and Magical Secrets picks</td><td>The Bard heals and controls. Steal a big spell with Magical Secrets.</td></tr>
+              <tr><td>Warlock</td><td>Eldritch Blast, Armour of Agathys, Misty Step, Darkness, Hold Person</td><td>A few strong spells, refreshed by short rests.</td></tr>
+              <tr><td>Paladin</td><td>Bless, Command, Shield of Faith, Cure Wounds; later Revivify</td><td>Spells that support the whole party.</td></tr>
+              <tr><td>Cleric</td><td>Bless, Cure Wounds, Healing Word, Sanctuary, Lesser Restoration, Revivify</td><td>The party's healer. Prepare healing first.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the starter picks against each class's list at level 1.</aside>
+      </section>
+
+      <section class="chapter reference" id="patch8">
+        <header>
+          <h3>What Patch 8 Added</h3>
+          <p class="where">Five new spells</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Spell</th><th>Who gets it</th><th>What it does (our words)</th></tr></thead>
+            <tbody>
+              <tr><td>Toll the Dead</td><td>Wizard, Warlock, Cleric</td><td>A necrotic cantrip that hits harder against wounded targets.</td></tr>
+              <tr><td>Booming Blade</td><td>Wizard, Sorcerer, Warlock</td><td>A weapon strike wrapped in thunder that bites again if the target moves.</td></tr>
+              <tr><td>Bursting Sinew</td><td>Not yet confirmed</td><td>A new necrotic cantrip.</td></tr>
+              <tr><td>Shadow Blade</td><td>Not yet confirmed</td><td>A blade of shadow. It grants its summoner proficiency with it.</td></tr>
+              <tr><td>Staggering Smite</td><td>Hexblade (so far)</td><td>A smite that staggers the target.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the class lists and exact effects of the new spells.</aside>
+      </section>
+
+      <section class="chapter reference" id="wizard-scrolls">
+        <header>
+          <h3>Wizards and Scrolls</h3>
+          <p class="where">How to grow a spellbook</p>
+        </header>
+
+        <ol class="steps">
+          <li>A Wizard learns spells by <strong>copying scrolls</strong>: right-click the scroll and choose Learn Spell, or use <em>Learn More Spells</em> in the spellbook.</li>
+          <li>Each copy costs <strong>50 gold per spell level</strong>, and the Wizard needs a spell slot of that level.</li>
+          <li>A Wizard pays <strong>half price</strong> for spells from their own school. (Bladesingers don't get the discount.)</li>
+          <li>Only <strong>Wizard-list</strong> spells can be copied, and a few have no scroll at all. <strong>Counterspell, Shield, Find Familiar and Toll the Dead</strong> only come from leveling up.</li>
+          <li>Scrolls of <strong>Revivify</strong> and <strong>Speak with Dead</strong> can't be copied: they aren't on the Wizard list.</li>
+        </ol>
+        <aside class="callout tip"><strong>How many spells you end up with</strong>At level 12: a Wizard's spellbook holds about 28 spells; a Bard knows 15; a Sorcerer or Warlock knows 13. Cleric, Druid and Paladin prepare from their lists each day.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the counts and costs on our version.</aside>
+      </section>
+
+      <section class="chapter reference" id="counterspell">
+        <header>
+          <h3>Who Gets Counterspell?</h3>
+          <p class="where">A popular spell, with an odd rule or two</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Class</th><th>Counterspell?</th></tr></thead>
+            <tbody>
+              <tr><td>Wizard</td><td>Yes, but only by leveling up. There's no scroll to copy.</td></tr>
+              <tr><td>Sorcerer</td><td>Yes, from class level 5.</td></tr>
+              <tr><td>Warlock</td><td>Yes.</td></tr>
+              <tr><td>Bard</td><td>Not on the base list. Take it with <strong>Magical Secrets</strong>: College of Lore Bards can pick up to two spells of up to 3rd level at level 6, and all Bards can pick two spells up to 5th level at level 10.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the Warlock list and Bard Magical Secrets levels on our version.</aside>
+      </section>
+
+      <section class="credits" id="credits">
+        <h3>Credits &amp; Sources</h3>
+        <p>Class spell lists were checked against <a href="https://bg3.wiki/wiki/Spells" rel="noopener">bg3.wiki's spell and class pages</a>, <a href="https://bg3.wiki/wiki/Transcribing_scrolls" rel="noopener">Transcribing scrolls</a> and <a href="https://bg3.wiki/wiki/Magical_Secrets" rel="noopener">Magical Secrets</a>. All descriptions are written in our own words, never copied from the game or the rulebooks.</p>
+        <p><em>Baldur's Gate 3 Paths</em> is unofficial Fan Content permitted under the <a href="https://company.wizards.com/en/legal/fancontentpolicy" rel="noopener">Fan Content Policy</a>. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</p>
+        <p><em>Baldur's Gate 3</em> is © Larian Studios. Baldur's Gate, Dungeons &amp; Dragons and the Forgotten Realms are trademarks of Wizards of the Coast. SugarTickles isn't affiliated with either. It's a fan guide, made with love.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    © 2026 <a href="https://craz.com">Crabtree Labz</a> · <a href="https://craz.com/privacy.html">Privacy</a> · Baldur's Gate 3 © Larian Studios · Baldur's Gate, Dungeons &amp; Dragons and Forgotten Realms © Wizards of the Coast · Unofficial fan guide
+  </footer>
+
+</body>
+</html>

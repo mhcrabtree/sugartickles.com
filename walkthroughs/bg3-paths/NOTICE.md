@@ -26,4 +26,14 @@ Wizards of the Coast's [Fan Content Policy](https://company.wizards.com/en/legal
 - Open-licensed icons (if used): [game-icons.net](https://game-icons.net), CC BY 3.0. Credit each icon's author, e.g.
   "Icons made by {author}. Available on https://game-icons.net". None are used yet.
 
+## Gear and game facts
+
+Item names, locations and class facts are compiled from public guides (AltChar for Act One, Gamer Guides for Acts Two
+and Three, bg3.wiki for Patch 8 subclasses and Minthara) and rewritten in our own words. Facts aren't copyrightable,
+but wording is: never paste guide text. Locations are unverified until we confirm them in our own playthrough.
+
+The Spells Guide and Easter Egg Guide follow the same rule: facts from bg3.wiki, reworded, never pasted. Spoiler
+entries stay inside `<details class="spoiler">` boxes. This folder stays separate from `../baldurs-gate-3/`, whose text
+is CC BY-NC-SA and must never be monetized. (The only edit there is two links to these pages in its header.)
+
 Larian or Wizards can change these terms at any time. Re-check them before adding anything new.

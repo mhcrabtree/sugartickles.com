@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Scholar — Baldur's Gate 3 Path · SugarTickles</title>
+  <meta name="description" content="A Baldur's Gate 3 character path: an Abjuration Wizard with a full spell plan, protective party, gear and checklist, for players who just want to be a wizard." />
+  <!--
+    Original SugarTickles writing. Does NOT adapt bg3.wiki text, so it is not bound by the wiki's
+    CC BY-NC-SA license (unlike ../baldurs-gate-3/). Fan Content rules still apply: see NOTICE.md.
+  -->
+  <link rel="stylesheet" href="/fonts/fonts.css?v=d1e52a1c">
+  <link rel="stylesheet" href="../../walkthrough.css?v=b78d8fbf" />
+</head>
+
+<body data-walkthrough="bg3-paths-scholar">
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/logo.png" alt="" />SugarTickles</a>
+    <nav>
+      <a href="/walkthroughs/">Walkthroughs</a>
+      <a href="../" aria-current="page">BG3 Paths</a>
+      <a href="#credits">Credits</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">BG3 Path · I want to be a wizard</span>
+    <h1>The Scholar<span class="sub">Abjuration Wizard</span></h1>
+    <p class="lede">The classic: a Wizard with a spellbook, a staff and a ward that soaks up damage. If you've ever said "I want to be a wizard, but I don't know what a good wizard looks like," this is the answer. This path gives you the build, the spells to learn first, the party that protects you and the gear to hunt. You choose how they look; we choose everything else.</p>
+    <svg class="ornament" viewBox="0 0 240 40" fill="none" aria-hidden="true">
+      <path d="M4 20 H 84" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M156 20 H 236" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M120 6 C 104 6, 96 14, 96 20 C 96 26, 104 34, 120 34 C 136 34, 144 26, 144 20 C 144 14, 136 6, 120 6 z" stroke="currentColor" stroke-width="2"/>
+      <circle cx="112" cy="18" r="2.2" fill="currentColor"/>
+      <circle cx="128" cy="18" r="2.2" fill="currentColor"/>
+    </svg>
+    <div class="meta-row">
+      <span class="pill">Wizard</span>
+      <span class="pill">The bookish path</span>
+      <span class="pill">Spells for everything</span>
+    </div>
+    <div class="resource-links">
+      <a href="#sc-sheet">📚 Build</a>
+      <a href="#sc-spells">✨ Spells</a>
+      <a href="#sc-party">👥 Party</a>
+      <a href="#sc-gear">⚔️ Gear</a>
+      <a href="#sc-act1">✅ Playthrough</a>
+    </div>
+  </section>
+
+  <div class="layout">
+    <div>
+      <button class="toc-toggle" aria-expanded="false">☰ Chapters &amp; progress</button>
+      <nav class="toc" aria-label="Chapters">
+        <div class="progress">
+          <div class="label"><span>Your progress</span></div>
+          <div class="bar"><span></span></div>
+          <div class="label" style="margin-top:6px"><span class="count"></span></div>
+          <button type="button">Reset progress</button>
+        </div>
+          <h4><a href="#act-build" style="color:inherit;text-decoration:none">Your Character</a></h4>
+          <ol>
+            <li><a href="#sc-idea"><span>The Idea</span><span class="done"></span></a></li>
+            <li><a href="#sc-sheet"><span>Character Creation</span><span class="done"></span></a></li>
+            <li><a href="#sc-levels"><span>Level by Level</span><span class="done"></span></a></li>
+            <li><a href="#sc-spells"><span>Spells to Learn First</span><span class="done"></span></a></li>
+            <li><a href="#sc-party"><span>Your Party</span><span class="done"></span></a></li>
+            <li><a href="#sc-gear"><span>Gear Worth Finding</span><span class="done"></span></a></li>
+            <li><a href="#sc-eggs"><span>Easter Eggs</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-play" style="color:inherit;text-decoration:none">Staying on Target</a></h4>
+          <ol>
+            <li><a href="#sc-act1"><span>Act One</span><span class="done"></span></a></li>
+            <li><a href="#sc-act2"><span>Act Two</span><span class="done"></span></a></li>
+            <li><a href="#sc-act3"><span>Act Three</span><span class="done"></span></a></li>
+            <li><a href="#sc-love"><span>Love & Companions</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#sc-never" style="color:inherit;text-decoration:none">Reference</a></h4>
+          <ol>
+            <li><a href="#sc-never"><span>Never Do This</span><span class="done"></span></a></li>
+          </ol>
+      </nav>
+    </div>
+
+    <main>
+      <section class="credits" id="credits">
+        <h3>Credits &amp; Sources</h3>
+        <p>This is original SugarTickles writing, built from our own knowledge of the game and checked in our own playthrough. Where we haven't confirmed something yet you'll see a gold <strong>"To verify"</strong> note. Spells, features and items are described in our own words, never copied from the game or the rulebooks.</p>
+        <p>Screenshots are our own captures from the game.</p>
+        <p><em>Baldur's Gate 3 Paths</em> is unofficial Fan Content permitted under the <a href="https://company.wizards.com/en/legal/fancontentpolicy" rel="noopener">Fan Content Policy</a>. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</p>
+        <p><em>Baldur's Gate 3</em> and its art, characters and names are © Larian Studios. Baldur's Gate, Dungeons &amp; Dragons and the Forgotten Realms are trademarks of Wizards of the Coast. SugarTickles isn't affiliated with Larian or Wizards of the Coast. It's a fan guide, made with love. We use no Wizards or Larian logos.</p>
+      </section>
+
+      <section class="act" id="act-build">
+        <span class="act-num">Your Character</span>
+        <h2>Build The Scholar</h2>
+        <p>A High Elf Abjurer: a tough-ish Wizard with a magic ward. This chapter picks the build, the spells and the order to learn them.</p>
+      </section>
+
+      <section class="chapter" id="sc-idea">
+        <header>
+          <span class="chapter-num">Chapter 1</span>
+          <h3>The Idea</h3>
+          <p class="where">Who the Scholar is, and why Abjuration</p>
+        </header>
+
+        <p>The Scholar reads, studies and learns. A <strong>Wizard</strong> has the biggest spell list in the game, but also the thinnest armor. The <strong>School of Abjuration</strong> is the best answer for a new player: it gives you a magic <strong>ward</strong> that soaks damage before your hit points do.</p>
+        <p>The main trick of a Wizard is that you <strong>learn new spells from scrolls</strong>. Every scroll you find can be copied into your spellbook. That makes loot a core part of the class, and this page tells you which scrolls to look for.</p>
+        <aside class="callout tip"><strong>Patch 8 alternative</strong>Patch 8 added <strong>Bladesinging</strong>, a Wizard who fights with a sword and moves like a dancer. It's a fun choice if you want to be in the thick of things. We built this page around Abjuration for its sturdiness.</aside>
+        <aside class="callout verify"><strong>Draft status</strong>This path was drafted before our playthrough. Notes marked <strong>To verify</strong> are what we'll confirm against the current version of the game. Gear locations come from one guide per act and haven't been checked in our own game yet.</aside>
+        <figure class="shot" data-src="shots/sc-01-creation.jpg">
+          <figcaption>The character creation screen with The Scholar choices</figcaption>
+        </figure>
+
+      </section>
+
+      <section class="chapter" id="sc-sheet">
+        <header>
+          <span class="chapter-num">Chapter 2</span>
+          <h3>Character Creation</h3>
+          <p class="where">Race, background, ability scores and skills. Pick the look; copy the rest.</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Choice</th><th>Pick</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>Race</td><td><strong>High Elf</strong></td><td>Gets an extra wizard cantrip, and Intelligence suits the race.</td></tr>
+              <tr><td>Background</td><td><strong>Sage</strong></td><td>Trains you in Arcana and History: a scholar's skills.</td></tr>
+              <tr><td>Class</td><td><strong>Wizard</strong></td><td>Subclass at level 2: <strong>School of Abjuration</strong>.</td></tr>
+              <tr><td>Ability scores</td><td>Strength 8, Dexterity 14, Constitution <strong>15</strong>, Intelligence <strong>17</strong>, Wisdom 10, Charisma 10</td><td>Spend the 27 points as 8 / 14 / 14 / 15 / 10 / 10, then +2 Intelligence and +1 Constitution.</td></tr>
+              <tr><td>Skills</td><td>Investigation, Medicine</td><td>Your two Wizard picks. Sage adds Arcana and History.</td></tr>
+              <tr><td>Cantrips</td><td>Fire Bolt, Ray of Frost, Shocking Grasp, Mage Hand, plus the High Elf's bonus</td><td>A mix of attacks and a utility spell. Mage Hand moves things from a distance.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the High Elf's bonus cantrip, the Sage skills, and which cantrips the Wizard can pick at level 1.</aside>
+      </section>
+
+      <section class="chapter" id="sc-levels">
+        <header>
+          <span class="chapter-num">Chapter 3</span>
+          <h3>Level by Level</h3>
+          <p class="where">What to pick at each level, and what you're getting</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Level</th><th>What you get</th><th>What to do</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Spellbook, Arcane Recovery, spellcasting</td><td>Pick your first spells (below). Arcane Recovery returns spent slots on a short rest.</td></tr>
+              <tr><td>2</td><td>School of Abjuration: Arcane Ward</td><td>Your ward absorbs damage. Cast an abjuration spell to recharge it.</td></tr>
+              <tr><td>3</td><td>Second-level spells</td><td>Misty Step is the must-have: an escape you can use every fight.</td></tr>
+              <tr><td>4</td><td>Ability Improvement or feat</td><td>+2 Intelligence, or the <strong>War Caster</strong> feat.</td></tr>
+              <tr><td>5</td><td>Third-level spells</td><td><strong>Fireball</strong>, <strong>Counterspell</strong> and <strong>Haste</strong> arrive.</td></tr>
+              <tr><td>6</td><td>Projected Ward</td><td>Your ward can protect an ally.</td></tr>
+              <tr><td>7</td><td>Fourth-level spells</td><td>Control or defense.</td></tr>
+              <tr><td>8</td><td>Ability Improvement</td><td>More Intelligence.</td></tr>
+              <tr><td>9</td><td>Fifth-level spells</td><td>Big control or damage.</td></tr>
+              <tr><td>10</td><td>Wizard feature</td><td>More power.</td></tr>
+              <tr><td>11</td><td>Sixth-level spells</td><td>Late-game magic.</td></tr>
+              <tr><td>12</td><td>Final Ability Improvement</td><td>You're done. Max level.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout warn"><strong>Don't skip the scrolls</strong>A Wizard only knows spells in the spellbook. Every time you find a scroll for a spell you don't have, <strong>copy it</strong> into your book. It costs gold, but it's the best money you'll spend.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm each level's features on our version, especially the Abjuration extras and how scroll-copying works.</aside>
+      </section>
+
+      <section class="chapter" id="sc-spells">
+        <header>
+          <span class="chapter-num">Chapter 4</span>
+          <h3>Spells to Learn First</h3>
+          <p class="where">What to put in your spellbook, in order</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Spell</th><th>What it does (our words)</th><th>Why it's on the list</th></tr></thead>
+            <tbody>
+              <tr><td>Mage Armour</td><td>A shimmer of magic gives you better armor class.</td><td>Cast it every morning. Your armor is cloth.</td></tr>
+              <tr><td>Shield</td><td>A reaction that blocks an attack.</td><td>Saves your life when you're hit.</td></tr>
+              <tr><td>Magic Missile</td><td>Darts of force that never miss.</td><td>Reliable damage, especially early.</td></tr>
+              <tr><td>Sleep</td><td>Puts weak enemies to sleep.</td><td>Wins early Act One fights.</td></tr>
+              <tr><td>Find Familiar</td><td>Summons a little helper that scouts and distracts.</td><td>A free pair of eyes.</td></tr>
+              <tr><td>Misty Step</td><td>A short teleport.</td><td>Escape and reposition.</td></tr>
+              <tr><td>Tasha's Hideous Laughter</td><td>An enemy collapses laughing and can't act.</td><td>Cheap crowd control from level 1.</td></tr>
+              <tr><td>Fireball</td><td>A huge blast of flame.</td><td>Clears crowds.</td></tr>
+              <tr><td>Counterspell</td><td>Stops an enemy casting a spell.</td><td>The Abjurer's signature.</td></tr>
+              <tr><td>Haste</td><td>A friend moves and acts much faster.</td><td>Turns your fighter into a monster.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Where scrolls come from</strong>Check every trader that sells scrolls, and loot every caster you defeat. Copying costs 50 gold per spell level, and half that for your own school. A few spells, like Counterspell, Shield and Find Familiar, have no scroll: you learn those by leveling up.</aside>
+        <aside class="callout tip"><strong>More on spells</strong>New to magic? The <a href="../spells/">Spells Guide</a> explains slots, concentration and who can learn what.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm each spell is on the Wizard list and which can be found as early scrolls.</aside>
+      </section>
+
+      <section class="chapter" id="sc-party">
+        <header>
+          <span class="chapter-num">Party</span>
+          <h3>Your Party</h3>
+          <p class="where">The companions to pick, and the ones to leave at camp</p>
+        </header>
+
+        <p>A Wizard is fragile, so the party's job is to keep enemies away from the Scholar. Choose tough friends and one healer.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Companion</th><th>Role</th><th>Why they fit this path</th><th>Where to find them</th></tr></thead>
+            <tbody>
+              <tr><td><span class="npc">Karlach</span></td><td>Front-line barbarian</td><td>A wall of muscle between you and everything else.</td><td>Risen Road, below the Toll House</td></tr>
+              <tr><td><span class="npc">Lae'zel</span></td><td>Front-line fighter</td><td>Hits hard, and respects someone who studies.</td><td>Nautiloid; then a cage on the Roadside Cliffs</td></tr>
+              <tr><td><span class="npc">Shadowheart</span></td><td>Cleric healer</td><td>Keeps everyone alive, and a good study partner.</td><td>A pod on the Nautiloid, or near the crash site</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>On the bench</strong><span class="npc">Gale</span> is a wizard too. He's a great friend and a romance, but two wizards in one party is a lot of squishy. Swap him in for fun, and keep him out for tough fights.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm each companion's recruitment spot and that this party handles our path's choices.</aside>
+      </section>
+
+      <section class="chapter" id="sc-gear">
+        <header>
+          <span class="chapter-num">Gear</span>
+          <h3>Gear Worth Finding</h3>
+          <p class="where">Our recommended finds by act, and where to get them</p>
+        </header>
+
+        <p>A Wizard wears robes and carries a staff. Look for anything that adds armor class without armor, boosts spell save DC, or lets you cast more.</p>
+        <h4>Act One</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Warped Headband of Intellect</strong></td><td>Lump the Enlightened, Blighted Village (looted or pickpocketed).</td><td>A headband aimed at Intelligence casters.</td><td>📜 Quest reward</td></tr>
+              <tr><td><strong>Amulet of Misty Step</strong></td><td>A chest in Priestess Gut's chambers in the Goblin Camp, guarded by the ogre Polma.</td><td>A free teleport for a fragile Wizard.</td><td>📦 Chest</td></tr>
+              <tr><td><strong>Mourning Frost</strong></td><td>Crafted from three parts: Icy Helve (Dhourn, west of the Selûnite Outpost), Icy Crystal (Myconid Colony reward room) and Icy Metal (Filro the Forgotten, northwest near the Sussur Tree).</td><td>A frost staff, if you enjoy crafting.</td><td>🔨 Craft it</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <h4>Act Two</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Incandescent Staff</strong></td><td>Quartermaster Talli, Last Light Inn.</td><td>Free Fire Bolt and Fireball each rest.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Fistbreaker Helm</strong></td><td>Lann Tarv, Moonrise Towers.</td><td>+1 spell save DC and better initiative.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Ketheric's Shield</strong></td><td>Dropped by Ketheric Thorm.</td><td>A boss drop with +1 to spell attacks and save DC.</td><td>💀 Boss drop</td></tr>
+              <tr><td><strong>Ring of Mental Inhibition</strong></td><td>A hidden spot in the House in Deep Shadow.</td><td>A hidden ring: spell victims get weaker in mind.</td><td>👀 Easy to miss</td></tr>
+              <tr><td><strong>Cloak of Protection</strong></td><td>Quartermaster Talli, Last Light Inn.</td><td>+1 AC and saves for the squishy.</td><td>🛒 Trader</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <h4>Act Three</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Markoheshkir</strong></td><td>The Sorcerer's Vaults, behind the Arcane Barrier puzzle in Ramazith's Tower.</td><td>The legendary Wizard's staff. Solve the Arcane Barrier puzzle in Ramazith's Tower.</td><td>🧩 Puzzle</td></tr>
+              <tr><td><strong>Staff of Spellpower</strong></td><td>The House of Hope Boudoir vault (a Wisdom check, then an Arcana check).</td><td>A strong staff with a Wisdom and Arcana check to open it.</td><td>👀 Easy to miss</td></tr>
+              <tr><td><strong>Cloak of the Weave</strong></td><td>A store in the Sorcerer's Vaults.</td><td>Higher spell save DC and attack.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Robe of the Weave</strong></td><td>Sorcerer's Sundries.</td><td>The most balanced robe for casters.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Spellseeking Gloves</strong></td><td>Devil's Fee.</td><td>Gloves for spell attackers.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Pyroquickness Hat</strong></td><td>An invisible chest in Elminster's vault, Sorcerer's Sundries. You need See Invisibility or similar.</td><td>An invisible chest; you'll need See Invisibility.</td><td>👀 Easy to miss</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Hidden loot</strong>Items marked <strong>👀 Easy to miss</strong> or <strong>⚠️ Missable</strong> are the ones people walk past. The full list for every act is in the <a href="../gear/">Gear Atlas</a>.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Every location here comes from a single guide and hasn't been confirmed in our own game. We'll check each one and correct the page.</aside>
+      </section>
+
+      <section class="chapter" id="sc-eggs">
+        <header>
+          <span class="chapter-num">Eggs</span>
+          <h3>Easter Eggs on Your Path</h3>
+          <p class="where">Nods, jokes and references your build is likely to find</p>
+        </header>
+
+        <p>Your path is a good excuse to catch these. We've picked the easter eggs your build, background, party and route are most likely to run into. Each one links to the full entry in the <a href="../eggs/">Easter Egg Guide</a>. ⚠️ means a spoiler, so the guide hides the details until you open it.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>When</th><th>Easter egg</th><th>Where</th><th>What you need</th></tr></thead>
+            <tbody>
+              <tr><td>Act Two (our guess)</td><td><strong><a href="../eggs/#egg-balthazar">Balthazar's borrowed bones</a></strong> ⚠️</td><td>Ask the necromancer Balthazar about his name.</td><td>Talk to him.</td></tr>
+              <tr><td>Act Three</td><td><strong><a href="../eggs/#egg-graves">Old heroes in the graveyard</a></strong></td><td>The Lower City graveyard: Branwen near X 31, Y 13; Durlag's Tower near X 26, Y 13; Eldoth Kron near X -7, Y 31; Harold "Scar" Loggerson near X 15, Y 31.</td><td>Walk through and read them.</td></tr>
+              <tr><td>Act Three (our guess)</td><td><strong><a href="../eggs/#egg-wyrmway-chess">The Wyrmway chess puzzle</a></strong></td><td>The Chamber of Strategy, in the Wyrmway.</td><td>Visit the chamber.</td></tr>
+              <tr><td>Act Three (our guess)</td><td><strong><a href="../eggs/#egg-khalid">Khalid's Gift</a></strong> ⚠️</td><td>Jaheira's basement (Elerrathin's Home), with a note called "My Dearest Wife."</td><td>Reach Jaheira's story in Act Three.</td></tr>
+              <tr><td>Any act</td><td><strong><a href="../eggs/#egg-gale-chess">Gale talks in chess</a></strong></td><td>Gale's combat lines, in any act.</td><td>Bring Gale along.</td></tr>
+              <tr><td>Any act</td><td><strong><a href="../eggs/#egg-fizban">Staff of a Mumbling Wizard and the cantrip "Firebolt?"</a></strong></td><td>An item; we don't know where yet.</td><td>Find the item. The location is unconfirmed.</td></tr>
+              <tr><td>Any act</td><td><strong><a href="../eggs/#egg-raven">Quothe the raven</a></strong></td><td>Through a Find Familiar raven.</td><td>Cast Find Familiar. Act and trigger unconfirmed.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Keep a checklist</strong>Tick these off as you find them. We'll note in each act's chapter when one is nearby.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Many acts and triggers come from a single wiki page and are our best guess. We'll confirm each one as we play.</aside>
+      </section>
+
+      <section class="act" id="act-play">
+        <span class="act-num">Staying on Target</span>
+        <h2>The Scholar's Playthrough</h2>
+        <p>Read, copy, cast. Here's the plan.</p>
+      </section>
+
+      <section class="chapter" id="sc-act1">
+        <header>
+          <span class="chapter-num">Act One</span>
+          <h3>Act One: Build the Spellbook</h3>
+          <p class="where">Collect scrolls and keep your distance</p>
+        </header>
+
+        <ol class="steps">
+          <li>Recruit <span class="npc">Karlach</span>, <span class="npc">Lae'zel</span> and <span class="npc">Shadowheart</span>.</li>
+          <li>Cast <strong>Mage Armour</strong> every morning, and keep <strong>Shield</strong> ready.</li>
+          <li>Copy every scroll you find into your spellbook.</li>
+          <li>Stay behind your fighters. Use cantrips from a distance and save slots for bigger fights.</li>
+          <li>Meet <span class="npc">Gale</span> and borrow ideas.</li>
+        </ol>
+        <aside class="callout tip"><strong>Recommended: your first big find</strong>Pick up the <span class="item">Warped Headband of Intellect</span> from Lump the Enlightened in the Blighted Village. It's a headband made for Intelligence casters.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm what the headband does and what it costs.</aside>
+      </section>
+
+      <section class="chapter" id="sc-act2">
+        <header>
+          <span class="chapter-num">Act Two</span>
+          <h3>Act Two: Fill the Pages</h3>
+          <p class="where">The shadows hide scrolls</p>
+        </header>
+
+        <ol class="steps">
+          <li>Take the <span class="item">Incandescent Staff</span> from Last Light's quartermaster.</li>
+          <li>Learn <strong>Counterspell</strong> and <strong>Fireball</strong> by level 5.</li>
+          <li>Keep your ward up: cast an abjuration spell at the start of a fight.</li>
+        </ol>
+        <aside class="callout verify"><strong>To verify while proving</strong>Replace with the exact Act Two quests after playing.</aside>
+        <aside class="callout tip"><strong>🥚 Easter eggs this act</strong>🥚 <a href="../eggs/#egg-balthazar">Balthazar's borrowed bones</a> ⚠️ — Ask the necromancer Balthazar about his name.</aside>
+      </section>
+
+      <section class="chapter" id="sc-act3">
+        <header>
+          <span class="chapter-num">Act Three</span>
+          <h3>Act Three: The Archmage</h3>
+          <p class="where">The biggest spells in the biggest city</p>
+        </header>
+
+        <ol class="steps">
+          <li>Solve the <strong>Arcane Barrier</strong> puzzle in Ramazith's Tower for <span class="item">Markoheshkir</span>.</li>
+          <li>Pick up the <span class="item">Cloak of the Weave</span> in the Sorcerer's Vaults.</li>
+          <li>At the finale, use your best spells and let your party protect you.</li>
+        </ol>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the Act Three quests and the Scholar's best ending after playing.</aside>
+        <aside class="callout tip"><strong>🥚 Easter eggs this act</strong>🥚 <a href="../eggs/#egg-graves">Old heroes in the graveyard</a> — The Lower City graveyard: Branwen near X 31, Y 13; Durlag's Tower near X 26, Y 13; Eldoth Kron near X -7, Y 31; Harold "Scar" Loggerson near X 15, Y 31.<br>🥚 <a href="../eggs/#egg-wyrmway-chess">The Wyrmway chess puzzle</a> — The Chamber of Strategy, in the Wyrmway.<br>🥚 <a href="../eggs/#egg-khalid">Khalid's Gift</a> ⚠️ — Jaheira's basement (Elerrathin's Home), with a note called "My Dearest Wife."</aside>
+      </section>
+
+      <section class="chapter" id="sc-love">
+        <header>
+          <span class="chapter-num">Love Interests</span>
+          <h3>Love & Companions</h3>
+          <p class="where">The game is open: any companion can be romanced whatever your character looks like</p>
+        </header>
+
+        <p>The Scholar loves a good conversation. These two will listen.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Our pick</th><th>Why they fit</th><th>Alternates</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Male</strong></td><td><span class="npc">Gale</span></td><td>A fellow Wizard with a brilliant mind and a past he's hiding. The obvious study partner.</td><td><span class="npc">Wyll</span></td></tr>
+              <tr><td><strong>Female</strong></td><td><span class="npc">Jaheira</span></td><td>A veteran and a scholar of the natural world. A slow burn.</td><td><span class="npc">Shadowheart</span></td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm Jaheira's romance availability and approval thresholds.</aside>
+        <figure class="shot" data-src="shots/sc-02-spellbook.jpg">
+          <figcaption>The Scholar's spellbook, full of copied scrolls</figcaption>
+        </figure>
+
+      </section>
+
+      <section class="chapter reference" id="sc-never">
+        <header>
+          <span class="chapter-num">Reference</span>
+          <h3>Never Do This</h3>
+          <p class="where">Choices that break the character</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Don't</th><th>Because</th></tr></thead>
+            <tbody>
+              <tr><td>Leave a scroll unread</td><td>Every scroll is a new spell.</td></tr>
+              <tr><td>Stand in front</td><td>You are not the tank.</td></tr>
+              <tr><td>Skip Mage Armour</td><td>Your armor is cloth.</td></tr>
+              <tr><td>Waste your spell slots on weak enemies</td><td>Use cantrips.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Add every point of no return for the path after playing.</aside>
+      </section>
+
+      <aside class="callout tip" style="margin-top:40px"><strong>Want a different path?</strong>Head back to the <a href="../">BG3 Paths hub</a> to compare all three, or see the <a href="../../baldurs-gate-3/">general act-by-act walkthrough</a> for the full story.</aside>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    © 2026 <a href="https://craz.com">Crabtree Labz</a> · <a href="https://craz.com/privacy.html">Privacy</a> · Baldur's Gate 3 © Larian Studios · Baldur's Gate, Dungeons &amp; Dragons and Forgotten Realms © Wizards of the Coast · Unofficial fan guide
+  </footer>
+
+  <script src="../../walkthrough.js?v=e57d0971"></script>
+</body>
+</html>

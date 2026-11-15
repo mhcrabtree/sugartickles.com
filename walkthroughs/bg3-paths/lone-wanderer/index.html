@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Lone Wanderer — Baldur's Gate 3 Path · SugarTickles</title>
+  <meta name="description" content="A Baldur's Gate 3 solo character path: a Hexblade Warlock who refuses every companion, with the build, the solo rules, a list of what's lost, gear and checklist." />
+  <!--
+    Original SugarTickles writing. Does NOT adapt bg3.wiki text, so it is not bound by the wiki's
+    CC BY-NC-SA license (unlike ../baldurs-gate-3/). Fan Content rules still apply: see NOTICE.md.
+  -->
+  <link rel="stylesheet" href="/fonts/fonts.css?v=d1e52a1c">
+  <link rel="stylesheet" href="../../walkthrough.css?v=b78d8fbf" />
+</head>
+
+<body data-walkthrough="bg3-paths-lone-wanderer">
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/logo.png" alt="" />SugarTickles</a>
+    <nav>
+      <a href="/walkthroughs/">Walkthroughs</a>
+      <a href="../" aria-current="page">BG3 Paths</a>
+      <a href="#credits">Credits</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">BG3 Path · Nobody comes with you</span>
+    <h1>The Lone Wanderer<span class="sub">Hexblade Warlock · No companions</span></h1>
+    <p class="lede">You, a cursed blade, and no one else. Can you finish Baldur's Gate 3 without a single companion? Players have, though the sources are thin on the details. This path gives you the build, the solo rules, an honest list of what you'll lose and the tools to make it work. You choose how they look; we choose everything else.</p>
+    <svg class="ornament" viewBox="0 0 240 40" fill="none" aria-hidden="true">
+      <path d="M4 20 H 84" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M156 20 H 236" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M120 6 C 104 6, 96 14, 96 20 C 96 26, 104 34, 120 34 C 136 34, 144 26, 144 20 C 144 14, 136 6, 120 6 z" stroke="currentColor" stroke-width="2"/>
+      <circle cx="112" cy="18" r="2.2" fill="currentColor"/>
+      <circle cx="128" cy="18" r="2.2" fill="currentColor"/>
+    </svg>
+    <div class="meta-row">
+      <span class="pill">Warlock</span>
+      <span class="pill">Solo</span>
+      <span class="pill">No romance</span>
+    </div>
+    <div class="resource-links">
+      <a href="#lw-sheet">⚔️ Build</a>
+      <a href="#lw-rules">🐺 Solo Rules</a>
+      <a href="#lw-missed">💔 What You'll Miss</a>
+      <a href="#lw-gear">🎒 Gear</a>
+      <a href="#lw-act1">✅ Playthrough</a>
+    </div>
+  </section>
+
+  <div class="layout">
+    <div>
+      <button class="toc-toggle" aria-expanded="false">☰ Chapters &amp; progress</button>
+      <nav class="toc" aria-label="Chapters">
+        <div class="progress">
+          <div class="label"><span>Your progress</span></div>
+          <div class="bar"><span></span></div>
+          <div class="label" style="margin-top:6px"><span class="count"></span></div>
+          <button type="button">Reset progress</button>
+        </div>
+          <h4><a href="#act-build" style="color:inherit;text-decoration:none">Your Character</a></h4>
+          <ol>
+            <li><a href="#lw-idea"><span>The Idea</span><span class="done"></span></a></li>
+            <li><a href="#lw-sheet"><span>Character Creation</span><span class="done"></span></a></li>
+            <li><a href="#lw-levels"><span>Level by Level</span><span class="done"></span></a></li>
+            <li><a href="#lw-spells"><span>Spells & Invocations</span><span class="done"></span></a></li>
+            <li><a href="#lw-rules"><span>Solo Rules</span><span class="done"></span></a></li>
+            <li><a href="#lw-missed"><span>What You'll Miss</span><span class="done"></span></a></li>
+            <li><a href="#lw-party"><span>Your Party</span><span class="done"></span></a></li>
+            <li><a href="#lw-gear"><span>Gear Worth Finding</span><span class="done"></span></a></li>
+            <li><a href="#lw-eggs"><span>Easter Eggs</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-play" style="color:inherit;text-decoration:none">Staying on Target</a></h4>
+          <ol>
+            <li><a href="#lw-act1"><span>Act One</span><span class="done"></span></a></li>
+            <li><a href="#lw-act2"><span>Act Two</span><span class="done"></span></a></li>
+            <li><a href="#lw-act3"><span>Act Three</span><span class="done"></span></a></li>
+            <li><a href="#lw-love"><span>Love & Companions</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#lw-never" style="color:inherit;text-decoration:none">Reference</a></h4>
+          <ol>
+            <li><a href="#lw-never"><span>Never Do This</span><span class="done"></span></a></li>
+          </ol>
+      </nav>
+    </div>
+
+    <main>
+      <section class="credits" id="credits">
+        <h3>Credits &amp; Sources</h3>
+        <p>This is original SugarTickles writing, built from our own knowledge of the game and checked in our own playthrough. Where we haven't confirmed something yet you'll see a gold <strong>"To verify"</strong> note. Spells, features and items are described in our own words, never copied from the game or the rulebooks.</p>
+        <p>Screenshots are our own captures from the game.</p>
+        <p><em>Baldur's Gate 3 Paths</em> is unofficial Fan Content permitted under the <a href="https://company.wizards.com/en/legal/fancontentpolicy" rel="noopener">Fan Content Policy</a>. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</p>
+        <p><em>Baldur's Gate 3</em> and its art, characters and names are © Larian Studios. Baldur's Gate, Dungeons &amp; Dragons and the Forgotten Realms are trademarks of Wizards of the Coast. SugarTickles isn't affiliated with Larian or Wizards of the Coast. It's a fan guide, made with love. We use no Wizards or Larian logos.</p>
+      </section>
+
+      <section class="act" id="act-build">
+        <span class="act-num">Your Character</span>
+        <h2>Build The Lone Wanderer</h2>
+        <p>A Hexblade Warlock: a blade-wielding Charisma fighter with short-rest magic. Strong on its own, and simple to build. This chapter picks the build.</p>
+      </section>
+
+      <section class="chapter" id="lw-idea">
+        <header>
+          <span class="chapter-num">Chapter 1</span>
+          <h3>The Idea</h3>
+          <p class="where">Who the Lone Wanderer is, and why a Hexblade</p>
+        </header>
+
+        <p>The Lone Wanderer turns every companion down. No Astarion, no Shadowheart, no Gale: just you. Is it possible? <strong>Yes.</strong> Players have finished the game solo, and a small fraction of players reached the end with no companions at all. It's a challenge run, though: there's no "lone wolf" bonus, and you won't earn extra experience for going it alone.</p>
+        <p>For a solo build we picked the <strong>Hexblade Warlock</strong>, a Patch 8 subclass. It wears medium armor, carries a shield, fights with Charisma, and its spell slots come back on a <em>short</em> rest. It needs only one main stat, and one tier list rates it among the best subclasses in the game.</p>
+        <aside class="callout warn"><strong>Honest caveats</strong>We could confirm the basics, but not the details. We don't yet know every scene that forces a companion into your party, or exactly which quests change without companions. Treat this page as a plan to test, and expect us to learn as we play.</aside>
+        <aside class="callout verify"><strong>Draft status</strong>This path was drafted before our playthrough. Notes marked <strong>To verify</strong> are what we'll confirm against the current version of the game. Gear locations come from one guide per act and haven't been checked in our own game yet.</aside>
+        <figure class="shot" data-src="shots/lw-01-creation.jpg">
+          <figcaption>The character creation screen with The Lone Wanderer choices</figcaption>
+        </figure>
+
+      </section>
+
+      <section class="chapter" id="lw-sheet">
+        <header>
+          <span class="chapter-num">Chapter 2</span>
+          <h3>Character Creation</h3>
+          <p class="where">Race, background, ability scores and skills. Pick the look; copy the rest.</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Choice</th><th>Pick</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>Race</td><td><strong>Human</strong></td><td>Flexible, and a good all-rounder when nobody else can fill your gaps.</td></tr>
+              <tr><td>Background</td><td><strong>Haunted One</strong></td><td>A fitting loner's past, with skills that suit a wanderer.</td></tr>
+              <tr><td>Class</td><td><strong>Warlock</strong></td><td>Subclass at level 1: <strong>Hexblade</strong>. At level 3, take <strong>Pact of the Blade</strong>.</td></tr>
+              <tr><td>Ability scores</td><td>Strength 8, Dexterity 14, Constitution <strong>15</strong>, Intelligence 10, Wisdom 10, Charisma <strong>17</strong></td><td>Spend the 27 points as 8 / 14 / 14 / 10 / 10 / 15, then +2 Charisma and +1 Constitution.</td></tr>
+              <tr><td>Skills</td><td>Persuasion, Intimidation</td><td>Your two Warlock picks. Talking your way past trouble matters more when you're alone.</td></tr>
+              <tr><td>Armor</td><td>Medium armor and a shield</td><td>The Hexblade is trained in both.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm what Hexblade gives at level 1 on our version, the Haunted One skills, and the Pact of the Blade options.</aside>
+      </section>
+
+      <section class="chapter" id="lw-levels">
+        <header>
+          <span class="chapter-num">Chapter 3</span>
+          <h3>Level by Level</h3>
+          <p class="where">What to pick at each level, and what you're getting</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Level</th><th>What you get</th><th>What to do</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Hexblade, Eldritch Blast, spellcasting</td><td>Medium armor, shields, and Charisma for weapon attacks. Eldritch Blast is your free ranged attack.</td></tr>
+              <tr><td>2</td><td>Eldritch Invocations</td><td>Pick invocations that boost Eldritch Blast (like Agonizing Blast).</td></tr>
+              <tr><td>3</td><td>Pact of the Blade</td><td>Summon a weapon of your choice and fight with it.</td></tr>
+              <tr><td>4</td><td>Ability Improvement or feat</td><td>+2 Charisma, or Tough for extra hit points.</td></tr>
+              <tr><td>5</td><td>Extra Attack, third-level slots</td><td>Attack twice. Your slots refresh on a short rest.</td></tr>
+              <tr><td>6</td><td>Hexblade feature</td><td>Your curse gets stronger.</td></tr>
+              <tr><td>7</td><td>Fourth-level slots</td><td>More power per slot.</td></tr>
+              <tr><td>8</td><td>Ability Improvement</td><td>More Charisma.</td></tr>
+              <tr><td>9</td><td>Fifth-level slots</td><td>Your biggest slots, and all you'll ever need.</td></tr>
+              <tr><td>10</td><td>Hexblade feature</td><td>A spectral ally.</td></tr>
+              <tr><td>11</td><td>Mystic Arcanum</td><td>A sixth-level spell, once per rest.</td></tr>
+              <tr><td>12</td><td>Final Ability Improvement</td><td>You're done. Max level.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Stay a Warlock</strong>A pure Warlock keeps things simple, and a solo run is hard enough. No multiclass needed.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm each level on our version, and what the Hexblade gets at levels 6 and 10.</aside>
+      </section>
+
+      <section class="chapter" id="lw-spells">
+        <header>
+          <span class="chapter-num">Chapter 4</span>
+          <h3>Spells & Invocations</h3>
+          <p class="where">A short list that keeps you alive alone</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Spell or ability</th><th>What it does (our words)</th><th>When to use it</th></tr></thead>
+            <tbody>
+              <tr><td>Eldritch Blast</td><td>A beam of force that gets stronger as you level.</td><td>Your default attack. Use it from range.</td></tr>
+              <tr><td>Hex or Hexblade's Curse</td><td>Marks an enemy so you hit it harder.</td><td>On the toughest enemy.</td></tr>
+              <tr><td>Armor of Agathys</td><td>A freezing shield that hurts melee attackers.</td><td>At the start of a hard fight.</td></tr>
+              <tr><td>Misty Step</td><td>A short teleport.</td><td>To escape or reposition.</td></tr>
+              <tr><td>Darkness or Fear</td><td>Cuts off sight or scares a crowd.</td><td>To avoid being surrounded.</td></tr>
+              <tr><td>Hold Person</td><td>Freezes a humanoid.</td><td>Setting up easy kills on a single tough foe.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>More on spells</strong>New to magic? The <a href="../spells/">Spells Guide</a> explains slots, concentration and who can learn what.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm which of these are on the Warlock list and available to us at each level.</aside>
+      </section>
+
+      <section class="chapter" id="lw-rules">
+        <header>
+          <span class="chapter-num">Guide</span>
+          <h3>Solo Rules</h3>
+          <p class="where">How to play alone, and what to expect</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Rule</th><th>What it means</th></tr></thead>
+            <tbody>
+              <tr><td>Recruit no one</td><td>Don't ask any companion to join. If one joins you for a scene, send them to camp afterward.</td></tr>
+              <tr><td>No hirelings</td><td>Hirelings are companions by another name. Skip them.</td></tr>
+              <tr><td>Temporary helpers don't count</td><td>Some characters join you for a quest and leave on their own. They don't take a party slot, so we allow them.</td></tr>
+              <tr><td>No romance</td><td>That's the cost of loneliness.</td></tr>
+              <tr><td>Difficulty</td><td>We'd start on Explorer, then work up. There's no solo bonus, so a hard setting makes a hard run harder.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>The solo toolkit</strong>Players who've done this recommend: a high armor class (around 22 is reachable), plenty of healing potions, scrolls for spells you lack, and a way to avoid fights altogether. Misty Step, invisibility, and Pass Without Trace all help.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm which scenes force a companion into your party, and whether declining a companion differs from sending them to camp.</aside>
+      </section>
+
+      <section class="chapter" id="lw-missed">
+        <header>
+          <span class="chapter-num">Guide</span>
+          <h3>What You'll Miss</h3>
+          <p class="where">The companions, quests and scenes a solo run skips</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>You skip</th><th>What changes</th></tr></thead>
+            <tbody>
+              <tr><td>Every Origin companion's story</td><td>Astarion, Gale, Shadowheart, Lae'zel, Wyll and Karlach each have personal quests and endings you won't see.</td></tr>
+              <tr><td>Halsin, Jaheira, Minthara, Minsc</td><td>These are recruited later, and you won't have them.</td></tr>
+              <tr><td>Healing</td><td>No cleric, so lean on potions, Armor of Agathys and short rests.</td></tr>
+              <tr><td>Locks and traps</td><td>No Rogue to open them. Buy lockpicks and scrolls, or skip some chests.</td></tr>
+              <tr><td>Speak with Dead</td><td>Some quests need it. Pick up scrolls or a spell.</td></tr>
+              <tr><td>Companion-linked choices</td><td>Some choices are tied to a companion's presence. We'll note them as we find them.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Unique dialogue</strong>A report claims the game has dialogue written just for a no-companion run. We'll record what we find.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>This table is a starting point from limited sources. We'll replace it with a verified list after our run.</aside>
+      </section>
+
+      <section class="chapter" id="lw-party">
+        <header>
+          <span class="chapter-num">Party</span>
+          <h3>Your Party</h3>
+          <p class="where">The companions to pick, and the ones to leave at camp</p>
+        </header>
+
+        <p>There is no party. This chapter is a reminder, and a list of the temporary allies you'll still meet.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Companion</th><th>Role</th><th>Why they fit this path</th><th>Where to find them</th></tr></thead>
+            <tbody>
+              <tr><td>Nobody</td><td>—</td><td>That's the point.</td><td>Not applicable</td></tr>
+              <tr><td><span class="npc">Lae'zel</span> and <span class="npc">Shadowheart</span></td><td>Temporary prologue helpers</td><td>They may appear with you briefly on the Nautiloid. They don't join your party for good.</td><td>The Nautiloid</td></tr>
+              <tr><td><span class="npc">Halsin</span>, <span class="npc">Jaheira</span>, <span class="npc">Minthara</span></td><td>Attached followers</td><td>They tag along for specific quests and leave on set triggers. They don't count as party members.</td><td>Various</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>On the bench</strong>Everybody else stays in the camp, or you never recruit them at all.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm each companion's recruitment spot and that this party handles our path's choices.</aside>
+      </section>
+
+      <section class="chapter" id="lw-gear">
+        <header>
+          <span class="chapter-num">Gear</span>
+          <h3>Gear Worth Finding</h3>
+          <p class="where">Our recommended finds by act, and where to get them</p>
+        </header>
+
+        <p>Alone, you need armor class, escape tools and healing. Wear medium armor with a shield, and look for anything that adds AC, saves, invisibility or stealth.</p>
+        <h4>Act One</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Amulet of Misty Step</strong></td><td>A chest in Priestess Gut's chambers in the Goblin Camp, guarded by the ogre Polma.</td><td>An escape you can use every day.</td><td>📦 Chest</td></tr>
+              <tr><td><strong>Adamantine Scale or Splint Mail</strong></td><td>Crafted at the Adamantine Forge in Grymforge.</td><td>Heavy options are unavailable, but the scale mail is medium.</td><td>🔨 Craft it</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <h4>Act Two</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Shield of Devotion</strong></td><td>Quartermaster Talli, Last Light Inn.</td><td>Extra spell slots and Aid: self-support.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Cloak of Protection</strong></td><td>Quartermaster Talli, Last Light Inn.</td><td>+1 AC and saves.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Ring of Shadow</strong></td><td>Olivar's quest, House in Deep Shadow.</td><td>Pass Without Trace: sneak past almost anything.</td><td>📜 Quest reward</td></tr>
+              <tr><td><strong>Shifting Corpus Ring</strong></td><td>Flaming Fist Marcus, at Last Light Inn or Moonrise Towers.</td><td>Invisibility and Blur for your toughest fights.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Gloves of the Duellist</strong></td><td>Lann Tarv, Moonrise Towers.</td><td>A one-handed weapon bonus for a sword-and-empty-hand style.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Vivacious Cloak</strong></td><td>A hidden tomb in the cemetery near the Gauntlet of Shar.</td><td>Temporary HP after you cast in melee.</td><td>👀 Easy to miss</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <h4>Act Three</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Viconia's Walking Fortress</strong></td><td>The House of Grief, through Shadowheart's Act 3 storyline.</td><td>A shield that helps Charisma fighters.</td><td>📜 Quest reward</td></tr>
+              <tr><td><strong>Silver Sword of the Astral Plane</strong></td><td>Voss in the sewers, through the githyanki storyline.</td><td>A longsword for Charisma melee.</td><td>📜 Quest reward</td></tr>
+              <tr><td><strong>Duellist's Prerogative</strong></td><td>The Save Vanra questline, starting at the Lower City Barracks.</td><td>A rapier for a finesse build.</td><td>📜 Quest reward</td></tr>
+              <tr><td><strong>Helm of Balduran</strong></td><td>The secret base under Wyrmgate Prison.</td><td>Heals you every turn and blocks stuns and crits: ideal for a solo.</td><td>👀 Easy to miss</td></tr>
+              <tr><td><strong>Birthright</strong></td><td>Sorcerer's Sundries.</td><td>A Charisma hat.</td><td>🛒 Trader</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Hidden loot</strong>Items marked <strong>👀 Easy to miss</strong> or <strong>⚠️ Missable</strong> are the ones people walk past. The full list for every act is in the <a href="../gear/">Gear Atlas</a>.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Every location here comes from a single guide and hasn't been confirmed in our own game. We'll check each one and correct the page.</aside>
+      </section>
+
+      <section class="chapter" id="lw-eggs">
+        <header>
+          <span class="chapter-num">Eggs</span>
+          <h3>Easter Eggs on Your Path</h3>
+          <p class="where">Nods, jokes and references your build is likely to find</p>
+        </header>
+
+        <p>Your path is a good excuse to catch these. We've picked the easter eggs your build, background, party and route are most likely to run into. Each one links to the full entry in the <a href="../eggs/">Easter Egg Guide</a>. ⚠️ means a spoiler, so the guide hides the details until you open it.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>When</th><th>Easter egg</th><th>Where</th><th>What you need</th></tr></thead>
+            <tbody>
+              <tr><td>Act Two (our guess)</td><td><strong><a href="../eggs/#egg-gather">"You must gather your party"</a></strong> ⚠️</td><td>The entrance to the Shadowfell.</td><td>Walk in without your companions. Try it solo.</td></tr>
+              <tr><td>Act Three (our guess)</td><td><strong><a href="../eggs/#egg-elin">The Warlock's threat</a></strong></td><td>Wyrm's Rock Fortress, in a conversation with Elin.</td><td>Be a Warlock.</td></tr>
+              <tr><td>Act Three (our guess)</td><td><strong><a href="../eggs/#egg-marvin">Marvin the talking skull</a></strong></td><td>The Wyrm's Rock prison.</td><td>Interact with him.</td></tr>
+              <tr><td>Act Three (our guess)</td><td><strong><a href="../eggs/#egg-balduran-gear">Balduran's returning gear</a></strong> ⚠️</td><td>Wyrmgate Prison's secret base and the Emperor's sword.</td><td>Reach the secret base.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Keep a checklist</strong>Tick these off as you find them. We'll note in each act's chapter when one is nearby.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Many acts and triggers come from a single wiki page and are our best guess. We'll confirm each one as we play.</aside>
+      </section>
+
+      <section class="act" id="act-play">
+        <span class="act-num">Staying on Target</span>
+        <h2>The Lone Wanderer's Playthrough</h2>
+        <p>One character, one blade, no net. Here's the plan.</p>
+      </section>
+
+      <section class="chapter" id="lw-act1">
+        <header>
+          <span class="chapter-num">Act One</span>
+          <h3>Act One: Walk Alone</h3>
+          <p class="where">Refuse every offer</p>
+        </header>
+
+        <ol class="steps">
+          <li>On the Nautiloid, don't seek out companions. Free yourself and escape.</li>
+          <li>On the beach, don't add Astarion, Gale, Shadowheart or Lae'zel to your party.</li>
+          <li>Pick your fights. Use Eldritch Blast from range and Armor of Agathys up close.</li>
+          <li>Buy healing potions and keep a stock at all times.</li>
+          <li>Rest often: your spell slots return on a short rest.</li>
+        </ol>
+        <aside class="callout tip"><strong>Recommended: your first big find</strong>Get the <span class="item">Amulet of Misty Step</span> from the chest in Priestess Gut's chambers, guarded by the ogre Polma. It's your escape button.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm which companions approach you on their own, and how to turn them down.</aside>
+      </section>
+
+      <section class="chapter" id="lw-act2">
+        <header>
+          <span class="chapter-num">Act Two</span>
+          <h3>Act Two: Alone in the Dark</h3>
+          <p class="where">The shadows don't care how many you are</p>
+        </header>
+
+        <ol class="steps">
+          <li>Grab the <span class="item">Ring of Shadow</span> and the <span class="item">Shifting Corpus Ring</span> for stealth and escape.</li>
+          <li>Avoid fights that don't pay off.</li>
+          <li>Keep your potions stocked, and your short rests regular.</li>
+        </ol>
+        <aside class="callout verify"><strong>To verify while proving</strong>Replace with the exact Act Two quests after playing.</aside>
+        <aside class="callout tip"><strong>🥚 Easter eggs this act</strong>🥚 <a href="../eggs/#egg-gather">"You must gather your party"</a> ⚠️ — The entrance to the Shadowfell.</aside>
+      </section>
+
+      <section class="chapter" id="lw-act3">
+        <header>
+          <span class="chapter-num">Act Three</span>
+          <h3>Act Three: The Last Stand</h3>
+          <p class="where">The city, alone</p>
+        </header>
+
+        <ol class="steps">
+          <li>Seek out the <span class="item">Helm of Balduran</span> in the secret base under Wyrmgate Prison.</li>
+          <li>Keep your escape tools and your potions, and take the final fights one at a time.</li>
+          <li>At the finale, face the end alone.</li>
+        </ol>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the Act Three quests and whether the finale works without companions.</aside>
+        <aside class="callout tip"><strong>🥚 Easter eggs this act</strong>🥚 <a href="../eggs/#egg-elin">The Warlock's threat</a> — Wyrm's Rock Fortress, in a conversation with Elin.<br>🥚 <a href="../eggs/#egg-marvin">Marvin the talking skull</a> — The Wyrm's Rock prison.<br>🥚 <a href="../eggs/#egg-balduran-gear">Balduran's returning gear</a> ⚠️ — Wyrmgate Prison's secret base and the Emperor's sword.</aside>
+      </section>
+
+      <section class="chapter" id="lw-love">
+        <header>
+          <span class="chapter-num">Love Interests</span>
+          <h3>Love & Companions</h3>
+          <p class="where">The game is open: any companion can be romanced whatever your character looks like</p>
+        </header>
+
+        <p>The Lone Wanderer has no companions, so no romance. That's the cost. If you ever break the vow, we'd suggest:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Our pick</th><th>Why they fit</th><th>Alternates</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Male</strong></td><td><span class="npc">Wyll</span></td><td>Dutiful and quietly lonely himself.</td><td><span class="npc">Gale</span></td></tr>
+              <tr><td><strong>Female</strong></td><td><span class="npc">Karlach</span></td><td>The warmest of the lot, and the hardest to turn away.</td><td><span class="npc">Shadowheart</span></td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout warn"><strong>Breaking the vow</strong>The moment you recruit someone, you're no longer a lone wanderer. Decide before you start.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm whether any romance is possible without recruiting the companion.</aside>
+        <figure class="shot" data-src="shots/lw-02-alone.jpg">
+          <figcaption>The Lone Wanderer on an empty road</figcaption>
+        </figure>
+
+      </section>
+
+      <section class="chapter reference" id="lw-never">
+        <header>
+          <span class="chapter-num">Reference</span>
+          <h3>Never Do This</h3>
+          <p class="where">Choices that break the character</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Don't</th><th>Because</th></tr></thead>
+            <tbody>
+              <tr><td>Recruit a companion</td><td>That ends the run.</td></tr>
+              <tr><td>Hire a hireling</td><td>A hireling is a companion by another name.</td></tr>
+              <tr><td>Skip healing potions</td><td>You have no healer.</td></tr>
+              <tr><td>Take every fight</td><td>A solo can't afford them.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Add every point of no return for the path after playing.</aside>
+      </section>
+
+      <aside class="callout tip" style="margin-top:40px"><strong>Want a different path?</strong>Head back to the <a href="../">BG3 Paths hub</a> to compare all three, or see the <a href="../../baldurs-gate-3/">general act-by-act walkthrough</a> for the full story.</aside>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    © 2026 <a href="https://craz.com">Crabtree Labz</a> · <a href="https://craz.com/privacy.html">Privacy</a> · Baldur's Gate 3 © Larian Studios · Baldur's Gate, Dungeons &amp; Dragons and Forgotten Realms © Wizards of the Coast · Unofficial fan guide
+  </footer>
+
+  <script src="../../walkthrough.js?v=e57d0971"></script>
+</body>
+</html>

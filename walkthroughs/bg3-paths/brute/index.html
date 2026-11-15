@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Brute — Baldur's Gate 3 Path · SugarTickles</title>
+  <meta name="description" content="A Baldur's Gate 3 character path: a magic-shunning Berserker Barbarian with the Brute's Code, a muscle-bound party, gear and act-by-act checklist." />
+  <!--
+    Original SugarTickles writing. Does NOT adapt bg3.wiki text, so it is not bound by the wiki's
+    CC BY-NC-SA license (unlike ../baldurs-gate-3/). Fan Content rules still apply: see NOTICE.md.
+  -->
+  <link rel="stylesheet" href="/fonts/fonts.css?v=d1e52a1c">
+  <link rel="stylesheet" href="../../walkthrough.css?v=b78d8fbf" />
+</head>
+
+<body data-walkthrough="bg3-paths-brute">
+  <header class="topbar">
+    <a class="brand" href="/"><img src="/logo.png" alt="" />SugarTickles</a>
+    <nav>
+      <a href="/walkthroughs/">Walkthroughs</a>
+      <a href="../" aria-current="page">BG3 Paths</a>
+      <a href="#credits">Credits</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">BG3 Path · Hit it. Then hit it again.</span>
+    <h1>The Brute<span class="sub">Berserker Barbarian</span></h1>
+    <p class="lede">A roaring, magic-shunning Barbarian who solves every problem with a big weapon and a bigger temper. No spells, no scrolls, no wands, and a party of people who feel the same. This path gives you the build, the Brute's Code, the muscle to bring and the gear to hunt. You choose how they look; we choose everything else.</p>
+    <svg class="ornament" viewBox="0 0 240 40" fill="none" aria-hidden="true">
+      <path d="M4 20 H 84" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M156 20 H 236" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      <path d="M120 6 C 104 6, 96 14, 96 20 C 96 26, 104 34, 120 34 C 136 34, 144 26, 144 20 C 144 14, 136 6, 120 6 z" stroke="currentColor" stroke-width="2"/>
+      <circle cx="112" cy="18" r="2.2" fill="currentColor"/>
+      <circle cx="128" cy="18" r="2.2" fill="currentColor"/>
+    </svg>
+    <div class="meta-row">
+      <span class="pill">Barbarian</span>
+      <span class="pill">The no-magic path</span>
+      <span class="pill">Pure muscle</span>
+    </div>
+    <div class="resource-links">
+      <a href="#br-sheet">💪 Build</a>
+      <a href="#br-code">📜 The Brute's Code</a>
+      <a href="#br-party">👥 Party</a>
+      <a href="#br-gear">⚔️ Gear</a>
+      <a href="#br-act1">✅ Playthrough</a>
+    </div>
+  </section>
+
+  <div class="layout">
+    <div>
+      <button class="toc-toggle" aria-expanded="false">☰ Chapters &amp; progress</button>
+      <nav class="toc" aria-label="Chapters">
+        <div class="progress">
+          <div class="label"><span>Your progress</span></div>
+          <div class="bar"><span></span></div>
+          <div class="label" style="margin-top:6px"><span class="count"></span></div>
+          <button type="button">Reset progress</button>
+        </div>
+          <h4><a href="#act-build" style="color:inherit;text-decoration:none">Your Character</a></h4>
+          <ol>
+            <li><a href="#br-idea"><span>The Idea</span><span class="done"></span></a></li>
+            <li><a href="#br-sheet"><span>Character Creation</span><span class="done"></span></a></li>
+            <li><a href="#br-levels"><span>Level by Level</span><span class="done"></span></a></li>
+            <li><a href="#br-code"><span>The Brute's Code</span><span class="done"></span></a></li>
+            <li><a href="#br-party"><span>Your Party</span><span class="done"></span></a></li>
+            <li><a href="#br-gear"><span>Gear Worth Finding</span><span class="done"></span></a></li>
+            <li><a href="#br-eggs"><span>Easter Eggs</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#act-play" style="color:inherit;text-decoration:none">Staying on Target</a></h4>
+          <ol>
+            <li><a href="#br-act1"><span>Act One</span><span class="done"></span></a></li>
+            <li><a href="#br-act2"><span>Act Two</span><span class="done"></span></a></li>
+            <li><a href="#br-act3"><span>Act Three</span><span class="done"></span></a></li>
+            <li><a href="#br-love"><span>Love & Companions</span><span class="done"></span></a></li>
+          </ol>
+          <h4><a href="#br-never" style="color:inherit;text-decoration:none">Reference</a></h4>
+          <ol>
+            <li><a href="#br-never"><span>Never Do This</span><span class="done"></span></a></li>
+          </ol>
+      </nav>
+    </div>
+
+    <main>
+      <section class="credits" id="credits">
+        <h3>Credits &amp; Sources</h3>
+        <p>This is original SugarTickles writing, built from our own knowledge of the game and checked in our own playthrough. Where we haven't confirmed something yet you'll see a gold <strong>"To verify"</strong> note. Spells, features and items are described in our own words, never copied from the game or the rulebooks.</p>
+        <p>Screenshots are our own captures from the game.</p>
+        <p><em>Baldur's Gate 3 Paths</em> is unofficial Fan Content permitted under the <a href="https://company.wizards.com/en/legal/fancontentpolicy" rel="noopener">Fan Content Policy</a>. Not approved/endorsed by Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the Coast LLC.</p>
+        <p><em>Baldur's Gate 3</em> and its art, characters and names are © Larian Studios. Baldur's Gate, Dungeons &amp; Dragons and the Forgotten Realms are trademarks of Wizards of the Coast. SugarTickles isn't affiliated with Larian or Wizards of the Coast. It's a fan guide, made with love. We use no Wizards or Larian logos.</p>
+      </section>
+
+      <section class="act" id="act-build">
+        <span class="act-num">Your Character</span>
+        <h2>Build The Brute</h2>
+        <p>A half-orc Berserker: Rage, a big weapon, and a deep distrust of anything that glows. This chapter picks the build.</p>
+      </section>
+
+      <section class="chapter" id="br-idea">
+        <header>
+          <span class="chapter-num">Chapter 1</span>
+          <h3>The Idea</h3>
+          <p class="where">Who the Brute is, and why a Barbarian</p>
+        </header>
+
+        <p>The Brute has no patience for wizards, wands or witchcraft. Problems get solved with an axe. A <strong>Barbarian</strong> is perfect: it rages, takes huge damage and dishes out more. The <strong>Berserker</strong> subclass goes all in on fury.</p>
+        <p>It's also one of the simplest classes in the game: there are no spells to prepare and few buttons to press. Great for a new player.</p>
+        <aside class="callout tip"><strong>Patch 8 alternative</strong>Patch 8 added the <strong>Giant</strong> Barbarian, a hulking fighter that grows huge when it rages. It's another very Brute option. We built this page around the Berserker.</aside>
+        <aside class="callout verify"><strong>Draft status</strong>This path was drafted before our playthrough. Notes marked <strong>To verify</strong> are what we'll confirm against the current version of the game. Gear locations come from one guide per act and haven't been checked in our own game yet.</aside>
+        <figure class="shot" data-src="shots/br-01-creation.jpg">
+          <figcaption>The character creation screen with The Brute choices</figcaption>
+        </figure>
+
+      </section>
+
+      <section class="chapter" id="br-sheet">
+        <header>
+          <span class="chapter-num">Chapter 2</span>
+          <h3>Character Creation</h3>
+          <p class="where">Race, background, ability scores and skills. Pick the look; copy the rest.</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Choice</th><th>Pick</th><th>Why</th></tr></thead>
+            <tbody>
+              <tr><td>Race</td><td><strong>Half-Orc</strong></td><td>Tough, strong, and hard to put down.</td></tr>
+              <tr><td>Background</td><td><strong>Soldier</strong></td><td>Trains you in Athletics and Intimidation.</td></tr>
+              <tr><td>Class</td><td><strong>Barbarian</strong></td><td>Subclass at level 3: <strong>Berserker</strong>.</td></tr>
+              <tr><td>Ability scores</td><td>Strength <strong>17</strong>, Dexterity 14, Constitution <strong>15</strong>, Intelligence 8, Wisdom 10, Charisma 10</td><td>Spend the 27 points as 15 / 14 / 14 / 8 / 10 / 10, then +2 Strength and +1 Constitution.</td></tr>
+              <tr><td>Skills</td><td>Perception, Survival</td><td>Your two Barbarian picks. Soldier adds Athletics and Intimidation.</td></tr>
+              <tr><td>Armor</td><td><strong>None</strong> (Unarmored Defense)</td><td>A Barbarian without armor uses Dexterity and Constitution for armor class. Heavy armor is optional.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the Half-Orc traits, Soldier's skills, and that Berserker is a level 3 choice on our version.</aside>
+      </section>
+
+      <section class="chapter" id="br-levels">
+        <header>
+          <span class="chapter-num">Chapter 3</span>
+          <h3>Level by Level</h3>
+          <p class="where">What to pick at each level, and what you're getting</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Level</th><th>What you get</th><th>What to do</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>Rage, Unarmored Defense</td><td>Rage is your power button: it adds damage and resists weapon damage. Use it every fight.</td></tr>
+              <tr><td>2</td><td>Reckless Attack, Danger Sense</td><td>Attack with advantage, at the price of taking hits. Fine for a Brute.</td></tr>
+              <tr><td>3</td><td>Berserker: Frenzy</td><td>Frenzy gives you an extra attack while raging. It's what makes the Berserker a Berserker.</td></tr>
+              <tr><td>4</td><td>Ability Improvement or feat</td><td>+2 Strength, or the <strong>Tavern Brawler</strong> or <strong>Great Weapon Master</strong> feat.</td></tr>
+              <tr><td>5</td><td>Extra Attack, Fast Movement</td><td>You hit twice and run faster.</td></tr>
+              <tr><td>6</td><td>Mindless Rage</td><td>You can't be charmed or frightened while you rage.</td></tr>
+              <tr><td>7</td><td>Feral Instinct</td><td>Better initiative, and you can rage when surprised.</td></tr>
+              <tr><td>8</td><td>Ability Improvement</td><td>More Strength.</td></tr>
+              <tr><td>9</td><td>Brutal Critical</td><td>Critical hits get bigger.</td></tr>
+              <tr><td>10</td><td>Subclass feature</td><td>More fury.</td></tr>
+              <tr><td>11</td><td>Relentless Rage</td><td>A rage that keeps you on your feet.</td></tr>
+              <tr><td>12</td><td>Final Ability Improvement</td><td>You're done. Max level.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>No multiclassing, no problem</strong>The Brute stays a pure Barbarian. A pure Barbarian is one of the strongest, simplest characters in the game.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm each level on our version, especially the Berserker's Frenzy and Mindless Rage levels.</aside>
+      </section>
+
+      <section class="chapter" id="br-code">
+        <header>
+          <span class="chapter-num">Guide</span>
+          <h3>The Brute's Code</h3>
+          <p class="where">Our house rules for staying in character</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Rule</th><th>What it means</th></tr></thead>
+            <tbody>
+              <tr><td>No casting</td><td>You never cast a spell, read a scroll or zap a wand. Magic is for people with something to prove.</td></tr>
+              <tr><td>Potions are fine</td><td>A potion is just a drink. Drink it.</td></tr>
+              <tr><td>Shiny weapons are fine</td><td>A sword that glows is still a sword.</td></tr>
+              <tr><td>No casters in the party</td><td>Your companions are warriors and rogues. No wizards, no clerics, no warlocks.</td></tr>
+              <tr><td>Rage first</td><td>If it moves, you rage, then you hit it.</td></tr>
+              <tr><td>Break the door</td><td>If a door is locked, you break it, shove it or hit it. No lockpicks.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Make it easier</strong>The Code is about fun, not punishment. If a rule keeps you stuck, relax it. A shiny weapon you can't beat Act Two without is a good excuse.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Check whether a no-caster party can get through Act One and Act Two on Balanced difficulty.</aside>
+      </section>
+
+      <section class="chapter" id="br-party">
+        <header>
+          <span class="chapter-num">Party</span>
+          <h3>Your Party</h3>
+          <p class="where">The companions to pick, and the ones to leave at camp</p>
+        </header>
+
+        <p>The Brute's party is as muscular as they are. With no casters allowed, you need a healer-free plan: bring tough friends, lots of potions and a rogue for the doors.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Companion</th><th>Role</th><th>Why they fit this path</th><th>Where to find them</th></tr></thead>
+            <tbody>
+              <tr><td><span class="npc">Karlach</span></td><td>Front-line barbarian</td><td>Another Barbarian, and a close friend of the Brute's spirit.</td><td>Risen Road, below the Toll House</td></tr>
+              <tr><td><span class="npc">Lae'zel</span></td><td>Front-line fighter</td><td>Respects strength above all else, and she and the Brute will get on.</td><td>Nautiloid; then a cage on the Roadside Cliffs</td></tr>
+              <tr><td><span class="npc">Astarion</span></td><td>Rogue</td><td>Handles locks and traps so you don't have to, and doesn't cast spells.</td><td>Ravaged Beach, west of the Nautiloid wreck</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>On the bench</strong><span class="npc">Minsc</span> (a ranger who talks to a hamster) arrives in Act Three and is a very good Brute. <span class="npc">Gale</span>, <span class="npc">Shadowheart</span> and <span class="npc">Wyll</span> are casters: the Code leaves them at camp.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm each companion's recruitment spot and that this party handles our path's choices.</aside>
+      </section>
+
+      <section class="chapter" id="br-gear">
+        <header>
+          <span class="chapter-num">Gear</span>
+          <h3>Gear Worth Finding</h3>
+          <p class="where">Our recommended finds by act, and where to get them</p>
+        </header>
+
+        <p>A Barbarian without armor wants clothes that raise Strength or Constitution, a big two-handed weapon, and as much hit-point insurance as possible. Heavy armor is allowed if you want it.</p>
+        <h4>Act One</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Everburn Blade</strong></td><td>Commander Zhalk on the Nautiloid (prologue). You don't have to fight him: a Command spell makes him drop it.</td><td>A big greatsword from the very first minutes. Command Zhalk to drop it.</td><td>⚠️ Missable</td></tr>
+              <tr><td><strong>The Skinburster</strong></td><td>A chest in the Inquisitor's room, Crèche Y'llek.</td><td>A halberd that makes Rage even tougher.</td><td>📦 Chest</td></tr>
+              <tr><td><strong>Adamantine Scale or Splint Mail</strong></td><td>Crafted at the Adamantine Forge in Grymforge.</td><td>Heavy armor is optional but very sturdy.</td><td>🔨 Craft it</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <h4>Act Two</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>The Mighty Cloth</strong></td><td>Quartermaster Talli, Last Light Inn.</td><td>A cloak that raises Strength, perfect for an unarmored Barbarian.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Enraging Heart Garb</strong></td><td>Lann Tarv, Moonrise Towers.</td><td>A garb that raises Constitution and rewards raging.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Halberd of Vigilance</strong></td><td>Lann Tarv, Moonrise Towers.</td><td>Reactions that hit harder.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Titanstring Bow</strong></td><td>Lann Tarv, Moonrise Towers.</td><td>A bow for the one time you need to hit something far away.</td><td>🛒 Trader</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <h4>Act Three</h4>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Item</th><th>Where</th><th>Why for this path</th><th>Heads-up</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Gauntlets of Hill Giant Strength</strong></td><td>The House of Hope archive.</td><td>Sets your Strength to 23.</td><td>📜 Quest reward</td></tr>
+              <tr><td><strong>Amulet of Greater Health</strong></td><td>House of Hope.</td><td>Raises Constitution to 23.</td><td>📜 Quest reward</td></tr>
+              <tr><td><strong>Bonespike Helmet</strong></td><td>The Voiceless Penitent, in the sewers.</td><td>An area-damage helmet while you rage.</td><td>💀 Boss drop</td></tr>
+              <tr><td><strong>Bonespike Garb</strong></td><td>Exxvikyap, the Rivington blacksmith.</td><td>Temporary HP for the Brute.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Horns of the Berserker</strong></td><td>Entharl Danthelon, Wyrmgate bridge.</td><td>+2 to attack when you're wounded.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Sword of Chaos</strong></td><td>Sarevok, near the Murder Tribunal. Unconfirmed.</td><td>A huge greatsword.</td><td>📜 Quest reward</td></tr>
+              <tr><td><strong>Sethan</strong></td><td>Ferg Drogher, Rivington refugees.</td><td>A huge axe.</td><td>🛒 Trader</td></tr>
+              <tr><td><strong>Balduran's Giantslayer</strong></td><td>The secret base under Wyrmgate Prison, or Wyll's storyline.</td><td>A legendary greatsword.</td><td>👀 Easy to miss</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Hidden loot</strong>Items marked <strong>👀 Easy to miss</strong> or <strong>⚠️ Missable</strong> are the ones people walk past. The full list for every act is in the <a href="../gear/">Gear Atlas</a>.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Every location here comes from a single guide and hasn't been confirmed in our own game. We'll check each one and correct the page.</aside>
+      </section>
+
+      <section class="chapter" id="br-eggs">
+        <header>
+          <span class="chapter-num">Eggs</span>
+          <h3>Easter Eggs on Your Path</h3>
+          <p class="where">Nods, jokes and references your build is likely to find</p>
+        </header>
+
+        <p>Your path is a good excuse to catch these. We've picked the easter eggs your build, background, party and route are most likely to run into. Each one links to the full entry in the <a href="../eggs/">Easter Egg Guide</a>. ⚠️ means a spoiler, so the guide hides the details until you open it.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>When</th><th>Easter egg</th><th>Where</th><th>What you need</th></tr></thead>
+            <tbody>
+              <tr><td>Act Two</td><td><strong><a href="../eggs/#egg-ratbat">Rat Bat</a></strong></td><td>The Waning Moon pub in the Shadow-Cursed Lands.</td><td>Loot it.</td></tr>
+              <tr><td>Act Three</td><td><strong><a href="../eggs/#egg-minsc-room">Minsc's room</a></strong></td><td>The Lower City Sewers, in the room where you recruit him.</td><td>Reach the room where Minsc can be recruited.</td></tr>
+              <tr><td>Act Three</td><td><strong><a href="../eggs/#egg-sethan">Sethan, the JoJo greataxe</a></strong></td><td>Ferg Drogher, among the Rivington refugees.</td><td>Buy or take the axe.</td></tr>
+              <tr><td>Act Three (our guess)</td><td><strong><a href="../eggs/#egg-sarevok-gear">Sarevok's gear</a></strong> ⚠️</td><td>Looted from Sarevok's corpse.</td><td>Defeat Sarevok.</td></tr>
+              <tr><td>Act Three (our guess)</td><td><strong><a href="../eggs/#egg-rudolph">"Rudolph Van Richtover My Dead Body"</a></strong> ⚠️</td><td>Defeating Cazador Szarr.</td><td>You need the Soldier background and Cazador must be a Vampire Ascendant.</td></tr>
+              <tr><td>Any act</td><td><strong><a href="../eggs/#egg-boo-turns">"Boo is not used to this taking of turns"</a></strong></td><td>A Minsc combat line.</td><td>Bring Minsc (Act Three).</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout tip"><strong>Keep a checklist</strong>Tick these off as you find them. We'll note in each act's chapter when one is nearby.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Many acts and triggers come from a single wiki page and are our best guess. We'll confirm each one as we play.</aside>
+      </section>
+
+      <section class="act" id="act-play">
+        <span class="act-num">Staying on Target</span>
+        <h2>The Brute's Playthrough</h2>
+        <p>Rage first. Ask questions never. Here's the plan.</p>
+      </section>
+
+      <section class="chapter" id="br-act1">
+        <header>
+          <span class="chapter-num">Act One</span>
+          <h3>Act One: Hit Things</h3>
+          <p class="where">Make friends with people who hit things</p>
+        </header>
+
+        <ol class="steps">
+          <li>On the Nautiloid, get the <span class="item">Everburn Blade</span>: make Zhalk drop it with a Command spell (cast by an ally), or fight him.</li>
+          <li>Recruit <span class="npc">Lae'zel</span>, <span class="npc">Astarion</span> and <span class="npc">Karlach</span>. No casters.</li>
+          <li>Break open locked doors and chests with Strength, or let Astarion pick them.</li>
+          <li>Rage at the start of every fight, and let your friends rest between them.</li>
+          <li>At the Grove, side with whoever hits hardest. You have no stake in the druids' arguments.</li>
+        </ol>
+        <aside class="callout tip"><strong>Recommended: your first big find</strong>Take the <span class="item">Skinburster</span> from the Inquisitor's room in Crèche Y'llek at the end of Act One. With Rage, it makes you very hard to hurt.</aside>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm who's present on the Nautiloid and how to get the Command spell used on Zhalk if no caster is in the party.</aside>
+      </section>
+
+      <section class="chapter" id="br-act2">
+        <header>
+          <span class="chapter-num">Act Two</span>
+          <h3>Act Two: Hit Harder</h3>
+          <p class="where">The shadows can't hurt what you can't see</p>
+        </header>
+
+        <ol class="steps">
+          <li>Look for the <span class="item">Mighty Cloth</span> and the <span class="item">Enraging Heart Garb</span> from the Last Light and Moonrise traders.</li>
+          <li>Use Reckless Attack on every boss.</li>
+          <li>Keep your potions stocked: no healer means no safety net.</li>
+        </ol>
+        <aside class="callout verify"><strong>To verify while proving</strong>Replace with the exact Act Two quests after playing.</aside>
+        <aside class="callout tip"><strong>🥚 Easter eggs this act</strong>🥚 <a href="../eggs/#egg-ratbat">Rat Bat</a> — The Waning Moon pub in the Shadow-Cursed Lands.</aside>
+      </section>
+
+      <section class="chapter" id="br-act3">
+        <header>
+          <span class="chapter-num">Act Three</span>
+          <h3>Act Three: Hit Everything</h3>
+          <p class="where">The final brawl</p>
+        </header>
+
+        <ol class="steps">
+          <li>Recruit <span class="npc">Minsc</span>, and take Boo to the finale.</li>
+          <li>Pick up the <span class="item">Gauntlets of Hill Giant Strength</span> and the <span class="item">Amulet of Greater Health</span> in the House of Hope.</li>
+          <li>At the finale, choose the ending that ends with the biggest fight.</li>
+        </ol>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm the Act Three quests and the best Brute ending after playing.</aside>
+        <aside class="callout tip"><strong>🥚 Easter eggs this act</strong>🥚 <a href="../eggs/#egg-minsc-room">Minsc's room</a> — The Lower City Sewers, in the room where you recruit him.<br>🥚 <a href="../eggs/#egg-sethan">Sethan, the JoJo greataxe</a> — Ferg Drogher, among the Rivington refugees.<br>🥚 <a href="../eggs/#egg-sarevok-gear">Sarevok's gear</a> ⚠️ — Looted from Sarevok's corpse.<br>🥚 <a href="../eggs/#egg-rudolph">"Rudolph Van Richtover My Dead Body"</a> ⚠️ — Defeating Cazador Szarr.</aside>
+      </section>
+
+      <section class="chapter" id="br-love">
+        <header>
+          <span class="chapter-num">Love Interests</span>
+          <h3>Love & Companions</h3>
+          <p class="where">The game is open: any companion can be romanced whatever your character looks like</p>
+        </header>
+
+        <p>The Brute isn't a smooth talker, but even a Barbarian gets lonely. These two respect strength.</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th></th><th>Our pick</th><th>Why they fit</th><th>Alternates</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Male</strong></td><td><span class="npc">Astarion</span></td><td>A cutthroat who likes someone who gets things done, and a non-caster.</td><td><span class="npc">Wyll</span> (the Code would bench him, but the heart wants what it wants)</td></tr>
+              <tr><td><strong>Female</strong></td><td><span class="npc">Lae'zel</span></td><td>She respects strength and decisiveness above all. A fellow warrior.</td><td><span class="npc">Karlach</span>, a fellow Barbarian</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Confirm approval thresholds for both pairings.</aside>
+        <figure class="shot" data-src="shots/br-02-rage.jpg">
+          <figcaption>The Brute mid-rage</figcaption>
+        </figure>
+
+      </section>
+
+      <section class="chapter reference" id="br-never">
+        <header>
+          <span class="chapter-num">Reference</span>
+          <h3>Never Do This</h3>
+          <p class="where">Choices that break the character</p>
+        </header>
+
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Don't</th><th>Because</th></tr></thead>
+            <tbody>
+              <tr><td>Cast a spell or read a scroll</td><td>That's the Code.</td></tr>
+              <tr><td>Bring a caster to the party</td><td>The Code again.</td></tr>
+              <tr><td>Pick a lock politely</td><td>Break it.</td></tr>
+              <tr><td>Stop and think</td><td>Rage, then think.</td></tr>
+              </tbody>
+          </table>
+        </div>
+        <aside class="callout verify"><strong>To verify while proving</strong>Add every point of no return for the path after playing.</aside>
+      </section>
+
+      <aside class="callout tip" style="margin-top:40px"><strong>Want a different path?</strong>Head back to the <a href="../">BG3 Paths hub</a> to compare all three, or see the <a href="../../baldurs-gate-3/">general act-by-act walkthrough</a> for the full story.</aside>
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    © 2026 <a href="https://craz.com">Crabtree Labz</a> · <a href="https://craz.com/privacy.html">Privacy</a> · Baldur's Gate 3 © Larian Studios · Baldur's Gate, Dungeons &amp; Dragons and Forgotten Realms © Wizards of the Coast · Unofficial fan guide
+  </footer>
+
+  <script src="../../walkthrough.js?v=e57d0971"></script>
+</body>
+</html>
