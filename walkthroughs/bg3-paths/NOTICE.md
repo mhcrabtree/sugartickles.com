@@ -22,9 +22,14 @@ Wizards of the Coast's [Fan Content Policy](https://company.wizards.com/en/legal
 
 - Screenshots: our own captures from our own playthrough only. See `*/shots/SHOTLIST.md`.
 - We do **not** extract files from the game's data. Larian's only grant of game assets is the modding toolkit, for mods.
-- We do **not** use the Larian press kit: the press page states no usage terms.
-- Open-licensed icons (if used): [game-icons.net](https://game-icons.net), CC BY 3.0. Credit each icon's author, e.g.
-  "Icons made by {author}. Available on https://game-icons.net". None are used yet.
+- Larian press-kit screenshots: the press page and the kits state no usage terms, so this is a **judgment call, not a
+  license**. We use 17 resized, unmodified screenshots as page banners, with a credit line, on a free fan site (see
+  `art/CREDITS.md`). We never use the BG3 logo, key art that contains the logo, GIFs, video, Collector's Edition or
+  release marketing graphics, or the actor photo. We never claim Larian endorsed the site. If asked, we remove them.
+  Keep these pages ad-free and non-commercial while the images are in use.
+- Open-licensed icons: [game-icons.net](https://game-icons.net), CC BY 3.0. Every path, guide and hub emblem is one of these
+  (see `img/CREDITS.md`). Credit each icon's author on the page that uses it: "Icons made by {author}. Available on
+  https://game-icons.net". The pages already do this; keep it when adding icons.
 
 ## Gear and game facts
 

@@ -1,0 +1,8 @@
+/* BG3 Paths: emblem styling (game-icons.net, CC BY 3.0). */
+.emblem { display: block; color: var(--gold); fill: currentColor; }
+.hero .emblem { width: 84px; height: 84px; margin: 16px auto 6px; opacity: 0.92; }
+.card .art svg.emblem { width: auto; height: 74%; max-height: 120px; }
+.hero + .hero { display: none; }
+.art-banner { max-width: 880px; margin: 8px auto 30px; padding: 0 24px; }
+.art-banner img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; border-radius: 14px; border: 1px solid var(--line, #3a2c4a); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35); }
+.art-banner figcaption { margin-top: 8px; text-align: center; font-size: 0.78rem; color: var(--muted, #a99bb8); }
