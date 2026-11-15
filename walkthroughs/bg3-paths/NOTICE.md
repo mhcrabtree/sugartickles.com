@@ -51,4 +51,8 @@ The New Player Guide (`start-here/`, `dice/`, `combat/`, `systems/`, `faq/`, `gl
 Facts (ability modifiers, proficiency by level, spell-slot counts, rest costs) come from bg3.wiki and the game. Don't paste
 rules text from the game, the rulebooks or the wiki. Keep every unconfirmed claim behind a "To verify" note.
 
+- Open-licensed photos (Wikimedia Commons, CC BY / CC BY-SA): `photos/`, credited beside each photo and in
+  `photos/CREDITS.md`. We check the license on the file page, avoid photos where a logo is the subject (we cropped a
+  printed D&D logo out of one), and never use a photo of a person without checking that the license page is clear.
+
 Larian or Wizards can change these terms at any time. Re-check them before adding anything new.
